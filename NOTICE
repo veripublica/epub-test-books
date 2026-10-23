@@ -1,0 +1,14 @@
+epub-test-books
+Copyright (c) 2026 Barış Kayadelen (veripublica) and contributors
+
+Everything under books/, and the READMEs and documentation, are licensed
+under the Creative Commons Attribution 4.0 International License (CC BY 4.0;
+full text in LICENSE).
+
+Everything under scripts/ is licensed under the GNU Affero General Public
+License, version 3 only (AGPL-3.0-only; full text in LICENSE-AGPL).
+
+The books, and any other output, that the scripts produce are licensed
+under CC BY 4.0, whatever parts of the scripts they contain.
+
+SPDX-License-Identifier: CC-BY-4.0 AND AGPL-3.0-only

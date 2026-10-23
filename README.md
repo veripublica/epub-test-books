@@ -73,6 +73,8 @@ Read them in place; do not copy them into your repository.
 - The books and other output the scripts produce are CC BY 4.0, whatever
   parts of the scripts they contain.
 
+Which licence covers what is stated in [NOTICE](NOTICE).
+
 You may copy, change and ship the books. If you copy them into your own
 project, keep the credit — one line in the folder is enough:
 
