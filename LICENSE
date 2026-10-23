@@ -2,9 +2,13 @@ Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 Copyright (c) 2026 Barış Kayadelen (veripublica) and contributors
 
-The books, READMEs and documentation in this repository are licensed under
-the Creative Commons Attribution 4.0 International License. Scripts are
-licensed under the MIT License (see LICENSE-MIT).
+Everything under books/, and the READMEs and documentation, are licensed
+under the Creative Commons Attribution 4.0 International License.
+Everything under scripts/ is licensed under the GNU Affero General Public
+License, version 3 only (see LICENSE-AGPL).
+
+The books, and any other output, that the scripts produce are licensed
+under CC BY 4.0, whatever parts of the scripts they contain.
 
 You are free to:
   - Share  — copy and redistribute the material in any medium or format;

@@ -20,14 +20,22 @@ without guessing.
 ## Layout
 
 ```
-templates/
-  epub3-minimal/          every part EPUB 3 requires, zero findings
-  epub2-minimal/          every part EPUB 2 requires, zero findings
-epub-3.3/<area>/<anchor>/<set>/
-epub-2.0.1/<area>/<anchor>/<set>/
-css-<module>/<anchor>/<set>/
-bundles/                  generated from verified sets; settle nothing alone
+books/                      CC BY 4.0
+  templates/
+    epub3-minimal/          every part EPUB 3 requires, zero findings
+    epub2-minimal/          every part EPUB 2 requires, zero findings
+  epub-3.3/<area>/<anchor>/<set>/
+  epub-2.0.1/<area>/<anchor>/<set>/
+  css-<module>/<anchor>/<set>/
+  bundles/                  generated from verified sets; settle nothing alone
+scripts/                    AGPL-3.0-only
+  <same path as the set>/   the script that builds that set's book
+  ...                       bundle and check scripts
 ```
+
+Books and scripts live in separate trees, so the licence follows the
+folder: everything under `books/` is CC BY 4.0, everything under `scripts/`
+is AGPL-3.0-only.
 
 A set lives under the specification version and the section's stable
 anchor, not its number, because section numbers change between versions.
@@ -35,14 +43,16 @@ A set that touches more than one clause goes under its main clause, and its
 README lists the others. Tools' own rule ids are listed in the README, never
 used as keys.
 
-Each set folder holds:
+Each set folder under `books/` holds:
 
 - `README.md`: the question, the clause, the expected result, the origin,
   each verifier's result with its version, and the marks;
 - the book or books;
-- the build script, where the book is built by one;
 - one output file per verifier run, named with the exact version
   (`epubcheck-5.4.0.txt`, `epubveri-0.31.0.txt`).
+
+Where a book is built by a script, the script lives under `scripts/` at the
+same path as its set.
 
 ## Using the books
 
@@ -58,10 +68,12 @@ Read them in place; do not copy them into your repository.
 
 ## Licence
 
-- Books, READMEs and documentation: [CC BY 4.0](LICENSE).
-- Scripts: [MIT](LICENSE-MIT).
+- `books/`, READMEs and documentation: [CC BY 4.0](LICENSE).
+- `scripts/`: [AGPL-3.0-only](LICENSE-AGPL).
+- The books and other output the scripts produce are CC BY 4.0, whatever
+  parts of the scripts they contain.
 
-You may copy, change and ship any of it. If you copy books into your own
+You may copy, change and ship the books. If you copy them into your own
 project, keep the credit — one line in the folder is enough:
 
 ```

@@ -21,8 +21,8 @@ publisher, in an issue, a commit or a README. Reduce it first (§3).
 
 ## 2. Templates
 
-Every book starts from a template in `templates/` and changes only what its
-question needs.
+Every book starts from a template in `books/templates/` and changes only
+what its question needs.
 
 - A template carries every part its EPUB version requires. The list comes
   from the specification, and each item cites its clause in the template's
@@ -53,6 +53,8 @@ keep it in its smallest form and say why in the README.
 ## 4. Verifying a set
 
 1. The book is built and opened as a pull request that links its issue.
+   The book goes under `books/`; its build script, if any, under `scripts/`
+   at the same path. Nothing executable goes under `books/`.
 2. epubveri runs on it, and its output is compared with the expected result.
 3. epubcheck runs on it. Every place where the two differ is marked in the
    README with one of three marks:
@@ -85,7 +87,8 @@ version; a new difference gets its mark.
 ## 6. Bundles
 
 A bundle (for example, every CSS set in one book) is generated from
-verified sets by a script in `scripts/`, and its README says so. A bundle
+verified sets by a script in `scripts/`, goes under `books/bundles/`, and
+its README says so. A bundle
 is a quick check of many sets at once. It settles nothing on its own: one
 fatal defect can hide the others.
 
@@ -106,6 +109,7 @@ and its notes say so.
 ## 8. Licence of contributions
 
 By contributing you agree that your contribution is licensed as the rest of
-the repository: books, READMEs and documentation under CC BY 4.0, scripts
-under MIT. You confirm that the book is built from scratch or reduced as in
+the repository: everything under `books/`, READMEs and documentation under
+CC BY 4.0; everything under `scripts/` under AGPL-3.0-only, with the books
+and other output the scripts produce under CC BY 4.0. You confirm that the book is built from scratch or reduced as in
 §3, and that you have the right to give it.
