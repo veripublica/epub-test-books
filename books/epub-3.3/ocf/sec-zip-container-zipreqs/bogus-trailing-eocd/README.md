@@ -14,7 +14,7 @@ The question: a second end-of-central-directory record follows the real one at t
 
 Everything before those last 22 bytes is the EPUB 3 template, which raises no finding.
 
-Expected result: invalid. A ZIP file must have only one end-of-central-directory record, and the one a reader finds last points to a central directory that is not there, so the container cannot be opened.
+Expected result: invalid. A ZIP file must have only one end-of-central-directory record, and the one a reader finds by searching from the end points to a central directory that is not there, so the container cannot be opened.
 
 ## Question
 
@@ -50,7 +50,9 @@ bogus one, and its central directory does not exist.
 Both agree with the expected result, so there is nothing to mark. Both
 reject the record because the central directory it describes does not fit
 in the file. epubcheck reports it where it opens the container
-(`OCFChecker`); epubveri makes the same check.
+(`OCFChecker`); epubveri makes the same check. Neither verifier checks the
+one-record rule on its own: they reject this file because of what the
+second record points to.
 
 ## Other readers
 

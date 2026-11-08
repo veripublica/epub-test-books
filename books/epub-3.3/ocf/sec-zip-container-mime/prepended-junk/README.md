@@ -65,7 +65,8 @@ This is the set where validators and ZIP readers part ways. ZIP readers
 treat the 16 bytes as a prefix, as they do for self-extracting archives, and
 read every entry:
 
-- `unzip -t` (Info-ZIP 6.00): no errors.
+- `unzip -t` (Info-ZIP 6.00): warns about 16 extra bytes at the beginning,
+  then tests every entry without error (exit 1, a warning).
 - Python `zipfile`: reads every entry.
 
 So a tool that repairs or converts books may open this file without

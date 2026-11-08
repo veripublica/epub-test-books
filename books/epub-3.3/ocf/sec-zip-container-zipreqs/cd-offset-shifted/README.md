@@ -56,7 +56,8 @@ that file no package document is declared.
 ## Other readers
 
 - `unzip -t` (Info-ZIP 6.00): reports errors.
-- Python `zipfile`: refuses the file ("Bad magic number for file header").
+- Python `zipfile`: opens the archive and lists every entry, but can read
+  none of them ("Bad magic number for file header").
 
 ## Build
 
