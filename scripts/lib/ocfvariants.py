@@ -111,6 +111,13 @@ def filename_not_utf8(files):
 
 # --- sec-container-file-and-dir-structure ------------------------------------
 
+def link_into_meta_inf(files):
+    d = _get(files, CONTENT).replace(
+        "holds only this paragraph.",
+        'holds only this paragraph. <a href="../META-INF/container.xml">A link</a>')
+    return rz.build(_entries(files, changes={CONTENT: d}))
+
+
 def container_in_manifest(files):
     return rz.build(_entries(files, changes={OPF: _manifest_add(
         files, '<item id="container" href="../META-INF/container.xml" '
@@ -171,6 +178,12 @@ def container_foreign_attribute(files):
 
 def container_missing(files):
     return rz.build(_entries(files, drop=[CONT]))
+
+
+def container_version_wrong(files):
+    # only the container element's attribute: the XML declaration keeps 1.0
+    c = _get(files, CONT).replace('<container version="1.0"', '<container version="2.0"')
+    return rz.build(_entries(files, changes={CONT: c}))
 
 
 def rootfile_wrong_media_type(files):

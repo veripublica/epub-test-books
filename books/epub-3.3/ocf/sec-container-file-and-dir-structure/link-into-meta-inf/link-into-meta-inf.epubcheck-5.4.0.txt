@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-008): link-into-meta-inf.epub/OEBPS/content.xhtml(11,126): Referenced resource "META-INF/container.xml" is not declared in the OPF manifest.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]
