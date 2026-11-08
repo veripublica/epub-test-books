@@ -276,3 +276,14 @@ def zip_encryption(files):
         if e.name == CONTENT:
             e.password = b"epub-test-books"
     return rz.build(es)
+
+
+def never_encrypted(files, target):
+    # META-INF/encryption.xml declares `target` encrypted with AES-128-CBC.
+    # Only the declaration is the defect: the file's bytes stay as they are,
+    # since real encryption would also make the file unreadable.
+    xml = _encryption_xml(target).replace(
+        "http://www.idpf.org/2008/embedding", "http://www.w3.org/2001/04/xmlenc#aes128-cbc")
+    files = list(files)
+    files.insert(1, ("META-INF/encryption.xml", xml))
+    return rz.build(rz.entries_from(files))
