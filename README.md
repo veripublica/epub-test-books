@@ -14,8 +14,8 @@ it. Where either of them disagrees with the specification, the book's
 README says so and why. None of the books
 contain commercial content.
 
-Nothing is released yet. The first release will hold the two templates, one
-for EPUB 3 and one for EPUB 2, and the first sets, on damaged ZIP containers.
+The first release, v0.1.0, holds the two templates, one for EPUB 3 and one
+for EPUB 2, and the first three sets, on damaged ZIP containers.
 
 To use the books in CI, check out a release tag and read them in place:
 

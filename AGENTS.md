@@ -6,8 +6,8 @@ kept true at every release. The rules for adding a set are in
 
 ## Status
 
-Nothing is released yet. The first release, v0.1.0, holds the two templates
-and three ZIP container sets:
+Latest release: v0.1.0 (2026-11-08). It holds the two templates and three
+ZIP container sets:
 
 - `books/templates/epub3-minimal/`, `books/templates/epub2-minimal/`
 - `books/epub-3.3/ocf/sec-zip-container-zipreqs/bogus-trailing-eocd/`
