@@ -11,6 +11,8 @@ either verifier. A set copies it and changes only what its question needs.
   [OPS 2.0.1](https://idpf.org/epub/20/spec/OPS_2.0.1_draft.htm) and
   [OCF 2.0.1](https://idpf.org/epub/20/spec/OCF_2.0.1_draft.doc)
 - Origin: built here
+- Expected: valid, no finding at any level
+- Marks: none
 
 ## About this book
 

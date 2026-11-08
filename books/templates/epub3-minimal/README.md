@@ -9,6 +9,8 @@ either verifier. A set copies it and changes only what its question needs.
 - Specification: [EPUB 3.3](https://www.w3.org/TR/epub-33/), W3C
   Recommendation (version of 13 January 2026)
 - Origin: built here
+- Expected: valid, no finding at any level
+- Marks: none
 
 ## About this book
 

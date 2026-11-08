@@ -1,0 +1,28 @@
+# Every pull request and push: the library's own consistency checks.
+# Every release tag: the index must have been made for that tag and match
+# the books (CONTRIBUTING §7). The verifiers themselves are run locally with
+# `scripts/release.py check <tag> --full` before tagging.
+name: check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Lint
+        run: python3 scripts/release.py lint
+      - name: Release index matches the tag
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: python3 scripts/release.py check "${GITHUB_REF_NAME}"

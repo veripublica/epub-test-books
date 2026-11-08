@@ -137,6 +137,21 @@ Releases are tags, `vMAJOR.MINOR.PATCH`. Tools pin a tag.
 While the version is `0.x`, a MINOR release may carry what would be MAJOR,
 and its notes say so.
 
+Every release, in this order:
+
+1. `python3 scripts/release.py index vX.Y.Z` writes `books/INDEX.md` and
+   `books/index.json` for that release: one line per book, with its expected
+   result, both verifiers' results, its marks, its issue and its download.
+2. `python3 scripts/release.py check vX.Y.Z --full` passes. It fails if the
+   index was made for another release or does not match the books, if a
+   rebuild changes a book's bytes, or if a verifier output is not current.
+3. The tag goes on that commit. CI checks the index against the tag again.
+4. The GitHub release carries every book as its own file, named
+   `<spec>--<anchor>--<set>.epub`, and all of them in one
+   `epub-test-books-vX.Y.Z.zip` (`python3 scripts/release.py bundle`).
+
+A release whose index was made for another release does not ship.
+
 ## 8. Licence of contributions
 
 By contributing you agree that your contribution is licensed as the rest of
