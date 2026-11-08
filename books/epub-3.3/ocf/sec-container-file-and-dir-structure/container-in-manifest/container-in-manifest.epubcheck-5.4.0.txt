@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(PKG-025): container-in-manifest.epub/OEBPS/package.opf(29,89): Publication resource must not be located in the META-INF directory
+USAGE(OPF-097): container-in-manifest.epub/OEBPS/package.opf(29,89): Resource "META-INF/container.xml" is listed in the manifest, but no reference to it was found in content documents.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 1]

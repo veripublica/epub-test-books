@@ -1,0 +1,7 @@
+ERROR(RSC-003): no-rootfile.epub/META-INF/container.xml(-1,-1): No rootfile tag with media type "application/oebps-package+xml" was found in the container.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

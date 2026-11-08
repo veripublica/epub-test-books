@@ -15,6 +15,10 @@ ZIP container sets. `books/INDEX.md` lists every book on one page, and
 - `books/epub-3.3/ocf/sec-zip-container-mime/prepended-junk/`
 - `books/epub-3.3/ocf/sec-zip-container-zipreqs/cd-offset-shifted/`
 
+Next release (not yet tagged): 19 more OCF sets, on the mimetype file, ZIP
+compression and file names, `container.xml` and `rootfile`, and URLs in the
+container. Their issues are opened when they are published.
+
 ## Scope
 
 A library of small EPUBs for testing EPUB tools, one question per book: mostly
@@ -71,6 +75,8 @@ books/                          CC BY 4.0
 scripts/                        AGPL-3.0-only
   lib/epubbook.py               shared builder: metadata, about.xhtml, ZIP
   lib/zippatch.py               byte changes made to a finished ZIP
+  lib/rawzip.py                 a ZIP writer that controls every header field
+  lib/ocfvariants.py            the OCF sets' containers, one function each
   check.py                      runs both verifiers, keeps their outputs
   release.py                    index, release check, download bundle
   templates/<template>/build.py builds a template; package() for sets

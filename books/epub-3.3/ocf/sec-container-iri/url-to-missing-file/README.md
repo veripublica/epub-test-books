@@ -1,0 +1,50 @@
+# A link to a file that does not exist
+
+- Book: `url-to-missing-file.epub`, built from the EPUB 3 template
+- Built by: `scripts/epub-3.3/ocf/sec-container-iri/url-to-missing-file/build.py`
+- Origin: built here
+- Expected: invalid
+- Marks: none
+- Asked for by: the maintainer, to complete the OCF section
+- Issue: pending
+
+## About this book
+
+This book is a set of epub-test-books, a library of small EPUB files that each show one rule or one defect.
+
+The content document has a link to missing.xhtml, a file that is not in the container. Everything else is the EPUB 3 template, which raises no finding.
+
+Expected result: Invalid. The relative URL does not resolve to a file in the container.
+
+## Question
+
+The content document links to `missing.xhtml`, which is not in the container. Does a validator reject it?
+
+## Clause
+
+EPUB 3.3, [`sec-container-iri`](https://www.w3.org/TR/epub-33/#sec-container-iri):
+
+> In addition, all relative-URL-with-fragment strings [url] MUST, after parsing, be equal to the content URL of an existing file in the OCF abstract container.
+
+## Expected result
+
+Invalid. The relative URL does not resolve to a file in the container.
+
+## Verifier results
+
+| Verifier | Command | Result | Output |
+|----------|---------|--------|--------|
+| epubveri 0.37.1 | `epubveri -i url-to-missing-file.epub -u --advisory` | ERROR RSC-007; INVALID | `url-to-missing-file.epubveri-0.37.1.txt` |
+| epubcheck 5.4.0 | `epubcheck url-to-missing-file.epub -u` | ERROR RSC-007; INVALID | `url-to-missing-file.epubcheck-5.4.0.txt` |
+
+Both agree with the expected result, so there is nothing to mark. They report the same messages.
+
+Every epubveri finding here is in its default output. None is an `--advisory` finding.
+
+## Build
+
+`OEBPS/content.xhtml` gains `<a href="missing.xhtml">A link</a>` at the end of its paragraph.
+
+## History
+
+- 2026-11-08: First version.

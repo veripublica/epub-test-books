@@ -121,6 +121,7 @@ def library() -> list[dict]:
                 "marks": field(text, "Marks"),
                 "asked_by": field(text, "Asked for by"),
                 "issue": m.group(1) if m else None,
+                "issue_field": issue,
                 "epubveri": verifier(folder, book.stem, "epubveri"),
                 "epubcheck": verifier(folder, book.stem, "epubcheck"),
             })
@@ -130,8 +131,9 @@ def library() -> list[dict]:
 # --- index -------------------------------------------------------------------
 
 def render(version: str, entries: list[dict]) -> tuple[str, str]:
+    books = [{k: v for k, v in e.items() if k != "issue_field"} for e in entries]
     data = {"release": version, "repository": REPO, "credit": CREDIT,
-            "books": entries}
+            "books": books}
     js = json.dumps(data, indent=2, ensure_ascii=False) + "\n"
 
     def tool(t: dict | None) -> str:
@@ -170,7 +172,9 @@ All books in one download: [epub-test-books-{version}.zip]({dl}/epub-test-books-
     return md, js
 
 
-def problems(entries: list[dict]) -> list[str]:
+def problems(entries: list[dict], release: bool = False) -> list[str]:
+    """Consistency problems. Between releases an issue may still be
+    'pending' (it is opened with the next push); a release needs every link."""
     out = []
     names = [e["asset"] for e in entries]
     for n in sorted({n for n in names if names.count(n) > 1}):
@@ -185,7 +189,8 @@ def problems(entries: list[dict]) -> list[str]:
             if not e[t]:
                 out.append(f"{e['book']}: no {t} output")
         if e["path"].split("/")[1] != "templates" and not e["issue"]:
-            out.append(f"{e['path']}: README has no issue link")
+            if release or (e.get("issue_field") or "").strip() != "pending":
+                out.append(f"{e['path']}: README has no issue link")
     return out
 
 
@@ -207,7 +212,7 @@ def cmd_check(version: str, full: bool) -> None:
     if not re.fullmatch(r"v\d+\.\d+\.\d+", version):
         bad.append(f"{version}: not a vMAJOR.MINOR.PATCH tag")
     entries = library()
-    bad += problems(entries)
+    bad += problems(entries, release=True)
     md, js = render(version, entries)
     for name, want in (("INDEX.md", md), ("index.json", js)):
         f = BOOKS / name

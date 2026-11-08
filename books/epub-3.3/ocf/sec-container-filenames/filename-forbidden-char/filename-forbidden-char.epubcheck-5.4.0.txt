@@ -1,0 +1,8 @@
+ERROR(PKG-009): filename-forbidden-char.epub/./filename-forbidden-char.epub(-1,-1): The file name "OEBPS/con|tent.xhtml" contains characters that are not allowed in OCF file names: U+007C (|).
+Validating using EPUB version 3.4 rules.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

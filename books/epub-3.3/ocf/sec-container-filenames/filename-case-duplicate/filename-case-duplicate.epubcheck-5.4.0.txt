@@ -1,0 +1,8 @@
+ERROR(OPF-060): filename-case-duplicate.epub/./filename-case-duplicate.epub(-1,-1): Duplicate entry in the ZIP file: "OEBPS/Content.xhtml" (file names must be unique after Unicode canonical normalization and full case folding).
+Validating using EPUB version 3.4 rules.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]
