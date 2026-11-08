@@ -39,6 +39,8 @@ Invalid. After canonical normalization the two names are equal.
 
 Both agree with the expected result, so there is nothing to mark.
 
+The other findings follow from the defect. ERROR OPF-074 says the two manifest items resolve to one resource once their names are normalized. USAGE PKG-012 appears once for each file name with a non-ASCII character.
+
 Every epubveri finding here is in its default output, except the USAGE messages, which need `-u`. None is an `--advisory` finding.
 
 ## Build

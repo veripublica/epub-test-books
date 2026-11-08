@@ -39,6 +39,8 @@ Invalid. Files in META-INF must not be in the manifest.
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.
 
+USAGE OPF-097 is a side effect of the defect, not a second defect: the manifest now lists a file that nothing in the book references.
+
 Every epubveri finding here is in its default output, except the USAGE messages, which need `-u`. None is an `--advisory` finding.
 
 ## Build
