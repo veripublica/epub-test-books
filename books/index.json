@@ -1,5 +1,5 @@
 {
-  "release": "v0.2.0",
+  "release": "v0.3.0",
   "repository": "https://github.com/veripublica/epub-test-books",
   "credit": "EPUB test books © veripublica contributors, CC BY 4.0, https://github.com/veripublica/epub-test-books",
   "books": [
@@ -49,6 +49,40 @@
         "verdict": "valid",
         "messages": [],
         "output": "books/templates/epub3-minimal/epub3-minimal.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/obfus-specifying/obfuscated-not-font",
+      "book": "books/epub-3.3/ocf/obfus-specifying/obfuscated-not-font/obfuscated-not-font.epub",
+      "asset": "epub-3.3--obfus-specifying--obfuscated-not-font--invalid.epub",
+      "sha256": "62a1c4a8a0cd031fee54a46f34eecf75dfc7c94342bfde37c6880a6cbef5a219",
+      "title": "A stylesheet obfuscated as if it were a font",
+      "question": "`META-INF/encryption.xml` lists a stylesheet as obfuscated with the font algorithm. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/29",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR PKG-026",
+          "INFO RSC-004",
+          "USAGE OPF-097",
+          "USAGE OBS-001"
+        ],
+        "output": "books/epub-3.3/ocf/obfus-specifying/obfuscated-not-font/obfuscated-not-font.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "USAGE OBS-001",
+          "INFO RSC-004",
+          "USAGE OPF-097",
+          "ERROR PKG-026"
+        ],
+        "output": "books/epub-3.3/ocf/obfus-specifying/obfuscated-not-font/obfuscated-not-font.epubcheck-5.4.0.txt"
       }
     },
     {
@@ -228,6 +262,60 @@
       }
     },
     {
+      "path": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-foreign-attribute",
+      "book": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-foreign-attribute/container-foreign-attribute.epub",
+      "asset": "epub-3.3--sec-container-metainf-container.xml--container-foreign-attribute--valid.epub",
+      "sha256": "6308056fbf4317b09c573454732c304080081bf054547af3ee8c249d738cf42d",
+      "title": "An attribute from another namespace in container.xml",
+      "question": "The `rootfiles` element in `META-INF/container.xml` has an attribute from another namespace. Does a validator accept it?",
+      "expected": "valid",
+      "marks": "epubcheck: wrong error",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/33",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "valid",
+        "messages": [],
+        "output": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-foreign-attribute/container-foreign-attribute.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR RSC-005"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-foreign-attribute/container-foreign-attribute.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-foreign-element",
+      "book": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-foreign-element/container-foreign-element.epub",
+      "asset": "epub-3.3--sec-container-metainf-container.xml--container-foreign-element--valid.epub",
+      "sha256": "6cc11eab0f31acb0d4a447713de655c949c9d30c22ebe64cd41913f6437ace53",
+      "title": "An element from another namespace in container.xml",
+      "question": "`META-INF/container.xml` has an element from another namespace after `rootfiles`. Does a validator accept it?",
+      "expected": "valid",
+      "marks": "epubveri: wrong error; epubcheck: wrong error",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/32",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR RSC-005"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-foreign-element/container-foreign-element.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR RSC-005"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-foreign-element/container-foreign-element.epubcheck-5.4.0.txt"
+      }
+    },
+    {
       "path": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-missing",
       "book": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-missing/container-missing.epub",
       "asset": "epub-3.3--sec-container-metainf-container.xml--container-missing--invalid.epub",
@@ -337,6 +425,73 @@
           "ERROR RSC-003"
         ],
         "output": "books/epub-3.3/ocf/sec-container.xml-rootfiles-elem/no-rootfile/no-rootfile.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-encryption.xml-encryption/encryption-wrong-root",
+      "book": "books/epub-3.3/ocf/sec-encryption.xml-encryption/encryption-wrong-root/encryption-wrong-root.epub",
+      "asset": "epub-3.3--sec-encryption.xml-encryption--encryption-wrong-root--invalid.epub",
+      "sha256": "8d0e81412e373b2495b60524bd6a6f02b2a0899649661d3081f7da8058703d2a",
+      "title": "encryption.xml with the wrong root element",
+      "question": "The root element of `META-INF/encryption.xml` is `encryptions` instead of `encryption`. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/30",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR RSC-005",
+          "USAGE OBS-001",
+          "USAGE CSS-028"
+        ],
+        "output": "books/epub-3.3/ocf/sec-encryption.xml-encryption/encryption-wrong-root/encryption-wrong-root.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR RSC-005",
+          "USAGE OBS-001",
+          "USAGE CSS-028",
+          "USAGE CSS-028",
+          "INFO RSC-004"
+        ],
+        "output": "books/epub-3.3/ocf/sec-encryption.xml-encryption/encryption-wrong-root/encryption-wrong-root.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-font-obfuscation/font-obfuscated",
+      "book": "books/epub-3.3/ocf/sec-font-obfuscation/font-obfuscated/font-obfuscated.epub",
+      "asset": "epub-3.3--sec-font-obfuscation--font-obfuscated--valid.epub",
+      "sha256": "789d8a87593ed48548a3fae701833e477e2c81bb78e9f247a52f225098d339f6",
+      "title": "An obfuscated font, done right",
+      "question": "The book embeds a font obfuscated with the EPUB algorithm and lists it in `META-INF/encryption.xml`. Does a validator accept it?",
+      "expected": "valid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/28",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "valid",
+        "messages": [
+          "INFO RSC-004",
+          "USAGE CSS-028",
+          "USAGE OBS-001"
+        ],
+        "output": "books/epub-3.3/ocf/sec-font-obfuscation/font-obfuscated/font-obfuscated.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "valid",
+        "messages": [
+          "USAGE OBS-001",
+          "USAGE CSS-028",
+          "USAGE CSS-028",
+          "INFO RSC-004"
+        ],
+        "output": "books/epub-3.3/ocf/sec-font-obfuscation/font-obfuscated/font-obfuscated.epubcheck-5.4.0.txt"
       }
     },
     {
@@ -675,6 +830,34 @@
           "FATAL PKG-027"
         ],
         "output": "books/epub-3.3/ocf/sec-zip-container-zipreqs/filename-not-utf8/filename-not-utf8.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-zip-container-zipreqs/zip-encryption",
+      "book": "books/epub-3.3/ocf/sec-zip-container-zipreqs/zip-encryption/zip-encryption.epub",
+      "asset": "epub-3.3--sec-zip-container-zipreqs--zip-encryption--invalid.epub",
+      "sha256": "821b52c02755d4629167fb476ea553a41eb79cf093e6e9c19fc6e53fea5bea0a",
+      "title": "A content document encrypted with ZIP encryption",
+      "question": "`OEBPS/content.xhtml` is encrypted with the ZIP format's own (traditional PKWARE) encryption. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/31",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "FATAL PKG-027"
+        ],
+        "output": "books/epub-3.3/ocf/sec-zip-container-zipreqs/zip-encryption/zip-encryption.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "FATAL PKG-027"
+        ],
+        "output": "books/epub-3.3/ocf/sec-zip-container-zipreqs/zip-encryption/zip-encryption.epubcheck-5.4.0.txt"
       }
     }
   ]

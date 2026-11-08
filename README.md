@@ -14,9 +14,10 @@ it. Where either of them disagrees with the specification, the book's
 README says so and why. None of the books
 contain commercial content.
 
-The latest release, v0.2.0, holds the two templates, one for EPUB 3 and one
-for EPUB 2, and 22 sets on the EPUB container (OCF): damaged ZIP files, the
-mimetype file, file names, `container.xml` and its rootfile. Every book
+The latest release, v0.3.0, holds the two templates, one for EPUB 3 and one
+for EPUB 2, and 28 sets on the EPUB container (OCF): damaged ZIP files, the
+mimetype file, file names, `container.xml` and its rootfile, encryption and
+font obfuscation. Every book
 is listed on one page, [`books/INDEX.md`](./books/INDEX.md), with what it
 should give and what each validator says. Each release also has every book
 as a download, one by one or all together in a single zip.
@@ -27,7 +28,7 @@ To use the books in CI, check out a release tag and read them in place:
 - uses: actions/checkout@v4
   with:
     repository: veripublica/epub-test-books
-    ref: v0.2.0
+    ref: v0.3.0
     path: epub-test-books
 ```
 

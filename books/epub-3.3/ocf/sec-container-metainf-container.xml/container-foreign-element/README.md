@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: epubveri: wrong error; epubcheck: wrong error
 - Asked for by: the maintainer, to complete the OCF section
-- Issue: pending
+- Issue: [#32](https://github.com/veripublica/epub-test-books/issues/32)
 
 ## About this book
 
@@ -40,7 +40,7 @@ Valid. Elements and attributes from other namespaces are removed before the file
 Both disagree with the expected result. Each reports the extension element as not allowed (RSC-005). That is right for the bare schema, but the specification says to remove elements from other namespaces before validating.
 
 - **epubveri: wrong error.** Reported to epubveri by note (2026-11-08); no public issue yet.
-- **epubcheck: wrong error.** The issue on `w3c/epubcheck` is not filed yet. I found no existing issue on it.
+- **epubcheck: wrong error.** [w3c/epubcheck#1754](https://github.com/w3c/epubcheck/issues/1754).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 
