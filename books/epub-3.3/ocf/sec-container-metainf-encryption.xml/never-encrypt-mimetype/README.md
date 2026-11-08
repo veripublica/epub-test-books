@@ -50,7 +50,7 @@ epubveri agrees with the expected result. epubcheck does not: it gives no findin
 
 - **epubcheck: missed.** Issue on `w3c/epubcheck`: ISSUE.
 
-SPEC-001 is epubveri's id for a specification rule that epubcheck has no id for. It is in epubveri's default output, not an `--advisory` finding.
+SPEC-001 is epubveri's id for a specification rule that epubcheck has no id for. It is in epubveri's default output, not an `--advisory` finding, so it fails the book and sets the exit code. epubveri lists it under [Known differences from epubcheck](https://github.com/veripublica/epubveri/blob/main/AGENTS.md#known-differences-from-epubcheck).
 
 ## Build
 
