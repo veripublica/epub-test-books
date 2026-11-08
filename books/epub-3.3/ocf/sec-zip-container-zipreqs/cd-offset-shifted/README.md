@@ -3,6 +3,8 @@
 - Book: `cd-offset-shifted.epub`, built from the EPUB 3 template
 - Built by: `scripts/epub-3.3/ocf/sec-zip-container-zipreqs/cd-offset-shifted/build.py`
 - Origin: built here
+- Expected: invalid
+- Marks: none
 - Asked for by: epubveri
 - Issue: [#4](https://github.com/veripublica/epub-test-books/issues/4)
 

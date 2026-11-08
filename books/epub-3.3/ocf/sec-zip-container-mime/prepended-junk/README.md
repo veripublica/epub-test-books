@@ -3,6 +3,8 @@
 - Book: `prepended-junk.epub`, built from the EPUB 3 template
 - Built by: `scripts/epub-3.3/ocf/sec-zip-container-mime/prepended-junk/build.py`
 - Origin: built here
+- Expected: invalid
+- Marks: none
 - Asked for by: epubveri
 - Issue: [#3](https://github.com/veripublica/epub-test-books/issues/3)
 - Also touches: [`sec-zip-container-zipreqs`](https://www.w3.org/TR/epub-33/#sec-zip-container-zipreqs)

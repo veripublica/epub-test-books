@@ -6,8 +6,9 @@ kept true at every release. The rules for adding a set are in
 
 ## Status
 
-Latest release: v0.1.0 (2026-11-08). It holds the two templates and three
-ZIP container sets:
+Latest release: v0.1.1 (2026-11-08). It holds the two templates and three
+ZIP container sets. `books/INDEX.md` lists every book on one page, and
+`books/index.json` holds the same list for programs:
 
 - `books/templates/epub3-minimal/`, `books/templates/epub2-minimal/`
 - `books/epub-3.3/ocf/sec-zip-container-zipreqs/bogus-trailing-eocd/`
@@ -66,10 +67,12 @@ books/                          CC BY 4.0
   epub-2.0.1/<area>/<anchor>/<set>/
   css-<module>/<anchor>/<set>/
   bundles/                      generated from verified sets
+  INDEX.md, index.json          generated at each release (scripts/release.py)
 scripts/                        AGPL-3.0-only
   lib/epubbook.py               shared builder: metadata, about.xhtml, ZIP
   lib/zippatch.py               byte changes made to a finished ZIP
   check.py                      runs both verifiers, keeps their outputs
+  release.py                    index, release check, download bundle
   templates/<template>/build.py builds a template; package() for sets
   <same path as the set>/build.py
 ```
@@ -121,6 +124,13 @@ python3 scripts/<set path>/build.py                        # build a set
 python3 scripts/check.py books/<set path>                  # run both verifiers
 ```
 
+```sh
+python3 scripts/release.py lint                            # what CI runs on every PR
+python3 scripts/release.py index vX.Y.Z                    # regenerate the index
+python3 scripts/release.py check vX.Y.Z --full             # the gate before a tag
+python3 scripts/release.py bundle vX.Y.Z <outdir>          # the release assets
+```
+
 `check.py` writes `<book>.<tool>-<version>.txt` next to each book. If an
 output for that version already exists and the new run differs, it stops
 instead of overwriting.
@@ -156,6 +166,18 @@ Tags, `vMAJOR.MINOR.PATCH` (CONTRIBUTING §7):
 While the version is `0.x`, a MINOR release may carry what would be MAJOR,
 and its notes say so. Every changed expected result is listed in the release
 notes with its issue.
+
+The release steps are in CONTRIBUTING §7: regenerate the index for the tag,
+pass `release.py check <tag> --full`, tag, then publish every book as
+`<spec>--<anchor>--<set>.epub` plus `epub-test-books-<tag>.zip`. CI
+(`.github/workflows/check.yml`) runs `lint` on every pull request and push,
+and on a tag also checks that the index was made for that tag.
+
+Index fields per book (`index.json`): `path`, `book`, `asset`, `sha256`,
+`title`, `question`, `expected`, `marks`, `asked_by`, `issue`, and for
+`epubveri` and `epubcheck` each: `version`, `verdict`, `messages`, `output`.
+They come from the set README's header lines (`- Expected:`, `- Marks:`,
+`- Asked for by:`, `- Issue:`) and the newest verifier output files.
 
 ## Workflow
 

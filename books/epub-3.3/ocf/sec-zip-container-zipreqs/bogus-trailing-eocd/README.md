@@ -3,6 +3,8 @@
 - Book: `bogus-trailing-eocd.epub`, built from the EPUB 3 template
 - Built by: `scripts/epub-3.3/ocf/sec-zip-container-zipreqs/bogus-trailing-eocd/build.py`
 - Origin: built here
+- Expected: invalid
+- Marks: none
 - Asked for by: epubveri
 - Issue: [#2](https://github.com/veripublica/epub-test-books/issues/2)
 
