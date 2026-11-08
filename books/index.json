@@ -6,7 +6,7 @@
     {
       "path": "books/templates/epub2-minimal",
       "book": "books/templates/epub2-minimal/epub2-minimal.epub",
-      "asset": "templates--epub2-minimal.epub",
+      "asset": "templates--epub2-minimal--valid.epub",
       "sha256": "2a46eec740304517d95d7c1b64732d02f1e19c869d39668926775179439ea806",
       "title": "Template: EPUB 2.0.1",
       "question": "No finding at any level, from a validator that follows the specification.",
@@ -30,7 +30,7 @@
     {
       "path": "books/templates/epub3-minimal",
       "book": "books/templates/epub3-minimal/epub3-minimal.epub",
-      "asset": "templates--epub3-minimal.epub",
+      "asset": "templates--epub3-minimal--valid.epub",
       "sha256": "73ddfdc1a98d80c17f39696b75e300ccd1dbeb02ae1bd7c746b5ab8b23713a7e",
       "title": "Template: EPUB 3.3",
       "question": "No finding at any level, from a validator that follows the specification. Each part below is there because a clause asks for it, or because the library chose it and the specification allows it.",
@@ -54,7 +54,7 @@
     {
       "path": "books/epub-3.3/ocf/sec-zip-container-mime/prepended-junk",
       "book": "books/epub-3.3/ocf/sec-zip-container-mime/prepended-junk/prepended-junk.epub",
-      "asset": "epub-3.3--sec-zip-container-mime--prepended-junk.epub",
+      "asset": "epub-3.3--sec-zip-container-mime--prepended-junk--invalid.epub",
       "sha256": "d1310d73150e7354c4c94b5ed0a373e1b827129607441fda072ab66a414cb749",
       "title": "Junk before the first local header",
       "question": "The file starts with `JUNKJUNKJUNKJUNK`, then the template's ZIP bytes, unchanged. Every offset in the central directory is now 16 bytes short of the header it points to. Does a validator reject the container?",
@@ -82,7 +82,7 @@
     {
       "path": "books/epub-3.3/ocf/sec-zip-container-zipreqs/bogus-trailing-eocd",
       "book": "books/epub-3.3/ocf/sec-zip-container-zipreqs/bogus-trailing-eocd/bogus-trailing-eocd.epub",
-      "asset": "epub-3.3--sec-zip-container-zipreqs--bogus-trailing-eocd.epub",
+      "asset": "epub-3.3--sec-zip-container-zipreqs--bogus-trailing-eocd--invalid.epub",
       "sha256": "57a3b5ea7c44051d4d6e3106dfe95709d6965bce698f5c063a14c83944867a5d",
       "title": "A bogus end-of-central-directory record after the real one",
       "question": "A ZIP file ends with two end-of-central-directory (EOCD) records. The second says the central directory is 999 bytes long at offset 99999, which does not fit before it. Does a validator reject the container?",
@@ -110,7 +110,7 @@
     {
       "path": "books/epub-3.3/ocf/sec-zip-container-zipreqs/cd-offset-shifted",
       "book": "books/epub-3.3/ocf/sec-zip-container-zipreqs/cd-offset-shifted/cd-offset-shifted.epub",
-      "asset": "epub-3.3--sec-zip-container-zipreqs--cd-offset-shifted.epub",
+      "asset": "epub-3.3--sec-zip-container-zipreqs--cd-offset-shifted--invalid.epub",
       "sha256": "ad7a13546f14b9b1210a37be6158148106883388722f423d35bae6d3854b7b4a",
       "title": "Central-directory offset 4 bytes short",
       "question": "The 4-byte \"offset of start of central directory\" field in the EOCD record holds a value 4 smaller than the real offset. Nothing else changes. Does a validator reject the container?",

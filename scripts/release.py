@@ -14,8 +14,10 @@ would write now, so a release can never ship with a stale index (CONTRIBUTING
 also rebuilds every book and reruns both verifiers, which needs epubveri
 and epubcheck installed.
 
-Release assets: one .epub per book, named `<spec>--<anchor>--<set>.epub`
-(templates: `templates--<name>.epub`) so that no two collide, and
+Release assets: one .epub per book, named
+`<spec>--<anchor>--<set>--<valid|invalid>.epub` (templates:
+`templates--<name>--valid.epub`), so that no two collide and the expected
+verdict shows in the name, and
 `epub-test-books-vX.Y.Z.zip` with all of them in one flat folder, the index
 and the licence files. The bundle is reproducible like the books.
 """
@@ -75,7 +77,13 @@ def verifier(folder: Path, stem: str, tool: str) -> dict | None:
     }
 
 
-def asset_name(book: Path) -> str:
+def verdict_word(expected: str | None) -> str:
+    """'valid' or 'invalid', from the README's Expected line."""
+    word = (expected or "").split(",")[0].split()[0:1]
+    return word[0].lower() if word and word[0].lower() in ("valid", "invalid") else "unknown"
+
+
+def asset_name(book: Path, expected: str | None) -> str:
     parts = book.parent.relative_to(BOOKS).parts
     if parts[0] == "templates":
         base = ["templates", parts[-1]]
@@ -83,6 +91,7 @@ def asset_name(book: Path) -> str:
         base = [parts[0], parts[-2], parts[-1]]      # spec, anchor, set
     if book.stem != parts[-1]:
         base.append(book.stem)
+    base.append(verdict_word(expected))
     return "--".join(base) + ".epub"
 
 
@@ -99,15 +108,16 @@ def library() -> list[dict]:
             title = re.search(r"^# (.+)$", text, re.M).group(1).strip()
             issue = field(text, "Issue")
             m = re.search(r"\((https://[^)]+)\)", issue or "")
+            expected = field(text, "Expected")
             entries.append({
                 "path": folder.relative_to(ROOT).as_posix(),
                 "book": book.relative_to(ROOT).as_posix(),
-                "asset": asset_name(book),
+                "asset": asset_name(book, expected),
                 "sha256": hashlib.sha256(book.read_bytes()).hexdigest(),
                 "title": title,
                 "question": section_first_paragraph(text, "Question")
                             or section_first_paragraph(text, "Expected result"),
-                "expected": field(text, "Expected"),
+                "expected": expected,
                 "marks": field(text, "Marks"),
                 "asked_by": field(text, "Asked for by"),
                 "issue": m.group(1) if m else None,
@@ -169,6 +179,8 @@ def problems(entries: list[dict]) -> list[str]:
         for key in ("expected", "marks"):
             if not e[key]:
                 out.append(f"{e['path']}: README has no '- {key.capitalize()}:' line")
+        if e["expected"] and verdict_word(e["expected"]) == "unknown":
+            out.append(f"{e['path']}: the Expected line must start with 'valid' or 'invalid'")
         for t in ("epubveri", "epubcheck"):
             if not e[t]:
                 out.append(f"{e['book']}: no {t} output")

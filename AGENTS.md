@@ -169,7 +169,8 @@ notes with its issue.
 
 The release steps are in CONTRIBUTING §7: regenerate the index for the tag,
 pass `release.py check <tag> --full`, tag, then publish every book as
-`<spec>--<anchor>--<set>.epub` plus `epub-test-books-<tag>.zip`. CI
+`<spec>--<anchor>--<set>--<valid|invalid>.epub` plus
+`epub-test-books-<tag>.zip`. CI
 (`.github/workflows/check.yml`) runs `lint` on every pull request and push,
 and on a tag also checks that the index was made for that tag.
 

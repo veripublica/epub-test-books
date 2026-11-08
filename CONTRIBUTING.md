@@ -147,7 +147,8 @@ Every release, in this order:
    rebuild changes a book's bytes, or if a verifier output is not current.
 3. The tag goes on that commit. CI checks the index against the tag again.
 4. The GitHub release carries every book as its own file, named
-   `<spec>--<anchor>--<set>.epub`, and all of them in one
+   `<spec>--<anchor>--<set>--<valid|invalid>.epub` (the expected verdict
+   last), and all of them in one
    `epub-test-books-vX.Y.Z.zip` (`python3 scripts/release.py bundle`).
 
 A release whose index was made for another release does not ship.
