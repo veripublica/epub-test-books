@@ -4,6 +4,8 @@ about: Propose a book that shows one rule or defect pattern
 labels: set
 ---
 
+<!-- You don't need to build anything. If you are not sure of the clause or the expected result, write what you saw; it gets worked out here. -->
+
 **Question** — the one thing this book shows:
 
 **Clause** — specification, version, section anchor, and the sentence quoted:
