@@ -1,0 +1,7 @@
+FATAL(PKG-008): bogus-trailing-eocd.epub/./bogus-trailing-eocd.epub(-1,-1): Unable to read file "invalid END header (bad central directory offset)".
+
+Check finished with errors
+Messages: 1 fatal / 0 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

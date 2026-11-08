@@ -1,0 +1,8 @@
+FATAL(PKG-008): cd-offset-shifted.epub/META-INF/container.xml(-1,-1): Unable to read file "META-INF/container.xml".
+ERROR(RSC-003): cd-offset-shifted.epub/META-INF/container.xml(-1,-1): No rootfile tag with media type "application/oebps-package+xml" was found in the container.
+
+Check finished with errors
+Messages: 1 fatal / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

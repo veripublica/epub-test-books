@@ -1,0 +1,8 @@
+FATAL(PKG-004): prepended-junk.epub/./prepended-junk.epub(-1,-1): Corrupted EPUB ZIP header.
+Validating using EPUB version 3.4 rules.
+
+Check finished with errors
+Messages: 1 fatal / 0 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]
