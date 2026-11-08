@@ -1,0 +1,12 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): encryption-wrong-root.epub/META-INF/encryption.xml(2,116): Error while parsing file: element "encryptions" not allowed here; expected element "encryption"
+USAGE(OBS-001): encryption-wrong-root.epub/META-INF/encryption.xml(6,55): Usage of font obfuscation is outdated.
+USAGE(CSS-028): encryption-wrong-root.epub/OEBPS/style.css(2,3): Use of Font-face declaration.
+USAGE(CSS-028): encryption-wrong-root.epub/OEBPS/style.css(3,3): Use of Font-face declaration.
+INFO(RSC-004): encryption-wrong-root.epub/OEBPS/fonts/box.ttf(-1,-1): File "OEBPS/fonts/box.ttf" is encrypted, its content will not be checked.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 1 info / 3 usages
+
+EPUBCheck completed
+[exit 1]

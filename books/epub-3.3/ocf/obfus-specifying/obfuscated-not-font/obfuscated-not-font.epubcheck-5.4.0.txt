@@ -1,0 +1,11 @@
+Validating using EPUB version 3.4 rules.
+USAGE(OBS-001): obfuscated-not-font.epub/META-INF/encryption.xml(6,51): Usage of font obfuscation is outdated.
+INFO(RSC-004): obfuscated-not-font.epub/OEBPS/style.css(-1,-1): File "OEBPS/style.css" is encrypted, its content will not be checked.
+USAGE(OPF-097): obfuscated-not-font.epub/OEBPS/package.opf(30,65): Resource "OEBPS/fonts/box.ttf" is listed in the manifest, but no reference to it was found in content documents.
+ERROR(PKG-026): obfuscated-not-font.epub/META-INF/encryption.xml(6,51): Obfuscated resource must be a Font Core Media Type (was declared as "text/css" in "OEBPS/package.opf").
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 1 info / 2 usages
+
+EPUBCheck completed
+[exit 1]

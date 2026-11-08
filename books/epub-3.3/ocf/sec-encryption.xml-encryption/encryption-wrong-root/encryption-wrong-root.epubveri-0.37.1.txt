@@ -1,0 +1,5 @@
+ERROR RSC-005: expected element "encryption" as the root of META-INF/encryption.xml [META-INF/encryption.xml:2:1]
+USAGE OBS-001: usage of font obfuscation is outdated [META-INF/encryption.xml:3:3]
+USAGE CSS-028: @font-face declaration [OEBPS/style.css:1:1]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

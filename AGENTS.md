@@ -69,7 +69,9 @@ books/                          CC BY 4.0
 scripts/                        AGPL-3.0-only
   lib/epubbook.py               shared builder: metadata, about.xhtml, ZIP
   lib/zippatch.py               byte changes made to a finished ZIP
-  lib/rawzip.py                 a ZIP writer that controls every header field
+  lib/rawzip.py                 a ZIP writer that controls every header field,
+                                ZIP encryption included
+  lib/minifont.py               a two-glyph TrueType font, and font obfuscation
   lib/ocfvariants.py            the OCF sets' containers, one function each
   check.py                      runs both verifiers, keeps their outputs
   release.py                    index, release check, download bundle

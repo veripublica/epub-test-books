@@ -1,0 +1,10 @@
+Validating using EPUB version 3.4 rules.
+USAGE(OBS-001): font-obfuscated.epub/META-INF/encryption.xml(6,55): Usage of font obfuscation is outdated.
+USAGE(CSS-028): font-obfuscated.epub/OEBPS/style.css(2,3): Use of Font-face declaration.
+USAGE(CSS-028): font-obfuscated.epub/OEBPS/style.css(3,3): Use of Font-face declaration.
+INFO(RSC-004): font-obfuscated.epub/OEBPS/fonts/box.ttf(-1,-1): File "OEBPS/fonts/box.ttf" is encrypted, its content will not be checked.
+No errors or warnings detected.
+Messages: 0 fatals / 0 errors / 0 warnings / 1 info / 3 usages
+
+EPUBCheck completed
+[exit 0]

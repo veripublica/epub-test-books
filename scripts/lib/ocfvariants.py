@@ -181,3 +181,68 @@ def url_to_missing_file(files):
         "holds only this paragraph.",
         'holds only this paragraph. <a href="missing.xhtml">A link</a>')
     return rz.build(_entries(files, changes={CONTENT: d}))
+
+
+# --- encryption.xml and font obfuscation ------------------------------------
+# These books add a stylesheet that uses a font, so the font is referenced.
+# The font is scripts/lib/minifont.py's two-glyph TrueType font (928 bytes,
+# so obfuscation changes the whole file: EPUB 3.3 §4.4.4 covers fonts
+# shorter than 1040 bytes).
+
+import minifont as mf  # noqa: E402
+
+FONT_HREF = "fonts/box.ttf"
+CSS = ('@font-face {\n  font-family: "Box";\n  src: url(fonts/box.ttf);\n}\n\n'
+       'body {\n  font-family: "Box", serif;\n}\n')
+
+
+def _encryption_xml(uri, root="encryption"):
+    return (f'<?xml version="1.0" encoding="UTF-8"?>\n'
+            f'<{root} xmlns="urn:oasis:names:tc:opendocument:xmlns:container"'
+            f' xmlns:enc="http://www.w3.org/2001/04/xmlenc#">\n'
+            f'  <enc:EncryptedData>\n'
+            f'    <enc:EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding"/>\n'
+            f'    <enc:CipherData>\n'
+            f'      <enc:CipherReference URI="{uri}"/>\n'
+            f'    </enc:CipherData>\n'
+            f'  </enc:EncryptedData>\n'
+            f'</{root}>\n')
+
+
+def _font_book(info, *, font, css=CSS, encryption=None):
+    content = t3.content_doc().replace(
+        "    <title>Content</title>\n",
+        '    <title>Content</title>\n'
+        '    <link rel="stylesheet" type="text/css" href="style.css"/>\n')
+    files = t3.package(info, content=content, extra=[
+        ("style", "style.css", "text/css", "", css),
+        ("font", FONT_HREF, "font/ttf", "", font)])
+    if encryption is not None:
+        files.insert(1, ("META-INF/encryption.xml", encryption))
+    return rz.build(rz.entries_from(files))
+
+
+def font_obfuscated(info):
+    return _font_book(info, font=mf.obfuscate(mf.font(), info.identifier),
+                      encryption=_encryption_xml("OEBPS/" + FONT_HREF))
+
+
+def obfuscated_not_font(info):
+    return _font_book(info, font=mf.font(),
+                      css=mf.obfuscate(CSS.encode(), info.identifier),
+                      encryption=_encryption_xml("OEBPS/style.css"))
+
+
+def encryption_wrong_root(info):
+    return _font_book(info, font=mf.obfuscate(mf.font(), info.identifier),
+                      encryption=_encryption_xml("OEBPS/" + FONT_HREF, root="encryptions"))
+
+
+def zip_encryption(files):
+    # traditional PKWARE encryption on the content document (general purpose
+    # flag bit 0); the password is "epub-test-books"
+    es = _entries(files)
+    for e in es:
+        if e.name == CONTENT:
+            e.password = b"epub-test-books"
+    return rz.build(es)
