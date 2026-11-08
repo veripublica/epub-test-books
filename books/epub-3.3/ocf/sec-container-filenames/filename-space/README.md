@@ -6,7 +6,7 @@
 - Expected: valid, with a warning for the space
 - Marks: none
 - Asked for by: the maintainer, to complete the OCF section
-- Issue: pending
+- Issue: [#12](https://github.com/veripublica/epub-test-books/issues/12)
 
 ## About this book
 

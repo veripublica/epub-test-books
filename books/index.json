@@ -1,5 +1,5 @@
 {
-  "release": "v0.1.1",
+  "release": "v0.2.0",
   "repository": "https://github.com/veripublica/epub-test-books",
   "credit": "EPUB test books © veripublica contributors, CC BY 4.0, https://github.com/veripublica/epub-test-books",
   "books": [
@@ -49,6 +49,490 @@
         "verdict": "valid",
         "messages": [],
         "output": "books/templates/epub3-minimal/epub3-minimal.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-container-file-and-dir-structure/container-in-manifest",
+      "book": "books/epub-3.3/ocf/sec-container-file-and-dir-structure/container-in-manifest/container-in-manifest.epub",
+      "asset": "epub-3.3--sec-container-file-and-dir-structure--container-in-manifest--invalid.epub",
+      "sha256": "acd885304ad49b6552cc3a29aee33b21ce4b5fe2d4f74d317d80ec5adb294d03",
+      "title": "META-INF/container.xml listed in the manifest",
+      "question": "The package document's manifest lists `META-INF/container.xml` as an item. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/8",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR PKG-025",
+          "USAGE OPF-097"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-file-and-dir-structure/container-in-manifest/container-in-manifest.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR PKG-025",
+          "USAGE OPF-097"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-file-and-dir-structure/container-in-manifest/container-in-manifest.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-container-filenames/filename-case-duplicate",
+      "book": "books/epub-3.3/ocf/sec-container-filenames/filename-case-duplicate/filename-case-duplicate.epub",
+      "asset": "epub-3.3--sec-container-filenames--filename-case-duplicate--invalid.epub",
+      "sha256": "6c5a7da8b8940c0f5fa48f1f9cd76d0509769fff2d7d49242d96bf19a8969493",
+      "title": "Two file names that differ only in case",
+      "question": "The same folder holds `content.xhtml` and `Content.xhtml`, both in the manifest and the spine. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/9",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR OPF-060"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-filenames/filename-case-duplicate/filename-case-duplicate.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR OPF-060"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-filenames/filename-case-duplicate/filename-case-duplicate.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-container-filenames/filename-forbidden-char",
+      "book": "books/epub-3.3/ocf/sec-container-filenames/filename-forbidden-char/filename-forbidden-char.epub",
+      "asset": "epub-3.3--sec-container-filenames--filename-forbidden-char--invalid.epub",
+      "sha256": "2685a78aa483589871243cadc5c941a61f831968db7e1e2000f37d535c929b99",
+      "title": "A file name with a vertical line",
+      "question": "The content document is named `con|tent.xhtml`. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/10",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR PKG-009"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-filenames/filename-forbidden-char/filename-forbidden-char.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR PKG-009"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-filenames/filename-forbidden-char/filename-forbidden-char.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-container-filenames/filename-nfc-nfd-duplicate",
+      "book": "books/epub-3.3/ocf/sec-container-filenames/filename-nfc-nfd-duplicate/filename-nfc-nfd-duplicate.epub",
+      "asset": "epub-3.3--sec-container-filenames--filename-nfc-nfd-duplicate--invalid.epub",
+      "sha256": "c8931ecf39854fdbe27bc83a0bea43e75c5a52e145fcad9c46d599f5b502f983",
+      "title": "Two file names that differ only in Unicode normalization",
+      "question": "The same folder holds `é.xhtml` written as one code point (U+00E9) and as two (U+0065 U+0301). Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/11",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR OPF-060",
+          "ERROR OPF-074",
+          "USAGE PKG-012",
+          "USAGE PKG-012"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-filenames/filename-nfc-nfd-duplicate/filename-nfc-nfd-duplicate.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "USAGE PKG-012",
+          "ERROR OPF-060",
+          "USAGE PKG-012",
+          "ERROR OPF-074"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-filenames/filename-nfc-nfd-duplicate/filename-nfc-nfd-duplicate.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-container-filenames/filename-space",
+      "book": "books/epub-3.3/ocf/sec-container-filenames/filename-space/filename-space.epub",
+      "asset": "epub-3.3--sec-container-filenames--filename-space--valid.epub",
+      "sha256": "e635bc00670c4c360d247ccde896cb288e645cafe83d2dcf8078abe63ac597e0",
+      "title": "A file name with a space",
+      "question": "The content document is named `con tent.xhtml`. A space is discouraged, not forbidden. What does a validator report?",
+      "expected": "valid, with a warning for the space",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/12",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "valid",
+        "messages": [
+          "WARNING PKG-010"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-filenames/filename-space/filename-space.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "valid",
+        "messages": [
+          "WARNING PKG-010"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-filenames/filename-space/filename-space.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-container-iri/url-to-missing-file",
+      "book": "books/epub-3.3/ocf/sec-container-iri/url-to-missing-file/url-to-missing-file.epub",
+      "asset": "epub-3.3--sec-container-iri--url-to-missing-file--invalid.epub",
+      "sha256": "bf0b25cd76896eff510be22b36c87a71059b026af82682ade07d366ec2c21c09",
+      "title": "A link to a file that does not exist",
+      "question": "The content document links to `missing.xhtml`, which is not in the container. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/13",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR RSC-007"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-iri/url-to-missing-file/url-to-missing-file.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR RSC-007"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-iri/url-to-missing-file/url-to-missing-file.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-missing",
+      "book": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-missing/container-missing.epub",
+      "asset": "epub-3.3--sec-container-metainf-container.xml--container-missing--invalid.epub",
+      "sha256": "3849c5e57c618f02e9c29fe89319198c7a0667b5d935447090303881494b1542",
+      "title": "No META-INF/container.xml",
+      "question": "The container has no `META-INF/container.xml`. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/14",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "FATAL RSC-002"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-missing/container-missing.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "FATAL RSC-002"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-missing/container-missing.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-container.xml-rootfile-elem/rootfile-missing-target",
+      "book": "books/epub-3.3/ocf/sec-container.xml-rootfile-elem/rootfile-missing-target/rootfile-missing-target.epub",
+      "asset": "epub-3.3--sec-container.xml-rootfile-elem--rootfile-missing-target--invalid.epub",
+      "sha256": "eeecebcbcb0c086c9f818d376a1eaafbb237a315a83f3089466652666524d726",
+      "title": "Rootfile points to a file that does not exist",
+      "question": "The `rootfile` element's `full-path` is `OEBPS/missing.opf`, which is not in the container. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/15",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "FATAL OPF-002"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container.xml-rootfile-elem/rootfile-missing-target/rootfile-missing-target.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "FATAL OPF-002"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container.xml-rootfile-elem/rootfile-missing-target/rootfile-missing-target.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-container.xml-rootfile-elem/rootfile-wrong-media-type",
+      "book": "books/epub-3.3/ocf/sec-container.xml-rootfile-elem/rootfile-wrong-media-type/rootfile-wrong-media-type.epub",
+      "asset": "epub-3.3--sec-container.xml-rootfile-elem--rootfile-wrong-media-type--invalid.epub",
+      "sha256": "baf3528a7f422ffe7cdb30a670504f9d8bfd3ec11e63c852432d4ff56aa4699a",
+      "title": "Rootfile with the wrong media type",
+      "question": "The `rootfile` element in container.xml says `media-type=\"application/xml\"`. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/16",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR RSC-003"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container.xml-rootfile-elem/rootfile-wrong-media-type/rootfile-wrong-media-type.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR RSC-003"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container.xml-rootfile-elem/rootfile-wrong-media-type/rootfile-wrong-media-type.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-container.xml-rootfiles-elem/no-rootfile",
+      "book": "books/epub-3.3/ocf/sec-container.xml-rootfiles-elem/no-rootfile/no-rootfile.epub",
+      "asset": "epub-3.3--sec-container.xml-rootfiles-elem--no-rootfile--invalid.epub",
+      "sha256": "3da9e481a61844d711aca0e0454cb78edfb3abbb0b696193e3755cf043d8a985",
+      "title": "Rootfiles with no rootfile",
+      "question": "container.xml has an empty `rootfiles` element. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/17",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR RSC-003"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container.xml-rootfiles-elem/no-rootfile/no-rootfile.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR RSC-003"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container.xml-rootfiles-elem/no-rootfile/no-rootfile.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-bom",
+      "book": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-bom/mimetype-bom.epub",
+      "asset": "epub-3.3--sec-zip-container-mime--mimetype-bom--invalid.epub",
+      "sha256": "b739bd01e033d99a1507938943b680e4ad16fffdc0bbffd5df51b70964edaea7",
+      "title": "Mimetype starts with a byte order mark",
+      "question": "The mimetype file starts with the UTF-8 byte order mark, then `application/epub+zip`. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/18",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR PKG-007"
+        ],
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-bom/mimetype-bom.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR PKG-007"
+        ],
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-bom/mimetype-bom.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-extra-field",
+      "book": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-extra-field/mimetype-extra-field.epub",
+      "asset": "epub-3.3--sec-zip-container-mime--mimetype-extra-field--invalid.epub",
+      "sha256": "162e3e656eb09ac581b5b948955a246cc53a6b41f3fdcf1bf19680326b93bb0b",
+      "title": "Mimetype has an extra field in its ZIP header",
+      "question": "The mimetype entry's local header carries an extra field, the extended timestamp many zip tools add. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/19",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR PKG-005"
+        ],
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-extra-field/mimetype-extra-field.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR PKG-005"
+        ],
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-extra-field/mimetype-extra-field.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-leading-space",
+      "book": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-leading-space/mimetype-leading-space.epub",
+      "asset": "epub-3.3--sec-zip-container-mime--mimetype-leading-space--invalid.epub",
+      "sha256": "df6710e7f7fdefa36bb46210906d0424e0bc0409fca2a7fd429d634222049dd6",
+      "title": "Mimetype starts with a space",
+      "question": "The mimetype file holds a space and then `application/epub+zip`. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/20",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR PKG-007"
+        ],
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-leading-space/mimetype-leading-space.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR PKG-007"
+        ],
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-leading-space/mimetype-leading-space.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-missing",
+      "book": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-missing/mimetype-missing.epub",
+      "asset": "epub-3.3--sec-zip-container-mime--mimetype-missing--invalid.epub",
+      "sha256": "d1730fbda7380b7b4e8577e8f86d7ef3109672aae9baf215eba00c91ad63b337",
+      "title": "No mimetype file",
+      "question": "The container has no mimetype file at all. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/21",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR PKG-006"
+        ],
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-missing/mimetype-missing.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR PKG-006"
+        ],
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-missing/mimetype-missing.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-not-first",
+      "book": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-not-first/mimetype-not-first.epub",
+      "asset": "epub-3.3--sec-zip-container-mime--mimetype-not-first--invalid.epub",
+      "sha256": "2aee75d01943739ec74b25a3ecd684463fd6da85dd1e1fadbba3bf4e13e32c76",
+      "title": "Mimetype is not the first entry",
+      "question": "The mimetype file is present and correct, but it is the second entry in the ZIP file, after `META-INF/container.xml`. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/22",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR PKG-006"
+        ],
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-not-first/mimetype-not-first.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR PKG-006"
+        ],
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-not-first/mimetype-not-first.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-trailing-newline",
+      "book": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-trailing-newline/mimetype-trailing-newline.epub",
+      "asset": "epub-3.3--sec-zip-container-mime--mimetype-trailing-newline--invalid.epub",
+      "sha256": "040c75bc0d1de5aba7c24a4847978c00c729fe3d9f808c4c0df7512b138be043",
+      "title": "Mimetype ends with a newline",
+      "question": "The mimetype file holds `application/epub+zip` followed by a line feed. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/23",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR PKG-007"
+        ],
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-trailing-newline/mimetype-trailing-newline.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR PKG-007"
+        ],
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-trailing-newline/mimetype-trailing-newline.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-wrong-value",
+      "book": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-wrong-value/mimetype-wrong-value.epub",
+      "asset": "epub-3.3--sec-zip-container-mime--mimetype-wrong-value--invalid.epub",
+      "sha256": "78ff1e45b8b9a54aeb667c4f513f2b19bea85e3aa749378a4b8676d1dbe842a0",
+      "title": "Mimetype holds the wrong media type",
+      "question": "The mimetype file holds `application/zip` instead of `application/epub+zip`. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/24",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR PKG-007"
+        ],
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-wrong-value/mimetype-wrong-value.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR PKG-007"
+        ],
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-wrong-value/mimetype-wrong-value.epubcheck-5.4.0.txt"
       }
     },
     {
@@ -135,6 +619,62 @@
           "ERROR RSC-003"
         ],
         "output": "books/epub-3.3/ocf/sec-zip-container-zipreqs/cd-offset-shifted/cd-offset-shifted.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-zip-container-zipreqs/compression-bzip2",
+      "book": "books/epub-3.3/ocf/sec-zip-container-zipreqs/compression-bzip2/compression-bzip2.epub",
+      "asset": "epub-3.3--sec-zip-container-zipreqs--compression-bzip2--invalid.epub",
+      "sha256": "03ce96e18fc4bafa95fe89f5aead835f4ae1e52872f200e3194b68fad4e63603",
+      "title": "An entry compressed with bzip2",
+      "question": "One entry, the content document, is compressed with bzip2 (ZIP method 12) instead of Deflate. Does a validator reject the container?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/25",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "FATAL PKG-027"
+        ],
+        "output": "books/epub-3.3/ocf/sec-zip-container-zipreqs/compression-bzip2/compression-bzip2.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "FATAL PKG-027"
+        ],
+        "output": "books/epub-3.3/ocf/sec-zip-container-zipreqs/compression-bzip2/compression-bzip2.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-zip-container-zipreqs/filename-not-utf8",
+      "book": "books/epub-3.3/ocf/sec-zip-container-zipreqs/filename-not-utf8/filename-not-utf8.epub",
+      "asset": "epub-3.3--sec-zip-container-zipreqs--filename-not-utf8--invalid.epub",
+      "sha256": "2b5ffd480990fab34d1f7b47ee7a3a031ad8b1fb46aa9cfe4f4d6c5ac7b447c2",
+      "title": "A file name not encoded as UTF-8",
+      "question": "The content document's name holds the byte 0x81 (u with diaeresis in CP437, the old ZIP default), and the entry's UTF-8 flag is clear. Does a validator reject the container?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/26",
+      "epubveri": {
+        "version": "0.37.1",
+        "verdict": "invalid",
+        "messages": [
+          "FATAL PKG-027"
+        ],
+        "output": "books/epub-3.3/ocf/sec-zip-container-zipreqs/filename-not-utf8/filename-not-utf8.epubveri-0.37.1.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "FATAL PKG-027"
+        ],
+        "output": "books/epub-3.3/ocf/sec-zip-container-zipreqs/filename-not-utf8/filename-not-utf8.epubcheck-5.4.0.txt"
       }
     }
   ]

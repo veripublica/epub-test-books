@@ -6,18 +6,12 @@ kept true at every release. The rules for adding a set are in
 
 ## Status
 
-Latest release: v0.1.1 (2026-11-08). It holds the two templates and three
-ZIP container sets. `books/INDEX.md` lists every book on one page, and
-`books/index.json` holds the same list for programs:
-
-- `books/templates/epub3-minimal/`, `books/templates/epub2-minimal/`
-- `books/epub-3.3/ocf/sec-zip-container-zipreqs/bogus-trailing-eocd/`
-- `books/epub-3.3/ocf/sec-zip-container-mime/prepended-junk/`
-- `books/epub-3.3/ocf/sec-zip-container-zipreqs/cd-offset-shifted/`
-
-Next release (not yet tagged): 19 more OCF sets, on the mimetype file, ZIP
-compression and file names, `container.xml` and `rootfile`, and URLs in the
-container. Their issues are opened when they are published.
+Latest release: v0.2.0 (2026-11-08). It holds the two templates and 22
+sets on the EPUB container (OCF), under `books/epub-3.3/ocf/<anchor>/<set>/`:
+damaged ZIP files, the mimetype file, ZIP compression and file names,
+`container.xml` and `rootfile`, and URLs in the container. `books/INDEX.md`
+lists every book on one page, and `books/index.json` holds the same list for
+programs.
 
 ## Scope
 
@@ -152,7 +146,7 @@ are hidden by both.
 Read them in place; do not copy them into your repository.
 
 - **In CI:** check out a release tag (`repository: veripublica/epub-test-books`,
-  `ref: v0.1.0`). Pin a tag, never `main`: a new set changes what your tests
+  `ref: v0.2.0`). Pin a tag, never `main`: a new set changes what your tests
   see.
 - **Locally:** one clone, read-only. Write your tool's outputs into your own
   project.

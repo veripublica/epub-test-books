@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: none
 - Asked for by: the maintainer, to complete the OCF section
-- Issue: pending
+- Issue: [#15](https://github.com/veripublica/epub-test-books/issues/15)
 - Also touches: [`sec-container-iri`](https://www.w3.org/TR/epub-33/#sec-container-iri)
 
 ## About this book

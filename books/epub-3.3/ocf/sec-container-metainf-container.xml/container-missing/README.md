@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: none
 - Asked for by: the maintainer, to complete the OCF section
-- Issue: pending
+- Issue: [#14](https://github.com/veripublica/epub-test-books/issues/14)
 
 ## About this book
 
