@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): container-foreign-element.epub/META-INF/container.xml(6,64): Error while parsing file: element "ext:note" not allowed anywhere; expected the element end-tag or element "links"
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

@@ -34,8 +34,8 @@ Rules every book follows:
   issue, from the quoted clause, before any tool runs (CONTRIBUTING §1).
 - **Two verifiers, exact versions.** epubveri and epubcheck run on every
   book; each output is kept under its version; every difference from the
-  expected result is marked intended, spec unclear (followed epubcheck), or
-  missed (CONTRIBUTING §4).
+  expected result is marked intended, spec unclear (followed epubcheck),
+  missed, or wrong error (CONTRIBUTING §4).
 - **No commercial content.** Books are built from scratch, or reduced from a
   real book (CONTRIBUTING §3).
 - **Each book explains itself** in its first document, "About this book".

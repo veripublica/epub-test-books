@@ -87,12 +87,14 @@ keep it in its smallest form and say why in the README.
    epubveri's latest release.
 3. Both outputs are compared with the expected result. The specification
    decides; neither tool does. Every place where a verifier differs from the
-   expected result is marked in the README with one of three marks:
+   expected result is marked in the README with one of four marks:
    - **intended:** the clause, and the verifier's issue if one exists;
    - **spec unclear, followed epubcheck:** with the W3C issue, where one is
      worth filing;
    - **missed:** a defect in the verifier that missed it, with that
-     verifier's issue.
+     verifier's issue;
+   - **wrong error:** a defect in the verifier that reports an error the
+     specification rules out, with that verifier's issue.
 4. The README records, for each epubveri finding, whether it is in the
    default output or under `--advisory`.
 5. **Review by the project or person who asked for the set.** The

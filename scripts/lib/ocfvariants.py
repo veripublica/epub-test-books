@@ -152,6 +152,23 @@ def filename_nfc_nfd_duplicate(files):
 
 # --- container.xml -------------------------------------------------------------
 
+EXT = 'xmlns:ext="https://example.org/epub-test-books/ns"'
+
+
+def container_foreign_element(files):
+    # an extension element after rootfiles; removing it leaves the template
+    c = _get(files, CONT).replace(
+        "  </rootfiles>\n",
+        f"  </rootfiles>\n  <ext:note {EXT}>An element from another namespace.</ext:note>\n")
+    return rz.build(_entries(files, changes={CONT: c}))
+
+
+def container_foreign_attribute(files):
+    # an extension attribute on rootfiles; removing it leaves the template
+    c = _get(files, CONT).replace("<rootfiles>", f'<rootfiles {EXT} ext:note="An attribute from another namespace.">')
+    return rz.build(_entries(files, changes={CONT: c}))
+
+
 def container_missing(files):
     return rz.build(_entries(files, drop=[CONT]))
 

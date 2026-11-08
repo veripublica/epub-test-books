@@ -7,7 +7,7 @@ Closes #
 - [ ] No title, publisher or file of a source book appears anywhere.
 - [ ] Two builds give the same bytes.
 - [ ] `scripts/check.py` outputs added (`epubveri -u --advisory`, `epubcheck -u`), named with exact versions.
-- [ ] Every difference from the expected result is marked (intended / spec unclear, followed epubcheck / missed).
+- [ ] Every difference from the expected result is marked (intended / spec unclear, followed epubcheck / missed / wrong error).
 - [ ] Default vs `--advisory` recorded for each epubveri finding.
 - [ ] Reviewed by whoever asked for the set.
 
