@@ -34,7 +34,7 @@ Invalid. `rootfiles` must hold at least one `rootfile`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.37.1 | `epubveri -i no-rootfile.epub -u --advisory` | ERROR RSC-003; INVALID | `no-rootfile.epubveri-0.37.1.txt` |
+| epubveri 0.38.0 | `epubveri -i no-rootfile.epub -u --advisory` | ERROR RSC-003; INVALID | `no-rootfile.epubveri-0.38.0.txt` |
 | epubcheck 5.4.0 | `epubcheck no-rootfile.epub -u` | ERROR RSC-003; INVALID | `no-rootfile.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

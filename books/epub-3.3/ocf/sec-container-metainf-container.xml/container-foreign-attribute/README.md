@@ -34,14 +34,14 @@ Valid. Elements and attributes from other namespaces are removed before the file
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.37.1 | `epubveri -i container-foreign-attribute.epub -u --advisory` | VALID | `container-foreign-attribute.epubveri-0.37.1.txt` |
+| epubveri 0.38.0 | `epubveri -i container-foreign-attribute.epub -u --advisory` | VALID | `container-foreign-attribute.epubveri-0.38.0.txt` |
 | epubcheck 5.4.0 | `epubcheck container-foreign-attribute.epub -u` | ERROR RSC-005; INVALID | `container-foreign-attribute.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the extension attribute as not allowed (RSC-005). That is right for the bare schema, but the specification says to remove attributes from other namespaces before validating.
 
 - **epubcheck: wrong error.** [w3c/epubcheck#1754](https://github.com/w3c/epubcheck/issues/1754).
 
-epubveri gives no finding here. Its unreleased commit 1a33152, which validates container.xml against the schema, reports the same RSC-005 as epubcheck. This has been reported to epubveri by note (2026-11-08). If its next release keeps that, this book gets the same mark for epubveri.
+epubveri gives no finding here. Since 0.38.0 it validates container.xml against the schema, but it removes other namespaces first.
 
 ## Build
 

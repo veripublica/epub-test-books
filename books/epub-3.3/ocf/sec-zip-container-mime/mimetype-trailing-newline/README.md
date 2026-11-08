@@ -34,7 +34,7 @@ Invalid. A line feed is trailing whitespace.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.37.1 | `epubveri -i mimetype-trailing-newline.epub -u --advisory` | ERROR PKG-007; INVALID | `mimetype-trailing-newline.epubveri-0.37.1.txt` |
+| epubveri 0.38.0 | `epubveri -i mimetype-trailing-newline.epub -u --advisory` | ERROR PKG-007; INVALID | `mimetype-trailing-newline.epubveri-0.38.0.txt` |
 | epubcheck 5.4.0 | `epubcheck mimetype-trailing-newline.epub -u` | ERROR PKG-007; INVALID | `mimetype-trailing-newline.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -36,12 +36,12 @@ Invalid. The root element of encryption.xml must be encryption.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.37.1 | `epubveri -i encryption-wrong-root.epub -u --advisory` | ERROR RSC-005, USAGE OBS-001, USAGE CSS-028; INVALID | `encryption-wrong-root.epubveri-0.37.1.txt` |
+| epubveri 0.38.0 | `epubveri -i encryption-wrong-root.epub -u --advisory` | ERROR RSC-005, INFO RSC-004, USAGE OBS-001, USAGE CSS-028; INVALID | `encryption-wrong-root.epubveri-0.38.0.txt` |
 | epubcheck 5.4.0 | `epubcheck encryption-wrong-root.epub -u` | ERROR RSC-005, USAGE OBS-001, USAGE CSS-028, USAGE CSS-028, INFO RSC-004; INVALID | `encryption-wrong-root.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark.
 
-The tools differ on two messages, and neither changes the verdict. epubcheck still gives INFO RSC-004 for the obfuscated font, and epubveri does not. USAGE CSS-028 appears twice from epubcheck and once from epubveri, as in `font-obfuscated`. USAGE OBS-001 says font obfuscation is outdated.
+The other findings come with the font. Both tools still read the entry, so INFO RSC-004 says the obfuscated font is not checked. USAGE OBS-001 says font obfuscation is outdated. USAGE CSS-028 appears twice from epubcheck and once from epubveri, as in `font-obfuscated`. epubveri 0.37.1 did not give RSC-004 here.
 
 Every epubveri finding here is in its default output, except the USAGE messages, which need `-u`. None is an `--advisory` finding.
 

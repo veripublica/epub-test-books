@@ -38,7 +38,7 @@ Invalid. Only stored (0) and Deflate (8) are allowed.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.37.1 | `epubveri -i compression-bzip2.epub -u --advisory` | FATAL PKG-027; INVALID | `compression-bzip2.epubveri-0.37.1.txt` |
+| epubveri 0.38.0 | `epubveri -i compression-bzip2.epub -u --advisory` | FATAL PKG-027; INVALID | `compression-bzip2.epubveri-0.38.0.txt` |
 | epubcheck 5.4.0 | `epubcheck compression-bzip2.epub -u` | FATAL PKG-027; INVALID | `compression-bzip2.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

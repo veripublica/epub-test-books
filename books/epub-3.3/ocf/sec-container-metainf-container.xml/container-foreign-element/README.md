@@ -4,7 +4,7 @@
 - Built by: `scripts/epub-3.3/ocf/sec-container-metainf-container.xml/container-foreign-element/build.py`
 - Origin: built here
 - Expected: valid
-- Marks: epubveri: wrong error; epubcheck: wrong error
+- Marks: epubcheck: wrong error
 - Asked for by: the maintainer, to complete the OCF section
 - Issue: [#32](https://github.com/veripublica/epub-test-books/issues/32)
 
@@ -34,15 +34,14 @@ Valid. Elements and attributes from other namespaces are removed before the file
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.37.1 | `epubveri -i container-foreign-element.epub -u --advisory` | ERROR RSC-005; INVALID | `container-foreign-element.epubveri-0.37.1.txt` |
+| epubveri 0.38.0 | `epubveri -i container-foreign-element.epub -u --advisory` | VALID | `container-foreign-element.epubveri-0.38.0.txt` |
 | epubcheck 5.4.0 | `epubcheck container-foreign-element.epub -u` | ERROR RSC-005; INVALID | `container-foreign-element.epubcheck-5.4.0.txt` |
 
-Both disagree with the expected result. Each reports the extension element as not allowed (RSC-005). That is right for the bare schema, but the specification says to remove elements from other namespaces before validating.
+epubveri agrees with the expected result. epubcheck does not: it reports the extension element as not allowed (RSC-005). That is right for the bare schema, but the specification says to remove elements from other namespaces before validating.
 
-- **epubveri: wrong error.** Reported to epubveri by note (2026-11-08); no public issue yet.
 - **epubcheck: wrong error.** [w3c/epubcheck#1754](https://github.com/w3c/epubcheck/issues/1754).
 
-Every epubveri finding here is in its default output. None is an `--advisory` finding.
+epubveri 0.37.1 gave the same RSC-005 as epubcheck, so in v0.3.0 this book was also marked wrong error for epubveri. epubveri 0.38.0 removes other namespaces before the schema check, and gives no finding.
 
 ## Build
 

@@ -34,7 +34,7 @@ Invalid. The mimetype entry's header has an extra field, so `application/epub+zi
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.37.1 | `epubveri -i mimetype-extra-field.epub -u --advisory` | ERROR PKG-005; INVALID | `mimetype-extra-field.epubveri-0.37.1.txt` |
+| epubveri 0.38.0 | `epubveri -i mimetype-extra-field.epub -u --advisory` | ERROR PKG-005; INVALID | `mimetype-extra-field.epubveri-0.38.0.txt` |
 | epubcheck 5.4.0 | `epubcheck mimetype-extra-field.epub -u` | ERROR PKG-005; INVALID | `mimetype-extra-field.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -34,14 +34,14 @@ Invalid. The only allowed value of the `version` attribute is `1.0`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.37.1+1a33152 | `epubveri -i container-version-wrong.epub -u --advisory` | ERROR RSC-005; INVALID | `container-version-wrong.epubveri-0.37.1+1a33152.txt` |
+| epubveri 0.38.0 | `epubveri -i container-version-wrong.epub -u --advisory` | ERROR RSC-005; INVALID | `container-version-wrong.epubveri-0.38.0.txt` |
 | epubcheck 5.4.0 | `epubcheck container-version-wrong.epub -u` | ERROR RSC-005; INVALID | `container-version-wrong.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 
-Preview: the epubveri output comes from an unreleased build (commit 1a33152). The released epubveri 0.37.1 gives no finding and calls this book VALID; the fix comes with its next release. Before this set ships, the output is regenerated with that release and this note goes.
+epubveri 0.37.1 gave no finding here and called this book VALID. 0.38.0 is the first release with the fix.
 
 ## Build
 

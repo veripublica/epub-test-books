@@ -34,7 +34,7 @@ Invalid. The mimetype file is required.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.37.1 | `epubveri -i mimetype-missing.epub -u --advisory` | ERROR PKG-006; INVALID | `mimetype-missing.epubveri-0.37.1.txt` |
+| epubveri 0.38.0 | `epubveri -i mimetype-missing.epub -u --advisory` | ERROR PKG-006; INVALID | `mimetype-missing.epubveri-0.38.0.txt` |
 | epubcheck 5.4.0 | `epubcheck mimetype-missing.epub -u` | ERROR PKG-006; INVALID | `mimetype-missing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.
