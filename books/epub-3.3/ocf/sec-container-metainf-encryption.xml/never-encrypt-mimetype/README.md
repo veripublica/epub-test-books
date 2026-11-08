@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: epubcheck: missed
 - Asked for by: epubveri, after the encryption sets
-- Issue: pending
+- Issue: [#38](https://github.com/veripublica/epub-test-books/issues/38)
 
 ## About this book
 
@@ -48,7 +48,7 @@ Invalid. The mimetype file is on the list of files that must not be encrypted.
 
 epubveri agrees with the expected result. epubcheck does not: it gives no finding.
 
-- **epubcheck: missed.** Issue on `w3c/epubcheck`: ISSUE.
+- **epubcheck: missed.** [w3c/epubcheck#1757](https://github.com/w3c/epubcheck/issues/1757).
 
 SPEC-001 is epubveri's id for a specification rule that epubcheck has no id for. It is in epubveri's default output, not an `--advisory` finding, so it fails the book and sets the exit code. epubveri lists it under [Known differences from epubcheck](https://github.com/veripublica/epubveri/blob/main/AGENTS.md#known-differences-from-epubcheck).
 

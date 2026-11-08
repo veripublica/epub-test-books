@@ -1,5 +1,5 @@
 {
-  "release": "v0.3.0",
+  "release": "v0.4.0",
   "repository": "https://github.com/veripublica/epub-test-books",
   "credit": "EPUB test books © veripublica contributors, CC BY 4.0, https://github.com/veripublica/epub-test-books",
   "books": [
@@ -15,10 +15,10 @@
       "asked_by": null,
       "issue": null,
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "valid",
         "messages": [],
-        "output": "books/templates/epub2-minimal/epub2-minimal.epubveri-0.37.1.txt"
+        "output": "books/templates/epub2-minimal/epub2-minimal.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -39,10 +39,10 @@
       "asked_by": null,
       "issue": null,
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "valid",
         "messages": [],
-        "output": "books/templates/epub3-minimal/epub3-minimal.epubveri-0.37.1.txt"
+        "output": "books/templates/epub3-minimal/epub3-minimal.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -63,7 +63,7 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/29",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "ERROR PKG-026",
@@ -71,7 +71,7 @@
           "USAGE OPF-097",
           "USAGE OBS-001"
         ],
-        "output": "books/epub-3.3/ocf/obfus-specifying/obfuscated-not-font/obfuscated-not-font.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/obfus-specifying/obfuscated-not-font/obfuscated-not-font.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -97,13 +97,13 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/8",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "ERROR PKG-025",
           "USAGE OPF-097"
         ],
-        "output": "books/epub-3.3/ocf/sec-container-file-and-dir-structure/container-in-manifest/container-in-manifest.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-container-file-and-dir-structure/container-in-manifest/container-in-manifest.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -113,6 +113,34 @@
           "USAGE OPF-097"
         ],
         "output": "books/epub-3.3/ocf/sec-container-file-and-dir-structure/container-in-manifest/container-in-manifest.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-container-file-and-dir-structure/link-into-meta-inf",
+      "book": "books/epub-3.3/ocf/sec-container-file-and-dir-structure/link-into-meta-inf/link-into-meta-inf.epub",
+      "asset": "epub-3.3--sec-container-file-and-dir-structure--link-into-meta-inf--invalid.epub",
+      "sha256": "871dce2997cd033ed7d3d55eedf2dd35178c4c277da7ad28a1f1abadb85540ed",
+      "title": "A link into META-INF",
+      "question": "The content document links to `META-INF/container.xml`. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/34",
+      "epubveri": {
+        "version": "0.38.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR RSC-008"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-file-and-dir-structure/link-into-meta-inf/link-into-meta-inf.epubveri-0.38.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR RSC-008"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-file-and-dir-structure/link-into-meta-inf/link-into-meta-inf.epubcheck-5.4.0.txt"
       }
     },
     {
@@ -127,12 +155,12 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/9",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "ERROR OPF-060"
         ],
-        "output": "books/epub-3.3/ocf/sec-container-filenames/filename-case-duplicate/filename-case-duplicate.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-container-filenames/filename-case-duplicate/filename-case-duplicate.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -155,12 +183,12 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/10",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "ERROR PKG-009"
         ],
-        "output": "books/epub-3.3/ocf/sec-container-filenames/filename-forbidden-char/filename-forbidden-char.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-container-filenames/filename-forbidden-char/filename-forbidden-char.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -183,7 +211,7 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/11",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "ERROR OPF-060",
@@ -191,7 +219,7 @@
           "USAGE PKG-012",
           "USAGE PKG-012"
         ],
-        "output": "books/epub-3.3/ocf/sec-container-filenames/filename-nfc-nfd-duplicate/filename-nfc-nfd-duplicate.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-container-filenames/filename-nfc-nfd-duplicate/filename-nfc-nfd-duplicate.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -217,12 +245,12 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/12",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "valid",
         "messages": [
           "WARNING PKG-010"
         ],
-        "output": "books/epub-3.3/ocf/sec-container-filenames/filename-space/filename-space.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-container-filenames/filename-space/filename-space.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -245,12 +273,12 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/13",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "ERROR RSC-007"
         ],
-        "output": "books/epub-3.3/ocf/sec-container-iri/url-to-missing-file/url-to-missing-file.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-container-iri/url-to-missing-file/url-to-missing-file.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -273,10 +301,10 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/33",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "valid",
         "messages": [],
-        "output": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-foreign-attribute/container-foreign-attribute.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-foreign-attribute/container-foreign-attribute.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -295,16 +323,14 @@
       "title": "An element from another namespace in container.xml",
       "question": "`META-INF/container.xml` has an element from another namespace after `rootfiles`. Does a validator accept it?",
       "expected": "valid",
-      "marks": "epubveri: wrong error; epubcheck: wrong error",
+      "marks": "epubcheck: wrong error",
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/32",
       "epubveri": {
-        "version": "0.37.1",
-        "verdict": "invalid",
-        "messages": [
-          "ERROR RSC-005"
-        ],
-        "output": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-foreign-element/container-foreign-element.epubveri-0.37.1.txt"
+        "version": "0.38.0",
+        "verdict": "valid",
+        "messages": [],
+        "output": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-foreign-element/container-foreign-element.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -327,12 +353,12 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/14",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "FATAL RSC-002"
         ],
-        "output": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-missing/container-missing.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-missing/container-missing.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -341,6 +367,112 @@
           "FATAL RSC-002"
         ],
         "output": "books/epub-3.3/ocf/sec-container-metainf-container.xml/container-missing/container-missing.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-container-metainf-encryption.xml/never-encrypt-container-xml",
+      "book": "books/epub-3.3/ocf/sec-container-metainf-encryption.xml/never-encrypt-container-xml/never-encrypt-container-xml.epub",
+      "asset": "epub-3.3--sec-container-metainf-encryption.xml--never-encrypt-container-xml--invalid.epub",
+      "sha256": "8d594156a19e7e67925c651a90f33288f3b5785479163be4c9b932c4a3f0b84d",
+      "title": "container.xml declared encrypted",
+      "question": "`META-INF/encryption.xml` declares `META-INF/container.xml` encrypted. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "epubcheck: missed",
+      "asked_by": "epubveri, after the encryption sets",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/37",
+      "epubveri": {
+        "version": "0.38.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR SPEC-001"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-metainf-encryption.xml/never-encrypt-container-xml/never-encrypt-container-xml.epubveri-0.38.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "valid",
+        "messages": [],
+        "output": "books/epub-3.3/ocf/sec-container-metainf-encryption.xml/never-encrypt-container-xml/never-encrypt-container-xml.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-container-metainf-encryption.xml/never-encrypt-mimetype",
+      "book": "books/epub-3.3/ocf/sec-container-metainf-encryption.xml/never-encrypt-mimetype/never-encrypt-mimetype.epub",
+      "asset": "epub-3.3--sec-container-metainf-encryption.xml--never-encrypt-mimetype--invalid.epub",
+      "sha256": "6ec8e6ff22ad4528f4970309f9539c08f32936316c70c99aed5ca12ec397e6da",
+      "title": "The mimetype file declared encrypted",
+      "question": "`META-INF/encryption.xml` declares the `mimetype` file encrypted. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "epubcheck: missed",
+      "asked_by": "epubveri, after the encryption sets",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/38",
+      "epubveri": {
+        "version": "0.38.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR SPEC-001"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-metainf-encryption.xml/never-encrypt-mimetype/never-encrypt-mimetype.epubveri-0.38.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "valid",
+        "messages": [],
+        "output": "books/epub-3.3/ocf/sec-container-metainf-encryption.xml/never-encrypt-mimetype/never-encrypt-mimetype.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-container-metainf-encryption.xml/never-encrypt-package-document",
+      "book": "books/epub-3.3/ocf/sec-container-metainf-encryption.xml/never-encrypt-package-document/never-encrypt-package-document.epub",
+      "asset": "epub-3.3--sec-container-metainf-encryption.xml--never-encrypt-package-document--invalid.epub",
+      "sha256": "d63991b224ec343f4e36f871c80851ccbfc37bcfd744491310b4a0c7ad10f026",
+      "title": "The package document declared encrypted",
+      "question": "`META-INF/encryption.xml` declares `OEBPS/package.opf`, the package document, encrypted. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "epubcheck: missed",
+      "asked_by": "epubveri, after the encryption sets",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/36",
+      "epubveri": {
+        "version": "0.38.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR SPEC-001"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container-metainf-encryption.xml/never-encrypt-package-document/never-encrypt-package-document.epubveri-0.38.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "valid",
+        "messages": [],
+        "output": "books/epub-3.3/ocf/sec-container-metainf-encryption.xml/never-encrypt-package-document/never-encrypt-package-document.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-container.xml-container-elem/container-version-wrong",
+      "book": "books/epub-3.3/ocf/sec-container.xml-container-elem/container-version-wrong/container-version-wrong.epub",
+      "asset": "epub-3.3--sec-container.xml-container-elem--container-version-wrong--invalid.epub",
+      "sha256": "f6b966bf38ec05c1202923d68f92b9cf1800d7330470f51e22a25b739199891f",
+      "title": "container.xml with version=\"2.0\"",
+      "question": "The `container` element in `META-INF/container.xml` says `version=\"2.0\"`. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, to complete the OCF section",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/35",
+      "epubveri": {
+        "version": "0.38.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR RSC-005"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container.xml-container-elem/container-version-wrong/container-version-wrong.epubveri-0.38.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR RSC-005"
+        ],
+        "output": "books/epub-3.3/ocf/sec-container.xml-container-elem/container-version-wrong/container-version-wrong.epubcheck-5.4.0.txt"
       }
     },
     {
@@ -355,12 +487,12 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/15",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "FATAL OPF-002"
         ],
-        "output": "books/epub-3.3/ocf/sec-container.xml-rootfile-elem/rootfile-missing-target/rootfile-missing-target.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-container.xml-rootfile-elem/rootfile-missing-target/rootfile-missing-target.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -383,12 +515,12 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/16",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "ERROR RSC-003"
         ],
-        "output": "books/epub-3.3/ocf/sec-container.xml-rootfile-elem/rootfile-wrong-media-type/rootfile-wrong-media-type.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-container.xml-rootfile-elem/rootfile-wrong-media-type/rootfile-wrong-media-type.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -411,12 +543,12 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/17",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "ERROR RSC-003"
         ],
-        "output": "books/epub-3.3/ocf/sec-container.xml-rootfiles-elem/no-rootfile/no-rootfile.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-container.xml-rootfiles-elem/no-rootfile/no-rootfile.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -439,14 +571,15 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/30",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "ERROR RSC-005",
+          "INFO RSC-004",
           "USAGE OBS-001",
           "USAGE CSS-028"
         ],
-        "output": "books/epub-3.3/ocf/sec-encryption.xml-encryption/encryption-wrong-root/encryption-wrong-root.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-encryption.xml-encryption/encryption-wrong-root/encryption-wrong-root.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -473,14 +606,14 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/28",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "valid",
         "messages": [
           "INFO RSC-004",
           "USAGE CSS-028",
           "USAGE OBS-001"
         ],
-        "output": "books/epub-3.3/ocf/sec-font-obfuscation/font-obfuscated/font-obfuscated.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-font-obfuscation/font-obfuscated/font-obfuscated.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -506,12 +639,12 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/18",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "ERROR PKG-007"
         ],
-        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-bom/mimetype-bom.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-bom/mimetype-bom.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -534,12 +667,12 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/19",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "ERROR PKG-005"
         ],
-        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-extra-field/mimetype-extra-field.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-extra-field/mimetype-extra-field.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -562,12 +695,12 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/20",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "ERROR PKG-007"
         ],
-        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-leading-space/mimetype-leading-space.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-leading-space/mimetype-leading-space.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -590,12 +723,12 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/21",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "ERROR PKG-006"
         ],
-        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-missing/mimetype-missing.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-missing/mimetype-missing.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -618,12 +751,12 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/22",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "ERROR PKG-006"
         ],
-        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-not-first/mimetype-not-first.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-not-first/mimetype-not-first.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -646,12 +779,12 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/23",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "ERROR PKG-007"
         ],
-        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-trailing-newline/mimetype-trailing-newline.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-trailing-newline/mimetype-trailing-newline.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -674,12 +807,12 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/24",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "ERROR PKG-007"
         ],
-        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-wrong-value/mimetype-wrong-value.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/mimetype-wrong-value/mimetype-wrong-value.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -702,12 +835,12 @@
       "asked_by": "epubveri",
       "issue": "https://github.com/veripublica/epub-test-books/issues/3",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "FATAL PKG-004"
         ],
-        "output": "books/epub-3.3/ocf/sec-zip-container-mime/prepended-junk/prepended-junk.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-zip-container-mime/prepended-junk/prepended-junk.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -730,12 +863,12 @@
       "asked_by": "epubveri",
       "issue": "https://github.com/veripublica/epub-test-books/issues/2",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "FATAL PKG-008"
         ],
-        "output": "books/epub-3.3/ocf/sec-zip-container-zipreqs/bogus-trailing-eocd/bogus-trailing-eocd.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-zip-container-zipreqs/bogus-trailing-eocd/bogus-trailing-eocd.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -758,13 +891,13 @@
       "asked_by": "epubveri",
       "issue": "https://github.com/veripublica/epub-test-books/issues/4",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "FATAL PKG-008",
           "ERROR RSC-003"
         ],
-        "output": "books/epub-3.3/ocf/sec-zip-container-zipreqs/cd-offset-shifted/cd-offset-shifted.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-zip-container-zipreqs/cd-offset-shifted/cd-offset-shifted.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -788,12 +921,12 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/25",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "FATAL PKG-027"
         ],
-        "output": "books/epub-3.3/ocf/sec-zip-container-zipreqs/compression-bzip2/compression-bzip2.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-zip-container-zipreqs/compression-bzip2/compression-bzip2.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -816,12 +949,12 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/26",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "FATAL PKG-027"
         ],
-        "output": "books/epub-3.3/ocf/sec-zip-container-zipreqs/filename-not-utf8/filename-not-utf8.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-zip-container-zipreqs/filename-not-utf8/filename-not-utf8.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
@@ -844,12 +977,12 @@
       "asked_by": "the maintainer, to complete the OCF section",
       "issue": "https://github.com/veripublica/epub-test-books/issues/31",
       "epubveri": {
-        "version": "0.37.1",
+        "version": "0.38.0",
         "verdict": "invalid",
         "messages": [
           "FATAL PKG-027"
         ],
-        "output": "books/epub-3.3/ocf/sec-zip-container-zipreqs/zip-encryption/zip-encryption.epubveri-0.37.1.txt"
+        "output": "books/epub-3.3/ocf/sec-zip-container-zipreqs/zip-encryption/zip-encryption.epubveri-0.38.0.txt"
       },
       "epubcheck": {
         "version": "5.4.0",
