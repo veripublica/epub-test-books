@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(OPF-065): refines-self.epub/OEBPS/package.opf(25,14): Invalid metadata declaration, probably due to a cycle in "refines" metadata.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

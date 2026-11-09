@@ -1,0 +1,15 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): manifest-missing.epub/OEBPS/package.opf(25,10): Error while parsing file: element "spine" not allowed yet; missing required element "manifest"
+ERROR(OPF-049): manifest-missing.epub/OEBPS/package.opf(26,29): Item id "about" was not found in the manifest.
+ERROR(OPF-049): manifest-missing.epub/OEBPS/package.opf(27,31): Item id "content" was not found in the manifest.
+ERROR(RSC-005): manifest-missing.epub/OEBPS/package.opf(26,29): Error while parsing file: itemref element idref attribute does not resolve to a manifest item element
+ERROR(RSC-005): manifest-missing.epub/OEBPS/package.opf(27,31): Error while parsing file: itemref element idref attribute does not resolve to a manifest item element
+USAGE(OPF-003): manifest-missing.epub/./manifest-missing.epub(-1,-1): Item "OEBPS/about.xhtml" exists in the EPUB, but is not declared in the OPF manifest.
+USAGE(OPF-003): manifest-missing.epub/./manifest-missing.epub(-1,-1): Item "OEBPS/content.xhtml" exists in the EPUB, but is not declared in the OPF manifest.
+USAGE(OPF-003): manifest-missing.epub/./manifest-missing.epub(-1,-1): Item "OEBPS/nav.xhtml" exists in the EPUB, but is not declared in the OPF manifest.
+
+Check finished with errors
+Messages: 0 fatals / 5 errors / 0 warnings / 0 infos / 3 usages
+
+EPUBCheck completed
+[exit 1]

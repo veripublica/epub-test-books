@@ -1,0 +1,12 @@
+ERROR RSC-005: element "package" has incomplete content; missing required element "manifest" [OEBPS/package.opf:2:1]
+ERROR RSC-005: OPF is missing the <manifest> element [OEBPS/package.opf:2:1]
+ERROR RSC-005: EPUB 3 requires a navigation document (a manifest item with properties="nav") [OEBPS/package.opf:2:1]
+ERROR RSC-005: the itemref's idref names no manifest item [OEBPS/package.opf:26:5]
+ERROR OPF-049: spine itemref idref 'about' was not found in the manifest [OEBPS/package.opf:26:5]
+ERROR RSC-005: the itemref's idref names no manifest item [OEBPS/package.opf:27:5]
+ERROR OPF-049: spine itemref idref 'content' was not found in the manifest [OEBPS/package.opf:27:5]
+USAGE OPF-003: container resource 'OEBPS/about.xhtml' is not listed in the manifest [OEBPS/package.opf]
+USAGE OPF-003: container resource 'OEBPS/content.xhtml' is not listed in the manifest [OEBPS/package.opf]
+USAGE OPF-003: container resource 'OEBPS/nav.xhtml' is not listed in the manifest [OEBPS/package.opf]
+— 7 error(s), 0 warning(s): INVALID
+[exit 1]

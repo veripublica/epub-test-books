@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(OPF-067): linked-record-in-manifest.epub/OEBPS/package.opf(-1,-1): The resource "OEBPS/record.xml" must not be listed both as a "link" element in the package metadata and as a manifest item.
+USAGE(OPF-097): linked-record-in-manifest.epub/OEBPS/package.opf(30,71): Resource "OEBPS/record.xml" is listed in the manifest, but no reference to it was found in content documents.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 1]
