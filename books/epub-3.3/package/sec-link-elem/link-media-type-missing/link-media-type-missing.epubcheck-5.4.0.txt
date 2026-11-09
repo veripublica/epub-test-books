@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(OPF-093): link-media-type-missing.epub/OEBPS/package.opf(24,43): The "media-type" attribute is required for linked resources located in the EPUB container
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

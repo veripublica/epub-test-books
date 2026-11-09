@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(OPF-098): link-href-manifest-id.epub/OEBPS/package.opf(24,76): The "href" attribute must reference resources, not elements in the package document, but found URL "#content".
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

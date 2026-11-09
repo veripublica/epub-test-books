@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): link-hreflang-malformed.epub/OEBPS/package.opf(24,125): Error while parsing file: value of attribute "hreflang" is invalid; must be an RFC 3066 language identifier or must be equal to ""
+ERROR(OPF-092): link-hreflang-malformed.epub/OEBPS/package.opf(24,125): Language tag "en_US" is not well-formed: Invalid subtag: en_US [at index 0]
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

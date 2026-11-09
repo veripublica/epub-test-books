@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): item-media-type-missing.epub/OEBPS/package.opf(29,40): Error while parsing file: element "item" missing required attribute "media-type"
+USAGE(OPF-097): item-media-type-missing.epub/OEBPS/package.opf(29,40): Resource "OEBPS/extra.txt" is listed in the manifest, but no reference to it was found in content documents.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 1]

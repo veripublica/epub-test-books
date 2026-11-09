@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(OPF-092): language-malformed.epub/OEBPS/package.opf(6,37): Language tag "en_US" is not well-formed: Invalid subtag: en_US [at index 0]
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

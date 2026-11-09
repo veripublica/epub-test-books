@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+USAGE(OPF-097): hyperlinked-not-in-spine.epub/OEBPS/package.opf(29,77): Resource "OEBPS/extra.xhtml" is listed in the manifest, but no reference to it was found in content documents.
+ERROR(RSC-011): hyperlinked-not-in-spine.epub/OEBPS/content.xhtml(11,30): Found a reference to a resource that is not a spine item.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 1]

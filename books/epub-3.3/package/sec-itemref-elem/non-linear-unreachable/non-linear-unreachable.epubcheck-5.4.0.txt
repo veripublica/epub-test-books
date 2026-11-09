@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(OPF-096): non-linear-unreachable.epub/OEBPS/package.opf(29,77): Non-linear content must be reachable, but found no hyperlink to "OEBPS/extra.xhtml".
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

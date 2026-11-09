@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): unique-identifier-not-identifier.epub/OEBPS/package.opf(2,101): Error while parsing file: package element unique-identifier attribute does not resolve to a dc:identifier element (given reference was "title")
+ERROR(OPF-030): unique-identifier-not-identifier.epub/OEBPS/package.opf(-1,-1): The unique-identifier "title" was not found.
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

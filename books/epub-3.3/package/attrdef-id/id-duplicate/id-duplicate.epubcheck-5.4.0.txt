@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): id-duplicate.epub/OEBPS/package.opf(15,60): Error while parsing file: Duplicate "collection"
+ERROR(RSC-005): id-duplicate.epub/OEBPS/package.opf(24,59): Error while parsing file: Duplicate "collection"
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

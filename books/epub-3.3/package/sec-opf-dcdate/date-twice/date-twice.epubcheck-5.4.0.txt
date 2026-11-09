@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): date-twice.epub/OEBPS/package.opf(24,14): Error while parsing file: element "dc:date" not allowed here; expected the element end-tag or element "dc:contributor", "dc:coverage", "dc:creator", "dc:description", "dc:format", "dc:identifier", "dc:language", "dc:publisher", "dc:relation", "dc:rights", "dc:source", "dc:subject", "dc:title", "dc:type", "link" or "meta"
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

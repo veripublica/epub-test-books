@@ -1,0 +1,12 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): spine-empty.epub/OEBPS/package.opf(30,18): Error while parsing file: element "spine" incomplete; missing required element "itemref"
+USAGE(OPF-097): spine-empty.epub/OEBPS/package.opf(26,77): Resource "OEBPS/about.xhtml" is listed in the manifest, but no reference to it was found in content documents.
+USAGE(OPF-097): spine-empty.epub/OEBPS/package.opf(27,81): Resource "OEBPS/content.xhtml" is listed in the manifest, but no reference to it was found in content documents.
+ERROR(RSC-011): spine-empty.epub/OEBPS/nav.xhtml(12,35): Found a reference to a resource that is not a spine item.
+ERROR(RSC-011): spine-empty.epub/OEBPS/nav.xhtml(13,37): Found a reference to a resource that is not a spine item.
+
+Check finished with errors
+Messages: 0 fatals / 3 errors / 0 warnings / 0 infos / 2 usages
+
+EPUBCheck completed
+[exit 1]

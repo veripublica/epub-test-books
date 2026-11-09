@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(OPF-049): itemref-unknown.epub/OEBPS/package.opf(33,28): Item id "nope" was not found in the manifest.
+ERROR(RSC-005): itemref-unknown.epub/OEBPS/package.opf(33,28): Error while parsing file: itemref element idref attribute does not resolve to a manifest item element
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

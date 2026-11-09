@@ -1,0 +1,7 @@
+ERROR RSC-005: element "spine" has incomplete content; expected "itemref" [OEBPS/package.opf:30:3]
+ERROR RSC-011: 'OEBPS/about.xhtml' is hyperlinked but not listed in the spine [OEBPS/nav.xhtml:12:13]
+ERROR RSC-011: 'OEBPS/content.xhtml' is hyperlinked but not listed in the spine [OEBPS/nav.xhtml:13:13]
+USAGE OPF-097: 'about.xhtml' is declared in the manifest, but no content document references it [OEBPS/package.opf:26:5]
+USAGE OPF-097: 'content.xhtml' is declared in the manifest, but no content document references it [OEBPS/package.opf:27:5]
+— 3 error(s), 0 warning(s): INVALID
+[exit 1]

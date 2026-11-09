@@ -1,0 +1,4 @@
+ERROR RSC-005: duplicate id "collection" [OEBPS/package.opf:15:5]
+ERROR RSC-005: duplicate id "collection" [OEBPS/package.opf:24:5]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]

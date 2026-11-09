@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): modified-no-zulu.epub/OEBPS/package.opf(14,39): Error while parsing file: dcterms:modified illegal syntax (expecting: "CCYY-MM-DDThh:mm:ssZ")
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

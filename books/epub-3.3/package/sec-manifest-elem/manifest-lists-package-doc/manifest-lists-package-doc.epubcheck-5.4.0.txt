@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(OPF-099): manifest-lists-package-doc.epub/OEBPS/package.opf(29,83): The manifest must not list the package document.
+USAGE(OPF-097): manifest-lists-package-doc.epub/OEBPS/package.opf(29,83): Resource "OEBPS/package.opf" is listed in the manifest, but no reference to it was found in content documents.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 1]
