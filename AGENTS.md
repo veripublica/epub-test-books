@@ -6,12 +6,13 @@ kept true at every release. The rules for adding a set are in
 
 ## Status
 
-Latest release: v0.4.0 (2026-11-09). It holds the two templates and 33
-sets on the EPUB container (OCF), under `books/epub-3.3/ocf/<anchor>/<set>/`:
-damaged ZIP files, the mimetype file, ZIP compression and file names,
-`container.xml` and `rootfile`, URLs in the container, `encryption.xml`, font
-obfuscation and ZIP encryption. Cases where the specification and the
-verifiers disagree are listed in issue #27 until they are settled. `books/INDEX.md`
+Latest release: v0.5.0 (2026-11-09). It holds the two templates and 224
+sets under `books/epub-3.3/<area>/<anchor>/<set>/` and
+`books/epub-2.0.1/package/<anchor>/<set>/`: the EPUB container (`ocf`), the
+package document (`package`), the navigation document (`nav`), publication
+resources (`resources`), content documents (`content`), and OPF 2.0.1 with the
+NCX. Cases where the specification and the verifiers disagree are listed in
+issue #27 until they are settled. `books/INDEX.md`
 lists every book on one page, and `books/index.json` holds the same list for
 programs.
 
@@ -75,6 +76,11 @@ scripts/                        AGPL-3.0-only
                                 ZIP encryption included
   lib/minifont.py               a two-glyph TrueType font, and font obfuscation
   lib/ocfvariants.py            the OCF sets' containers, one function each
+  lib/packagevariants.py        the package sets' changes to package.opf
+  lib/navvariants.py            the navigation sets' changes to nav.xhtml
+  lib/resourcevariants.py       extra items and small edits for resource and content sets
+  lib/epub2variants.py          the EPUB 2 sets' changes to package.opf and toc.ncx
+  lib/minijpeg.py, minimedia.py generated JPEG, BMP, XBM and WAV files
   check.py                      runs both verifiers, keeps their outputs
   release.py                    index, release check, download bundle
   templates/<template>/build.py builds a template; package() for sets
@@ -150,7 +156,7 @@ are hidden by both.
 Read them in place; do not copy them into your repository.
 
 - **In CI:** check out a release tag (`repository: veripublica/epub-test-books`,
-  `ref: v0.4.0`). Pin a tag, never `main`: a new set changes what your tests
+  `ref: v0.5.0`). Pin a tag, never `main`: a new set changes what your tests
   see.
 - **Locally:** one clone, read-only. Write your tool's outputs into your own
   project.
