@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+WARNING(CSS-003): css-utf-16.epub/OEBPS/style.css(-1,-1): CSS document is encoded in UTF-16. It should be encoded in UTF-8 instead.
+
+Check finished with warnings
+Messages: 0 fatals / 0 errors / 1 warning / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 0]

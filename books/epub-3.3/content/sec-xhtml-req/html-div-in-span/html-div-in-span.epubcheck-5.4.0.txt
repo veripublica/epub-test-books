@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): html-div-in-span.epub/OEBPS/content.xhtml(11,19): Error while parsing file: element "div" not allowed here; expected the element end-tag, text, element "a", "abbr", "area", "audio", "b", "bdi", "bdo", "br", "button", "canvas", "cite", "code", "data", "datalist", "del", "dfn", "em", "embed", "epub:switch", "i", "iframe", "img", "input", "ins", "kbd", "label", "link", "map", "mark", "meta", "meter", "ns1:math", "ns2:svg", "object", "output", "picture", "progress", "q", "ruby", "s", "samp", "script", "select", "selectedcontent", "slot", "small", "span", "strong", "sub", "sup", "template", "textarea", "time", "u", "var", "video" or "wbr" (with xmlns:ns1="http://www.w3.org/1998/Math/MathML" xmlns:ns2="http://www.w3.org/2000/svg") or an element from another namespace
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

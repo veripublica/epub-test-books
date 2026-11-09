@@ -1,0 +1,7 @@
+Validating using EPUB version 3.4 rules.
+USAGE(HTM_055): discouraged-embed.epub/OEBPS/content.xhtml(11,50): The "embed" element should not be used (discouraged construct)
+No errors or warnings detected.
+Messages: 0 fatals / 0 errors / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 0]

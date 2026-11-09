@@ -97,6 +97,28 @@ def package_utf16(files: Files) -> Files:
     return out
 
 
+def swap(text: str, old: str, new: str) -> str:
+    assert text.count(old) == 1, f"expected exactly one {old!r}"
+    return text.replace(old, new)
+
+
+def head_add(html: str, element: str) -> str:
+    return swap(html, "  </head>", f"    {element}\n  </head>")
+
+
+def inline_svg(inner: str) -> str:
+    return ('    <p><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" '
+            f'role="img" aria-label="A small gray square.">{inner}</svg></p>')
+
+
+def standalone_svg(inner: str) -> tuple:
+    """An SVG content document, as an extra manifest item."""
+    data = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">'
+            f'<title>A small picture</title>{inner}</svg>\n')
+    return ("picture", "picture.svg", "image/svg+xml", "", data)
+
+
 def doctype(html: str, new: str) -> str:
     assert html.count("<!DOCTYPE html>") == 1
     return html.replace("<!DOCTYPE html>", new)

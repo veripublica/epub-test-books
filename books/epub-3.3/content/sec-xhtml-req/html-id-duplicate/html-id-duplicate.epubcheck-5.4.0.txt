@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): html-id-duplicate.epub/OEBPS/content.xhtml(11,18): Error while parsing file: Duplicate ID "same"
+ERROR(RSC-005): html-id-duplicate.epub/OEBPS/content.xhtml(12,18): Error while parsing file: Duplicate ID "same"
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

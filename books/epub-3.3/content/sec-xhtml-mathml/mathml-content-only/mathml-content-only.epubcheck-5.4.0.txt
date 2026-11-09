@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): mathml-content-only.epub/OEBPS/content.xhtml(11,76): Error while parsing file: element "apply" not allowed here; expected the element end-tag or element "ns:maction", "ns:maligngroup", "ns:malignmark", "ns:menclose", "ns:merror", "ns:mfenced", "ns:mfrac", "ns:mi", "ns:mlongdiv", "ns:mmultiscripts", "ns:mn", "ns:mo", "ns:mover", "ns:mpadded", "ns:mphantom", "ns:mroot", "ns:mrow", "ns:ms", "ns:mspace", "ns:msqrt", "ns:mstack", "ns:mstyle", "ns:msub", "ns:msubsup", "ns:msup", "ns:mtable", "ns:mtext", "ns:munder", "ns:munderover" or "ns:semantics" (with xmlns:ns="http://www.w3.org/1998/Math/MathML")
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

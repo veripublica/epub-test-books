@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+USAGE(HTM_055): discouraged-rp.epub/OEBPS/content.xhtml(11,19): The "rp" element should not be used (discouraged construct)
+USAGE(HTM_055): discouraged-rp.epub/OEBPS/content.xhtml(11,39): The "rp" element should not be used (discouraged construct)
+No errors or warnings detected.
+Messages: 0 fatals / 0 errors / 0 warnings / 0 infos / 2 usages
+
+EPUBCheck completed
+[exit 0]

@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): html-a-in-a.epub/OEBPS/content.xhtml(11,57): Error while parsing file: The a element must not appear inside a elements.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

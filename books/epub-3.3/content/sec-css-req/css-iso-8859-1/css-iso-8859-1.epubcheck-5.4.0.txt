@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(CSS-004): css-iso-8859-1.epub/OEBPS/style.css(-1,-1): CSS documents must be encoded in UTF-8, detected iso-8859-1;
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]
