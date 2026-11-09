@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): toc-twice.epub/OEBPS/nav.xhtml(8,9): Error while parsing file: Exactly one "toc" nav element must be present
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

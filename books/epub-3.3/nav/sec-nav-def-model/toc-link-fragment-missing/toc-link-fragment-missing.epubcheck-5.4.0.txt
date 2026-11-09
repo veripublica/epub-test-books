@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-012): toc-link-fragment-missing.epub/OEBPS/nav.xhtml(14,42): Fragment identifier is not defined.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

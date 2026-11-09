@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): landmarks-duplicate.epub/OEBPS/nav.xhtml(19,60): Error while parsing file: Another landmark was found with the same epub:type and same reference to "content.xhtml"
+ERROR(RSC-005): landmarks-duplicate.epub/OEBPS/nav.xhtml(20,60): Error while parsing file: Another landmark was found with the same epub:type and same reference to "content.xhtml"
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

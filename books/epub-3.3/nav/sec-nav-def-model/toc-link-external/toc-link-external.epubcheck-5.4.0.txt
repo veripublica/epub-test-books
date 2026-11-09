@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(NAV-010): toc-link-external.epub/OEBPS/nav.xhtml(14,60): "toc" nav must not link to remote resources; found link to "https://example.org/epub-test-books/".
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

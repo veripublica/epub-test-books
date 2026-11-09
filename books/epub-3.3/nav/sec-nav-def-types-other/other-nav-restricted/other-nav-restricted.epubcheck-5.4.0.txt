@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): other-nav-restricted.epub/OEBPS/nav.xhtml(18,11): Error while parsing file: element "ul" not allowed here; expected element "ol"
+ERROR(RSC-005): other-nav-restricted.epub/OEBPS/nav.xhtml(21,11): Error while parsing file: element "nav" incomplete; missing required element "ol"
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

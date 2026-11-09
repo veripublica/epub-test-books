@@ -127,6 +127,10 @@ def book_has_image(files: Files) -> Files:
                     "It has one small gray image with a text alternative, no audio or video, and no known hazards.")
 
 
+def nav_has_svg(files: Files) -> Files:
+    return _replace(files, ' properties="nav"', ' properties="nav svg"')
+
+
 def section(inner: str, title: str = "Content", id_: str = "content") -> str:
     """The body of a content document, in the template's shape."""
     return (f'    <section id="{id_}" epub:type="chapter" role="doc-chapter">\n'

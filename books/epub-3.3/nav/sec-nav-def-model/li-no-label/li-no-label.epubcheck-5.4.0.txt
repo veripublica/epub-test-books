@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): li-no-label.epub/OEBPS/nav.xhtml(14,17): Error while parsing file: element "ol" not allowed yet; expected element "a" or "span"
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]
