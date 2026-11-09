@@ -1,0 +1,9 @@
+ERROR(RSC-028): package-iso-8859-1.epub/OEBPS/package.opf(-1,-1): XML documents must be encoded in UTF-8, but ISO-8859-1 was detected.
+Validating using EPUB version 2.0.1 rules.
+ERROR(RSC-028): package-iso-8859-1.epub/OEBPS/package.opf(-1,-1): XML documents must be encoded in UTF-8, but ISO-8859-1 was detected.
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

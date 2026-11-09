@@ -1,0 +1,8 @@
+Validating using EPUB version 2.0.1 rules.
+ERROR(OPF-040): fallback-unknown.epub/OEBPS/package.opf(25,97): Fallback item with id "nope" could not be found.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

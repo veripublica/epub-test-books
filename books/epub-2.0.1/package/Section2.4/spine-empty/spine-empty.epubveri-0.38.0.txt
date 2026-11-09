@@ -1,0 +1,7 @@
+ERROR RSC-005: element "spine" has incomplete content; expected "itemref" [OEBPS/package.opf:28:3]
+ERROR RSC-011: NCX content src 'about.xhtml' does not target a spine item [OEBPS/toc.ncx:14:7]
+ERROR RSC-011: NCX content src 'content.xhtml' does not target a spine item [OEBPS/toc.ncx:18:7]
+USAGE ADV-010: 'about.xhtml' is declared in the manifest, but no document draws, applies or loads it [OEBPS/package.opf:24:5]
+USAGE ADV-010: 'content.xhtml' is declared in the manifest, but no document draws, applies or loads it [OEBPS/package.opf:25:5]
+— 3 error(s), 0 warning(s): INVALID
+[exit 1]

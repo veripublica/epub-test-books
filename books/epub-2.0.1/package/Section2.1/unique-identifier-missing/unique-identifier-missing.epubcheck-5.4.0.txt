@@ -1,0 +1,10 @@
+Validating using EPUB version 2.0.1 rules.
+ERROR(RSC-005): unique-identifier-missing.epub/OEBPS/package.opf(2,61): Error while parsing file: element "package" missing required attribute "unique-identifier"
+ERROR(OPF-048): unique-identifier-missing.epub/OEBPS/package.opf(2,61): Package tag is missing its required unique-identifier attribute and value.
+ERROR(OPF-030): unique-identifier-missing.epub/OEBPS/package.opf(-1,-1): The unique-identifier "null" was not found.
+
+Check finished with errors
+Messages: 0 fatals / 3 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

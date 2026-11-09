@@ -1,0 +1,9 @@
+Validating using EPUB version 2.0.1 rules.
+ERROR(RSC-005): identifier-missing.epub/OEBPS/package.opf(21,14): Error while parsing file: element "metadata" incomplete; missing required element "dc:identifier"
+ERROR(OPF-030): identifier-missing.epub/OEBPS/package.opf(-1,-1): The unique-identifier "uid" was not found.
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

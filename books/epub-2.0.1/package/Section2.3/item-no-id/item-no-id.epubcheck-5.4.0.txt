@@ -1,0 +1,9 @@
+Validating using EPUB version 2.0.1 rules.
+ERROR(RSC-005): item-no-id.epub/OEBPS/package.opf(27,66): Error while parsing file: element "item" missing required attribute "id"
+USAGE(OPF-003): item-no-id.epub/./item-no-id.epub(-1,-1): Item "OEBPS/extra.xhtml" exists in the EPUB, but is not declared in the OPF manifest.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 1]

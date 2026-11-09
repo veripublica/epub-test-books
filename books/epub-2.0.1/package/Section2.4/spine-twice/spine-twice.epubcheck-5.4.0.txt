@@ -1,0 +1,9 @@
+Validating using EPUB version 2.0.1 rules.
+ERROR(RSC-005): spine-twice.epub/OEBPS/package.opf(32,20): Error while parsing file: element "spine" not allowed here; expected the element end-tag or element "guide" or "tours"
+ERROR(OPF-034): spine-twice.epub/OEBPS/package.opf(25,81): The spine contains multiple references to the manifest item with id "content".
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

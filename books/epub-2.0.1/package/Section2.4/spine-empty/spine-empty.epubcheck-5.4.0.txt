@@ -1,0 +1,10 @@
+Validating using EPUB version 2.0.1 rules.
+ERROR(RSC-005): spine-empty.epub/OEBPS/package.opf(28,28): Error while parsing file: element "spine" incomplete; missing required element "itemref"
+ERROR(RSC-011): spine-empty.epub/OEBPS/toc.ncx(14,35): Found a reference to a resource that is not a spine item.
+ERROR(RSC-011): spine-empty.epub/OEBPS/toc.ncx(18,37): Found a reference to a resource that is not a spine item.
+
+Check finished with errors
+Messages: 0 fatals / 3 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

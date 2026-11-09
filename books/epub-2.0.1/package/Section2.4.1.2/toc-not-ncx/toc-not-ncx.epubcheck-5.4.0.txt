@@ -1,0 +1,9 @@
+Validating using EPUB version 2.0.1 rules.
+ERROR(OPF-050): toc-not-ncx.epub/OEBPS/package.opf(25,81): TOC attribute references resource with non-NCX mime type; "application/x-dtbncx+xml" is expected.
+ERROR(CHK-008): toc-not-ncx.epub/OEBPS/package.opf(-1,-1): Error encountered while processing an item "OEBPS/content.xhtml"; skip other checks for the item.
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

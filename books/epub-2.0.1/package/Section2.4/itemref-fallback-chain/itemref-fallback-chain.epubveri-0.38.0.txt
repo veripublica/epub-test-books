@@ -1,0 +1,3 @@
+USAGE ADV-010: 'extra2.xhtml' is declared in the manifest, but no document draws, applies or loads it [OEBPS/package.opf:28:5]
+— 0 error(s), 0 warning(s): VALID
+[exit 0]

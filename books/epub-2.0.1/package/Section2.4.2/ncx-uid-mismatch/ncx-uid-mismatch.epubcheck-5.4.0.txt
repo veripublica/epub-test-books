@@ -1,0 +1,8 @@
+Validating using EPUB version 2.0.1 rules.
+ERROR(NCX-001): ncx-uid-mismatch.epub/OEBPS/toc.ncx(-1,-1): NCX identifier ("urn:uuid:00000000-0000-5000-8000-000000000000") does not match OPF identifier ("urn:uuid:65ea2bb3-c893-5317-8d63-1ac85465f315").
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]
