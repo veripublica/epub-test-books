@@ -39,7 +39,7 @@ Invalid. A value starting with `/` is a path-absolute-URL string in the URL Stan
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.
 
-Both give the reason as the URL leaving the container, which is the rule in `sec-container-iri`. The verdict is the same.
+epubcheck says the URL leaks outside the container, and epubveri says it is path-absolute or escapes the container root. The note in `sec-container-iri` says such a string does not leak after parsing and is disallowed anyway, so the clause above is the accurate reason. The verdict is the same.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 
