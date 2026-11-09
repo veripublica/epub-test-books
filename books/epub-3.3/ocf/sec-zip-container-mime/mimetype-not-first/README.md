@@ -34,7 +34,7 @@ Invalid. The mimetype file must be the first file.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i mimetype-not-first.epub -u --advisory` | ERROR PKG-006; INVALID | `mimetype-not-first.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i mimetype-not-first.epub -u --advisory` | ERROR PKG-006; INVALID | `mimetype-not-first.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck mimetype-not-first.epub -u` | ERROR PKG-006; INVALID | `mimetype-not-first.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

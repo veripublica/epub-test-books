@@ -34,7 +34,7 @@ Valid. The section is non-normative and only discourages the element when the re
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i discouraged-embed.epub -u --advisory` | USAGE HTM_055; VALID | `discouraged-embed.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i discouraged-embed.epub -u --advisory` | USAGE HTM_055; VALID | `discouraged-embed.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck discouraged-embed.epub -u` | USAGE HTM_055; VALID | `discouraged-embed.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -1,0 +1,3 @@
+ERROR RSC-005: element "dc:date" not allowed here (only one dc:date element is allowed) [OEBPS/package.opf:3:3]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

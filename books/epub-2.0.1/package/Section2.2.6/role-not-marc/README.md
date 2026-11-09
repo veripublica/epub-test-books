@@ -36,7 +36,7 @@ Invalid. A value that is not a MARC code must begin with `oth.`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i role-not-marc.epub -u --advisory` | ERROR OPF-052; INVALID | `role-not-marc.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i role-not-marc.epub -u --advisory` | ERROR OPF-052; INVALID | `role-not-marc.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck role-not-marc.epub -u` | ERROR OPF-052; INVALID | `role-not-marc.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

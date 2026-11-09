@@ -34,7 +34,7 @@ Valid. The content model applies only to a nav that carries `epub:type`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i other-nav-no-type.epub -u --advisory` | no findings; VALID | `other-nav-no-type.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i other-nav-no-type.epub -u --advisory` | no findings; VALID | `other-nav-no-type.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck other-nav-no-type.epub -u` | no findings; VALID | `other-nav-no-type.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

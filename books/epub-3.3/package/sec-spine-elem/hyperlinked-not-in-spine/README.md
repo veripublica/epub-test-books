@@ -34,7 +34,7 @@ Invalid. The linked document must be in the spine.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i hyperlinked-not-in-spine.epub -u --advisory` | ERROR RSC-011, USAGE OPF-097; INVALID | `hyperlinked-not-in-spine.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i hyperlinked-not-in-spine.epub -u --advisory` | ERROR RSC-011, USAGE OPF-097; INVALID | `hyperlinked-not-in-spine.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck hyperlinked-not-in-spine.epub -u` | USAGE OPF-097, ERROR RSC-011; INVALID | `hyperlinked-not-in-spine.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

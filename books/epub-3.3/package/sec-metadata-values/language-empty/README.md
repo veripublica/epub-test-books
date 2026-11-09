@@ -34,7 +34,7 @@ Invalid. The element has no value.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i language-empty.epub -u --advisory` | ERROR RSC-005; INVALID | `language-empty.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i language-empty.epub -u --advisory` | ERROR RSC-005; INVALID | `language-empty.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck language-empty.epub -u` | ERROR RSC-005; INVALID | `language-empty.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

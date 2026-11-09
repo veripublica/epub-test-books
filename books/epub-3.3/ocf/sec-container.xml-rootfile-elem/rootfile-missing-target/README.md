@@ -39,7 +39,7 @@ Invalid, at the level that stops the check: the declared package document does n
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i rootfile-missing-target.epub -u --advisory` | FATAL OPF-002; INVALID | `rootfile-missing-target.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i rootfile-missing-target.epub -u --advisory` | FATAL OPF-002; INVALID | `rootfile-missing-target.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck rootfile-missing-target.epub -u` | FATAL OPF-002; INVALID | `rootfile-missing-target.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

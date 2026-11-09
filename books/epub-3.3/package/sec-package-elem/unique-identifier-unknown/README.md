@@ -34,7 +34,7 @@ Invalid. The identifier's `id` is not the value the attribute references.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i unique-identifier-unknown.epub -u --advisory` | ERROR RSC-005, ERROR OPF-030; INVALID | `unique-identifier-unknown.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i unique-identifier-unknown.epub -u --advisory` | ERROR RSC-005, ERROR OPF-030; INVALID | `unique-identifier-unknown.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck unique-identifier-unknown.epub -u` | ERROR RSC-005, ERROR OPF-030; INVALID | `unique-identifier-unknown.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

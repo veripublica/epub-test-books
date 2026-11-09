@@ -34,7 +34,7 @@ Invalid. The chain must hold an EPUB content document.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i spine-fallback-no-content-doc.epub -u --advisory` | ERROR OPF-044, USAGE OPF-097; INVALID | `spine-fallback-no-content-doc.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i spine-fallback-no-content-doc.epub -u --advisory` | ERROR OPF-044, USAGE OPF-097; INVALID | `spine-fallback-no-content-doc.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck spine-fallback-no-content-doc.epub -u` | ERROR OPF-044, USAGE OPF-097; INVALID | `spine-fallback-no-content-doc.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

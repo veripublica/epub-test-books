@@ -34,10 +34,10 @@ Invalid. `en_US` is not a well-formed BCP 47 tag.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i link-hreflang-malformed.epub -u --advisory` | ERROR OPF-092; INVALID | `link-hreflang-malformed.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i link-hreflang-malformed.epub -u --advisory` | ERROR OPF-092, ERROR RSC-005; INVALID | `link-hreflang-malformed.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck link-hreflang-malformed.epub -u` | ERROR RSC-005, ERROR OPF-092; INVALID | `link-hreflang-malformed.epubcheck-5.4.0.txt` |
 
-Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.
+Both agree with the expected result, so there is nothing to mark. They report the same messages.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

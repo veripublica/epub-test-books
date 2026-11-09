@@ -34,7 +34,7 @@ Invalid. The name is not UTF-8: the byte 0x81 cannot start a UTF-8 character.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i filename-not-utf8.epub -u --advisory` | FATAL PKG-027; INVALID | `filename-not-utf8.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i filename-not-utf8.epub -u --advisory` | FATAL PKG-027; INVALID | `filename-not-utf8.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck filename-not-utf8.epub -u` | FATAL PKG-027; INVALID | `filename-not-utf8.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

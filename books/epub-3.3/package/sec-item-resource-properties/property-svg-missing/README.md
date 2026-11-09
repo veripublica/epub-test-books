@@ -34,7 +34,7 @@ Invalid. `svg` is one of the listed properties, and this document embeds SVG.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i property-svg-missing.epub -u --advisory` | ERROR OPF-014; INVALID | `property-svg-missing.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i property-svg-missing.epub -u --advisory` | ERROR OPF-014; INVALID | `property-svg-missing.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck property-svg-missing.epub -u` | ERROR OPF-014; INVALID | `property-svg-missing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

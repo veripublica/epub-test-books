@@ -34,7 +34,7 @@ Valid. This is the form the clause requires.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i mathml-annotation-content.epub -u --advisory` | no findings; VALID | `mathml-annotation-content.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i mathml-annotation-content.epub -u --advisory` | no findings; VALID | `mathml-annotation-content.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck mathml-annotation-content.epub -u` | no findings; VALID | `mathml-annotation-content.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

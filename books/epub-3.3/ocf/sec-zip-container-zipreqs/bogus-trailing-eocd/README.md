@@ -46,7 +46,7 @@ bogus one, and its central directory does not exist.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i bogus-trailing-eocd.epub -u --advisory` | FATAL PKG-008, INVALID | `bogus-trailing-eocd.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i bogus-trailing-eocd.epub -u --advisory` | FATAL PKG-008, INVALID | `bogus-trailing-eocd.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck bogus-trailing-eocd.epub -u` | FATAL PKG-008 | `bogus-trailing-eocd.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. Both

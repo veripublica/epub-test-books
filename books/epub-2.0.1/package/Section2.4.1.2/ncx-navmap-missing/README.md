@@ -34,7 +34,7 @@ Invalid. The element is required.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i ncx-navmap-missing.epub -u --advisory` | ERROR RSC-005; INVALID | `ncx-navmap-missing.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i ncx-navmap-missing.epub -u --advisory` | ERROR RSC-005; INVALID | `ncx-navmap-missing.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck ncx-navmap-missing.epub -u` | ERROR RSC-005; INVALID | `ncx-navmap-missing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

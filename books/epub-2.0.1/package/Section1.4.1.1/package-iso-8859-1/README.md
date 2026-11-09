@@ -34,7 +34,7 @@ Invalid. Only UTF-8 and UTF-16 are allowed.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i package-iso-8859-1.epub -u --advisory` | ERROR RSC-028; INVALID | `package-iso-8859-1.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i package-iso-8859-1.epub -u --advisory` | ERROR RSC-028; INVALID | `package-iso-8859-1.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck package-iso-8859-1.epub -u` | ERROR RSC-028, ERROR RSC-028; INVALID | `package-iso-8859-1.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

@@ -34,7 +34,7 @@ Invalid. Exactly one item may have the property.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i nav-twice.epub -u --advisory` | ERROR RSC-005; INVALID | `nav-twice.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i nav-twice.epub -u --advisory` | ERROR RSC-005; INVALID | `nav-twice.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck nav-twice.epub -u` | ERROR RSC-005; INVALID | `nav-twice.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

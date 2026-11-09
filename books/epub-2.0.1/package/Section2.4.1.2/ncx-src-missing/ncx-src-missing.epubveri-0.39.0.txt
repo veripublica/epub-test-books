@@ -1,0 +1,3 @@
+ERROR RSC-007: NCX content src 'nope.xhtml' does not resolve to a real resource [OEBPS/toc.ncx:18:7]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

@@ -131,6 +131,10 @@ def two_headings(files: Files) -> Files:
     return _replace(files, HEADING, HEADING + "      <h2>More contents</h2>\n")
 
 
+def heading_hgroup(files: Files) -> Files:
+    return _replace(files, HEADING, "      <hgroup><h1>Contents</h1></hgroup>\n")
+
+
 def heading_p(files: Files) -> Files:
     return _replace(files, HEADING, "      <p>Contents</p>\n")
 

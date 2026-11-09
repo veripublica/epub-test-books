@@ -34,7 +34,7 @@ Invalid. SVG with no text inside it gives no text alternative, so the `a` needs 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i label-svg-no-title.epub -u --advisory` | ERROR RSC-005; INVALID | `label-svg-no-title.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i label-svg-no-title.epub -u --advisory` | ERROR RSC-005; INVALID | `label-svg-no-title.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck label-svg-no-title.epub -u` | ERROR RSC-005; INVALID | `label-svg-no-title.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

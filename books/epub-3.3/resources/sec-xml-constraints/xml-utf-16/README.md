@@ -34,7 +34,7 @@ Valid. UTF-16 is allowed, although UTF-8 is recommended, so a warning would fit.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i xml-utf-16.epub -u --advisory` | WARNING RSC-027; VALID | `xml-utf-16.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i xml-utf-16.epub -u --advisory` | WARNING RSC-027; VALID | `xml-utf-16.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck xml-utf-16.epub -u` | WARNING RSC-027, WARNING RSC-027; VALID | `xml-utf-16.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

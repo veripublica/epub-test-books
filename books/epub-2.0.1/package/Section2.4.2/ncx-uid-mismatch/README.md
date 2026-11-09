@@ -34,7 +34,7 @@ Invalid. The meta must carry the OPF unique ID.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i ncx-uid-mismatch.epub -u --advisory` | ERROR NCX-001; INVALID | `ncx-uid-mismatch.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i ncx-uid-mismatch.epub -u --advisory` | ERROR NCX-001; INVALID | `ncx-uid-mismatch.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck ncx-uid-mismatch.epub -u` | ERROR NCX-001; INVALID | `ncx-uid-mismatch.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

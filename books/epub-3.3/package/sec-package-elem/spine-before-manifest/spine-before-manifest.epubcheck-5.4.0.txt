@@ -1,0 +1,15 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): spine-before-manifest.epub/OEBPS/package.opf(25,10): Error while parsing file: element "spine" not allowed yet; missing required element "manifest"
+ERROR(OPF-049): spine-before-manifest.epub/OEBPS/package.opf(26,29): Item id "about" was not found in the manifest.
+ERROR(OPF-049): spine-before-manifest.epub/OEBPS/package.opf(27,31): Item id "content" was not found in the manifest.
+ERROR(RSC-005): spine-before-manifest.epub/OEBPS/package.opf(29,13): Error while parsing file: element "manifest" not allowed here; expected the element end-tag or element "bindings", "collection" or "guide"
+USAGE(OPF-097): spine-before-manifest.epub/OEBPS/package.opf(30,77): Resource "OEBPS/about.xhtml" is listed in the manifest, but no reference to it was found in content documents.
+USAGE(OPF-097): spine-before-manifest.epub/OEBPS/package.opf(31,81): Resource "OEBPS/content.xhtml" is listed in the manifest, but no reference to it was found in content documents.
+ERROR(RSC-011): spine-before-manifest.epub/OEBPS/nav.xhtml(12,35): Found a reference to a resource that is not a spine item.
+ERROR(RSC-011): spine-before-manifest.epub/OEBPS/nav.xhtml(13,37): Found a reference to a resource that is not a spine item.
+
+Check finished with errors
+Messages: 0 fatals / 6 errors / 0 warnings / 0 infos / 2 usages
+
+EPUBCheck completed
+[exit 1]

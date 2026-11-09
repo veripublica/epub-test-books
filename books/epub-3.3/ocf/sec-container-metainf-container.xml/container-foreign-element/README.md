@@ -34,7 +34,7 @@ Valid. Elements and attributes from other namespaces are removed before the file
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i container-foreign-element.epub -u --advisory` | VALID | `container-foreign-element.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i container-foreign-element.epub -u --advisory` | VALID | `container-foreign-element.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck container-foreign-element.epub -u` | ERROR RSC-005; INVALID | `container-foreign-element.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the extension element as not allowed (RSC-005). That is right for the bare schema, but the specification says to remove elements from other namespaces before validating.

@@ -34,7 +34,7 @@ Invalid. The fragment references nothing.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i refines-target-missing.epub -u --advisory` | ERROR RSC-005; INVALID | `refines-target-missing.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i refines-target-missing.epub -u --advisory` | ERROR RSC-005; INVALID | `refines-target-missing.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck refines-target-missing.epub -u` | ERROR RSC-005; INVALID | `refines-target-missing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

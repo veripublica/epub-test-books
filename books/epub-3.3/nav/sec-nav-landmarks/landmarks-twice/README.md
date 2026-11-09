@@ -34,7 +34,7 @@ Invalid. One is the most allowed.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i landmarks-twice.epub -u --advisory` | ERROR RSC-005; INVALID | `landmarks-twice.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i landmarks-twice.epub -u --advisory` | ERROR RSC-005; INVALID | `landmarks-twice.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck landmarks-twice.epub -u` | ERROR RSC-005; INVALID | `landmarks-twice.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

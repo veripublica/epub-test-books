@@ -34,7 +34,7 @@ Invalid. The target is in the container, so the attribute is required.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i link-media-type-missing.epub -u --advisory` | ERROR OPF-093; INVALID | `link-media-type-missing.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i link-media-type-missing.epub -u --advisory` | ERROR OPF-093; INVALID | `link-media-type-missing.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck link-media-type-missing.epub -u` | ERROR OPF-093; INVALID | `link-media-type-missing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -34,7 +34,7 @@ Invalid. The mimetype file must hold exactly `application/epub+zip`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i mimetype-wrong-value.epub -u --advisory` | ERROR PKG-007; INVALID | `mimetype-wrong-value.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i mimetype-wrong-value.epub -u --advisory` | ERROR PKG-007; INVALID | `mimetype-wrong-value.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck mimetype-wrong-value.epub -u` | ERROR PKG-007; INVALID | `mimetype-wrong-value.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

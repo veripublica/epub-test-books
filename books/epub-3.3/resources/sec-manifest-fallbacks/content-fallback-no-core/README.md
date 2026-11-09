@@ -34,7 +34,7 @@ Invalid. The chain must hold a core media type resource.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i content-fallback-no-core.epub -u --advisory` | ERROR RSC-032, USAGE OBS-001, USAGE OPF-097; INVALID | `content-fallback-no-core.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i content-fallback-no-core.epub -u --advisory` | ERROR RSC-032, USAGE OBS-001, USAGE OPF-097; INVALID | `content-fallback-no-core.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck content-fallback-no-core.epub -u` | USAGE OPF-097, USAGE OBS-001, ERROR RSC-032; INVALID | `content-fallback-no-core.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

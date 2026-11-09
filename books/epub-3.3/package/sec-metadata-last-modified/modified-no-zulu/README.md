@@ -34,7 +34,7 @@ Invalid. The time is UTC but does not end in `Z`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i modified-no-zulu.epub -u --advisory` | ERROR RSC-005; INVALID | `modified-no-zulu.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i modified-no-zulu.epub -u --advisory` | ERROR RSC-005; INVALID | `modified-no-zulu.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck modified-no-zulu.epub -u` | ERROR RSC-005; INVALID | `modified-no-zulu.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -34,7 +34,7 @@ Invalid. The value is neither of the two allowed.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i mathml-annotation-bad-encoding.epub -u --advisory` | ERROR RSC-005; INVALID | `mathml-annotation-bad-encoding.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i mathml-annotation-bad-encoding.epub -u --advisory` | ERROR RSC-005; INVALID | `mathml-annotation-bad-encoding.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck mathml-annotation-bad-encoding.epub -u` | ERROR RSC-005; INVALID | `mathml-annotation-bad-encoding.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

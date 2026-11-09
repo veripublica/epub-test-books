@@ -34,7 +34,7 @@ Valid. The manifest fallback is defined.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i foreign-img-manifest-fallback.epub -u --advisory` | USAGE OBS-001, USAGE OPF-097; VALID | `foreign-img-manifest-fallback.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i foreign-img-manifest-fallback.epub -u --advisory` | USAGE OBS-001, USAGE OPF-097; VALID | `foreign-img-manifest-fallback.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck foreign-img-manifest-fallback.epub -u` | USAGE OPF-097, USAGE OBS-001; VALID | `foreign-img-manifest-fallback.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

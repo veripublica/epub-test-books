@@ -34,7 +34,7 @@ Invalid. The URL resolves to no fragment of the document.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i toc-link-fragment-missing.epub -u --advisory` | ERROR RSC-012; INVALID | `toc-link-fragment-missing.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i toc-link-fragment-missing.epub -u --advisory` | ERROR RSC-012; INVALID | `toc-link-fragment-missing.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck toc-link-fragment-missing.epub -u` | ERROR RSC-012; INVALID | `toc-link-fragment-missing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -34,7 +34,7 @@ Valid. The nesting is allowed.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i toc-nested.epub -u --advisory` | no findings; VALID | `toc-nested.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i toc-nested.epub -u --advisory` | no findings; VALID | `toc-nested.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck toc-nested.epub -u` | no findings; VALID | `toc-nested.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

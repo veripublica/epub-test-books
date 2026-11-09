@@ -34,7 +34,7 @@ Valid. The fallback the clause asks for is there.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i core-in-spine-with-fallback.epub -u --advisory` | USAGE OPF-097; VALID | `core-in-spine-with-fallback.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i core-in-spine-with-fallback.epub -u --advisory` | USAGE OPF-097; VALID | `core-in-spine-with-fallback.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck core-in-spine-with-fallback.epub -u` | USAGE OPF-097; VALID | `core-in-spine-with-fallback.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

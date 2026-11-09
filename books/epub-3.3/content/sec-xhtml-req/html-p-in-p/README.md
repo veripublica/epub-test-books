@@ -34,7 +34,7 @@ Invalid. The content model of `p` is phrasing content.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i html-p-in-p.epub -u --advisory` | ERROR RSC-005; INVALID | `html-p-in-p.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i html-p-in-p.epub -u --advisory` | ERROR RSC-005; INVALID | `html-p-in-p.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck html-p-in-p.epub -u` | ERROR RSC-005; INVALID | `html-p-in-p.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

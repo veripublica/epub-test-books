@@ -1,0 +1,7 @@
+ERROR(OPF-001): package-version-wrong.epub/OEBPS/package.opf(-1,-1): There was an error when parsing the EPUB version: Version not supported.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

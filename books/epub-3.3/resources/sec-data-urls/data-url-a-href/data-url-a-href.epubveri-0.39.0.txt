@@ -1,0 +1,4 @@
+ERROR RSC-029: a hyperlink href must not be a data URL [OEBPS/content.xhtml:11:8]
+ERROR RSC-011: a hyperlink target must be a spine item, and a data URL is not one [OEBPS/content.xhtml:11:8]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]

@@ -34,7 +34,7 @@ Invalid. The target is not a top-level content document.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i toc-link-css.epub -u --advisory` | ERROR RSC-010, USAGE OPF-097; INVALID | `toc-link-css.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i toc-link-css.epub -u --advisory` | ERROR RSC-010, USAGE OPF-097; INVALID | `toc-link-css.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck toc-link-css.epub -u` | USAGE OPF-097, ERROR RSC-010; INVALID | `toc-link-css.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -1,0 +1,10 @@
+Validating using EPUB version 2.0.1 rules.
+ERROR(RSC-005): guide-twice.epub/OEBPS/package.opf(33,10): Error while parsing file: element "guide" not allowed here; expected the element end-tag
+WARNING(RSC-017): guide-twice.epub/OEBPS/package.opf(32,71): Warning while parsing file: Duplicate "reference" elements with the same "type" and "href" attributes
+WARNING(RSC-017): guide-twice.epub/OEBPS/package.opf(33,71): Warning while parsing file: Duplicate "reference" elements with the same "type" and "href" attributes
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 2 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

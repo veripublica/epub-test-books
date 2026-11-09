@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): svg-title-svg-markup.epub/OEBPS/content.xhtml(11,171): Error while parsing file: element "rect" not allowed here; expected the element end-tag, text, element "a", "abbr", "address", "area", "article", "aside", "audio", "b", "bdi", "bdo", "blockquote", "body", "br", "button", "canvas", "cite", "code", "data", "datalist", "del", "details", "dfn", "dialog", "div", "dl", "em", "embed", "epub:switch", "epub:trigger", "fieldset", "figure", "footer", "form", "h1", "h2", "h3", "h4", "h5", "h6", "header", "hgroup", "hr", "html", "i", "iframe", "img", "input", "ins", "kbd", "label", "link", "main", "map", "mark", "menu", "meta", "meter", "nav", "ns1:math", "ns2:svg", "object", "ol", "output", "p", "picture", "pre", "progress", "q", "ruby", "s", "samp", "script", "search", "section", "select", "selectedcontent", "slot", "small", "span", "strong", "sub", "sup", "table", "template", "textarea", "time", "u", "ul", "var", "video" or "wbr" (with xmlns:ns1="http://www.w3.org/1998/Math/MathML" xmlns:ns2="http://www.w3.org/2000/svg") or an element from another namespace
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

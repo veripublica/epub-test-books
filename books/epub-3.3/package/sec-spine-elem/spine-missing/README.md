@@ -34,7 +34,7 @@ Invalid. The element is required. The documents the navigation document links to
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i spine-missing.epub -u --advisory` | ERROR RSC-005, ERROR RSC-011, ERROR RSC-011, USAGE OPF-097, USAGE OPF-097; INVALID | `spine-missing.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i spine-missing.epub -u --advisory` | ERROR RSC-005, ERROR RSC-011, ERROR RSC-011, USAGE OPF-097, USAGE OPF-097; INVALID | `spine-missing.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck spine-missing.epub -u` | ERROR RSC-005, USAGE OPF-097, USAGE OPF-097, ERROR RSC-011, ERROR RSC-011; INVALID | `spine-missing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

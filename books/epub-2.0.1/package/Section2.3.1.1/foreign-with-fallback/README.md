@@ -34,7 +34,7 @@ Valid. The fallback the clause asks for is there.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i foreign-with-fallback.epub -u --advisory` | USAGE ADV-010; VALID | `foreign-with-fallback.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i foreign-with-fallback.epub -u --advisory` | USAGE ADV-010; VALID | `foreign-with-fallback.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck foreign-with-fallback.epub -u` | no findings; VALID | `foreign-with-fallback.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

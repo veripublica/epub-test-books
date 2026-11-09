@@ -34,12 +34,10 @@ Invalid. This `itemref` references nothing.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i itemref-no-idref.epub -u --advisory` | ERROR RSC-005, ERROR RSC-005; INVALID | `itemref-no-idref.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i itemref-no-idref.epub -u --advisory` | ERROR RSC-005; INVALID | `itemref-no-idref.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck itemref-no-idref.epub -u` | ERROR RSC-005; INVALID | `itemref-no-idref.epubcheck-5.4.0.txt` |
 
-Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.
-
-epubveri reports the missing attribute twice, once from the schema and once from its own check.
+Both agree with the expected result, so there is nothing to mark. They report the same messages.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

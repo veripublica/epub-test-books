@@ -34,7 +34,7 @@ Invalid. Files in META-INF must not be in the manifest.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i container-in-manifest.epub -u --advisory` | ERROR PKG-025, USAGE OPF-097; INVALID | `container-in-manifest.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i container-in-manifest.epub -u --advisory` | ERROR PKG-025, USAGE OPF-097; INVALID | `container-in-manifest.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck container-in-manifest.epub -u` | ERROR PKG-025, USAGE OPF-097; INVALID | `container-in-manifest.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

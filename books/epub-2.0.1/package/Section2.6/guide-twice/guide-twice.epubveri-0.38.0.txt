@@ -1,0 +1,4 @@
+WARNING RSC-017: duplicate "reference" elements with the same "type" and "href" attributes [OEBPS/package.opf:32:10]
+WARNING RSC-017: duplicate "reference" elements with the same "type" and "href" attributes [OEBPS/package.opf:33:10]
+— 0 error(s), 2 warning(s): VALID
+[exit 0]

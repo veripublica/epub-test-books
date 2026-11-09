@@ -34,7 +34,7 @@ Valid. No rule requires the `toc` to list every spine item.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i toc-partial.epub -u --advisory` | no findings; VALID | `toc-partial.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i toc-partial.epub -u --advisory` | no findings; VALID | `toc-partial.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck toc-partial.epub -u` | no findings; VALID | `toc-partial.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -1,0 +1,4 @@
+ERROR RSC-005: Duplicate ID "same" [OEBPS/content.xhtml:11:5]
+ERROR RSC-005: Duplicate ID "same" [OEBPS/content.xhtml:12:5]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]

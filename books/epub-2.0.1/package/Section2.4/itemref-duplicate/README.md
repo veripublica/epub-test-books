@@ -34,7 +34,7 @@ Invalid. An item may appear once.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.38.0 | `epubveri -i itemref-duplicate.epub -u --advisory` | ERROR OPF-034; INVALID | `itemref-duplicate.epubveri-0.38.0.txt` |
+| epubveri 0.39.0 | `epubveri -i itemref-duplicate.epub -u --advisory` | ERROR OPF-034; INVALID | `itemref-duplicate.epubveri-0.39.0.txt` |
 | epubcheck 5.4.0 | `epubcheck itemref-duplicate.epub -u` | ERROR OPF-034; INVALID | `itemref-duplicate.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -1,0 +1,4 @@
+ERROR RSC-030: manifest item 'file' href is a file URL, which is not allowed [OEBPS/package.opf:29:21]
+ERROR RSC-006: manifest item 'file' href is not allowed in this context [OEBPS/package.opf:29:21]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]

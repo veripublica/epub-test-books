@@ -1,0 +1,9 @@
+Validating using EPUB version 2.0.1 rules.
+ERROR(OPF-049): dc-metadata-deprecated.epub/OEBPS/package.opf(4,18): Item id "dc-metadata" was not found in the manifest.
+ERROR(OPF-049): dc-metadata-deprecated.epub/OEBPS/package.opf(17,17): Item id "x-metadata" was not found in the manifest.
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

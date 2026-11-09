@@ -1,0 +1,4 @@
+ERROR OPF-049: <dc-metadata> is a legacy OEBPS 1.2 wrapper and does not belong in this package [OEBPS/package.opf:4:5]
+ERROR OPF-049: <x-metadata> is a legacy OEBPS 1.2 wrapper and does not belong in this package [OEBPS/package.opf:17:5]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]
