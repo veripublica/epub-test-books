@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(MED_007): picture-source-foreign-untyped.epub/OEBPS/content.xhtml(11,45): Picture "source" elements must define a "type" attribute when they reference foreign resources; found resource "OEBPS/image.bmp" of type "image/bmp".
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

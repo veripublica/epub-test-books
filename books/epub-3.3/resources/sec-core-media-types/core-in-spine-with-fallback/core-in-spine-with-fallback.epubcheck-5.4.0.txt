@@ -1,0 +1,7 @@
+Validating using EPUB version 3.4 rules.
+USAGE(OPF-097): core-in-spine-with-fallback.epub/OEBPS/package.opf(32,77): Resource "OEBPS/extra.xhtml" is listed in the manifest, but no reference to it was found in content documents.
+No errors or warnings detected.
+Messages: 0 fatals / 0 errors / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 0]

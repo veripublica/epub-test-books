@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-006): remote-stylesheet.epub/OEBPS/content.xhtml(7,82): Remote resource reference is not allowed in this context; resource "https://example.org/epub-test-books/style.css" must be located in the EPUB container.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

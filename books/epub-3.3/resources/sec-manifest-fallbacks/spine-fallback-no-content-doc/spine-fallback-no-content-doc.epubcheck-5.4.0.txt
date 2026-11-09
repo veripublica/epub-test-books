@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(OPF-044): spine-fallback-no-content-doc.epub/OEBPS/package.opf(31,82): Spine item with non-standard media-type "image/bmp" has no EPUB content document fallback.
+USAGE(OPF-097): spine-fallback-no-content-doc.epub/OEBPS/package.opf(32,64): Resource "OEBPS/image.jpg" is listed in the manifest, but no reference to it was found in content documents.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 1]

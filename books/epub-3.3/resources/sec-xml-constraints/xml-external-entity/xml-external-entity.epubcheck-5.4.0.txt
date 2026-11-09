@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(HTM-003): xml-external-entity.epub/OEBPS/content.xhtml(3,33): External entities are not allowed in EPUB v3 documents. External entity declaration found: e.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

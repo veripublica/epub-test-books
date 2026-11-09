@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+USAGE(OPF-097): foreign-img-manifest-fallback.epub/OEBPS/package.opf(32,64): Resource "OEBPS/image.jpg" is listed in the manifest, but no reference to it was found in content documents.
+USAGE(OBS-001): foreign-img-manifest-fallback.epub/OEBPS/content.xhtml(11,57): Usage of manifest content fallback (for resource "OEBPS/image.bmp") is outdated.
+No errors or warnings detected.
+Messages: 0 fatals / 0 errors / 0 warnings / 0 infos / 2 usages
+
+EPUBCheck completed
+[exit 0]

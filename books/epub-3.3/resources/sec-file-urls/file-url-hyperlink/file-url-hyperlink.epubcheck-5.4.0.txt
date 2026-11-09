@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-030): file-url-hyperlink.epub/OEBPS/content.xhtml(11,42): File URLs are not allowed in EPUB, but found "file:///tmp/extra.xhtml".
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

@@ -1,0 +1,10 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-030): file-url-css.epub/OEBPS/style.css(1,5): File URLs are not allowed in EPUB, but found "file:///tmp/x.jpg".
+ERROR(OPF-014): file-url-css.epub/OEBPS/style.css(0,0): The property "remote-resources" should be declared in the OPF file.
+ERROR(RSC-006): file-url-css.epub/OEBPS/style.css(1,5): Remote resource reference is not allowed in this context; resource "file:///tmp/x.jpg" must be located in the EPUB container.
+
+Check finished with errors
+Messages: 0 fatals / 3 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

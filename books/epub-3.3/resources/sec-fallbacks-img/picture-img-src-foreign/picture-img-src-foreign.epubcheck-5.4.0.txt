@@ -1,0 +1,10 @@
+Validating using EPUB version 3.4 rules.
+ERROR(MED-003): picture-img-src-foreign.epub/OEBPS/content.xhtml(11,66): Picture "img" elements must reference core media type resources, but found resource "OEBPS/image.bmp" of type "image/bmp".
+USAGE(OPF-097): picture-img-src-foreign.epub/OEBPS/package.opf(32,64): Resource "OEBPS/image.jpg" is listed in the manifest, but no reference to it was found in content documents.
+USAGE(OBS-001): picture-img-src-foreign.epub/OEBPS/content.xhtml(11,66): Usage of manifest content fallback (for resource "OEBPS/image.bmp") is outdated.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 2 usages
+
+EPUBCheck completed
+[exit 1]

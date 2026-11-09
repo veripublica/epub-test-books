@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(HTM-004): xml-doctype-xhtml11.epub/OEBPS/content.xhtml(2,97): Irregular DOCTYPE: found "-//W3C//DTD XHTML 1.1//EN", expected "<!DOCTYPE html>".
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]
