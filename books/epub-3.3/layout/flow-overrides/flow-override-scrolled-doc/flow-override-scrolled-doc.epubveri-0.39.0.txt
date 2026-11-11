@@ -1,0 +1,4 @@
+USAGE OBS-001: usage of the "rendition:flow" property is outdated [OEBPS/package.opf:24:5]
+USAGE OBS-001: usage of the "rendition:flow-scrolled-doc" property is outdated [OEBPS/package.opf:32:5]
+— 0 error(s), 0 warning(s): VALID
+[exit 0]

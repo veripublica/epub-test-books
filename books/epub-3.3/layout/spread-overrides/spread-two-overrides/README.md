@@ -39,7 +39,7 @@ Invalid. Only one spread override is allowed on a spine item.
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.
 
-USAGE OBS-001 (once for each property) says the spread overrides are outdated. EPUB 3.3 deprecates only `rendition:spread-portrait`; the message is at usage level, so it does not change the verdict.
+USAGE OBS-001 (once for each property) says the spread overrides are outdated. EPUB 3.3 deprecates only `rendition:spread-portrait`, but the EPUB 3.4 draft lists the spread overrides as outdated (change log, 18 December 2025); the message is at usage level, so it does not change the verdict.
 
 Every epubveri finding here is in its default output, except the USAGE messages, which need `-u`. None is an `--advisory` finding.
 

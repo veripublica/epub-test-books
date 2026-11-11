@@ -39,7 +39,7 @@ Valid. The override may be set on any spine item; the clause does not limit it t
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.
 
-USAGE OBS-001 says the `rendition:orientation-landscape` override is outdated. EPUB 3.3 does not deprecate it; the message is at usage level, so it does not change the verdict.
+USAGE OBS-001 says the `rendition:orientation-landscape` override is outdated. EPUB 3.3 does not deprecate it, but the EPUB 3.4 draft lists it as outdated (change log, 18 December 2025); the message is at usage level, so it does not change the verdict.
 
 Every epubveri finding here is in its default output, except the USAGE messages, which need `-u`. None is an `--advisory` finding.
 

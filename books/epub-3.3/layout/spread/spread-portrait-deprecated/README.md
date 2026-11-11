@@ -46,7 +46,7 @@ Valid, because using a deprecated feature is a SHOULD NOT, not a MUST NOT. A val
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.
 
-WARNING OPF-086 is the alert for the deprecated value. USAGE OBS-001 says the `rendition:spread` property is outdated. EPUB 3.3 deprecates only its `portrait` value; the message is at usage level, so it does not change the verdict.
+WARNING OPF-086 is the alert for the deprecated value. USAGE OBS-001 says the `rendition:spread` property is outdated. EPUB 3.3 deprecates only its `portrait` value, but the EPUB 3.4 draft lists the property as outdated (change log, 18 December 2025); the message is at usage level, so it does not change the verdict.
 
 Every epubveri finding here is in its default output, except the USAGE messages, which need `-u`. None is an `--advisory` finding.
 

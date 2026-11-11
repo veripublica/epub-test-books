@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+USAGE(OBS-001): flow-with-refines.epub/OEBPS/package.opf(24,72): Usage of the "rendition:flow" property is outdated.
+ERROR(RSC-005): flow-with-refines.epub/OEBPS/package.opf(24,56): Error while parsing file: The "rendition:flow" property must not be set on elements with a "refines" attribute
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 1]

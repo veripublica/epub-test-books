@@ -1,0 +1,10 @@
+Validating using EPUB version 3.4 rules.
+USAGE(OBS-001): flow-two-overrides.epub/OEBPS/package.opf(32,97): Usage of the "rendition:flow-paginated" property is outdated.
+USAGE(OBS-001): flow-two-overrides.epub/OEBPS/package.opf(32,97): Usage of the "rendition:flow-scrolled-doc" property is outdated.
+ERROR(RSC-005): flow-two-overrides.epub/OEBPS/package.opf(32,97): Error while parsing file: Properties "rendition:flow-paginated", "rendition:flow-scrolled-continuous", "rendition:flow-scrolled-doc" and "rendition:flow-auto" are mutually exclusive
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 2 usages
+
+EPUBCheck completed
+[exit 1]

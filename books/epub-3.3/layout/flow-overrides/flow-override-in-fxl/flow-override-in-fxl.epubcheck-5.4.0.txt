@@ -1,0 +1,7 @@
+Validating using EPUB version 3.4 rules.
+USAGE(OBS-001): flow-override-in-fxl.epub/OEBPS/package.opf(33,72): Usage of the "rendition:flow-scrolled-doc" property is outdated.
+No errors or warnings detected.
+Messages: 0 fatals / 0 errors / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 0]

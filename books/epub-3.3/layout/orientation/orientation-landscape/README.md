@@ -39,7 +39,7 @@ Valid. `landscape` is one of the values.
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.
 
-USAGE OBS-001 says the `rendition:orientation` property is outdated. EPUB 3.3 does not deprecate it; it is the feature this book uses, not a defect, and the message is at usage level, so it does not change the verdict.
+USAGE OBS-001 says the `rendition:orientation` property is outdated. EPUB 3.3 does not deprecate it, but the EPUB 3.4 draft lists it as outdated (change log, 18 December 2025); it is the feature this book uses, not a defect, and the message is at usage level, so it does not change the verdict.
 
 Every epubveri finding here is in its default output, except the USAGE messages, which need `-u`. None is an `--advisory` finding.
 
