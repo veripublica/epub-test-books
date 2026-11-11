@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+USAGE(OBS-001): spread-with-refines.epub/OEBPS/package.opf(25,69): Usage of the "rendition:spread" property is outdated.
+ERROR(RSC-005): spread-with-refines.epub/OEBPS/package.opf(25,58): Error while parsing file: The "rendition:spread" property must not be set on elements with a "refines" attribute
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 1]

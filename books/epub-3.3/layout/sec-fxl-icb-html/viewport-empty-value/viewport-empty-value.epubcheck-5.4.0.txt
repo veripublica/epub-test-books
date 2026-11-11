@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(HTM-047): viewport-empty-value.epub/OEBPS/content.xhtml(7,57): Viewport metadata "width=, height=600" has a syntax error
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

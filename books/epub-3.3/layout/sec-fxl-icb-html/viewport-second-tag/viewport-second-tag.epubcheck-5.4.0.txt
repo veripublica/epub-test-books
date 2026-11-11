@@ -1,0 +1,10 @@
+Validating using EPUB version 3.4 rules.
+ERROR(HTM_056): viewport-second-tag.epub/OEBPS/content.xhtml(7,56): Viewport metadata has no "width" dimension (both "width" and "height" properties are required)
+ERROR(HTM_056): viewport-second-tag.epub/OEBPS/content.xhtml(7,56): Viewport metadata has no "height" dimension (both "width" and "height" properties are required)
+USAGE(HTM_060a): viewport-second-tag.epub/OEBPS/content.xhtml(8,61): EPUB reading systems must ignore secondary viewport meta elements in fixed-layout documents; viewport declaration "width=1200, height=600" will be ignored. 
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 1]

@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(HTM_057): viewport-unit-px.epub/OEBPS/content.xhtml(7,65): Viewport "width" value must be a positive number or the keyword "device-width"
+ERROR(HTM_057): viewport-unit-px.epub/OEBPS/content.xhtml(7,65): Viewport "height" value must be a positive number or the keyword "device-height"
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

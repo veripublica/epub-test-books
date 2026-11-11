@@ -1,0 +1,10 @@
+Validating using EPUB version 3.4 rules.
+USAGE(OBS-001): orientation-twice.epub/OEBPS/package.opf(25,60): Usage of the "rendition:orientation" property is outdated.
+USAGE(OBS-001): orientation-twice.epub/OEBPS/package.opf(26,59): Usage of the "rendition:orientation" property is outdated.
+ERROR(RSC-005): orientation-twice.epub/OEBPS/package.opf(3,57): Error while parsing file: The "rendition:orientation" property must not occur more than one time in the package metadata.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 2 usages
+
+EPUBCheck completed
+[exit 1]

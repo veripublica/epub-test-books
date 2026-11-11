@@ -1,0 +1,7 @@
+Validating using EPUB version 3.4 rules.
+USAGE(OPF-100): page-spread-reflowable.epub/OEBPS/package.opf(27,81): The "rendition:page-spread-right" property only applies to pre-paginated content.
+No errors or warnings detected.
+Messages: 0 fatals / 0 errors / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 0]

@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+WARNING(OPF-086): spread-override-portrait.epub/OEBPS/package.opf(33,70): Property "rendition:spread-portrait" is deprecated. Consider using a custom prefixed property instead.
+
+Check finished with warnings
+Messages: 0 fatals / 0 errors / 1 warning / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 0]

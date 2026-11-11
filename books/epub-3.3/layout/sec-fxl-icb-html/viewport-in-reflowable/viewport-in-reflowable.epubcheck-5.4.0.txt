@@ -1,0 +1,7 @@
+Validating using EPUB version 3.4 rules.
+USAGE(HTM_060b): viewport-in-reflowable.epub/OEBPS/content.xhtml(7,61): EPUB reading systems must ignore viewport meta elements in reflowable documents; viewport declaration "width=1200, height=600" will be ignored.
+No errors or warnings detected.
+Messages: 0 fatals / 0 errors / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 0]

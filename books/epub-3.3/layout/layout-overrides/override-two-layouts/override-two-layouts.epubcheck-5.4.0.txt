@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): override-two-layouts.epub/OEBPS/package.opf(33,103): Error while parsing file: Properties "rendition:layout-reflowable" and "rendition:layout-pre-paginated" are mutually exclusive
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

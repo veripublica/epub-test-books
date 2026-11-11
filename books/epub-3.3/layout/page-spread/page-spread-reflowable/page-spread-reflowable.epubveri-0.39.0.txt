@@ -1,0 +1,3 @@
+USAGE OPF-100: the "rendition:page-spread-right" spine override applies to fixed-layout content, but this document is reflowable [OEBPS/package.opf:32:5]
+— 0 error(s), 0 warning(s): VALID
+[exit 0]

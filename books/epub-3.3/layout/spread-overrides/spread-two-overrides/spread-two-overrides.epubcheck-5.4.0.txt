@@ -1,0 +1,10 @@
+Validating using EPUB version 3.4 rules.
+USAGE(OBS-001): spread-two-overrides.epub/OEBPS/package.opf(33,88): Usage of the "rendition:spread-none" property is outdated.
+USAGE(OBS-001): spread-two-overrides.epub/OEBPS/package.opf(33,88): Usage of the "rendition:spread-both" property is outdated.
+ERROR(RSC-005): spread-two-overrides.epub/OEBPS/package.opf(33,88): Error while parsing file: Properties "rendition:spread-portrait", "rendition:spread-landscape", "rendition:spread-both", "rendition:spread-none" and "rendition:spread-auto" are mutually exclusive
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 2 usages
+
+EPUBCheck completed
+[exit 1]

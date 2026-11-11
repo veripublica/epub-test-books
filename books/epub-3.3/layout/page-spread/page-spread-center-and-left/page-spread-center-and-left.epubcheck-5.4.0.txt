@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): page-spread-center-and-left.epub/OEBPS/package.opf(33,90): Error while parsing file: Properties "page-spread-right", "page-spread-left" and "rendition:page-spread-center" are mutually exclusive
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(HTM-046): viewport-name-uppercase.epub/OEBPS/content.xhtml(8,10): Fixed layout document has no "viewport" meta element.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

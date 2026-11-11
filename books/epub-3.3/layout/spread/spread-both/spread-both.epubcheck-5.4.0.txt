@@ -1,0 +1,7 @@
+Validating using EPUB version 3.4 rules.
+USAGE(OBS-001): spread-both.epub/OEBPS/package.opf(25,50): Usage of the "rendition:spread" property is outdated.
+No errors or warnings detected.
+Messages: 0 fatals / 0 errors / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 0]

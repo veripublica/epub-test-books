@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+USAGE(OBS-001): spread-portrait-deprecated.epub/OEBPS/package.opf(25,54): Usage of the "rendition:spread" property is outdated.
+WARNING(OPF-086): spread-portrait-deprecated.epub/OEBPS/package.opf(25,54): Property "rendition:spread portrait" is deprecated. Consider using a custom prefixed property instead.
+
+Check finished with warnings
+Messages: 0 fatals / 0 errors / 1 warning / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 0]

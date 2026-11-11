@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(HTM_059): viewport-width-twice.epub/OEBPS/content.xhtml(7,73): Viewport "width" property must not be defined more than once, but found values ["1200", "1000"].
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

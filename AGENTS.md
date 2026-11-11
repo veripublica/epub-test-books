@@ -80,6 +80,8 @@ scripts/                        AGPL-3.0-only
   lib/navvariants.py            the navigation sets' changes to nav.xhtml
   lib/resourcevariants.py       extra items and small edits for resource and content sets
   lib/epub2variants.py          the EPUB 2 sets' changes to package.opf and toc.ncx
+  lib/layoutvariants.py         the fixed-layout form of the EPUB 3 template, and
+                                the layout sets' changes to it
   lib/minijpeg.py, minimedia.py generated JPEG, BMP, XBM and WAV files
   check.py                      runs both verifiers, keeps their outputs
   release.py                    index, release check, download bundle

@@ -1,0 +1,7 @@
+Validating using EPUB version 3.4 rules.
+USAGE(HTM_060a): viewport-two-tags-both-full.epub/OEBPS/content.xhtml(8,60): EPUB reading systems must ignore secondary viewport meta elements in fixed-layout documents; viewport declaration "width=800, height=400" will be ignored. 
+No errors or warnings detected.
+Messages: 0 fatals / 0 errors / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 0]

@@ -1,0 +1,7 @@
+Validating using EPUB version 3.4 rules.
+USAGE(OBS-001): orientation-override-reflowable.epub/OEBPS/package.opf(32,76): Usage of the "rendition:orientation-landscape" property is outdated.
+No errors or warnings detected.
+Messages: 0 fatals / 0 errors / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 0]
