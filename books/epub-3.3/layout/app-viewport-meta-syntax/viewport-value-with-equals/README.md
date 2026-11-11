@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: none
 - Asked for by: epubveri, after the fixed-layout sets
-- Issue: pending
+- Issue: [#320](https://github.com/veripublica/epub-test-books/issues/320)
 
 ## About this book
 

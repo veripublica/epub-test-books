@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: epubcheck: wrong error
 - Asked for by: epubveri, after the fixed-layout sets
-- Issue: pending
+- Issue: [#319](https://github.com/veripublica/epub-test-books/issues/319)
 - Other clauses: CSS 2.1 `numbers`
 
 ## About this book
