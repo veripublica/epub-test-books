@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+WARNING(CSS-003): charset-utf-16-label-utf-8-bytes.epub/OEBPS/style.css(-1,-1): CSS document is encoded in UTF-16. It should be encoded in UTF-8 instead.
+ERROR(CSS-008): charset-utf-16-label-utf-8-bytes.epub/OEBPS/style.css(1,1): An error occurred while parsing the CSS: Premature end of grammar (expecting: '{').
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 1 warning / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]
