@@ -1,0 +1,9 @@
+Validating using EPUB version 2.0.1 rules.
+ERROR(RSC-005): element-section.epub/OEBPS/content.xhtml(11,14): Error while parsing file: element "section" not allowed anywhere; expected the element end-tag, text or element "a", "abbr", "acronym", "address", "applet", "b", "bdo", "big", "blockquote", "br", "cite", "code", "del", "dfn", "div", "dl", "em", "h1", "h2", "h3", "h4", "h5", "h6", "hr", "i", "iframe", "img", "ins", "kbd", "map", "noscript", "ns:svg", "object", "ol", "p", "pre", "q", "samp", "script", "small", "span", "strong", "sub", "sup", "table", "tt", "ul" or "var" (with xmlns:ns="http://www.w3.org/2000/svg")
+ERROR(RSC-005): element-section.epub/OEBPS/content.xhtml(11,22): Error while parsing file: element "section" not allowed anywhere; expected the element end-tag, text or element "a", "abbr", "acronym", "address", "applet", "b", "bdo", "big", "blockquote", "br", "cite", "code", "del", "dfn", "div", "dl", "em", "h1", "h2", "h3", "h4", "h5", "h6", "hr", "i", "iframe", "img", "ins", "kbd", "map", "noscript", "ns:svg", "object", "ol", "p", "pre", "q", "samp", "script", "small", "span", "strong", "sub", "sup", "table", "tt", "ul" or "var" (with xmlns:ns="http://www.w3.org/2000/svg")
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

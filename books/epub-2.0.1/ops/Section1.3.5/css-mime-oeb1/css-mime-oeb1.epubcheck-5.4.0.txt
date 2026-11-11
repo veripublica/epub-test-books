@@ -1,0 +1,8 @@
+Validating using EPUB version 2.0.1 rules.
+WARNING(OPF-037): css-mime-oeb1.epub/OEBPS/package.opf(27,67): Found deprecated media-type "text/x-oeb1-css".
+
+Check finished with warnings
+Messages: 0 fatals / 0 errors / 1 warning / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 0]

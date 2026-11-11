@@ -1,0 +1,9 @@
+Validating using EPUB version 2.0.1 rules.
+ERROR(RSC-008): img-not-in-manifest.epub/OEBPS/content.xhtml(11,57): Referenced resource "OEBPS/image.jpg" is not declared in the OPF manifest.
+USAGE(OPF-003): img-not-in-manifest.epub/./img-not-in-manifest.epub(-1,-1): Item "OEBPS/image.jpg" exists in the EPUB, but is not declared in the OPF manifest.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 1]

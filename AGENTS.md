@@ -8,7 +8,7 @@ kept true at every release. The rules for adding a set are in
 
 Latest release: v0.5.0 (2026-11-09). It holds the two templates and 224
 sets under `books/epub-3.3/<area>/<anchor>/<set>/` and
-`books/epub-2.0.1/package/<anchor>/<set>/`: the EPUB container (`ocf`), the
+`books/epub-2.0.1/<area>/<anchor>/<set>/`: the EPUB container (`ocf`), the
 package document (`package`), the navigation document (`nav`), publication
 resources (`resources`), content documents (`content`), and OPF 2.0.1 with the
 NCX. Cases where the specification and the verifiers disagree are listed in
@@ -82,6 +82,7 @@ scripts/                        AGPL-3.0-only
   lib/epub2variants.py          the EPUB 2 sets' changes to package.opf and toc.ncx
   lib/layoutvariants.py         the fixed-layout form of the EPUB 3 template, and
                                 the layout sets' changes to it
+  lib/opsvariants.py            the OPS 2.0.1 content document sets' pieces
   lib/minijpeg.py, minimedia.py generated JPEG, BMP, XBM and WAV files
   check.py                      runs both verifiers, keeps their outputs
   release.py                    index, release check, download bundle

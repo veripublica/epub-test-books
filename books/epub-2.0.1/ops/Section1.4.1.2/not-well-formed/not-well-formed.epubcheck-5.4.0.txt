@@ -1,0 +1,8 @@
+Validating using EPUB version 2.0.1 rules.
+FATAL(RSC-016): not-well-formed.epub/OEBPS/content.xhtml(12,7): Fatal Error while parsing file: The element type "p" must be terminated by the matching end-tag "</p>".
+
+Check finished with errors
+Messages: 1 fatal / 0 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]
