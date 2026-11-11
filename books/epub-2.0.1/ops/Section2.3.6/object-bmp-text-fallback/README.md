@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: epubcheck: wrong error
 - Asked for by: the maintainer, for the OPS 2.0.1 content document sets
-- Issue: pending
+- Issue: [#316](https://github.com/veripublica/epub-test-books/issues/316)
 
 ## About this book
 
@@ -39,7 +39,7 @@ Valid. BMP is not a core media type, but the object gives descriptive text as it
 
 epubveri agrees with the expected result. epubcheck does not: it reports that the BMP has no fallback (RSC-032), because in an EPUB 2 book it does not count descriptive text inside the `object` as one.
 
-- **epubcheck: wrong error.** w3c/epubcheck issue pending.
+- **epubcheck: wrong error.** [w3c/epubcheck#1764](https://github.com/w3c/epubcheck/issues/1764).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 
