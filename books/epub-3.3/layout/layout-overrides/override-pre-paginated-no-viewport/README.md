@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: none
 - Asked for by: the maintainer, to start the fixed layouts section
-- Issue: pending
+- Issue: [#238](https://github.com/veripublica/epub-test-books/issues/238)
 - Other clauses: `layout`, `sec-fxl-icb-html`
 
 ## About this book

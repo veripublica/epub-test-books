@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: none
 - Asked for by: the maintainer, to start the reflowable layouts section
-- Issue: pending
+- Issue: [#291](https://github.com/veripublica/epub-test-books/issues/291)
 
 ## About this book
 

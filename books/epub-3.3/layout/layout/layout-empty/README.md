@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: none
 - Asked for by: the maintainer, to start the fixed layouts section
-- Issue: pending
+- Issue: [#233](https://github.com/veripublica/epub-test-books/issues/233)
 - Other clauses: `sec-metadata-values`
 
 ## About this book

@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: none
 - Asked for by: the maintainer, to start the OPS 2.0.1 content document sets
-- Issue: pending
+- Issue: [#299](https://github.com/veripublica/epub-test-books/issues/299)
 
 ## About this book
 

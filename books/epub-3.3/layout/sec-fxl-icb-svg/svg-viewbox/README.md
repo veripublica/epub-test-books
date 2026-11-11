@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: none
 - Asked for by: the maintainer, to start the fixed layouts section
-- Issue: pending
+- Issue: [#274](https://github.com/veripublica/epub-test-books/issues/274)
 
 ## About this book
 

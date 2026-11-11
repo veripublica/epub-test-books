@@ -6,7 +6,7 @@
 - Expected: valid, with a warning for the deprecated property
 - Marks: none
 - Asked for by: the maintainer, to start the fixed layouts section
-- Issue: pending
+- Issue: [#260](https://github.com/veripublica/epub-test-books/issues/260)
 - Other clauses: `deprecated`
 
 ## About this book
