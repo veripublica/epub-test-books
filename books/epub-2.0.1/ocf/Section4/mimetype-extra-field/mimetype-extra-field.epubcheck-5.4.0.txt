@@ -1,0 +1,8 @@
+ERROR(PKG-005): mimetype-extra-field.epub/./mimetype-extra-field.epub(-1,-1): The mimetype file has an extra field of length 4. The use of the extra field feature of the ZIP format is not permitted for the mimetype file.
+Validating using EPUB version 2.0.1 rules.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

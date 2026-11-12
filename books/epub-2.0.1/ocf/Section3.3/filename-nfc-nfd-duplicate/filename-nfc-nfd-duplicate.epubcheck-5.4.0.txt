@@ -1,0 +1,11 @@
+USAGE(PKG-012): filename-nfc-nfd-duplicate.epub/./filename-nfc-nfd-duplicate.epub(-1,-1): The file name "OEBPS/é.xhtml" contains non-ASCII characters, which might create interoperability issues with older reading systems.
+ERROR(OPF-060): filename-nfc-nfd-duplicate.epub/./filename-nfc-nfd-duplicate.epub(-1,-1): Duplicate entry in the ZIP file: "OEBPS/é.xhtml" (file names must be unique after Unicode canonical normalization and full case folding).
+USAGE(PKG-012): filename-nfc-nfd-duplicate.epub/./filename-nfc-nfd-duplicate.epub(-1,-1): The file name "OEBPS/é.xhtml" contains non-ASCII characters, which might create interoperability issues with older reading systems.
+Validating using EPUB version 2.0.1 rules.
+ERROR(OPF-074): filename-nfc-nfd-duplicate.epub/OEBPS/package.opf(27,76): Package resource "OEBPS/é.xhtml" is declared in several manifest items.
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 2 usages
+
+EPUBCheck completed
+[exit 1]

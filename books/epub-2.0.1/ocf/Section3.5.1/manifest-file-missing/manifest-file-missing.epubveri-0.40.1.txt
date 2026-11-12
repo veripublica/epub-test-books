@@ -1,0 +1,3 @@
+ERROR RSC-001: manifest item 'content' references a missing resource 'content.xhtml' [OEBPS/package.opf:25:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

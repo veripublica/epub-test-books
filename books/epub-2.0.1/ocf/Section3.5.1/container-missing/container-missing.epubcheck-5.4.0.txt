@@ -1,0 +1,7 @@
+FATAL(RSC-002): container-missing.epub/./container-missing.epub(-1,-1): Required META-INF/container.xml resource could not be found.
+
+Check finished with errors
+Messages: 1 fatal / 0 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

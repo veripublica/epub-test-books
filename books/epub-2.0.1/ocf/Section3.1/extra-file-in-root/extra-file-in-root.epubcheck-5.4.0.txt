@@ -1,0 +1,7 @@
+Validating using EPUB version 2.0.1 rules.
+USAGE(OPF-003): extra-file-in-root.epub/./extra-file-in-root.epub(-1,-1): Item "README.txt" exists in the EPUB, but is not declared in the OPF manifest.
+No errors or warnings detected.
+Messages: 0 fatals / 0 errors / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 0]

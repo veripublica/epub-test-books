@@ -1,0 +1,7 @@
+FATAL(PKG-027): compression-bzip2.epub/./compression-bzip2.epub(-1,-1): Could not extract EPUB ZIP content, probably due to file names not encoded in UTF-8. 
+
+Check finished with errors
+Messages: 1 fatal / 0 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

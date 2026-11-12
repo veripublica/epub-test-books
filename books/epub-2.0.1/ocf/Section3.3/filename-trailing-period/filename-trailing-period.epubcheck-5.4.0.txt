@@ -1,0 +1,8 @@
+ERROR(PKG-011): filename-trailing-period.epub/./filename-trailing-period.epub(-1,-1): The file name "OEBPS/content." is not allowed to end with ".".
+Validating using EPUB version 2.0.1 rules.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]
