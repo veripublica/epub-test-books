@@ -34,7 +34,7 @@ Invalid. A spine item may have only one page-spread property.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i page-spread-left-right.epub -u --advisory` | ERROR RSC-005; INVALID | `page-spread-left-right.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i page-spread-left-right.epub -u --advisory` | ERROR RSC-005; INVALID | `page-spread-left-right.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck page-spread-left-right.epub -u` | ERROR RSC-005; INVALID | `page-spread-left-right.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

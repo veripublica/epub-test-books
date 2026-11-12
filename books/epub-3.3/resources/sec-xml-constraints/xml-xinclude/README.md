@@ -34,7 +34,7 @@ Invalid. XInclude is not allowed. A schema error for the unknown element would f
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i xml-xinclude.epub -u --advisory` | ERROR RSC-005; INVALID | `xml-xinclude.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i xml-xinclude.epub -u --advisory` | ERROR RSC-005; INVALID | `xml-xinclude.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck xml-xinclude.epub -u` | ERROR RSC-005; INVALID | `xml-xinclude.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -34,7 +34,7 @@ Valid. BMP is not a core media type, but the object gives descriptive text as it
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i object-bmp-text-fallback.epub -u --advisory` | no findings; VALID | `object-bmp-text-fallback.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i object-bmp-text-fallback.epub -u --advisory` | no findings; VALID | `object-bmp-text-fallback.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck object-bmp-text-fallback.epub -u` | ERROR RSC-032; INVALID | `object-bmp-text-fallback.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports that the BMP has no fallback (RSC-032), because in an EPUB 2 book it does not count descriptive text inside the `object` as one.

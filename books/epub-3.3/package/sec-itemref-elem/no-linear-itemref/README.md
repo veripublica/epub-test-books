@@ -34,7 +34,7 @@ Invalid. No itemref is linear. Both documents can still be reached from the navi
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i no-linear-itemref.epub -u --advisory` | ERROR OPF-033; INVALID | `no-linear-itemref.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i no-linear-itemref.epub -u --advisory` | ERROR OPF-033; INVALID | `no-linear-itemref.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck no-linear-itemref.epub -u` | ERROR OPF-033; INVALID | `no-linear-itemref.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

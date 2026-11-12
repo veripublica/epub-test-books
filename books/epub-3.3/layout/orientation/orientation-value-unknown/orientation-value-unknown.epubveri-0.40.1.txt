@@ -1,0 +1,4 @@
+ERROR RSC-005: The value of the "rendition:orientation" property must be "auto", "landscape", or "portrait" [OEBPS/package.opf:25:5]
+USAGE OBS-001: usage of the "rendition:orientation" property is outdated [OEBPS/package.opf:25:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

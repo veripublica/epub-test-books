@@ -1,0 +1,4 @@
+ERROR OPF-045: item 'foreign' cannot fall back to itself [OEBPS/package.opf:31:5]
+USAGE OPF-097: 'image.bmp' is declared in the manifest, but no content document references it [OEBPS/package.opf:31:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

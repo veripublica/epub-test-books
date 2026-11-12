@@ -1,0 +1,3 @@
+ERROR HTM_057: viewport 'width' value '-1200' is not valid [OEBPS/content.xhtml:7:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

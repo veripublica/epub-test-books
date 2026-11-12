@@ -34,7 +34,7 @@ Invalid. HTML lists `center` as obsolete and non-conforming.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i html-center.epub -u --advisory` | ERROR RSC-005; INVALID | `html-center.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i html-center.epub -u --advisory` | ERROR RSC-005; INVALID | `html-center.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck html-center.epub -u` | ERROR RSC-005; INVALID | `html-center.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

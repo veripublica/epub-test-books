@@ -34,7 +34,7 @@ Invalid. The `type` attribute is required.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i style-no-type.epub -u --advisory` | ERROR RSC-005; INVALID | `style-no-type.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i style-no-type.epub -u --advisory` | ERROR RSC-005; INVALID | `style-no-type.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck style-no-type.epub -u` | ERROR RSC-005; INVALID | `style-no-type.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

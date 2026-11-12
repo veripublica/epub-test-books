@@ -34,7 +34,7 @@ Valid. These elements are deprecated, and the specification keeps them.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i dc-metadata-deprecated.epub -u --advisory` | no findings; VALID | `dc-metadata-deprecated.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i dc-metadata-deprecated.epub -u --advisory` | no findings; VALID | `dc-metadata-deprecated.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck dc-metadata-deprecated.epub -u` | ERROR OPF-049, ERROR OPF-049; INVALID | `dc-metadata-deprecated.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: epubcheck reports `dc-metadata` and `x-metadata` as manifest items it cannot find (OPF-049).

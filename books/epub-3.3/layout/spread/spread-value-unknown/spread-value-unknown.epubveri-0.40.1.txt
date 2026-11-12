@@ -1,0 +1,4 @@
+ERROR RSC-005: The value of the "rendition:spread" property must be "auto", "none", "landscape", "portrait", or "both" [OEBPS/package.opf:25:5]
+USAGE OBS-001: usage of the "rendition:spread" property is outdated [OEBPS/package.opf:25:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

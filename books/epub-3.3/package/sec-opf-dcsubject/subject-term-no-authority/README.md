@@ -34,7 +34,7 @@ Invalid. The element specifies no scheme, so it must not have a `term`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i subject-term-no-authority.epub -u --advisory` | ERROR RSC-005; INVALID | `subject-term-no-authority.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i subject-term-no-authority.epub -u --advisory` | ERROR RSC-005; INVALID | `subject-term-no-authority.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck subject-term-no-authority.epub -u` | ERROR RSC-005; INVALID | `subject-term-no-authority.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

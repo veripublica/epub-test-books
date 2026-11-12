@@ -34,7 +34,7 @@ Valid. This is the one place the property may be used.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i align-x-center-itemref.epub -u --advisory` | WARNING OPF-086; VALID | `align-x-center-itemref.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i align-x-center-itemref.epub -u --advisory` | WARNING OPF-086; VALID | `align-x-center-itemref.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck align-x-center-itemref.epub -u` | WARNING OPF-086; VALID | `align-x-center-itemref.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -34,7 +34,7 @@ Invalid. The values must be numbers; `1200px` is a length with a unit, not a num
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i viewport-unit-px.epub -u --advisory` | ERROR HTM_057, ERROR HTM_057; INVALID | `viewport-unit-px.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i viewport-unit-px.epub -u --advisory` | ERROR HTM_057, ERROR HTM_057; INVALID | `viewport-unit-px.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck viewport-unit-px.epub -u` | ERROR HTM_057, ERROR HTM_057; INVALID | `viewport-unit-px.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

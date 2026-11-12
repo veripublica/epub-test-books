@@ -34,7 +34,7 @@ Valid. The override sets the layout for that one spine item, and the item gives 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i override-pre-paginated.epub -u --advisory` | no findings; VALID | `override-pre-paginated.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i override-pre-paginated.epub -u --advisory` | no findings; VALID | `override-pre-paginated.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck override-pre-paginated.epub -u` | no findings; VALID | `override-pre-paginated.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

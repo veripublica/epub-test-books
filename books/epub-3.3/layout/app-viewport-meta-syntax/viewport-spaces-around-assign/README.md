@@ -34,7 +34,7 @@ Valid. `assign` allows a space on each side of `=`, and a separator may be sever
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i viewport-spaces-around-assign.epub -u --advisory` | no findings; VALID | `viewport-spaces-around-assign.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i viewport-spaces-around-assign.epub -u --advisory` | no findings; VALID | `viewport-spaces-around-assign.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck viewport-spaces-around-assign.epub -u` | no findings; VALID | `viewport-spaces-around-assign.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

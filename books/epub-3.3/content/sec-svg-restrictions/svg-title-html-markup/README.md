@@ -34,7 +34,7 @@ Valid. The markup is in the HTML namespace.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i svg-title-html-markup.epub -u --advisory` | no findings; VALID | `svg-title-html-markup.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i svg-title-html-markup.epub -u --advisory` | no findings; VALID | `svg-title-html-markup.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck svg-title-html-markup.epub -u` | no findings; VALID | `svg-title-html-markup.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

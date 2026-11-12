@@ -34,7 +34,7 @@ Invalid. HTML requires each `id` to be unique in the document.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i html-id-duplicate.epub -u --advisory` | ERROR RSC-005, ERROR RSC-005; INVALID | `html-id-duplicate.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i html-id-duplicate.epub -u --advisory` | ERROR RSC-005, ERROR RSC-005; INVALID | `html-id-duplicate.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck html-id-duplicate.epub -u` | ERROR RSC-005, ERROR RSC-005; INVALID | `html-id-duplicate.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

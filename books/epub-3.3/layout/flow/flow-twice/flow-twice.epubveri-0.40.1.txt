@@ -1,0 +1,5 @@
+ERROR RSC-005: The "rendition:flow" property must not occur more than one time as a global value [OEBPS/package.opf:3:3]
+USAGE OBS-001: usage of the "rendition:flow" property is outdated [OEBPS/package.opf:24:5]
+USAGE OBS-001: usage of the "rendition:flow" property is outdated [OEBPS/package.opf:25:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

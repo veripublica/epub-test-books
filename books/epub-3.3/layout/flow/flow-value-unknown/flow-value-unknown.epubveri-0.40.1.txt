@@ -1,0 +1,4 @@
+ERROR RSC-005: The value of the "rendition:flow" property must be "auto", "paginated", "scrolled-continuous", or "scrolled-doc" [OEBPS/package.opf:24:5]
+USAGE OBS-001: usage of the "rendition:flow" property is outdated [OEBPS/package.opf:24:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

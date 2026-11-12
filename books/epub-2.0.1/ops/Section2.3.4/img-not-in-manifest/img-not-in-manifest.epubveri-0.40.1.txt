@@ -1,0 +1,4 @@
+ERROR RSC-008: resource 'image.jpg' is not declared in the manifest [OEBPS/content.xhtml:11:8]
+USAGE OPF-003: container resource 'OEBPS/image.jpg' is not listed in the manifest [OEBPS/package.opf]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

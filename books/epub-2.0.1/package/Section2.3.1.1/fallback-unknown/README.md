@@ -34,7 +34,7 @@ Invalid. The value must be the ID of an item.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i fallback-unknown.epub -u --advisory` | ERROR OPF-040; INVALID | `fallback-unknown.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i fallback-unknown.epub -u --advisory` | ERROR OPF-040; INVALID | `fallback-unknown.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck fallback-unknown.epub -u` | ERROR OPF-040; INVALID | `fallback-unknown.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

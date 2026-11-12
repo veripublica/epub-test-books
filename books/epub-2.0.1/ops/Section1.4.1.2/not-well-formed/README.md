@@ -36,7 +36,7 @@ Invalid. The document is not well-formed XML.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i not-well-formed.epub -u --advisory` | FATAL RSC-016; INVALID | `not-well-formed.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i not-well-formed.epub -u --advisory` | FATAL RSC-016; INVALID | `not-well-formed.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck not-well-formed.epub -u` | FATAL RSC-016; INVALID | `not-well-formed.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

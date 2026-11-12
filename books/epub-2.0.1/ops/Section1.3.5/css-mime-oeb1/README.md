@@ -34,7 +34,7 @@ Valid. The type is deprecated, not removed. A warning would fit.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i css-mime-oeb1.epub -u --advisory` | WARNING OPF-037; VALID | `css-mime-oeb1.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i css-mime-oeb1.epub -u --advisory` | WARNING OPF-037; VALID | `css-mime-oeb1.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck css-mime-oeb1.epub -u` | WARNING OPF-037; VALID | `css-mime-oeb1.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

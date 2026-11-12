@@ -1,0 +1,3 @@
+ERROR NAV-010: external link 'https://example.org/epub-test-books/' in a toc/page-list/landmarks nav [OEBPS/nav.xhtml:14:13]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

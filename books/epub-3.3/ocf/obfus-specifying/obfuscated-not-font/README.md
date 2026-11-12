@@ -34,7 +34,7 @@ Invalid. The algorithm is only for fonts, and a stylesheet is not a font core me
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i obfuscated-not-font.epub -u --advisory` | ERROR PKG-026, INFO RSC-004, USAGE OPF-097, USAGE OBS-001; INVALID | `obfuscated-not-font.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i obfuscated-not-font.epub -u --advisory` | ERROR PKG-026, INFO RSC-004, USAGE OPF-097, USAGE OBS-001; INVALID | `obfuscated-not-font.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck obfuscated-not-font.epub -u` | USAGE OBS-001, INFO RSC-004, USAGE OPF-097, ERROR PKG-026; INVALID | `obfuscated-not-font.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -1,0 +1,5 @@
+ERROR RSC-005: The value of the "rendition:layout" property must be "reflowable", "pre-paginated" or "roll" [OEBPS/package.opf:24:5]
+USAGE HTM_060b: viewport metadata is not checked in reflowable content documents [OEBPS/about.xhtml:7:5]
+USAGE HTM_060b: viewport metadata is not checked in reflowable content documents [OEBPS/content.xhtml:7:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

@@ -34,7 +34,7 @@ Valid. JPEG is a core media type, so no fallback is needed.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i object-jpeg.epub -u --advisory` | no findings; VALID | `object-jpeg.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i object-jpeg.epub -u --advisory` | no findings; VALID | `object-jpeg.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck object-jpeg.epub -u` | no findings; VALID | `object-jpeg.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

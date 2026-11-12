@@ -34,7 +34,7 @@ Invalid. A BCP 47 tag separates its subtags with hyphens, so `en_US` is not well
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i language-malformed.epub -u --advisory` | ERROR OPF-092; INVALID | `language-malformed.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i language-malformed.epub -u --advisory` | ERROR OPF-092; INVALID | `language-malformed.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck language-malformed.epub -u` | ERROR OPF-092; INVALID | `language-malformed.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

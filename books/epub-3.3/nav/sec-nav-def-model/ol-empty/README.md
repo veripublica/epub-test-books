@@ -34,7 +34,7 @@ Invalid. One or more `li` elements are required.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i ol-empty.epub -u --advisory` | ERROR RSC-005; INVALID | `ol-empty.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i ol-empty.epub -u --advisory` | ERROR RSC-005; INVALID | `ol-empty.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck ol-empty.epub -u` | ERROR RSC-005; INVALID | `ol-empty.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

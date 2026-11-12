@@ -34,7 +34,7 @@ Invalid. The attribute is required. A tool may also be unable to tell which EPUB
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i version-missing.epub -u --advisory` | ERROR OPF-001; INVALID | `version-missing.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i version-missing.epub -u --advisory` | ERROR OPF-001; INVALID | `version-missing.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck version-missing.epub -u` | ERROR OPF-001; INVALID | `version-missing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

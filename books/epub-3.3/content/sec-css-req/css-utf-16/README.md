@@ -34,7 +34,7 @@ Valid. UTF-16 is allowed, although UTF-8 is recommended, so a warning would fit.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i css-utf-16.epub -u --advisory` | WARNING CSS-003; VALID | `css-utf-16.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i css-utf-16.epub -u --advisory` | WARNING CSS-003; VALID | `css-utf-16.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck css-utf-16.epub -u` | WARNING CSS-003; VALID | `css-utf-16.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

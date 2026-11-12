@@ -1,0 +1,3 @@
+ERROR RSC-005: value of attribute "encoding" is invalid; must be equal to one of "MathML-Content", "MathML-Presentation", "application/xhtml+xml", "text/html", "SVG1.1" [OEBPS/content.xhtml:11:90]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

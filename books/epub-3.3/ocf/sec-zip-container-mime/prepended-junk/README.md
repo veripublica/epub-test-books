@@ -54,7 +54,7 @@ directory do not point to the local headers.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i prepended-junk.epub -u --advisory` | FATAL PKG-004, INVALID | `prepended-junk.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i prepended-junk.epub -u --advisory` | FATAL PKG-004, INVALID | `prepended-junk.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck prepended-junk.epub -u` | FATAL PKG-004 | `prepended-junk.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. Before any

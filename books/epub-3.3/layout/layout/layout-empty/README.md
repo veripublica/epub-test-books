@@ -35,7 +35,7 @@ Invalid. An empty value is not `reflowable` or `pre-paginated`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i layout-empty.epub -u --advisory` | ERROR RSC-005, ERROR RSC-005, USAGE HTM_060b, USAGE HTM_060b; INVALID | `layout-empty.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i layout-empty.epub -u --advisory` | ERROR RSC-005, ERROR RSC-005, USAGE HTM_060b, USAGE HTM_060b; INVALID | `layout-empty.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck layout-empty.epub -u` | ERROR RSC-005, ERROR RSC-005, USAGE HTM_060b, USAGE HTM_060b; INVALID | `layout-empty.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

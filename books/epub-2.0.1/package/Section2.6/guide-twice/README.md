@@ -34,7 +34,7 @@ Invalid. There may be one.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i guide-twice.epub -u --advisory` | ERROR RSC-005, WARNING RSC-017, WARNING RSC-017; INVALID | `guide-twice.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i guide-twice.epub -u --advisory` | ERROR RSC-005, WARNING RSC-017, WARNING RSC-017; INVALID | `guide-twice.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck guide-twice.epub -u` | ERROR RSC-005, WARNING RSC-017, WARNING RSC-017; INVALID | `guide-twice.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

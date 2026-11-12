@@ -1,0 +1,5 @@
+ERROR RSC-005: element "guide" is not allowed here [OEBPS/package.opf:33:3]
+WARNING RSC-017: duplicate "reference" elements with the same "type" and "href" attributes [OEBPS/package.opf:32:10]
+WARNING RSC-017: duplicate "reference" elements with the same "type" and "href" attributes [OEBPS/package.opf:33:10]
+— 1 error(s), 2 warning(s): INVALID
+[exit 1]

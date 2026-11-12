@@ -34,7 +34,7 @@ Invalid. The target is not a top-level content document.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i toc-link-external.epub -u --advisory` | ERROR NAV-010; INVALID | `toc-link-external.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i toc-link-external.epub -u --advisory` | ERROR NAV-010; INVALID | `toc-link-external.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck toc-link-external.epub -u` | ERROR NAV-010; INVALID | `toc-link-external.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

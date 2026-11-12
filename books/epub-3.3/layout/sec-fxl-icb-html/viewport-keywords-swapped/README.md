@@ -34,7 +34,7 @@ Invalid. The width takes only `device-width` as a keyword, and the height only `
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i viewport-keywords-swapped.epub -u --advisory` | ERROR HTM_057, ERROR HTM_057; INVALID | `viewport-keywords-swapped.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i viewport-keywords-swapped.epub -u --advisory` | ERROR HTM_057, ERROR HTM_057; INVALID | `viewport-keywords-swapped.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck viewport-keywords-swapped.epub -u` | ERROR HTM_057, ERROR HTM_057; INVALID | `viewport-keywords-swapped.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

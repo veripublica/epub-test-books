@@ -34,7 +34,7 @@ Invalid. Only Presentation MathML is allowed outside `annotation-xml`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i mathml-content-only.epub -u --advisory` | ERROR RSC-005; INVALID | `mathml-content-only.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i mathml-content-only.epub -u --advisory` | ERROR RSC-005; INVALID | `mathml-content-only.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck mathml-content-only.epub -u` | ERROR RSC-005; INVALID | `mathml-content-only.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

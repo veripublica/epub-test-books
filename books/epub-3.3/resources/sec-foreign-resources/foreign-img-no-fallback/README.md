@@ -34,7 +34,7 @@ Invalid. A foreign resource in `img` needs a manifest fallback.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i foreign-img-no-fallback.epub -u --advisory` | ERROR RSC-032; INVALID | `foreign-img-no-fallback.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i foreign-img-no-fallback.epub -u --advisory` | ERROR RSC-032; INVALID | `foreign-img-no-fallback.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck foreign-img-no-fallback.epub -u` | ERROR RSC-032; INVALID | `foreign-img-no-fallback.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

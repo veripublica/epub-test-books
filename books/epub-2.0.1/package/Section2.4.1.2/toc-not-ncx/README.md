@@ -34,7 +34,7 @@ Invalid. The `toc` attribute must reference the item that describes the NCX.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i toc-not-ncx.epub -u --advisory` | ERROR OPF-050, USAGE ADV-010; INVALID | `toc-not-ncx.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i toc-not-ncx.epub -u --advisory` | ERROR OPF-050, USAGE ADV-010; INVALID | `toc-not-ncx.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck toc-not-ncx.epub -u` | ERROR OPF-050, ERROR CHK-008; INVALID | `toc-not-ncx.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

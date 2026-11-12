@@ -34,7 +34,7 @@ Invalid. Inside `picture`, the `img` must reference a core media type resource. 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i picture-img-src-foreign.epub -u --advisory` | ERROR MED-003, USAGE OBS-001, USAGE OPF-097; INVALID | `picture-img-src-foreign.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i picture-img-src-foreign.epub -u --advisory` | ERROR MED-003, USAGE OBS-001, USAGE OPF-097; INVALID | `picture-img-src-foreign.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck picture-img-src-foreign.epub -u` | ERROR MED-003, USAGE OPF-097, USAGE OBS-001; INVALID | `picture-img-src-foreign.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

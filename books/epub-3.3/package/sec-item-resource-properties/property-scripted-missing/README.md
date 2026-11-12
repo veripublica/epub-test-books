@@ -34,7 +34,7 @@ Invalid. `scripted` is one of the listed properties, and this document contains 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i property-scripted-missing.epub -u --advisory` | ERROR OPF-014; INVALID | `property-scripted-missing.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i property-scripted-missing.epub -u --advisory` | ERROR OPF-014; INVALID | `property-scripted-missing.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck property-scripted-missing.epub -u` | ERROR OPF-014; INVALID | `property-scripted-missing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

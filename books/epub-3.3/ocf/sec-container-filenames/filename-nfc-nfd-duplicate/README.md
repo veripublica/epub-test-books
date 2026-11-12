@@ -34,7 +34,7 @@ Invalid. After canonical normalization the two names are equal.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i filename-nfc-nfd-duplicate.epub -u --advisory` | ERROR OPF-060, ERROR OPF-074, USAGE PKG-012, USAGE PKG-012; INVALID | `filename-nfc-nfd-duplicate.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i filename-nfc-nfd-duplicate.epub -u --advisory` | ERROR OPF-060, ERROR OPF-074, USAGE PKG-012, USAGE PKG-012; INVALID | `filename-nfc-nfd-duplicate.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck filename-nfc-nfd-duplicate.epub -u` | USAGE PKG-012, ERROR OPF-060, USAGE PKG-012, ERROR OPF-074; INVALID | `filename-nfc-nfd-duplicate.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark.

@@ -1,0 +1,10 @@
+ERROR RSC-005: element "spine" is not allowed yet; missing required element "manifest" [OEBPS/package.opf:25:3]
+ERROR RSC-005: the itemref's idref names no manifest item [OEBPS/package.opf:26:5]
+ERROR OPF-049: spine itemref idref 'about' was not found in the manifest [OEBPS/package.opf:26:5]
+ERROR RSC-005: the itemref's idref names no manifest item [OEBPS/package.opf:27:5]
+ERROR OPF-049: spine itemref idref 'content' was not found in the manifest [OEBPS/package.opf:27:5]
+USAGE OPF-003: container resource 'OEBPS/about.xhtml' is not listed in the manifest [OEBPS/package.opf]
+USAGE OPF-003: container resource 'OEBPS/content.xhtml' is not listed in the manifest [OEBPS/package.opf]
+USAGE OPF-003: container resource 'OEBPS/nav.xhtml' is not listed in the manifest [OEBPS/package.opf]
+— 5 error(s), 0 warning(s): INVALID
+[exit 1]

@@ -34,7 +34,7 @@ Invalid. This is a circular reference.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i refines-cycle.epub -u --advisory` | ERROR OPF-065; INVALID | `refines-cycle.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i refines-cycle.epub -u --advisory` | ERROR OPF-065; INVALID | `refines-cycle.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck refines-cycle.epub -u` | ERROR OPF-065; INVALID | `refines-cycle.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

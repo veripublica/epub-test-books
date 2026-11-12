@@ -34,12 +34,12 @@ Valid. UTF-16 is allowed, and it has the byte order mark it must have.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i css-utf-16-bom.epub -u --advisory` | WARNING CSS-003; VALID | `css-utf-16-bom.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i css-utf-16-bom.epub -u --advisory` | no findings; VALID | `css-utf-16-bom.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck css-utf-16-bom.epub -u` | WARNING CSS-003; VALID | `css-utf-16-bom.epubcheck-5.4.0.txt` |
 
-Both agree with the expected result, so there is nothing to mark. They report the same messages.
+Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.
 
-WARNING CSS-003 recommends UTF-8. OPS 2.0.1 makes no such recommendation, but a warning does not change the verdict.
+epubcheck's WARNING CSS-003 recommends UTF-8. OPS 2.0.1 makes no such recommendation, but a warning does not change the verdict. epubveri gave the same warning up to 0.39.0 and gives none from 0.40.1.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

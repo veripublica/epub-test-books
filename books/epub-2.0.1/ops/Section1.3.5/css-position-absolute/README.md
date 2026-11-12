@@ -34,7 +34,7 @@ Valid. Absolute positioning is discouraged, not forbidden. A warning would fit.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i css-position-absolute.epub -u --advisory` | no findings; VALID | `css-position-absolute.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i css-position-absolute.epub -u --advisory` | no findings; VALID | `css-position-absolute.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck css-position-absolute.epub -u` | no findings; VALID | `css-position-absolute.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -34,7 +34,7 @@ Valid. A CSS number may have a fractional part, and both are positive.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i viewport-decimal.epub -u --advisory` | no findings; VALID | `viewport-decimal.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i viewport-decimal.epub -u --advisory` | no findings; VALID | `viewport-decimal.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck viewport-decimal.epub -u` | no findings; VALID | `viewport-decimal.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

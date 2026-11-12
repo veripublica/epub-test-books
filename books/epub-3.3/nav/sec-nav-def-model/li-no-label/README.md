@@ -34,7 +34,7 @@ Invalid. Exactly one `a` or `span` is required.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i li-no-label.epub -u --advisory` | ERROR RSC-005; INVALID | `li-no-label.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i li-no-label.epub -u --advisory` | ERROR RSC-005; INVALID | `li-no-label.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck li-no-label.epub -u` | ERROR RSC-005; INVALID | `li-no-label.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

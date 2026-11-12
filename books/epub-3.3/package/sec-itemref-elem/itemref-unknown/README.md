@@ -34,7 +34,7 @@ Invalid. The reference resolves to nothing.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i itemref-unknown.epub -u --advisory` | ERROR RSC-005, ERROR OPF-049; INVALID | `itemref-unknown.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i itemref-unknown.epub -u --advisory` | ERROR RSC-005, ERROR OPF-049; INVALID | `itemref-unknown.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck itemref-unknown.epub -u` | ERROR OPF-049, ERROR RSC-005; INVALID | `itemref-unknown.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

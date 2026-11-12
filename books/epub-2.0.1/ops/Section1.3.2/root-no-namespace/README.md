@@ -34,7 +34,7 @@ Invalid. The root element must declare the XHTML namespace.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i root-no-namespace.epub -u --advisory` | ERROR RSC-005; INVALID | `root-no-namespace.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i root-no-namespace.epub -u --advisory` | ERROR RSC-005; INVALID | `root-no-namespace.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck root-no-namespace.epub -u` | ERROR RSC-005; INVALID | `root-no-namespace.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

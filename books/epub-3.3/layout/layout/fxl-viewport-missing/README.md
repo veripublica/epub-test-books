@@ -39,7 +39,7 @@ Invalid. A pre-paginated XHTML document must give its width and height in a view
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i fxl-viewport-missing.epub -u --advisory` | ERROR HTM-046; INVALID | `fxl-viewport-missing.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i fxl-viewport-missing.epub -u --advisory` | ERROR HTM-046; INVALID | `fxl-viewport-missing.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck fxl-viewport-missing.epub -u` | ERROR HTM-046; INVALID | `fxl-viewport-missing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

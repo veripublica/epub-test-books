@@ -34,7 +34,7 @@ Valid. The chain holds an EPUB content document.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i spine-foreign-with-fallback.epub -u --advisory` | USAGE OPF-097; VALID | `spine-foreign-with-fallback.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i spine-foreign-with-fallback.epub -u --advisory` | USAGE OPF-097; VALID | `spine-foreign-with-fallback.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck spine-foreign-with-fallback.epub -u` | USAGE OPF-097; VALID | `spine-foreign-with-fallback.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.
