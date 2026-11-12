@@ -1,0 +1,10 @@
+Validating using EPUB version 3.4 rules.
+ERROR(CSS-001): direction-in-bad-url.epub/OEBPS/style.css(1,27): The "direction" property must not be included in an EPUB Style Sheet.
+ERROR(CSS-008): direction-in-bad-url.epub/OEBPS/style.css(1,43): An error occurred while parsing the CSS: Token ")" not allowed here, expecting a property name.
+ERROR(RSC-007): direction-in-bad-url.epub/OEBPS/style.css(1,5): Referenced resource "OEBPS/a(b" could not be found in the EPUB.
+
+Check finished with errors
+Messages: 0 fatals / 3 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

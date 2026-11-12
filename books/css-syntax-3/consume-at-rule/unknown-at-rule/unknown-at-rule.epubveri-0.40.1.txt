@@ -1,0 +1,4 @@
+ERROR CSS-008: CSS syntax error: 'baz' is not followed by ':' [OEBPS/style.css:1:12]
+USAGE ADV-020: '@foo' is not an at-rule any CSS specification defines, so browsers ignore the whole rule [OEBPS/style.css:1:1]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

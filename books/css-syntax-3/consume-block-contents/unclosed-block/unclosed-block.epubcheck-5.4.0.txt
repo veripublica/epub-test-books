@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(CSS-008): unclosed-block.epub/OEBPS/style.css(1,13): An error occurred while parsing the CSS: Premature end of grammar (expecting: ';' or '}').
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

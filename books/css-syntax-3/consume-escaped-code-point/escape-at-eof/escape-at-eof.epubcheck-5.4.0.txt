@@ -1,0 +1,10 @@
+Validating using EPUB version 3.4 rules.
+ERROR(CSS-008): escape-at-eof.epub/OEBPS/style.css(2,1): An error occurred while parsing the CSS: Premature end of file.
+ERROR(CSS-008): escape-at-eof.epub/OEBPS/style.css(2,1): An error occurred while parsing the CSS: Token "\" not allowed here.
+ERROR(CSS-008): escape-at-eof.epub/OEBPS/style.css(2,1): An error occurred while parsing the CSS: Premature end of grammar (expecting: '}').
+
+Check finished with errors
+Messages: 0 fatals / 3 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

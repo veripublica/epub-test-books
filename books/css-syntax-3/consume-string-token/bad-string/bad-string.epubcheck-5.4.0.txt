@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(CSS-008): bad-string.epub/OEBPS/style.css(2,18): An error occurred while parsing the CSS: The character "NEWLINE" is not allowed in "STRING" expressions.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

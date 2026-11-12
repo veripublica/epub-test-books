@@ -1,0 +1,10 @@
+Validating using EPUB version 3.4 rules.
+ERROR(CSS-008): direction-in-nested-rule.epub/OEBPS/style.css(1,5): An error occurred while parsing the CSS: Token "{" not allowed here, expecting :.
+ERROR(CSS-008): direction-in-nested-rule.epub/OEBPS/style.css(1,30): An error occurred while parsing the CSS: Token "}" not allowed here.
+ERROR(CSS-008): direction-in-nested-rule.epub/OEBPS/style.css(1,30): An error occurred while parsing the CSS: Premature end of grammar (expecting: '}').
+
+Check finished with errors
+Messages: 0 fatals / 3 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

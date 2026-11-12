@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(CSS-001): direction-inside-cdo-cdc.epub/OEBPS/style.css(1,10): The "direction" property must not be included in an EPUB Style Sheet.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

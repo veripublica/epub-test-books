@@ -1,0 +1,5 @@
+ERROR RSC-020: URL 'a b' is not conforming [OEBPS/style.css]
+ERROR RSC-007: references a missing resource 'a b' [OEBPS/style.css:1:17]
+USAGE ADV-015: 'url(a b)' is not a url() a browser can read: an unquoted url cannot contain unescaped spaces, quotes, parentheses, control characters or a backslash before a line break, so it is never loaded (epubcheck reads it as 'a b') [OEBPS/style.css:1:17]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]

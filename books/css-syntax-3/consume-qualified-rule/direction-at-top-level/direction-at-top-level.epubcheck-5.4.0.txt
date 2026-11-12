@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(CSS-008): direction-at-top-level.epub/OEBPS/style.css(2,15): An error occurred while parsing the CSS: Token ";" not allowed here.
+ERROR(CSS-008): direction-at-top-level.epub/OEBPS/style.css(2,15): An error occurred while parsing the CSS: Premature end of grammar (expecting: '}').
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]
