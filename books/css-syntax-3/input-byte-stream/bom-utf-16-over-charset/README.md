@@ -43,7 +43,7 @@ CSS result: The byte order mark takes precedence over the declaration, so the sh
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.39.0 | `epubveri -i bom-utf-16-over-charset.epub -u --advisory` | WARNING CSS-003; VALID | `bom-utf-16-over-charset.epubveri-0.39.0.txt` |
+| epubveri 0.40.1 | `epubveri -i bom-utf-16-over-charset.epub -u --advisory` | WARNING CSS-003; VALID | `bom-utf-16-over-charset.epubveri-0.40.1.txt` |
 | epubcheck 5.4.0 | `epubcheck bom-utf-16-over-charset.epub -u` | WARNING CSS-003; VALID | `bom-utf-16-over-charset.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.
