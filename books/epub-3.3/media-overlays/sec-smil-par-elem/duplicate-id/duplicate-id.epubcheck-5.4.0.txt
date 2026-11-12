@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): duplicate-id.epub/OEBPS/content.smil(4,20): Error while parsing file: Duplicate "par1"
+ERROR(RSC-005): duplicate-id.epub/OEBPS/content.smil(4,133): Error while parsing file: Duplicate "par1"
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

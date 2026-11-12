@@ -1,0 +1,11 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): media-overlay-unknown-id.epub/OEBPS/package.opf(29,102): Error while parsing file: media overlay items must be of the "application/smil+xml" type (given type was "")
+ERROR(RSC-005): media-overlay-unknown-id.epub/OEBPS/package.opf(29,102): Error while parsing file: item media:duration meta element not set (expecting: meta property='media:duration' refines='#')
+ERROR(MED_012): media-overlay-unknown-id.epub/OEBPS/package.opf(29,102): The "media-overlay" attribute does not match the ID of the Media Overlay that refers to this document.
+USAGE(OPF-097): media-overlay-unknown-id.epub/OEBPS/package.opf(31,74): Resource "OEBPS/content.smil" is listed in the manifest, but no reference to it was found in content documents.
+
+Check finished with errors
+Messages: 0 fatals / 3 errors / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 1]

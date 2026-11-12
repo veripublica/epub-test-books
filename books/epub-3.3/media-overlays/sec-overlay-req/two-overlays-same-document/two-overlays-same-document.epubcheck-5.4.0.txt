@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(MED_011): two-overlays-same-document.epub/OEBPS/content2.smil(4,50): EPUB Content Document referenced from multiple Media Overlay Documents.
+USAGE(OPF-097): two-overlays-same-document.epub/OEBPS/package.opf(33,76): Resource "OEBPS/content2.smil" is listed in the manifest, but no reference to it was found in content documents.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 1]

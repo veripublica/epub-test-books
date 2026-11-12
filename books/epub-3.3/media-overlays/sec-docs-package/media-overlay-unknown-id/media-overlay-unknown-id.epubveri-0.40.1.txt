@@ -1,0 +1,6 @@
+ERROR RSC-005: media-overlay target 'nope' must be of the "application/smil+xml" type (given type was "") [OEBPS/package.opf:29:5]
+ERROR RSC-005: the item media:duration meta element not set for 'nope' [OEBPS/package.opf:29:5]
+ERROR MED_012: content document references the wrong media overlay [OEBPS/content.xhtml]
+USAGE OPF-097: 'content.smil' is declared in the manifest, but no content document references it [OEBPS/package.opf:31:5]
+— 3 error(s), 0 warning(s): INVALID
+[exit 1]

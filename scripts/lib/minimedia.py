@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 # Copyright (c) 2026 Barış Kayadelen (veripublica) and contributors
-"""Small generated files in formats that are not EPUB core media types.
+"""Small generated media files: formats that are not EPUB core media types, and silent MP3.
 
 No outside files: every byte comes from these functions, so the sets that
 need a foreign resource stay reproducible and carry nothing copied.
@@ -36,3 +36,13 @@ def silent_wav() -> bytes:
         w.setframerate(8000)
         w.writeframes(b"\x80" * 800)
     return out.getvalue()
+
+
+def silent_mp3(frames: int = 125) -> bytes:
+    """Silent MPEG-1 Layer III audio, 24 ms per frame (125 frames = 3 s).
+
+    Each frame is a 4-byte header (64 kbit/s, 48 kHz, mono, no CRC) and
+    188 zero bytes: all-zero side information codes no samples, which
+    decoders play as silence.
+    """
+    return (b"\xff\xfb\x54\xc0" + b"\x00" * 188) * frames

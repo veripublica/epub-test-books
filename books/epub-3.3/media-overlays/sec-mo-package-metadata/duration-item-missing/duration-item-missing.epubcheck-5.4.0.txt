@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): duration-item-missing.epub/OEBPS/package.opf(28,100): Error while parsing file: item media:duration meta element not set (expecting: meta property='media:duration' refines='#mo')
+WARNING(MED_016): duration-item-missing.epub/OEBPS/package.opf(-1,-1): Media Overlays total duration should be the sum of the durations of all Media Overlays documents.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 1 warning / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

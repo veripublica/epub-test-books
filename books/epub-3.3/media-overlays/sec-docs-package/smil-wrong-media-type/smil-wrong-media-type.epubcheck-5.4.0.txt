@@ -1,0 +1,10 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): smil-wrong-media-type.epub/OEBPS/package.opf(29,100): Error while parsing file: media overlay items must be of the "application/smil+xml" type (given type was "application/xml")
+ERROR(MED_013): smil-wrong-media-type.epub/OEBPS/package.opf(29,100): Media Overlay Document referenced from the "media-overlay" attribute does not contain a reference to this Content Document.
+USAGE(OPF-097): smil-wrong-media-type.epub/OEBPS/package.opf(32,64): Resource "OEBPS/audio.mp3" is listed in the manifest, but no reference to it was found in content documents.
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 1]

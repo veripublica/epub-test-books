@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+WARNING(MED_016): duration-sum-off.epub/OEBPS/package.opf(-1,-1): Media Overlays total duration should be the sum of the durations of all Media Overlays documents.
+
+Check finished with warnings
+Messages: 0 fatals / 0 errors / 1 warning / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 0]

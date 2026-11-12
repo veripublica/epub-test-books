@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-026): text-src-absolute.epub/OEBPS/content.smil(4,57): URL "/OEBPS/content.xhtml#p1" leaks outside the container (it is not a valid-relative-ocf-URL-with-fragment string)
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

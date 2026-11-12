@@ -1,0 +1,3 @@
+ERROR RSC-005: clipEnd value '00:60' is not a valid SMIL clock value [OEBPS/content.smil:4:50]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

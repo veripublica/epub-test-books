@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(MED_013): text-src-missing-file.epub/OEBPS/package.opf(29,100): Media Overlay Document referenced from the "media-overlay" attribute does not contain a reference to this Content Document.
+ERROR(RSC-007): text-src-missing-file.epub/OEBPS/content.smil(4,50): Referenced resource "OEBPS/missing.xhtml" could not be found in the EPUB.
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

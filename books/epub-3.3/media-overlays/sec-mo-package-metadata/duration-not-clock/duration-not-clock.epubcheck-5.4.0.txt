@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): duration-not-clock.epub/OEBPS/package.opf(24,51): Error while parsing file: The value of the media:duration property must be a valid SMIL3 clock value
+ERROR(RSC-005): duration-not-clock.epub/OEBPS/package.opf(25,37): Error while parsing file: The value of the media:duration property must be a valid SMIL3 clock value
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

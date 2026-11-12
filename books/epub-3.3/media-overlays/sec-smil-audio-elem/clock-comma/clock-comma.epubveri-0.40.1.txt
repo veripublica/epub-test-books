@@ -1,0 +1,4 @@
+ERROR RSC-005: clipBegin value '0,0s' is not a valid SMIL clock value [OEBPS/content.smil:4:50]
+ERROR RSC-005: clipEnd value '3,0s' is not a valid SMIL clock value [OEBPS/content.smil:4:50]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]
