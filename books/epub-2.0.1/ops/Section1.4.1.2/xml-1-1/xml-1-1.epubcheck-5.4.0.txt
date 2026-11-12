@@ -1,0 +1,8 @@
+Validating using EPUB version 2.0.1 rules.
+ERROR(HTM-001): xml-1-1.epub/OEBPS/content.xhtml(-1,-1): Any publication resource that is an XML-based media type must be a valid XML 1.0 document. XML version found: 1.1.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

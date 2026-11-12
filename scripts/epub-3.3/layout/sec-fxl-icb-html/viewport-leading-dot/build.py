@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 # Copyright (c) 2026 Barış Kayadelen (veripublica) and contributors
-"""Build books/epub-3.3/layout/sec-fxl-icb-html/viewport-leading-dot/viewport-leading-dot.epub: A viewport with a negative width.
+"""Build books/epub-3.3/layout/sec-fxl-icb-html/viewport-leading-dot/viewport-leading-dot.epub: A viewport height of .5 (valid).
 
 The EPUB 3 template's files with the change for this set, made with
 scripts/lib/layoutvariants.py.
