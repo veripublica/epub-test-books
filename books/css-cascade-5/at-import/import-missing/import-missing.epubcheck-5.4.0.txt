@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-007): import-missing.epub/OEBPS/style.css(1,9): Referenced resource "OEBPS/missing.css" could not be found in the EPUB.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

@@ -31,6 +31,10 @@ CSS Syntax Level 3, [`error-handling`](https://www.w3.org/TR/css-syntax-3/#error
 
 > Qualified rules work similarly, except that semicolons don’t end them; instead, they are just taken in as part of the rule’s prelude.
 
+CSS Syntax Level 3, [`css-stylesheets`](https://www.w3.org/TR/css-syntax-3/#css-stylesheets) (8. CSS stylesheets; Candidate Recommendation Draft, 1 October 2026):
+
+> If any style rule is invalid, or any at-rule is not recognized or is invalid according to its grammar or context, it’s a parse error. Discard that rule.
+
 EPUB 3.3, [`sec-css-req`](https://www.w3.org/TR/epub-33/#sec-css-req):
 
 > A CSS style sheet: […] MAY include any CSS properties, with the following exceptions:
@@ -45,7 +49,7 @@ EPUB 3.3, [`sec-css-req`](https://www.w3.org/TR/epub-33/#sec-css-req):
 
 Valid. The sheet holds neither `direction` nor `unicode-bidi`, and it is UTF-8, so EPUB 3.3 asks nothing more of it. A parse error is not one of its requirements.
 
-CSS result: At the top level a semicolon does not end a qualified rule, so the prelude is `p; div`, which is not a valid selector, and the rule is dropped. No rule is kept, and there is no parse error.
+CSS result: At the top level a semicolon does not end a qualified rule, so the prelude is `p; div`, which is not a valid selector, and the rule is dropped. That is the one parse error, and no rule is kept.
 
 ## Verifier results
 

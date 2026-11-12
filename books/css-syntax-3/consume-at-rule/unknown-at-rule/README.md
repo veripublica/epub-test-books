@@ -31,6 +31,10 @@ CSS Syntax Level 3, [`consume-at-rule`](https://www.w3.org/TR/css-syntax-3/#cons
 
 > If rule is valid in the current context, return it. Otherwise, return nothing.
 
+CSS Syntax Level 3, [`css-stylesheets`](https://www.w3.org/TR/css-syntax-3/#css-stylesheets) (8. CSS stylesheets; Candidate Recommendation Draft, 1 October 2026):
+
+> If any style rule is invalid, or any at-rule is not recognized or is invalid according to its grammar or context, it’s a parse error. Discard that rule.
+
 EPUB 3.3, [`sec-css-req`](https://www.w3.org/TR/epub-33/#sec-css-req):
 
 > A CSS style sheet: […] MAY include any CSS properties, with the following exceptions:
@@ -45,7 +49,7 @@ EPUB 3.3, [`sec-css-req`](https://www.w3.org/TR/epub-33/#sec-css-req):
 
 Valid. The sheet holds neither `direction` nor `unicode-bidi`, and it is UTF-8, so EPUB 3.3 asks nothing more of it. A parse error is not one of its requirements.
 
-CSS result: `@foo` is not valid in a stylesheet, so the at-rule, with its block, is dropped. One rule is kept, `p { margin: 0; }`, and there is no parse error.
+CSS result: `@foo` is not valid in a stylesheet, so the at-rule, with its block, is dropped, which is a parse error. One rule is kept, `p { margin: 0; }`.
 
 ## Verifier results
 

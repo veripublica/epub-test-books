@@ -1,0 +1,3 @@
+ERROR RSC-006: remote resource 'https://example.com/a.css' is not allowed in this context [OEBPS/style.css]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]
