@@ -1,0 +1,3 @@
+ERROR RSC-005: value of attribute "page-progression-direction" is invalid: "RTL" [OEBPS/package.opf:30:10]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]
