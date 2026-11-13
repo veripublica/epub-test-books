@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(OPF-014): property-scripted-form-missing.epub/OEBPS/content.xhtml(-1,-1): The property "scripted" should be declared in the OPF file.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

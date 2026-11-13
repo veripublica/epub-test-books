@@ -1,0 +1,7 @@
+Validating using EPUB version 3.4 rules.
+USAGE(OPF-090): script-text-javascript.epub/OEBPS/package.opf(29,66): It is encouraged to use MIME media type "application/javascript" instead of "text/javascript".
+No errors or warnings detected.
+Messages: 0 fatals / 0 errors / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 0]
