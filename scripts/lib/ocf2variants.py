@@ -80,6 +80,13 @@ def _mimetype(files, data=b"application/epub+zip", **kw):
     return rz.build(es)
 
 
+def mimetype_compressed(files):
+    # the mimetype entry is Flate-compressed (method 8)
+    es = _entries(files)
+    es[0].method = 8
+    return rz.build(es)
+
+
 def mimetype_wrong_value(files):
     return _mimetype(files, b"application/epub")
 
@@ -114,6 +121,10 @@ def container_missing(files):
 
 def container_no_version(files):
     return _container(files, '<container version="1.0"', "<container")
+
+
+def container_version_2(files):
+    return _container(files, '<container version="1.0"', '<container version="2.0"')
 
 
 def container_foreign_element(files):
@@ -190,6 +201,19 @@ def manifest_xml_odf(files):
                      '</manifest:manifest>\n')
 
 
+def metadata_xml_unqualified(files):
+    return _meta_inf(files, "metadata.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<metadata><note>Container-level metadata.</note></metadata>\n')
+
+
+def rights_xml_not_well_formed(files):
+    # the root element is never closed
+    return _meta_inf(files, "rights.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<ext:rights ' + EXT + '>\n')
+
+
+def manifest_xml_wrong_root(files):
+    return _meta_inf(files, "manifest.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<files/>\n')
+
+
 def signatures_xml_wrong_root(files):
     return _meta_inf(files, "signatures.xml", '<?xml version="1.0" encoding="UTF-8"?>\n'
                      '<sigs xmlns="urn:oasis:names:tc:opendocument:xmlns:container"/>\n')
@@ -237,6 +261,12 @@ def filename_not_utf8(files):
 
 def compression_bzip2(files):
     return _set_entry(files, CONTENT, method=12, version=46)
+
+
+def version_needed_63(files):
+    # "version needed to extract" 63 (ZIP 6.3) for the content document, in
+    # both headers; the file is still deflated as before
+    return _set_entry(files, CONTENT, version=63)
 
 
 def zip64_unneeded(files):

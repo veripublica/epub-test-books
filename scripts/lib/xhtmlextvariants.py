@@ -151,6 +151,27 @@ def microdata_attributes(t3, info):
     return _book(t3, info, _doc(t3, '    <div itemscope="" itemtype="https://schema.org/Book"><p itemprop="name">A test book.</p></div>'))
 
 
+def rdfa_prefix_two_spaces(t3, info):
+    return _book(t3, info, _doc(t3, '    <div prefix="dc:  http://purl.org/dc/terms/"><p property="dc:title">A test book.</p></div>'))
+
+
+def rdfa_prefix_tab(t3, info):
+    # &#9; is a character reference, so attribute-value normalization keeps the tab
+    return _book(t3, info, _doc(t3, '    <div prefix="dc:&#9;http://purl.org/dc/terms/"><p property="dc:title">A test book.</p></div>'))
+
+
+def microdata_itemtype_no_itemscope(t3, info):
+    return _book(t3, info, _doc(t3, '    <div itemtype="https://schema.org/Book"><p>A test book.</p></div>'))
+
+
+def microdata_itemref_no_itemscope(t3, info):
+    return _book(t3, info, _doc(t3, '    <div itemref="title"><p>A test book.</p></div>\n    <p id="title">Content.</p>'))
+
+
+def microdata_itemid_no_itemtype(t3, info):
+    return _book(t3, info, _doc(t3, '    <div itemscope="" itemid="urn:isbn:9780306406157"><p itemprop="name">A test book.</p></div>'))
+
+
 # --- sec-xhtml-content-switch (deprecated)
 
 def _switch(case_attr=' required-namespace="http://www.w3.org/1998/Math/MathML"', default=True):

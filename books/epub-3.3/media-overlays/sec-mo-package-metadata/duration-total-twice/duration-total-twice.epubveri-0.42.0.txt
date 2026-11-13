@@ -1,0 +1,3 @@
+ERROR RSC-005: media:duration is given more than once for the EPUB publication; it must be given exactly once [OEBPS/package.opf:26:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]
