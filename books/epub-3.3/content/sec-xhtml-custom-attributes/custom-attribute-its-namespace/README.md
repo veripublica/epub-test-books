@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: none
 - Asked for by: the maintainer, from the EPUB 3.4 comparison (2026-11-13)
-- Issue: pending
+- Issue: [#611](https://github.com/veripublica/epub-test-books/issues/611)
 
 ## About this book
 
