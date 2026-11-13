@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: epubcheck: missed
 - Asked for by: the maintainer, to start the content documents section; parked on 2026-11-09 until #27's comments had their time, built on 2026-11-13 for the release after 15 November
-- Issue: pending
+- Issue: [#610](https://github.com/veripublica/epub-test-books/issues/610)
 
 ## About this book
 
