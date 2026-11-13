@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(HTM_054): custom-attribute-its-namespace.epub/OEBPS/content.xhtml(11,69): Custom attribute namespace ("http://www.w3.org/2005/11/its") must not include the string "w3.org" in its domain.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]
