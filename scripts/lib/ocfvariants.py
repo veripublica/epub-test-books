@@ -394,3 +394,11 @@ def aes_compressed_first(files, method=8):
     # Deflate first (raw, no zlib header), then AES; the Compression property
     # gives `method` and the length before compression
     return _aes_book(files, xml=lambda p: _aes_xml(CONTENT, props=_compression(method, len(p))), data=_deflate)
+
+
+def cipher_reference_missing(files):
+    # encryption.xml (as in aes_encrypted_content) declares OEBPS/secret.xhtml
+    # encrypted, and the container has no such file; nothing else changes
+    es = _entries(files)
+    es.insert(1, rz.E("META-INF/encryption.xml", _aes_xml("OEBPS/secret.xhtml").encode("utf-8")))
+    return rz.build(es)
