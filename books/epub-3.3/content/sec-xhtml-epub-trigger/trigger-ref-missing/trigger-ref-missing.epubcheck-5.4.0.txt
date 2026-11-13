@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+WARNING(RSC-017): trigger-ref-missing.epub/OEBPS/content.xhtml(7,127): Warning while parsing file: The "epub:trigger" element is deprecated.
+ERROR(RSC-005): trigger-ref-missing.epub/OEBPS/content.xhtml(7,127): Error while parsing file: The ref attribute must refer to an element in the same document (the ID "nowhere" does not exist).
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 1 warning / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

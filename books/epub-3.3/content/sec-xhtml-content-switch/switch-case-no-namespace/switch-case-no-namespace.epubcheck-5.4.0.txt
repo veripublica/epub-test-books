@@ -1,0 +1,10 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): switch-case-no-namespace.epub/OEBPS/content.xhtml(12,18): Error while parsing file: element "epub:case" missing required attribute "required-namespace"
+USAGE(ACC-009): switch-case-no-namespace.epub/OEBPS/content.xhtml(12,84): MathML should either have an "alttext" attribute or "annotation-xml" child element.
+WARNING(RSC-017): switch-case-no-namespace.epub/OEBPS/content.xhtml(11,27): Warning while parsing file: The "epub:switch" element is deprecated.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 1 warning / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 1]

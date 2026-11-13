@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+USAGE(RSC-025): svg-root-not-svg.epub/OEBPS/picture.svg(2,39): Informative parsing error: element "g" not allowed here; expected element "ns:html" or "svg" (with xmlns:ns="http://www.w3.org/1999/xhtml")
+ERROR(RSC-005): svg-root-not-svg.epub/OEBPS/picture.svg(2,39): Error while parsing file: element "g" not allowed here; expected element "svg"
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 1]

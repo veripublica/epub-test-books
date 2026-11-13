@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(OPF-026): epub-type-prefix-only.epub/OEBPS/content.xhtml(11,25): Found malformed property value: "foo:".
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

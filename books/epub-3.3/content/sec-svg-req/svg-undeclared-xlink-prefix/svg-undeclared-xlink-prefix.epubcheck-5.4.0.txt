@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+FATAL(RSC-016): svg-undeclared-xlink-prefix.epub/OEBPS/picture.svg(2,158): Fatal Error while parsing file: The prefix "xlink" for attribute "xlink:href" associated with an element type "use" is not bound.
+
+Check finished with errors
+Messages: 1 fatal / 0 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

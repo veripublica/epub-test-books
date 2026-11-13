@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): rdfa-prefix-no-colon.epub/OEBPS/content.xhtml(11,48): Error while parsing file: value of attribute "prefix" is invalid; must be a string matching the regular expression "\s*([\i-[:]][\c-[:]]*: [^ ]+)(\s+[\i-[:]][\c-[:]]*: [^ ]+)*\s*" or must be equal to ""
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

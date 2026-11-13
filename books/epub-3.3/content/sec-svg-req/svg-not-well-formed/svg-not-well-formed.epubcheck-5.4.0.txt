@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+FATAL(RSC-016): svg-not-well-formed.epub/OEBPS/picture.svg(3,1): Fatal Error while parsing file: XML document structures must start and end within the same entity.
+
+Check finished with errors
+Messages: 1 fatal / 0 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

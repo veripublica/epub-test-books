@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+WARNING(OPF-007): prefix-override-reserved.epub/OEBPS/content.xhtml(3,172): Re-declaration of reserved prefix "msv".
+WARNING(OPF-086c): prefix-override-reserved.epub/OEBPS/content.xhtml(3,172): the "msv" reserved prefix is deprecated.
+
+Check finished with warnings
+Messages: 0 fatals / 0 errors / 2 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 0]

@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+WARNING(OPF-086c): reserved-prefix-prism.epub/OEBPS/content.xhtml(11,34): the "prism" reserved prefix is deprecated.
+
+Check finished with warnings
+Messages: 0 fatals / 0 errors / 1 warning / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 0]

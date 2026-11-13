@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): trigger-unknown-action.epub/OEBPS/content.xhtml(7,125): Error while parsing file: value of attribute "action" is invalid; must be equal to "hide", "mute", "pause", "play", "resume", "show" or "unmute"
+WARNING(RSC-017): trigger-unknown-action.epub/OEBPS/content.xhtml(7,125): Warning while parsing file: The "epub:trigger" element is deprecated.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 1 warning / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(OPF-007a): prefix-underscore.epub/OEBPS/content.xhtml(3,170): Invalid prefix mapping: prefix "_" must not be declared.
+ERROR(OPF-028): prefix-underscore.epub/OEBPS/content.xhtml(11,26): Undeclared prefix: "_".
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

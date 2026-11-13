@@ -1,0 +1,7 @@
+Validating using EPUB version 3.4 rules.
+USAGE(OPF-088): epub-type-unknown-term.epub/OEBPS/content.xhtml(11,33): Unrecognized epub:type value "no-such-term".
+No errors or warnings detected.
+Messages: 0 fatals / 0 errors / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 0]

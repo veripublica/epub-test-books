@@ -1,0 +1,10 @@
+Validating using EPUB version 3.4 rules.
+USAGE(ACC-009): switch-no-default.epub/OEBPS/content.xhtml(12,140): MathML should either have an "alttext" attribute or "annotation-xml" child element.
+ERROR(RSC-005): switch-no-default.epub/OEBPS/content.xhtml(13,19): Error while parsing file: element "epub:switch" incomplete; missing required element "epub:default"
+WARNING(RSC-017): switch-no-default.epub/OEBPS/content.xhtml(11,27): Warning while parsing file: The "epub:switch" element is deprecated.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 1 warning / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 1]
