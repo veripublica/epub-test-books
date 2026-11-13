@@ -53,7 +53,7 @@ Invalid. The package document must not be encrypted, and the obfuscation algorit
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.
 
-Both read the obfuscated bytes as the package document, find it not well-formed (RSC-016), and so cannot read the EPUB version (OPF-001). Only epubveri also reports the declaration itself: SPEC-001, a package document declared encrypted. epubcheck gives no finding for `META-INF/encryption.xml`, as on `never-encrypt-package-document`, where it misses the case. epubcheck also prints a Java stack trace (`IllegalStateException` in `OCFChecker.checkPublicationVersion`) before its summary; the summary and exit code are still given.
+Both read the obfuscated bytes as the package document, find it not well-formed (RSC-016), and so cannot read the EPUB version (OPF-001). Only epubveri also reports the declaration itself: SPEC-001, a package document declared encrypted. epubcheck gives no finding for `META-INF/encryption.xml`, as on `never-encrypt-package-document`, where it misses the case. epubcheck also prints a Java stack trace (`IllegalStateException` in `OCFChecker.checkPublicationVersion`) before its summary; the summary and exit code are still given. The stack trace is reported as [w3c/epubcheck#1774](https://github.com/w3c/epubcheck/issues/1774).
 
 SPEC-001 is epubveri's id for a specification rule that epubcheck has no id for. It is in epubveri's default output, not an `--advisory` finding. Every epubveri finding here is in its default output.
 
