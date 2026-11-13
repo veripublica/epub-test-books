@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: none
 - Asked for by: the maintainer, to cover EPUB 3.3 content document extensions
-- Issue: pending
+- Issue: [#567](https://github.com/veripublica/epub-test-books/issues/567)
 
 ## About this book
 
