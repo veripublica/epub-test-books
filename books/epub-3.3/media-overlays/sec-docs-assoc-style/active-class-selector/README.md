@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: epubcheck: missed
 - Asked for by: the maintainer; parked on 2026-11-12 while both verifiers missed it, shipped after epubveri 0.42.0 reports it
-- Issue: pending
+- Issue: [#599](https://github.com/veripublica/epub-test-books/issues/599)
 
 ## About this book
 
@@ -39,7 +39,7 @@ Invalid. The property must hold a class name, not a selector.
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.
 
-- **epubcheck: missed.** w3c/epubcheck issue pending.
+- **epubcheck: missed.** [w3c/epubcheck#1778](https://github.com/w3c/epubcheck/issues/1778).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

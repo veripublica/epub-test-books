@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: epubcheck: missed
 - Asked for by: the maintainer, to cover EPUB 3.3 content document extensions; parked on 2026-11-13 while both verifiers missed it, shipped after epubveri 0.42.0 reports it
-- Issue: pending
+- Issue: [#601](https://github.com/veripublica/epub-test-books/issues/601)
 
 ## About this book
 
@@ -43,7 +43,7 @@ Invalid. itemtype must not be specified on an element that has no itemscope attr
 
 epubveri agrees with the expected result. epubcheck does not: it gives no finding.
 
-- **epubcheck: missed.** w3c/epubcheck issue pending.
+- **epubcheck: missed.** [w3c/epubcheck#1775](https://github.com/w3c/epubcheck/issues/1775).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: epubcheck: wrong error
 - Asked for by: epubveri, after its 0.42.0 fixes
-- Issue: pending
+- Issue: [#604](https://github.com/veripublica/epub-test-books/issues/604)
 
 ## About this book
 
@@ -43,7 +43,7 @@ Valid. RDFa's prefix attribute takes pairs of the form NCName ':' ' '+ IRI, so o
 
 epubveri agrees with the expected result. epubcheck does not: it reports the prefix value as a schema error (RSC-005), as its pattern allows exactly one space after the colon.
 
-- **epubcheck: wrong error.** w3c/epubcheck issue pending.
+- **epubcheck: wrong error.** [w3c/epubcheck#1776](https://github.com/w3c/epubcheck/issues/1776).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

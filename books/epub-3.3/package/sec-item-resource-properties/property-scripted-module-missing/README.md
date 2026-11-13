@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: epubcheck: missed
 - Asked for by: the maintainer, to cover EPUB 3.3 scripting; parked on 2026-11-13 while both verifiers missed it, shipped after epubveri 0.42.0 reports it
-- Issue: pending
+- Issue: [#600](https://github.com/veripublica/epub-test-books/issues/600)
 
 ## About this book
 

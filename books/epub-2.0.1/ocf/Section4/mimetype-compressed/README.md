@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: epubcheck: missed
 - Asked for by: the maintainer; parked on 2026-11-12 while both verifiers missed it, shipped after epubveri 0.42.0 reports it
-- Issue: pending
+- Issue: [#591](https://github.com/veripublica/epub-test-books/issues/591)
 
 ## About this book
 
@@ -39,7 +39,7 @@ Invalid. The `mimetype` file must not be compressed.
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.
 
-- **epubcheck: missed.** w3c/epubcheck issue pending.
+- **epubcheck: missed.** [w3c/epubcheck#1777](https://github.com/w3c/epubcheck/issues/1777).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

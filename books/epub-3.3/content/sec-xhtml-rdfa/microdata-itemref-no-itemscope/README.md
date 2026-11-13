@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: epubcheck: missed
 - Asked for by: epubveri, after its 0.42.0 fixes
-- Issue: pending
+- Issue: [#602](https://github.com/veripublica/epub-test-books/issues/602)
 
 ## About this book
 
@@ -43,7 +43,7 @@ Invalid. itemref must not be specified on an element that has no itemscope attri
 
 epubveri agrees with the expected result. epubcheck does not: it gives no finding.
 
-- **epubcheck: missed.** w3c/epubcheck issue pending.
+- **epubcheck: missed.** [w3c/epubcheck#1775](https://github.com/w3c/epubcheck/issues/1775).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

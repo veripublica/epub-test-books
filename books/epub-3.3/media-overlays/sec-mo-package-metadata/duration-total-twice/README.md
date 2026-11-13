@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: epubcheck: missed
 - Asked for by: the maintainer; parked on 2026-11-12 while both verifiers missed it, shipped after epubveri 0.42.0 reports it
-- Issue: pending
+- Issue: [#598](https://github.com/veripublica/epub-test-books/issues/598)
 
 ## About this book
 
@@ -43,7 +43,7 @@ Invalid. The total duration may be given exactly once.
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.
 
-- **epubcheck: missed.** w3c/epubcheck issue pending.
+- **epubcheck: missed.** [w3c/epubcheck#1778](https://github.com/w3c/epubcheck/issues/1778).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 
