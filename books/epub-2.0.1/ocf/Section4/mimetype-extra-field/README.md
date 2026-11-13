@@ -12,13 +12,13 @@
 
 This book is a set of epub-test-books, a library of small EPUB files that each show one rule or one defect.
 
-The ZIP headers of mimetype have an extra field. Everything else is the EPUB 2 template, which raises no finding.
+The ZIP local header of mimetype has an extra field. Everything else is the EPUB 2 template, which raises no finding.
 
 Expected result: Invalid. There must be no extra field in its ZIP header.
 
 ## Question
 
-The ZIP headers of `mimetype` have an extra field. Does a validator reject the book?
+The ZIP local header of `mimetype` has an extra field. Does a validator reject the book?
 
 ## Clause
 
@@ -43,8 +43,9 @@ Every epubveri finding here is in its default output. None is an `--advisory` fi
 
 ## Build
 
-The EPUB 2 template's files, written as a container by `scripts/lib/ocf2variants.py`. The `mimetype` entry's local and central headers carry a four-byte extra field (header ID 0xCAFE, no data).
+The EPUB 2 template's files, written as a container by `scripts/lib/ocf2variants.py`. The `mimetype` entry's local header carries a four-byte extra field (header ID 0xCAFE, no data); its central header has none.
 
 ## History
 
 - 2026-11-12: First version.
+- 2026-11-13: The book and its README said the extra field is in both ZIP headers; it is only in the local header, as built. The text is corrected; the container and the expected result are unchanged.

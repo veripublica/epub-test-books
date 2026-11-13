@@ -23,7 +23,7 @@ SET = "epub-2.0.1/ocf/Section4/mimetype-extra-field"
 def main() -> None:
     info = eb.load_set(
         SET, title='A mimetype entry with an extra field',
-        description='The ZIP headers of mimetype have an extra field. Does a validator reject the book?',
+        description='The ZIP local header of mimetype has an extra field. Does a validator reject the book?',
         subject="EPUB 2.0.1 OCF")
     files = epub2.package(info)
     out = info.book_dir / "mimetype-extra-field.epub"
