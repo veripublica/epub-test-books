@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-020): direction-in-bad-url-quote.epub/OEBPS/style.css(1,5): "a"b; direction: rtl;" is not a valid URL (Illegal character in path segment: “"” is not allowed)
+ERROR(RSC-007): direction-in-bad-url-quote.epub/OEBPS/style.css(1,5): Referenced resource "OEBPS/a%22b;%20direction:%20rtl;" could not be found in the EPUB.
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

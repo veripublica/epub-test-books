@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 # Copyright (c) 2026 Barış Kayadelen (veripublica) and contributors
-"""Build books/css-syntax-3/consume-url-token/direction-in-bad-url/direction-in-bad-url.epub: direction: rtl inside the remnants of a bad url (valid).
+"""Build books/css-syntax-3/consume-url-token/direction-in-bad-url/direction-in-bad-url.epub: A bad url whose remnants end at the first ), before direction: rtl.
 
 The EPUB 3 template with one linked stylesheet, made with
 scripts/lib/resourcevariants.py.
@@ -24,8 +24,8 @@ CSS = 'p { background: url(a(b); direction: rtl; ); }\n'
 
 def main() -> None:
     info = eb.load_set(
-        SET, title='direction: rtl inside the remnants of a bad url (valid)',
-        description='style.css holds p { background: url(a(b); direction: rtl; ); }. Does a validator accept the book?',
+        SET, title='A bad url whose remnants end at the first ), before direction: rtl',
+        description='style.css holds p { background: url(a(b); direction: rtl; ); }. Does a validator reject the book?',
         subject="CSS Syntax Level 3")
     content = rv.head_link(epub3.xhtml("Content", pv.section('    <p class="x">Content.</p>')), "style.css")
     files = epub3.package(info, content=content, extra=[("style", "style.css", "text/css", "", CSS.encode("utf-8"))])
