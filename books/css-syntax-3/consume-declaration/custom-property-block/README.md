@@ -54,7 +54,7 @@ CSS result: One rule with two declarations: the custom property `--x`, whose val
 
 epubveri agrees with the expected result. epubcheck does not: it reports the block in the custom property as errors (CSS-008).
 
-- **epubcheck: wrong error.** w3c/epubcheck issue pending.
+- **epubcheck: wrong error.** [w3c/epubcheck#1768](https://github.com/w3c/epubcheck/issues/1768).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

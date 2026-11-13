@@ -52,7 +52,7 @@ CSS result: No encoding has the label x-unknown, so getting an encoding fails an
 
 epubveri agrees with the expected result. epubcheck does not: it reads the unknown label as a declared encoding and reports it (CSS-004).
 
-- **epubcheck: wrong error.** w3c/epubcheck issue pending.
+- **epubcheck: wrong error.** [w3c/epubcheck#1770](https://github.com/w3c/epubcheck/issues/1770).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

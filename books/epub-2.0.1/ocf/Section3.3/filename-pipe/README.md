@@ -57,7 +57,7 @@ Valid. `|` is not one of the characters OCF 2.0.1 forbids. (EPUB 3.3 does forbid
 
 epubveri agrees with the expected result. epubcheck does not: it reports `|` as a forbidden character (PKG-009).
 
-- **epubcheck: wrong error.** w3c/epubcheck issue pending.
+- **epubcheck: wrong error.** [w3c/epubcheck#1771](https://github.com/w3c/epubcheck/issues/1771).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

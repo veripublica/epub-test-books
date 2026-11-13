@@ -58,7 +58,7 @@ CSS result: One rule, `p`, with one declaration, `direction: rtl`.
 
 epubveri agrees with the expected result. epubcheck does not: it does not report `direction` (no CSS-001), and reports the unclosed block as an error (CSS-008).
 
-- **epubcheck: missed, wrong error.** w3c/epubcheck issue pending.
+- **epubcheck: missed, wrong error.** [w3c/epubcheck#1768](https://github.com/w3c/epubcheck/issues/1768).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

@@ -39,7 +39,7 @@ Valid. OCF 2.0.1 allows two names in the same directory to map to the same strin
 
 epubveri agrees with the expected result. epubcheck does not: it reports the two names as duplicates (OPF-060, OPF-074).
 
-- **epubcheck: wrong error.** w3c/epubcheck issue pending.
+- **epubcheck: wrong error.** [w3c/epubcheck#1771](https://github.com/w3c/epubcheck/issues/1771).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

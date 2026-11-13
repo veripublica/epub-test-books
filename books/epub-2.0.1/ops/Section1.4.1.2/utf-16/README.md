@@ -41,7 +41,7 @@ Valid. A content document may be UTF-8 or UTF-16, and OPS 2.0.1 does not recomme
 
 epubveri agrees with the expected result. epubcheck does not: it reports that HTML documents must be encoded in UTF-8 (HTM_058), which OPS 2.0.1 does not require.
 
-- **epubcheck: wrong error.** w3c/epubcheck issue pending.
+- **epubcheck: wrong error.** [w3c/epubcheck#1772](https://github.com/w3c/epubcheck/issues/1772).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

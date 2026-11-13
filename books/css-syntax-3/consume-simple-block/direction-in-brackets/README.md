@@ -58,7 +58,7 @@ CSS result: One rule with one declaration, `color`, whose value is the block `[d
 
 epubveri agrees with the expected result. epubcheck does not: it reports the block as an error (CSS-008).
 
-- **epubcheck: wrong error.** w3c/epubcheck issue pending.
+- **epubcheck: wrong error.** [w3c/epubcheck#1768](https://github.com/w3c/epubcheck/issues/1768).
 
 Every epubveri finding here is in its default output, except USAGE ADV-024, which is an `--advisory` finding.
 

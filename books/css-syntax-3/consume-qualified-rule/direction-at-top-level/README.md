@@ -58,7 +58,7 @@ CSS result: One rule, `p { margin: 0; }`. The second qualified rule reaches EOF 
 
 epubveri agrees with the expected result. epubcheck does not: it reports the parse error as errors (CSS-008).
 
-- **epubcheck: wrong error.** w3c/epubcheck issue pending.
+- **epubcheck: wrong error.** [w3c/epubcheck#1768](https://github.com/w3c/epubcheck/issues/1768).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

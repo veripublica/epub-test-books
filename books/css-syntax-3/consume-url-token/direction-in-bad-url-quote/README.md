@@ -68,7 +68,7 @@ CSS result: One rule. The `background` declaration holds the bad-url token (a pa
 
 epubveri agrees with the expected result. epubcheck does not: it reads the bad url as a reference, and reports it as not valid (RSC-020) and missing (RSC-007).
 
-- **epubcheck: wrong error.** w3c/epubcheck issue pending.
+- **epubcheck: wrong error.** [w3c/epubcheck#1768](https://github.com/w3c/epubcheck/issues/1768).
 
 Every epubveri finding here is in its default output, except USAGE ADV-015, which is an `--advisory` finding.
 

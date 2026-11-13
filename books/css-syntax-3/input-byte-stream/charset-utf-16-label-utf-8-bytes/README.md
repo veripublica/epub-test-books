@@ -48,7 +48,7 @@ CSS result: The label utf-16 gives the encoding UTF-16LE, and a declared utf-16b
 
 epubveri agrees with the expected result. epubcheck does not: it decodes the sheet as UTF-16, warns about UTF-16 (CSS-003) and then cannot parse it (CSS-008).
 
-- **epubcheck: wrong error.** w3c/epubcheck issue pending.
+- **epubcheck: wrong error.** [w3c/epubcheck#1770](https://github.com/w3c/epubcheck/issues/1770).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

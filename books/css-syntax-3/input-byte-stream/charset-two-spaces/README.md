@@ -52,7 +52,7 @@ CSS result: The declaration must have exactly one space after `@charset`. With t
 
 epubveri agrees with the expected result. epubcheck does not: it reads the line as a declaration of ISO-8859-1 (CSS-004).
 
-- **epubcheck: wrong error.** w3c/epubcheck issue pending.
+- **epubcheck: wrong error.** [w3c/epubcheck#1770](https://github.com/w3c/epubcheck/issues/1770).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

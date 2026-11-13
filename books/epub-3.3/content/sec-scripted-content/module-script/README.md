@@ -50,7 +50,7 @@ Valid. A script with type="module" is a JavaScript module script, not a data blo
 Neither agrees with the expected result. epubveri reports the scripted property as not needed (OPF-015). epubcheck reports the scripted property as not needed (OPF-015).
 
 - **epubveri: wrong error.** epubveri issue pending.
-- **epubcheck: wrong error.** w3c/epubcheck issue pending.
+- **epubcheck: wrong error.** [w3c/epubcheck#1773](https://github.com/w3c/epubcheck/issues/1773).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

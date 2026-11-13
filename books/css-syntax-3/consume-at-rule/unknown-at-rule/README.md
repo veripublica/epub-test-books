@@ -60,7 +60,7 @@ CSS result: Inside the block, `baz` is not a declaration, and re-read as a rule 
 
 epubveri agrees with the expected result. epubcheck does not: it reports the unknown at-rule as an error (CSS-008).
 
-- **epubcheck: wrong error.** w3c/epubcheck issue pending.
+- **epubcheck: wrong error.** [w3c/epubcheck#1768](https://github.com/w3c/epubcheck/issues/1768).
 
 Every epubveri finding here is in its default output, except USAGE ADV-020, which is an `--advisory` finding.
 

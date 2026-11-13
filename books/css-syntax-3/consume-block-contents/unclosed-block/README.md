@@ -60,7 +60,7 @@ CSS result: One rule, `p { margin: 0; }`: the block and the declaration are clos
 
 epubveri agrees with the expected result. epubcheck does not: it reports the unclosed block as an error (CSS-008).
 
-- **epubcheck: wrong error.** w3c/epubcheck issue pending.
+- **epubcheck: wrong error.** [w3c/epubcheck#1768](https://github.com/w3c/epubcheck/issues/1768).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

@@ -41,7 +41,7 @@ epubveri agrees with the expected result. epubcheck does not: it reports the sec
 
 epubveri reports the second rootfile as a warning (PKG-013): the rule is a SHOULD, and a warning does not change the verdict. Up to 0.40.1 it was an error.
 
-- **epubcheck: wrong error.** w3c/epubcheck issue pending.
+- **epubcheck: wrong error.** [w3c/epubcheck#1771](https://github.com/w3c/epubcheck/issues/1771).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 
