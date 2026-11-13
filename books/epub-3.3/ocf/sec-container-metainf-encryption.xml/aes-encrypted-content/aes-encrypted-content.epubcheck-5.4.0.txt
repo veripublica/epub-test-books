@@ -1,0 +1,7 @@
+Validating using EPUB version 3.4 rules.
+INFO(RSC-004): aes-encrypted-content.epub/OEBPS/content.xhtml(-1,-1): File "OEBPS/content.xhtml" is encrypted, its content will not be checked.
+No errors or warnings detected.
+Messages: 0 fatals / 0 errors / 0 warnings / 1 info / 0 usages
+
+EPUBCheck completed
+[exit 0]

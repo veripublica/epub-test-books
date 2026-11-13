@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+FATAL(RSC-016): aes-no-encryption-xml.epub/OEBPS/content.xhtml(1,1): Fatal Error while parsing file: Content is not allowed in prolog.
+
+Check finished with errors
+Messages: 1 fatal / 0 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

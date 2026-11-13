@@ -99,6 +99,17 @@ def compression_bzip2(files):
     return rz.build(es)
 
 
+def zip64_unneeded(files):
+    # the content document carries ZIP64 sizes (a 0x0001 extra field in both
+    # headers, the 32-bit size fields set to 0xFFFFFFFF, version needed 45),
+    # though it is far below 4 GiB
+    es = _entries(files)
+    for e in es:
+        if e.name == CONTENT:
+            e.zip64 = True
+    return rz.build(es)
+
+
 def filename_not_utf8(files):
     # OEBPS/content.xhtml becomes "c\x81ntent.xhtml": 0x81 is u-umlaut in
     # CP437, the ZIP default; the UTF-8 flag (bit 11) is clear.
@@ -287,3 +298,99 @@ def never_encrypted(files, target):
     files = list(files)
     files.insert(1, ("META-INF/encryption.xml", xml))
     return rz.build(rz.entries_from(files))
+
+
+def package_document_obfuscated(info, files):
+    # The package document really obfuscated with the font algorithm (its
+    # first 1040 bytes XORed with the key from the unique identifier), and
+    # listed in META-INF/encryption.xml.
+    opf = "OEBPS/package.opf"
+    out = [(n, mf.obfuscate(d.encode("utf-8") if isinstance(d, str) else d, info.identifier) if n == opf else d)
+           for n, d in files]
+    out.insert(1, ("META-INF/encryption.xml", _encryption_xml(opf)))
+    return rz.build(rz.entries_from(out))
+
+
+# --- AES-encrypted resources (sec-container-metainf-encryption.xml, sec-enc-compression)
+# The content document is really encrypted with AES-128-CBC (scripts/lib/miniaes.py),
+# and META-INF/encryption.xml describes it as in EPUB 3.3's example 7: an
+# EncryptedKey (an RSA-wrapped key, named "epub-test-books") and an EncryptedData
+# that refers to it. The key and IV are fixed, so the books are reproducible; the
+# wrapped key is 128 fixed bytes, since nothing in a validator can unwrap it.
+
+import base64  # noqa: E402
+import hashlib  # noqa: E402
+import zlib  # noqa: E402
+
+import miniaes  # noqa: E402
+
+AES_KEY = hashlib.sha1(b"epub-test-books key").digest()[:16]
+AES_IV = hashlib.sha1(b"epub-test-books iv").digest()[:16]
+AES128 = "http://www.w3.org/2001/04/xmlenc#aes128-cbc"
+_WRAPPED = base64.b64encode(hashlib.sha512(b"wrapped key").digest() * 2).decode()
+
+
+def _aes_xml(target, alg=AES128, props=""):
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<encryption xmlns="urn:oasis:names:tc:opendocument:xmlns:container"'
+            ' xmlns:enc="http://www.w3.org/2001/04/xmlenc#" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">\n'
+            '  <enc:EncryptedKey Id="EK">\n'
+            '    <enc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5"/>\n'
+            '    <ds:KeyInfo><ds:KeyName>epub-test-books</ds:KeyName></ds:KeyInfo>\n'
+            f'    <enc:CipherData><enc:CipherValue>{_WRAPPED}</enc:CipherValue></enc:CipherData>\n'
+            '  </enc:EncryptedKey>\n'
+            '  <enc:EncryptedData Id="ED1">\n'
+            f'    <enc:EncryptionMethod Algorithm="{alg}"/>\n'
+            '    <ds:KeyInfo><ds:RetrievalMethod URI="#EK" Type="http://www.w3.org/2001/04/xmlenc#EncryptedKey"/></ds:KeyInfo>\n'
+            f'    <enc:CipherData><enc:CipherReference URI="{target}"/></enc:CipherData>\n'
+            f'{props}'
+            '  </enc:EncryptedData>\n'
+            '</encryption>\n')
+
+
+def _compression(method, length):
+    return ('    <enc:EncryptionProperties>\n'
+            '      <enc:EncryptionProperty xmlns:c="http://www.idpf.org/2016/encryption#compression">\n'
+            f'        <c:Compression Method="{method}" OriginalLength="{length}"/>\n'
+            '      </enc:EncryptionProperty>\n'
+            '    </enc:EncryptionProperties>\n')
+
+
+def _aes_book(files, *, xml=None, data=None, zip_method=0):
+    plain = _get(files, CONTENT)
+    plain = plain.encode("utf-8") if isinstance(plain, str) else plain
+    es = _entries(files)
+    for e in es:
+        if e.name == CONTENT:
+            e.data = miniaes.encrypt(plain if data is None else data(plain), AES_KEY, AES_IV)
+            e.method = zip_method
+    if xml is not None:
+        es.insert(1, rz.E("META-INF/encryption.xml", xml(plain).encode("utf-8")))
+    return rz.build(es)
+
+
+def _deflate(data):
+    c = zlib.compressobj(9, zlib.DEFLATED, -15)
+    return c.compress(data) + c.flush()
+
+
+def aes_encrypted_content(files):
+    return _aes_book(files, xml=lambda p: _aes_xml(CONTENT))
+
+
+def aes_unknown_algorithm(files):
+    return _aes_book(files, xml=lambda p: _aes_xml(CONTENT, alg="https://example.org/epub-test-books/no-such-cipher"))
+
+
+def aes_deflated_in_zip(files):
+    return _aes_book(files, xml=lambda p: _aes_xml(CONTENT), zip_method=8)
+
+
+def aes_no_encryption_xml(files):
+    return _aes_book(files)
+
+
+def aes_compressed_first(files, method=8):
+    # Deflate first (raw, no zlib header), then AES; the Compression property
+    # gives `method` and the length before compression
+    return _aes_book(files, xml=lambda p: _aes_xml(CONTENT, props=_compression(method, len(p))), data=_deflate)

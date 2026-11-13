@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): compression-method-9.epub/META-INF/encryption.xml(14,57): Error while parsing file: value of attribute "Method" is invalid; must be equal to "0" or "8"
+INFO(RSC-004): compression-method-9.epub/OEBPS/content.xhtml(-1,-1): File "OEBPS/content.xhtml" is encrypted, its content will not be checked.
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 1 info / 0 usages
+
+EPUBCheck completed
+[exit 1]

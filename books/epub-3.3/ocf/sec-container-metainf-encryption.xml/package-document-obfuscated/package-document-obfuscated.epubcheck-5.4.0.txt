@@ -1,0 +1,15 @@
+FATAL(RSC-016): package-document-obfuscated.epub/OEBPS/package.opf(-1,-1): Fatal Error while parsing file: Content is not allowed in prolog.
+ERROR(OPF-001): package-document-obfuscated.epub/OEBPS/package.opf(-1,-1): There was an error when parsing the EPUB version: Version not found.
+java.lang.IllegalStateException
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:497)
+	at com.adobe.epubcheck.ocf.OCFChecker.checkPublicationVersion(OCFChecker.java:568)
+	at com.adobe.epubcheck.ocf.OCFChecker.check(OCFChecker.java:124)
+	at com.adobe.epubcheck.api.EpubCheck.doValidate(EpubCheck.java:218)
+	at com.adobe.epubcheck.tool.EpubChecker.validateFile(EpubChecker.java:267)
+	at com.adobe.epubcheck.tool.EpubChecker.processFile(EpubChecker.java:349)
+	at com.adobe.epubcheck.tool.EpubChecker.run(EpubChecker.java:160)
+	at com.adobe.epubcheck.tool.Checker.main(Checker.java:31)
+Messages: 1 fatal / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

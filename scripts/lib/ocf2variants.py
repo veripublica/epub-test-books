@@ -93,7 +93,7 @@ def mimetype_uppercase(files):
 
 
 def mimetype_extra_field(files):
-    # an unknown extra field (header ID 0xCAFE, no data) in both headers
+    # an unknown extra field (header ID 0xCAFE, no data) in the local header (rawzip writes no central extra field)
     return _mimetype(files, extra=b"\xfe\xca\x00\x00")
 
 
@@ -237,6 +237,12 @@ def filename_not_utf8(files):
 
 def compression_bzip2(files):
     return _set_entry(files, CONTENT, method=12, version=46)
+
+
+def zip64_unneeded(files):
+    # ZIP64 sizes on the content document (0x0001 extra field in both headers,
+    # 32-bit sizes 0xFFFFFFFF, version needed 45), which does not need them
+    return _set_entry(files, CONTENT, zip64=True)
 
 
 def zip_encryption(files):

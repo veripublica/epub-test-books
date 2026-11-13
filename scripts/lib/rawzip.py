@@ -5,7 +5,7 @@
 epubbook.write_epub() writes correct containers with Python's zipfile. Some
 sets need a container zipfile will not write: a compressed or misplaced
 mimetype, an extra field, a non-UTF-8 name, another compression method,
-traditional ZIP encryption.
+traditional ZIP encryption, ZIP64 fields on an entry that does not need them.
 This writer builds those directly, and is reproducible in the same way
 (fixed 1980-01-01 times, fixed attributes, entries in the order given).
 """
@@ -25,6 +25,7 @@ class E:
     extra: bytes = b""
     raw_name: bool = False     # name already bytes, no encoding
     password: bytes | None = None  # traditional PKWARE encryption (APPNOTE 6.1)
+    zip64: bool = False        # sizes as 0xFFFFFFFF, real ones in a ZIP64 extra field (APPNOTE 4.5.3), both headers
 
 
 def _compress(data, method):
@@ -76,15 +77,20 @@ def build(entries, comment=b""):
         flags = e.flags
         if e.password is not None:
             comp, flags = _zipcrypto(comp, e.password, crc), flags | 1
-        ver = e.version if e.version is not None else (10 if e.method == 0 else 20)
+        ver = e.version if e.version is not None else (45 if e.zip64 else 10 if e.method == 0 else 20)
         off = len(out)
+        csize, usize, extra, cextra, made = len(comp), len(e.data), e.extra, b"", 20
+        if e.zip64:
+            z64 = struct.pack("<HHQQ", 0x0001, 16, usize, csize)
+            csize = usize = 0xFFFFFFFF
+            extra, cextra, made = extra + z64, z64, 45
         out += struct.pack("<IHHHHHIIIHH", 0x04034B50, ver, flags, e.method,
-                           DOS_TIME, DOS_DATE, crc, len(comp), len(e.data),
-                           len(name), len(e.extra)) + name + e.extra + comp
-        central += struct.pack("<IHHHHHHIIIHHHHHII", 0x02014B50, (3 << 8) | 20, ver,
-                               flags, e.method, DOS_TIME, DOS_DATE, crc, len(comp),
-                               len(e.data), len(name), 0, 0, 0, 0,
-                               0o100644 << 16, off) + name
+                           DOS_TIME, DOS_DATE, crc, csize, usize,
+                           len(name), len(extra)) + name + extra + comp
+        central += struct.pack("<IHHHHHHIIIHHHHHII", 0x02014B50, (3 << 8) | made, ver,
+                               flags, e.method, DOS_TIME, DOS_DATE, crc, csize,
+                               usize, len(name), len(cextra), 0, 0, 0,
+                               0o100644 << 16, off) + name + cextra
     cd_off = len(out)
     out += central
     out += struct.pack("<IHHHHIIH", 0x06054B50, 0, 0, len(entries), len(entries),
