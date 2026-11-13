@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: none
 - Asked for by: the maintainer, for styloria (selectors and cascade)
-- Issue: pending
+- Issue: [#386](https://github.com/veripublica/epub-test-books/issues/386)
 - Other clauses: EPUB 3.3 `sec-resource-locations`
 
 ## About this book

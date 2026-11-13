@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: epubcheck: wrong error
 - Asked for by: the maintainer, for the OPS 2.0.1 content document sets
-- Issue: pending
+- Issue: [#345](https://github.com/veripublica/epub-test-books/issues/345)
 
 ## About this book
 

@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: epubcheck: wrong error
 - Asked for by: the maintainer, to start the OCF 2.0.1 sets
-- Issue: pending
+- Issue: [#496](https://github.com/veripublica/epub-test-books/issues/496)
 
 ## About this book
 

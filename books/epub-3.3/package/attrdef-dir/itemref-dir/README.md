@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: none
 - Asked for by: styloria, its proposal 4 (vertical and right-to-left books, 2026-10-28)
-- Issue: pending
+- Issue: [#418](https://github.com/veripublica/epub-test-books/issues/418)
 
 ## About this book
 

@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: none
 - Asked for by: epubveri, after the encryption sets; settled in w3c/epub-specs#3106
-- Issue: pending
+- Issue: [#531](https://github.com/veripublica/epub-test-books/issues/531)
 - Other clauses: XML Encryption 1.1 `sec-CipherData`
 
 ## About this book

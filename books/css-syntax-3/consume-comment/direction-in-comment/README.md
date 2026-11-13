@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: none
 - Asked for by: styloria, after its review of the encoding sets
-- Issue: pending
+- Issue: [#354](https://github.com/veripublica/epub-test-books/issues/354)
 - Other clauses: EPUB 3.3 `sec-css-req`
 
 ## About this book

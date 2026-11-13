@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: none
 - Asked for by: the maintainer, to start the media overlays section
-- Issue: pending
+- Issue: [#436](https://github.com/veripublica/epub-test-books/issues/436)
 
 ## About this book
 

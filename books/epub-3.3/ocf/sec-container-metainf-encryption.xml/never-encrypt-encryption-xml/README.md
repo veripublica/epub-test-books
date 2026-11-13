@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: epubcheck: missed
 - Asked for by: the maintainer, to complete the OCF section
-- Issue: pending
+- Issue: [#528](https://github.com/veripublica/epub-test-books/issues/528)
 
 ## About this book
 

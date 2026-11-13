@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: none
 - Asked for by: the maintainer, for styloria (selectors and cascade)
-- Issue: pending
+- Issue: [#403](https://github.com/veripublica/epub-test-books/issues/403)
 - Other clauses: EPUB 3.3 `sec-css-req`
 
 ## About this book

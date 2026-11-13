@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: none
 - Asked for by: epubveri, after the encryption sets
-- Issue: pending
+- Issue: [#521](https://github.com/veripublica/epub-test-books/issues/521)
 - Other clauses: EPUB 3.3 `obfus-specifying`
 
 ## About this book

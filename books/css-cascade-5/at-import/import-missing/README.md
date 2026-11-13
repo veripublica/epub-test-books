@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: none
 - Asked for by: the maintainer, for styloria (selectors and cascade)
-- Issue: pending
+- Issue: [#385](https://github.com/veripublica/epub-test-books/issues/385)
 - Other clauses: EPUB 3.3 `sec-container-iri`
 
 ## About this book

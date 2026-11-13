@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: none
 - Asked for by: the maintainer, for the OPS 2.0.1 content document sets
-- Issue: pending
+- Issue: [#346](https://github.com/veripublica/epub-test-books/issues/346)
 - Other clauses: OPS 2.0.1 `Section1.2`, `Section1.3.1`; XML 1.0 (Fourth Edition) `sec-prolog-dtd`
 
 ## About this book

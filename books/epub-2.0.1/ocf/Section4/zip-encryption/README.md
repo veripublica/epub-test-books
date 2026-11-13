@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: none
 - Asked for by: the maintainer, to start the OCF 2.0.1 sets
-- Issue: pending
+- Issue: [#520](https://github.com/veripublica/epub-test-books/issues/520)
 
 ## About this book
 
