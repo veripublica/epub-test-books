@@ -34,7 +34,7 @@ Valid. A space is a `sep-char` on its own, so the two properties are separated a
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i viewport-space-separator.epub -u --advisory` | no findings; VALID | `viewport-space-separator.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i viewport-space-separator.epub -u --advisory` | no findings; VALID | `viewport-space-separator.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck viewport-space-separator.epub -u` | no findings; VALID | `viewport-space-separator.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

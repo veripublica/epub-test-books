@@ -34,7 +34,7 @@ Invalid. The file begins with U+FEFF.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i mimetype-bom.epub -u --advisory` | ERROR PKG-007; INVALID | `mimetype-bom.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i mimetype-bom.epub -u --advisory` | ERROR PKG-007; INVALID | `mimetype-bom.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck mimetype-bom.epub -u` | ERROR PKG-007; INVALID | `mimetype-bom.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

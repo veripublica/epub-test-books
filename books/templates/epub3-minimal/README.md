@@ -108,7 +108,7 @@ exact version and never edited afterwards.
 
 | Verifier | Command | Result |
 |----------|---------|--------|
-| epubveri 0.41.0 | `epubveri -i epub3-minimal.epub -u --advisory` | 0 findings, VALID (`epub3-minimal.epubveri-0.41.0.txt`) |
+| epubveri 0.42.0 | `epubveri -i epub3-minimal.epub -u --advisory` | 0 findings, VALID (`epub3-minimal.epubveri-0.42.0.txt`) |
 | epubcheck 5.4.0 | `epubcheck epub3-minimal.epub -u` | 0 fatals, errors, warnings, infos and usages (`epub3-minimal.epubcheck-5.4.0.txt`) |
 
 Both agree with the expected result, so there is nothing to mark.

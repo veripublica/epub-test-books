@@ -45,7 +45,7 @@ CSS result: The encoding declaration names utf-8, so the sheet decodes as UTF-8.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i charset-utf-8.epub -u --advisory` | no findings; VALID | `charset-utf-8.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i charset-utf-8.epub -u --advisory` | no findings; VALID | `charset-utf-8.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck charset-utf-8.epub -u` | no findings; VALID | `charset-utf-8.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

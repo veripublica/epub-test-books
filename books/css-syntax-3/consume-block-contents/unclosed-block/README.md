@@ -55,7 +55,7 @@ CSS result: One rule, `p { margin: 0; }`: the block and the declaration are clos
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i unclosed-block.epub -u --advisory` | USAGE CSS-008; VALID | `unclosed-block.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i unclosed-block.epub -u --advisory` | USAGE CSS-008; VALID | `unclosed-block.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck unclosed-block.epub -u` | ERROR CSS-008; INVALID | `unclosed-block.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the unclosed block as an error (CSS-008).

@@ -59,7 +59,7 @@ CSS result: No rule is kept. `:foo` is not a pseudo-class, so the selector is in
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i unknown-pseudo-class.epub -u --advisory` | USAGE ADV-019; VALID | `unknown-pseudo-class.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i unknown-pseudo-class.epub -u --advisory` | USAGE ADV-019; VALID | `unknown-pseudo-class.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck unknown-pseudo-class.epub -u` | no findings; VALID | `unknown-pseudo-class.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

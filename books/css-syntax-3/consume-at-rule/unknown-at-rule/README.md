@@ -55,7 +55,7 @@ CSS result: Inside the block, `baz` is not a declaration, and re-read as a rule 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i unknown-at-rule.epub -u --advisory` | USAGE ADV-020, USAGE CSS-008; VALID | `unknown-at-rule.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i unknown-at-rule.epub -u --advisory` | USAGE ADV-020, USAGE CSS-008; VALID | `unknown-at-rule.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck unknown-at-rule.epub -u` | ERROR CSS-008; INVALID | `unknown-at-rule.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the unknown at-rule as an error (CSS-008).

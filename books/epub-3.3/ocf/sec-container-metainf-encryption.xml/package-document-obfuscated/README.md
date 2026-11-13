@@ -48,7 +48,7 @@ Invalid. The package document must not be encrypted, and the obfuscation algorit
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i package-document-obfuscated.epub -u --advisory` | FATAL RSC-016, ERROR SPEC-001, ERROR OPF-001; INVALID | `package-document-obfuscated.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i package-document-obfuscated.epub -u --advisory` | FATAL RSC-016, ERROR SPEC-001, ERROR OPF-001; INVALID | `package-document-obfuscated.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck package-document-obfuscated.epub -u` | FATAL RSC-016, ERROR OPF-001; INVALID | `package-document-obfuscated.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

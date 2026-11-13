@@ -42,7 +42,7 @@ Valid. The element is deprecated, which is a SHOULD NOT, and this one follows th
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i switch-element.epub -u --advisory` | WARNING RSC-017, USAGE ACC-009; VALID | `switch-element.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i switch-element.epub -u --advisory` | WARNING RSC-017, USAGE ACC-009; VALID | `switch-element.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck switch-element.epub -u` | USAGE ACC-009, WARNING RSC-017; VALID | `switch-element.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

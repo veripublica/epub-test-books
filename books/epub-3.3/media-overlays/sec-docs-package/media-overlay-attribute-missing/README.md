@@ -34,7 +34,7 @@ Invalid. `content.smil` references `content.xhtml`, so its item must say `media-
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i media-overlay-attribute-missing.epub -u --advisory` | ERROR MED_010, USAGE OPF-097; INVALID | `media-overlay-attribute-missing.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i media-overlay-attribute-missing.epub -u --advisory` | ERROR MED_010, USAGE OPF-097; INVALID | `media-overlay-attribute-missing.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck media-overlay-attribute-missing.epub -u` | ERROR MED_010, USAGE OPF-097; INVALID | `media-overlay-attribute-missing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

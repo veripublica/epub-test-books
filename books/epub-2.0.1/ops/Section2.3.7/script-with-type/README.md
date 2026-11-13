@@ -36,7 +36,7 @@ Valid. The script has its type, and the document does not depend on it.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i script-with-type.epub -u --advisory` | no findings; VALID | `script-with-type.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i script-with-type.epub -u --advisory` | no findings; VALID | `script-with-type.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck script-with-type.epub -u` | no findings; VALID | `script-with-type.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

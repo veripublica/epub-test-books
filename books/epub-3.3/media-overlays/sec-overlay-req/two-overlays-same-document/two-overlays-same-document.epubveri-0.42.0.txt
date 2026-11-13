@@ -1,0 +1,4 @@
+ERROR MED_011: content document is declared/referenced in more than one media overlay [OEBPS/content.xhtml]
+USAGE OPF-097: 'content2.smil' is declared in the manifest, but no content document references it [OEBPS/package.opf:33:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

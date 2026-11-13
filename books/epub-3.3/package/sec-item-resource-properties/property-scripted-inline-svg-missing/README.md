@@ -38,7 +38,7 @@ Invalid. The script in the embedded SVG is scripting in content.xhtml, so its ma
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i property-scripted-inline-svg-missing.epub -u --advisory` | ERROR OPF-014, USAGE RSC-025; INVALID | `property-scripted-inline-svg-missing.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i property-scripted-inline-svg-missing.epub -u --advisory` | ERROR OPF-014, USAGE RSC-025; INVALID | `property-scripted-inline-svg-missing.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck property-scripted-inline-svg-missing.epub -u` | ERROR OPF-014; INVALID | `property-scripted-inline-svg-missing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

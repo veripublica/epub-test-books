@@ -1,0 +1,6 @@
+ERROR OPF-060: file name 'OEBPS/é.xhtml' collides with another entry after case-folding/normalization [OEBPS/é.xhtml]
+ERROR OPF-074: manifest item 'nfd' represents the same resource as item 'nfc' [OEBPS/package.opf:30:5]
+USAGE PKG-012: file name 'é.xhtml' contains non-ASCII characters [OEBPS/é.xhtml]
+USAGE PKG-012: file name 'é.xhtml' contains non-ASCII characters [OEBPS/é.xhtml]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]

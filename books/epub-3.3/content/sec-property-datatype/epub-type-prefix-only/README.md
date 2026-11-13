@@ -4,7 +4,7 @@
 - Built by: `scripts/epub-3.3/content/sec-property-datatype/epub-type-prefix-only/build.py`
 - Origin: built here
 - Expected: invalid
-- Marks: epubveri: missed
+- Marks: none
 - Asked for by: the maintainer, to cover EPUB 3.3 content document extensions
 - Issue: [#563](https://github.com/veripublica/epub-test-books/issues/563)
 
@@ -34,12 +34,10 @@ Invalid. A property with an empty reference, only a prefix and a colon, is not a
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i epub-type-prefix-only.epub -u --advisory` | no findings; VALID | `epub-type-prefix-only.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i epub-type-prefix-only.epub -u --advisory` | ERROR OPF-026; INVALID | `epub-type-prefix-only.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck epub-type-prefix-only.epub -u` | ERROR OPF-026; INVALID | `epub-type-prefix-only.epubcheck-5.4.0.txt` |
 
-epubcheck agrees with the expected result. epubveri does not: it gives no finding.
-
-- **epubveri: missed.** epubveri issue pending.
+Both agree with the expected result, so there is nothing to mark. They report the same messages.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

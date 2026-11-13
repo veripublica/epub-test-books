@@ -1,0 +1,3 @@
+ERROR RSC-005: the root element of an SVG document must be "svg" in the SVG namespace, not "svg" in no namespace [OEBPS/picture.svg:2:1]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

@@ -51,7 +51,7 @@ CSS result: One rule with one declaration, `all: unset`. It sets every property 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i all-unset.epub -u --advisory` | no findings; VALID | `all-unset.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i all-unset.epub -u --advisory` | no findings; VALID | `all-unset.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck all-unset.epub -u` | no findings; VALID | `all-unset.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

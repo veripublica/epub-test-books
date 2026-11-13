@@ -39,7 +39,7 @@ Valid. `.5` is a CSS 2.1 number (zero digits, a dot, one digit), and it is posit
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i viewport-leading-dot.epub -u --advisory` | no findings; VALID | `viewport-leading-dot.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i viewport-leading-dot.epub -u --advisory` | no findings; VALID | `viewport-leading-dot.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck viewport-leading-dot.epub -u` | ERROR HTM_057; INVALID | `viewport-leading-dot.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports `.5` as not a positive number (HTM_057).

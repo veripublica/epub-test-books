@@ -4,7 +4,7 @@
 - Built by: `scripts/epub-3.3/content/sec-scripted-content/module-script/build.py`
 - Origin: built here
 - Expected: valid
-- Marks: epubveri: wrong error; epubcheck: wrong error
+- Marks: epubcheck: wrong error
 - Asked for by: the maintainer, to cover EPUB 3.3 scripting
 - Issue: [#534](https://github.com/veripublica/epub-test-books/issues/534)
 
@@ -44,12 +44,11 @@ Valid. A script with type="module" is a JavaScript module script, not a data blo
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i module-script.epub -u --advisory` | ERROR OPF-015; INVALID | `module-script.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i module-script.epub -u --advisory` | no findings; VALID | `module-script.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck module-script.epub -u` | ERROR OPF-015; INVALID | `module-script.epubcheck-5.4.0.txt` |
 
-Neither agrees with the expected result. epubveri reports the scripted property as not needed (OPF-015). epubcheck reports the scripted property as not needed (OPF-015).
+epubveri agrees with the expected result. epubcheck does not: it reports the scripted property as not needed (OPF-015).
 
-- **epubveri: wrong error.** epubveri issue pending.
 - **epubcheck: wrong error.** [w3c/epubcheck#1773](https://github.com/w3c/epubcheck/issues/1773).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.

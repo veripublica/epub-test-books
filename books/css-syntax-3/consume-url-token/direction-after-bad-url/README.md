@@ -57,7 +57,7 @@ CSS result: One rule. The `background` declaration holds a bad-url token (a pars
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i direction-after-bad-url.epub -u --advisory` | ERROR CSS-001, USAGE ADV-015; INVALID | `direction-after-bad-url.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i direction-after-bad-url.epub -u --advisory` | ERROR CSS-001, USAGE ADV-015; INVALID | `direction-after-bad-url.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-after-bad-url.epub -u` | ERROR RSC-020, ERROR CSS-001, ERROR RSC-007; INVALID | `direction-after-bad-url.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

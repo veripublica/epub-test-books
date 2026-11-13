@@ -34,7 +34,7 @@ Invalid. `par` must hold exactly one `text`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i par-no-text.epub -u --advisory` | ERROR MED_013; INVALID | `par-no-text.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i par-no-text.epub -u --advisory` | ERROR MED_013; INVALID | `par-no-text.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck par-no-text.epub -u` | ERROR RSC-005, ERROR MED_013; INVALID | `par-no-text.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

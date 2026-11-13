@@ -4,7 +4,7 @@
 - Built by: `scripts/epub-3.3/content/sec-epub-type-attribute/epub-type-empty/build.py`
 - Origin: built here
 - Expected: invalid
-- Marks: epubveri: missed
+- Marks: none
 - Asked for by: the maintainer, to cover EPUB 3.3 content document extensions
 - Issue: [#561](https://github.com/veripublica/epub-test-books/issues/561)
 
@@ -34,12 +34,10 @@ Invalid. The value must be one or more terms, and an empty value has none.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i epub-type-empty.epub -u --advisory` | no findings; VALID | `epub-type-empty.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i epub-type-empty.epub -u --advisory` | ERROR RSC-005; INVALID | `epub-type-empty.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck epub-type-empty.epub -u` | ERROR RSC-005; INVALID | `epub-type-empty.epubcheck-5.4.0.txt` |
 
-epubcheck agrees with the expected result. epubveri does not: it gives no finding.
-
-- **epubveri: missed.** epubveri issue pending.
+Both agree with the expected result, so there is nothing to mark. They report the same messages.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

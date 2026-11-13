@@ -38,7 +38,7 @@ Valid. It is a conforming SVG stand-alone file.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i svg-document.epub -u --advisory` | no findings; VALID | `svg-document.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i svg-document.epub -u --advisory` | no findings; VALID | `svg-document.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck svg-document.epub -u` | no findings; VALID | `svg-document.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

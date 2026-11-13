@@ -1,0 +1,3 @@
+USAGE OPF-088: epub:type value 'no-such-term' is not in the default vocabulary [OEBPS/content.xhtml:11:8]
+— 0 error(s), 0 warning(s): VALID
+[exit 0]

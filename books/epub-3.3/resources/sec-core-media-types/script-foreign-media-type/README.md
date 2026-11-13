@@ -34,7 +34,7 @@ Valid. The script is then a foreign resource. A foreign resource needs a fallbac
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i script-foreign-media-type.epub -u --advisory` | USAGE RSC-035; VALID | `script-foreign-media-type.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i script-foreign-media-type.epub -u --advisory` | USAGE RSC-035; VALID | `script-foreign-media-type.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck script-foreign-media-type.epub -u` | USAGE RSC-035; VALID | `script-foreign-media-type.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

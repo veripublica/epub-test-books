@@ -34,7 +34,7 @@ Valid. body is not the head and not metadata content, so epub:type may go on it.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i epub-type-on-body.epub -u --advisory` | no findings; VALID | `epub-type-on-body.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i epub-type-on-body.epub -u --advisory` | no findings; VALID | `epub-type-on-body.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck epub-type-on-body.epub -u` | no findings; VALID | `epub-type-on-body.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

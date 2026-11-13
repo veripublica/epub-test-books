@@ -34,7 +34,7 @@ Valid. EPUB 3.3 uses XML Encryption as a framework and does not restrict the alg
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i aes-unknown-algorithm.epub -u --advisory` | INFO RSC-004; VALID | `aes-unknown-algorithm.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i aes-unknown-algorithm.epub -u --advisory` | INFO RSC-004; VALID | `aes-unknown-algorithm.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck aes-unknown-algorithm.epub -u` | INFO RSC-004; VALID | `aes-unknown-algorithm.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

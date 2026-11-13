@@ -52,7 +52,7 @@ Invalid. `:` is one of the forbidden characters.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i filename-colon.epub -u --advisory` | ERROR PKG-009; INVALID | `filename-colon.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i filename-colon.epub -u --advisory` | ERROR PKG-009; INVALID | `filename-colon.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck filename-colon.epub -u` | ERROR PKG-009; INVALID | `filename-colon.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

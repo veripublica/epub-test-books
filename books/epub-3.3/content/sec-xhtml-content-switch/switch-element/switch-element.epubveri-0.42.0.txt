@@ -1,0 +1,4 @@
+WARNING RSC-017: The "epub:switch" element is deprecated [OEBPS/content.xhtml:11:5]
+USAGE ACC-009: MathML markup has no alternative text [OEBPS/content.xhtml:12:74]
+— 0 error(s), 1 warning(s): VALID
+[exit 0]

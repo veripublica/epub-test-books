@@ -42,7 +42,7 @@ Valid. `dir` is an enumerated attribute, and its value only has to be an ASCII c
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i html-dir-uppercase.epub -u --advisory` | no findings; VALID | `html-dir-uppercase.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i html-dir-uppercase.epub -u --advisory` | no findings; VALID | `html-dir-uppercase.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck html-dir-uppercase.epub -u` | no findings; VALID | `html-dir-uppercase.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

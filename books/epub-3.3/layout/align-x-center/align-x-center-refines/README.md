@@ -34,7 +34,7 @@ Invalid. The property "is only available as a spine override" through the `itemr
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i align-x-center-refines.epub -u --advisory` | ERROR OPF-027; INVALID | `align-x-center-refines.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i align-x-center-refines.epub -u --advisory` | ERROR OPF-027; INVALID | `align-x-center-refines.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck align-x-center-refines.epub -u` | ERROR OPF-027; INVALID | `align-x-center-refines.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

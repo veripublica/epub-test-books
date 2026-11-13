@@ -36,7 +36,7 @@ Invalid. The root element of encryption.xml must be encryption.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i encryption-wrong-root.epub -u --advisory` | ERROR RSC-005, INFO RSC-004, USAGE OBS-001, USAGE CSS-028; INVALID | `encryption-wrong-root.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i encryption-wrong-root.epub -u --advisory` | ERROR RSC-005, INFO RSC-004, USAGE OBS-001, USAGE CSS-028; INVALID | `encryption-wrong-root.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck encryption-wrong-root.epub -u` | ERROR RSC-005, USAGE OBS-001, USAGE CSS-028, USAGE CSS-028, INFO RSC-004; INVALID | `encryption-wrong-root.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark.

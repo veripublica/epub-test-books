@@ -40,7 +40,7 @@ Invalid. Seconds range from 00 to 59.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i clock-seconds-60.epub -u --advisory` | ERROR RSC-005; INVALID | `clock-seconds-60.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i clock-seconds-60.epub -u --advisory` | ERROR RSC-005; INVALID | `clock-seconds-60.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck clock-seconds-60.epub -u` | ERROR RSC-005; INVALID | `clock-seconds-60.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

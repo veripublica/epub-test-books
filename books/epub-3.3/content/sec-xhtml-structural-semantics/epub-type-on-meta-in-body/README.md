@@ -40,7 +40,7 @@ Invalid. meta is metadata content, and epub:type must not be used on metadata co
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i epub-type-on-meta-in-body.epub -u --advisory` | ERROR RSC-005; INVALID | `epub-type-on-meta-in-body.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i epub-type-on-meta-in-body.epub -u --advisory` | ERROR RSC-005; INVALID | `epub-type-on-meta-in-body.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck epub-type-on-meta-in-body.epub -u` | ERROR RSC-005; INVALID | `epub-type-on-meta-in-body.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

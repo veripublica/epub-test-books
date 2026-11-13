@@ -34,7 +34,7 @@ Invalid. `active-class` may occur at most once.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i active-class-twice.epub -u --advisory` | ERROR RSC-005; INVALID | `active-class-twice.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i active-class-twice.epub -u --advisory` | ERROR RSC-005; INVALID | `active-class-twice.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck active-class-twice.epub -u` | ERROR RSC-005; INVALID | `active-class-twice.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

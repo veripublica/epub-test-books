@@ -38,7 +38,7 @@ Valid. `vertical-right` is a deprecated keyword that `-epub-text-orientation` st
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i epub-text-orientation-deprecated.epub -u --advisory` | USAGE OBS-001; VALID | `epub-text-orientation-deprecated.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i epub-text-orientation-deprecated.epub -u --advisory` | USAGE OBS-001; VALID | `epub-text-orientation-deprecated.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck epub-text-orientation-deprecated.epub -u` | USAGE OBS-001; VALID | `epub-text-orientation-deprecated.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

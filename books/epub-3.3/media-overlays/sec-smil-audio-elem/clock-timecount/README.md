@@ -40,7 +40,7 @@ Valid. `3s` is a timecount value with the metric `s`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i clock-timecount.epub -u --advisory` | no findings; VALID | `clock-timecount.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i clock-timecount.epub -u --advisory` | no findings; VALID | `clock-timecount.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck clock-timecount.epub -u` | no findings; VALID | `clock-timecount.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

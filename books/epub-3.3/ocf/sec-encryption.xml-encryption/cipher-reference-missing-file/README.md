@@ -47,7 +47,7 @@ The EPUB 3.3 text does not say this in one sentence, so this set waited for the 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i cipher-reference-missing-file.epub -u --advisory` | ERROR RSC-007; INVALID | `cipher-reference-missing-file.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i cipher-reference-missing-file.epub -u --advisory` | ERROR RSC-007; INVALID | `cipher-reference-missing-file.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck cipher-reference-missing-file.epub -u` | ERROR RSC-007; INVALID | `cipher-reference-missing-file.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

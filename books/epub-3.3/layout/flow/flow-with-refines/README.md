@@ -34,7 +34,7 @@ Invalid. The property must not be declared with the `refines` attribute; a spine
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i flow-with-refines.epub -u --advisory` | ERROR RSC-005, USAGE OBS-001; INVALID | `flow-with-refines.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i flow-with-refines.epub -u --advisory` | ERROR RSC-005, USAGE OBS-001; INVALID | `flow-with-refines.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck flow-with-refines.epub -u` | USAGE OBS-001, ERROR RSC-005; INVALID | `flow-with-refines.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

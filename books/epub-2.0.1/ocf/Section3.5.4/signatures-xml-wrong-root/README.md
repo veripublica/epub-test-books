@@ -38,7 +38,7 @@ Invalid. The root element of `signatures.xml` must be `signatures`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i signatures-xml-wrong-root.epub -u --advisory` | ERROR RSC-005; INVALID | `signatures-xml-wrong-root.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i signatures-xml-wrong-root.epub -u --advisory` | ERROR RSC-005; INVALID | `signatures-xml-wrong-root.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck signatures-xml-wrong-root.epub -u` | ERROR RSC-005; INVALID | `signatures-xml-wrong-root.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

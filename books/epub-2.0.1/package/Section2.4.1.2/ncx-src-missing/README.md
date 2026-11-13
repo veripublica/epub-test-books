@@ -34,7 +34,7 @@ Invalid. The URI must resolve to an OPS Content Document.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i ncx-src-missing.epub -u --advisory` | ERROR RSC-007; INVALID | `ncx-src-missing.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i ncx-src-missing.epub -u --advisory` | ERROR RSC-007; INVALID | `ncx-src-missing.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck ncx-src-missing.epub -u` | ERROR RSC-007; INVALID | `ncx-src-missing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

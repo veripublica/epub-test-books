@@ -38,7 +38,7 @@ Invalid. A document with a form element is a scripted content document, so its m
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i property-scripted-form-missing.epub -u --advisory` | ERROR OPF-014; INVALID | `property-scripted-form-missing.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i property-scripted-form-missing.epub -u --advisory` | ERROR OPF-014; INVALID | `property-scripted-form-missing.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck property-scripted-form-missing.epub -u` | ERROR OPF-014; INVALID | `property-scripted-form-missing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -1,0 +1,4 @@
+ERROR RSC-005: element "spine" is not allowed yet; missing required element "manifest" [OEBPS/package.opf:25:3]
+ERROR RSC-005: element "manifest" is not allowed here; expected one of "bindings", "collection", "guide" [OEBPS/package.opf:29:3]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]

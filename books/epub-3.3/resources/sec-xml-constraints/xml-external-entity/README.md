@@ -34,7 +34,7 @@ Invalid. The declaration itself is not allowed, used or not.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i xml-external-entity.epub -u --advisory` | ERROR HTM-003; INVALID | `xml-external-entity.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i xml-external-entity.epub -u --advisory` | ERROR HTM-003; INVALID | `xml-external-entity.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck xml-external-entity.epub -u` | ERROR HTM-003; INVALID | `xml-external-entity.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

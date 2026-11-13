@@ -34,7 +34,7 @@ Valid. Files that are not in the manifest may be in the archive; they are only n
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i extra-unlisted-file.epub -u --advisory` | USAGE OPF-003; VALID | `extra-unlisted-file.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i extra-unlisted-file.epub -u --advisory` | USAGE OPF-003; VALID | `extra-unlisted-file.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck extra-unlisted-file.epub -u` | USAGE OPF-003; VALID | `extra-unlisted-file.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

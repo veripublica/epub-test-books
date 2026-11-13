@@ -48,7 +48,7 @@ too far. No entry can be read, `META-INF/container.xml` first among them.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i cd-offset-shifted.epub -u --advisory` | FATAL PKG-008 on `META-INF/container.xml`, ERROR RSC-003, INVALID | `cd-offset-shifted.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i cd-offset-shifted.epub -u --advisory` | FATAL PKG-008 on `META-INF/container.xml`, ERROR RSC-003, INVALID | `cd-offset-shifted.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck cd-offset-shifted.epub -u` | FATAL PKG-008 on `META-INF/container.xml`, ERROR RSC-003 | `cd-offset-shifted.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. PKG-008 is

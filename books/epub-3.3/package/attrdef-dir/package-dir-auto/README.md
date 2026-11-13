@@ -38,7 +38,7 @@ Valid. `auto` is an allowed value, and `dir` is allowed on `package`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i package-dir-auto.epub -u --advisory` | no findings; VALID | `package-dir-auto.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i package-dir-auto.epub -u --advisory` | no findings; VALID | `package-dir-auto.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck package-dir-auto.epub -u` | no findings; VALID | `package-dir-auto.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

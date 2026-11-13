@@ -45,7 +45,7 @@ CSS result: `style.css` imports `b.css`, whose one rule declares `direction: rtl
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i import-direction.epub -u --advisory` | ERROR CSS-001; INVALID | `import-direction.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i import-direction.epub -u --advisory` | ERROR CSS-001; INVALID | `import-direction.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck import-direction.epub -u` | ERROR CSS-001; INVALID | `import-direction.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -52,7 +52,7 @@ Valid. `|` is not one of the characters OCF 2.0.1 forbids. (EPUB 3.3 does forbid
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i filename-pipe.epub -u --advisory` | no findings; VALID | `filename-pipe.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i filename-pipe.epub -u --advisory` | no findings; VALID | `filename-pipe.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck filename-pipe.epub -u` | ERROR PKG-009; INVALID | `filename-pipe.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports `|` as a forbidden character (PKG-009).

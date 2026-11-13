@@ -34,7 +34,7 @@ Valid. Attributes from other namespaces are removed before the schema check, and
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i container-foreign-attribute.epub -u --advisory` | no findings; VALID | `container-foreign-attribute.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i container-foreign-attribute.epub -u --advisory` | no findings; VALID | `container-foreign-attribute.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck container-foreign-attribute.epub -u` | ERROR RSC-005; INVALID | `container-foreign-attribute.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the foreign attribute as a schema error (RSC-005).

@@ -34,7 +34,7 @@ Valid. UTF-16 is allowed, and it has the byte order mark it must have.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i css-utf-16-bom.epub -u --advisory` | no findings; VALID | `css-utf-16-bom.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i css-utf-16-bom.epub -u --advisory` | no findings; VALID | `css-utf-16-bom.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck css-utf-16-bom.epub -u` | WARNING CSS-003; VALID | `css-utf-16-bom.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

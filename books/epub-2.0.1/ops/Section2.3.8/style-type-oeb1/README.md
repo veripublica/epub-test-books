@@ -34,7 +34,7 @@ Valid. The clause allows the deprecated value.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i style-type-oeb1.epub -u --advisory` | no findings; VALID | `style-type-oeb1.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i style-type-oeb1.epub -u --advisory` | no findings; VALID | `style-type-oeb1.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck style-type-oeb1.epub -u` | no findings; VALID | `style-type-oeb1.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

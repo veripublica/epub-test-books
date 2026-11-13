@@ -36,7 +36,7 @@ Invalid. Data URLs are not allowed on `a` elements outside an `iframe`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i data-url-a-href.epub -u --advisory` | ERROR RSC-029, ERROR RSC-011; INVALID | `data-url-a-href.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i data-url-a-href.epub -u --advisory` | ERROR RSC-029, ERROR RSC-011; INVALID | `data-url-a-href.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck data-url-a-href.epub -u` | ERROR RSC-029, ERROR RSC-011; INVALID | `data-url-a-href.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

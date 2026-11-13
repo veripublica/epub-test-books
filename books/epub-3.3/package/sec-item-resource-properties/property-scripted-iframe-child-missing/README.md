@@ -38,7 +38,7 @@ Invalid. framed.xhtml contains scripting, so its own manifest item must have the
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i property-scripted-iframe-child-missing.epub -u --advisory` | ERROR OPF-014; INVALID | `property-scripted-iframe-child-missing.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i property-scripted-iframe-child-missing.epub -u --advisory` | ERROR OPF-014; INVALID | `property-scripted-iframe-child-missing.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck property-scripted-iframe-child-missing.epub -u` | ERROR OPF-014; INVALID | `property-scripted-iframe-child-missing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

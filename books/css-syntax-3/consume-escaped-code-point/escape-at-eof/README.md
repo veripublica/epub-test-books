@@ -57,7 +57,7 @@ CSS result: One rule, `p { margin: 0; }`. The backslash and EOF make an escape: 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i escape-at-eof.epub -u --advisory` | USAGE CSS-008, USAGE CSS-008; VALID | `escape-at-eof.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i escape-at-eof.epub -u --advisory` | USAGE CSS-008, USAGE CSS-008; VALID | `escape-at-eof.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck escape-at-eof.epub -u` | ERROR CSS-008, ERROR CSS-008, ERROR CSS-008; INVALID | `escape-at-eof.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the parse error as errors (CSS-008).

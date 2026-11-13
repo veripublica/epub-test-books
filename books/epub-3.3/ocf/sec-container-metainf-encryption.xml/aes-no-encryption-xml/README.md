@@ -34,7 +34,7 @@ Invalid. An encrypted resource needs encryption.xml. Without it, a validator rea
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i aes-no-encryption-xml.epub -u --advisory` | FATAL RSC-016, FATAL RSC-016; INVALID | `aes-no-encryption-xml.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i aes-no-encryption-xml.epub -u --advisory` | FATAL RSC-016, FATAL RSC-016; INVALID | `aes-no-encryption-xml.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck aes-no-encryption-xml.epub -u` | FATAL RSC-016; INVALID | `aes-no-encryption-xml.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

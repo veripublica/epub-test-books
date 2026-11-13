@@ -34,7 +34,7 @@ Valid. OCF 2.0.1 allows two names in the same directory to map to the same strin
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i filename-nfc-nfd-duplicate.epub -u --advisory` | USAGE PKG-012, USAGE PKG-012; VALID | `filename-nfc-nfd-duplicate.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i filename-nfc-nfd-duplicate.epub -u --advisory` | USAGE PKG-012, USAGE PKG-012; VALID | `filename-nfc-nfd-duplicate.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck filename-nfc-nfd-duplicate.epub -u` | USAGE PKG-012, ERROR OPF-060, USAGE PKG-012, ERROR OPF-074; INVALID | `filename-nfc-nfd-duplicate.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the two names as duplicates (OPF-060, OPF-074).

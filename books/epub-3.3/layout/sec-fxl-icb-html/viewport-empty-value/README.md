@@ -34,7 +34,7 @@ Invalid. The width must be a positive number or `device-width`; an empty value i
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i viewport-empty-value.epub -u --advisory` | ERROR HTM-047; INVALID | `viewport-empty-value.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i viewport-empty-value.epub -u --advisory` | ERROR HTM-047; INVALID | `viewport-empty-value.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck viewport-empty-value.epub -u` | ERROR HTM-047; INVALID | `viewport-empty-value.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

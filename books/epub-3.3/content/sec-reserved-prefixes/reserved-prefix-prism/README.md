@@ -41,7 +41,7 @@ Valid. prism is one of the two prefixes reserved for epub:type, so it needs no d
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i reserved-prefix-prism.epub -u --advisory` | WARNING OPF-086c; VALID | `reserved-prefix-prism.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i reserved-prefix-prism.epub -u --advisory` | WARNING OPF-086c; VALID | `reserved-prefix-prism.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck reserved-prefix-prism.epub -u` | WARNING OPF-086c; VALID | `reserved-prefix-prism.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

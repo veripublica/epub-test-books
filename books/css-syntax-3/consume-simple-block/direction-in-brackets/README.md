@@ -53,7 +53,7 @@ CSS result: One rule with one declaration, `color`, whose value is the block `[d
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i direction-in-brackets.epub -u --advisory` | USAGE ADV-024; VALID | `direction-in-brackets.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i direction-in-brackets.epub -u --advisory` | USAGE ADV-024; VALID | `direction-in-brackets.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-in-brackets.epub -u` | ERROR CSS-008; INVALID | `direction-in-brackets.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the block as an error (CSS-008).

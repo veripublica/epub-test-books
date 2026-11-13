@@ -4,7 +4,7 @@
 - Built by: `scripts/epub-3.3/content/sec-epub-type-attribute/epub-type-whitespace-only/build.py`
 - Origin: built here
 - Expected: invalid
-- Marks: epubveri: missed
+- Marks: none
 - Asked for by: the maintainer, to cover EPUB 3.3 content document extensions
 - Issue: [#562](https://github.com/veripublica/epub-test-books/issues/562)
 
@@ -34,12 +34,10 @@ Invalid. The value must be one or more terms, and spaces alone hold none.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i epub-type-whitespace-only.epub -u --advisory` | no findings; VALID | `epub-type-whitespace-only.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i epub-type-whitespace-only.epub -u --advisory` | ERROR RSC-005; INVALID | `epub-type-whitespace-only.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck epub-type-whitespace-only.epub -u` | ERROR RSC-005; INVALID | `epub-type-whitespace-only.epubcheck-5.4.0.txt` |
 
-epubcheck agrees with the expected result. epubveri does not: it gives no finding.
-
-- **epubveri: missed.** epubveri issue pending.
+Both agree with the expected result, so there is nothing to mark. They report the same messages.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

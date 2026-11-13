@@ -38,7 +38,7 @@ Invalid. ref is an IDREF, so it must name an element in the document.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i trigger-ref-missing.epub -u --advisory` | ERROR RSC-005, WARNING RSC-017; INVALID | `trigger-ref-missing.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i trigger-ref-missing.epub -u --advisory` | ERROR RSC-005, WARNING RSC-017; INVALID | `trigger-ref-missing.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck trigger-ref-missing.epub -u` | WARNING RSC-017, ERROR RSC-005; INVALID | `trigger-ref-missing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

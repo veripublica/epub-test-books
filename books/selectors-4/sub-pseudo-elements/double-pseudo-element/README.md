@@ -57,7 +57,7 @@ CSS result: No rule is kept. `::before::before` is an invalid selector, so the r
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i double-pseudo-element.epub -u --advisory` | USAGE ADV-017; VALID | `double-pseudo-element.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i double-pseudo-element.epub -u --advisory` | USAGE ADV-017; VALID | `double-pseudo-element.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck double-pseudo-element.epub -u` | no findings; VALID | `double-pseudo-element.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

@@ -34,7 +34,7 @@ Invalid. The `id` is not unique.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i id-duplicate.epub -u --advisory` | ERROR RSC-005, ERROR RSC-005; INVALID | `id-duplicate.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i id-duplicate.epub -u --advisory` | ERROR RSC-005, ERROR RSC-005; INVALID | `id-duplicate.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck id-duplicate.epub -u` | ERROR RSC-005, ERROR RSC-005; INVALID | `id-duplicate.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -39,7 +39,7 @@ Invalid. `-0` is a number equal to 0, and 0 is not positive.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i viewport-minus-zero.epub -u --advisory` | ERROR HTM_057; INVALID | `viewport-minus-zero.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i viewport-minus-zero.epub -u --advisory` | ERROR HTM_057; INVALID | `viewport-minus-zero.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck viewport-minus-zero.epub -u` | ERROR HTM_057; INVALID | `viewport-minus-zero.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

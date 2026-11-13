@@ -34,7 +34,7 @@ Invalid. This is a self-reference. The property is a `schema:` one, like those a
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i refines-self.epub -u --advisory` | ERROR OPF-065; INVALID | `refines-self.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i refines-self.epub -u --advisory` | ERROR OPF-065; INVALID | `refines-self.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck refines-self.epub -u` | ERROR OPF-065; INVALID | `refines-self.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

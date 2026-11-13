@@ -52,7 +52,7 @@ Invalid. A period as the last character is forbidden.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i filename-trailing-period.epub -u --advisory` | ERROR PKG-011; INVALID | `filename-trailing-period.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i filename-trailing-period.epub -u --advisory` | ERROR PKG-011; INVALID | `filename-trailing-period.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck filename-trailing-period.epub -u` | ERROR PKG-011; INVALID | `filename-trailing-period.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

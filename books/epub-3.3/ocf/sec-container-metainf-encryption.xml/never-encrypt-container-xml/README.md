@@ -43,7 +43,7 @@ Invalid. META-INF/container.xml is on the list of files that must not be encrypt
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i never-encrypt-container-xml.epub -u --advisory` | ERROR SPEC-001; INVALID | `never-encrypt-container-xml.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i never-encrypt-container-xml.epub -u --advisory` | ERROR SPEC-001; INVALID | `never-encrypt-container-xml.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck never-encrypt-container-xml.epub -u` | VALID | `never-encrypt-container-xml.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it gives no finding.

@@ -34,7 +34,7 @@ Valid. The clause names this exact pair as valid.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i page-spread-alias-pair.epub -u --advisory` | no findings; VALID | `page-spread-alias-pair.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i page-spread-alias-pair.epub -u --advisory` | no findings; VALID | `page-spread-alias-pair.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck page-spread-alias-pair.epub -u` | no findings; VALID | `page-spread-alias-pair.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

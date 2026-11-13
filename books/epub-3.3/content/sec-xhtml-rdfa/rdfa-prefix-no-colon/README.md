@@ -4,7 +4,7 @@
 - Built by: `scripts/epub-3.3/content/sec-xhtml-rdfa/rdfa-prefix-no-colon/build.py`
 - Origin: built here
 - Expected: invalid
-- Marks: epubveri: missed
+- Marks: none
 - Asked for by: the maintainer, to cover EPUB 3.3 content document extensions
 - Issue: [#575](https://github.com/veripublica/epub-test-books/issues/575)
 
@@ -38,12 +38,10 @@ Invalid. RDFa's prefix attribute takes pairs of the form NCName ':' ' '+ IRI, an
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i rdfa-prefix-no-colon.epub -u --advisory` | no findings; VALID | `rdfa-prefix-no-colon.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i rdfa-prefix-no-colon.epub -u --advisory` | ERROR RSC-005; INVALID | `rdfa-prefix-no-colon.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck rdfa-prefix-no-colon.epub -u` | ERROR RSC-005; INVALID | `rdfa-prefix-no-colon.epubcheck-5.4.0.txt` |
 
-epubcheck agrees with the expected result. epubveri does not: it gives no finding.
-
-- **epubveri: missed.** epubveri issue pending.
+Both agree with the expected result, so there is nothing to mark. They report the same messages.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

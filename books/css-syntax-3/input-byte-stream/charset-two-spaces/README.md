@@ -47,7 +47,7 @@ CSS result: The declaration must have exactly one space after `@charset`. With t
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i charset-two-spaces.epub -u --advisory` | no findings; VALID | `charset-two-spaces.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i charset-two-spaces.epub -u --advisory` | no findings; VALID | `charset-two-spaces.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck charset-two-spaces.epub -u` | ERROR CSS-004; INVALID | `charset-two-spaces.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reads the line as a declaration of ISO-8859-1 (CSS-004).

@@ -34,7 +34,7 @@ Invalid. `vertical` is not `landscape`, `portrait` or `auto`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i orientation-value-unknown.epub -u --advisory` | ERROR RSC-005, USAGE OBS-001; INVALID | `orientation-value-unknown.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i orientation-value-unknown.epub -u --advisory` | ERROR RSC-005, USAGE OBS-001; INVALID | `orientation-value-unknown.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck orientation-value-unknown.epub -u` | USAGE OBS-001, ERROR RSC-005; INVALID | `orientation-value-unknown.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

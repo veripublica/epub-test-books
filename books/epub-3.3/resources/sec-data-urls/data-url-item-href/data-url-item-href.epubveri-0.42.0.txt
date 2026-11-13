@@ -1,0 +1,4 @@
+ERROR RSC-029: manifest item 'data' href must not be a data URL [OEBPS/package.opf:29:21]
+USAGE OPF-097: 'data:text/plain,hello' is declared in the manifest, but no content document references it [OEBPS/package.opf:29:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

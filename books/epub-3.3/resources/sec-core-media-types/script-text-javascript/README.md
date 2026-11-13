@@ -34,7 +34,7 @@ Valid. text/javascript is one of the three media types the core media types tabl
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i script-text-javascript.epub -u --advisory` | USAGE OPF-090; VALID | `script-text-javascript.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i script-text-javascript.epub -u --advisory` | USAGE OPF-090; VALID | `script-text-javascript.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck script-text-javascript.epub -u` | USAGE OPF-090; VALID | `script-text-javascript.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

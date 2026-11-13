@@ -38,7 +38,7 @@ Invalid. The `style` element holds a CSS style sheet, and that style sheet inclu
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i style-element-direction.epub -u --advisory` | ERROR CSS-001; INVALID | `style-element-direction.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i style-element-direction.epub -u --advisory` | ERROR CSS-001; INVALID | `style-element-direction.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck style-element-direction.epub -u` | ERROR CSS-001; INVALID | `style-element-direction.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

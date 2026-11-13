@@ -34,7 +34,7 @@ Valid. The clause lets any spine item carry a flow override; nothing forbids one
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i flow-override-in-fxl.epub -u --advisory` | USAGE OBS-001; VALID | `flow-override-in-fxl.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i flow-override-in-fxl.epub -u --advisory` | USAGE OBS-001; VALID | `flow-override-in-fxl.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck flow-override-in-fxl.epub -u` | USAGE OBS-001; VALID | `flow-override-in-fxl.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

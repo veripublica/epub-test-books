@@ -63,7 +63,7 @@ CSS result: One rule. The `(` makes a bad-url token, `url(a(b)` (a parse error).
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i direction-in-bad-url.epub -u --advisory` | ERROR CSS-001, USAGE ADV-015, USAGE CSS-008; INVALID | `direction-in-bad-url.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i direction-in-bad-url.epub -u --advisory` | ERROR CSS-001, USAGE ADV-015, USAGE CSS-008; INVALID | `direction-in-bad-url.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-in-bad-url.epub -u` | ERROR CSS-001, ERROR CSS-008, ERROR RSC-007; INVALID | `direction-in-bad-url.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

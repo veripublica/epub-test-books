@@ -34,7 +34,7 @@ Invalid. An `ol` must follow a `span`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i span-leaf.epub -u --advisory` | ERROR RSC-005; INVALID | `span-leaf.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i span-leaf.epub -u --advisory` | ERROR RSC-005; INVALID | `span-leaf.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck span-leaf.epub -u` | ERROR RSC-005; INVALID | `span-leaf.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -47,7 +47,7 @@ CSS result: The declaration must use double quotes. With single quotes it is not
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i charset-single-quotes.epub -u --advisory` | no findings; VALID | `charset-single-quotes.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i charset-single-quotes.epub -u --advisory` | no findings; VALID | `charset-single-quotes.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck charset-single-quotes.epub -u` | ERROR CSS-004; INVALID | `charset-single-quotes.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reads the single-quoted line as a declaration of ISO-8859-1 (CSS-004).

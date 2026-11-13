@@ -1,0 +1,4 @@
+ERROR RSC-007: references a missing resource 'missing.xhtml#p1' [OEBPS/content.smil:4:20]
+ERROR MED_013: content document declares a media-overlay attribute but is not referenced from that overlay [OEBPS/content.xhtml]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]

@@ -59,7 +59,7 @@ CSS result: One rule. The `background` declaration holds a bad-url token (a pars
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i bad-url.epub -u --advisory` | USAGE ADV-015; VALID | `bad-url.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i bad-url.epub -u --advisory` | USAGE ADV-015; VALID | `bad-url.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck bad-url.epub -u` | ERROR RSC-020, ERROR RSC-007; INVALID | `bad-url.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reads the bad url as a reference, and reports it as missing (RSC-007) and not valid (RSC-020).

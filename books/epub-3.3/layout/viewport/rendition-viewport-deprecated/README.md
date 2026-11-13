@@ -39,7 +39,7 @@ Valid, because using a deprecated feature is a SHOULD NOT, not a MUST NOT. A val
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i rendition-viewport-deprecated.epub -u --advisory` | WARNING OPF-086; VALID | `rendition-viewport-deprecated.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i rendition-viewport-deprecated.epub -u --advisory` | WARNING OPF-086; VALID | `rendition-viewport-deprecated.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck rendition-viewport-deprecated.epub -u` | WARNING OPF-086; VALID | `rendition-viewport-deprecated.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

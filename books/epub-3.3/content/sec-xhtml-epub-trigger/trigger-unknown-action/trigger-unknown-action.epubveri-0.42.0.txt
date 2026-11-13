@@ -1,0 +1,4 @@
+ERROR RSC-005: value of attribute "action" is invalid: "explode" [OEBPS/content.xhtml:7:64]
+WARNING RSC-017: The "epub:trigger" element is deprecated [OEBPS/content.xhtml:7:5]
+— 1 error(s), 1 warning(s): INVALID
+[exit 1]

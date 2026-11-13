@@ -34,7 +34,7 @@ Valid. The viewport rules are for fixed-layout documents; nothing forbids the ta
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i viewport-in-reflowable.epub -u --advisory` | USAGE HTM_060b; VALID | `viewport-in-reflowable.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i viewport-in-reflowable.epub -u --advisory` | USAGE HTM_060b; VALID | `viewport-in-reflowable.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck viewport-in-reflowable.epub -u` | USAGE HTM_060b; VALID | `viewport-in-reflowable.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -53,7 +53,7 @@ CSS result: One rule, `p`, with one declaration, `direction: rtl`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i direction-in-unclosed-block.epub -u --advisory` | ERROR CSS-001, USAGE CSS-008; INVALID | `direction-in-unclosed-block.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i direction-in-unclosed-block.epub -u --advisory` | ERROR CSS-001, USAGE CSS-008; INVALID | `direction-in-unclosed-block.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-in-unclosed-block.epub -u` | ERROR CSS-008; INVALID | `direction-in-unclosed-block.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it does not report `direction` (no CSS-001), and reports the unclosed block as an error (CSS-008).

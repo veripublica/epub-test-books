@@ -55,7 +55,7 @@ CSS result: At the top level a semicolon does not end a qualified rule, so the p
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i semicolon-in-selector.epub -u --advisory` | USAGE CSS-008; VALID | `semicolon-in-selector.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i semicolon-in-selector.epub -u --advisory` | USAGE CSS-008; VALID | `semicolon-in-selector.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck semicolon-in-selector.epub -u` | ERROR CSS-008; INVALID | `semicolon-in-selector.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the invalid selector as an error (CSS-008).

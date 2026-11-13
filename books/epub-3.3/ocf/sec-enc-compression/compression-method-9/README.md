@@ -40,7 +40,7 @@ Invalid. The Compression element's Method must be 0 or 8.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i compression-method-9.epub -u --advisory` | ERROR RSC-005, INFO RSC-004; INVALID | `compression-method-9.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i compression-method-9.epub -u --advisory` | ERROR RSC-005, INFO RSC-004; INVALID | `compression-method-9.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck compression-method-9.epub -u` | ERROR RSC-005, INFO RSC-004; INVALID | `compression-method-9.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

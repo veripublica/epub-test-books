@@ -47,7 +47,7 @@ CSS result: One `@namespace` rule and one style rule, kept: every element whose 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i attribute-namespace-prefix.epub -u --advisory` | no findings; VALID | `attribute-namespace-prefix.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i attribute-namespace-prefix.epub -u --advisory` | no findings; VALID | `attribute-namespace-prefix.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck attribute-namespace-prefix.epub -u` | no findings; VALID | `attribute-namespace-prefix.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

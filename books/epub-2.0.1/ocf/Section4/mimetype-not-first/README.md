@@ -38,7 +38,7 @@ Invalid. `mimetype` must be the first file in the ZIP archive.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i mimetype-not-first.epub -u --advisory` | ERROR PKG-006; INVALID | `mimetype-not-first.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i mimetype-not-first.epub -u --advisory` | ERROR PKG-006; INVALID | `mimetype-not-first.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck mimetype-not-first.epub -u` | ERROR PKG-006; INVALID | `mimetype-not-first.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

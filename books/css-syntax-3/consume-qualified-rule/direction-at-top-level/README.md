@@ -53,7 +53,7 @@ CSS result: One rule, `p { margin: 0; }`. The second qualified rule reaches EOF 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i direction-at-top-level.epub -u --advisory` | USAGE CSS-008; VALID | `direction-at-top-level.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i direction-at-top-level.epub -u --advisory` | USAGE CSS-008; VALID | `direction-at-top-level.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-at-top-level.epub -u` | ERROR CSS-008, ERROR CSS-008; INVALID | `direction-at-top-level.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the parse error as errors (CSS-008).

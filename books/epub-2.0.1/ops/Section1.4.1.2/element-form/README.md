@@ -37,7 +37,7 @@ Invalid. `form` and `input` are from the XHTML Forms module, which is not in the
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i element-form.epub -u --advisory` | ERROR RSC-005, ERROR RSC-005; INVALID | `element-form.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i element-form.epub -u --advisory` | ERROR RSC-005, ERROR RSC-005; INVALID | `element-form.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck element-form.epub -u` | ERROR RSC-005, ERROR RSC-005, ERROR RSC-005; INVALID | `element-form.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

@@ -34,7 +34,7 @@ Valid. The heading is optional: the content model allows zero or one, and no sen
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i other-nav-no-heading.epub -u --advisory` | no findings; VALID | `other-nav-no-heading.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i other-nav-no-heading.epub -u --advisory` | no findings; VALID | `other-nav-no-heading.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck other-nav-no-heading.epub -u` | ERROR RSC-005; INVALID | `other-nav-no-heading.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: epubcheck requires a heading on this kind of `nav`, and EPUB 3.3 does not.

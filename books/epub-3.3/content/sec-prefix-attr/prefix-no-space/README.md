@@ -34,7 +34,7 @@ Invalid. The grammar asks for at least one space after the colon, so this is not
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i prefix-no-space.epub -u --advisory` | ERROR OPF-004d, ERROR OPF-028; INVALID | `prefix-no-space.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i prefix-no-space.epub -u --advisory` | ERROR OPF-004d, ERROR OPF-028; INVALID | `prefix-no-space.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck prefix-no-space.epub -u` | ERROR OPF-004d, ERROR OPF-028; INVALID | `prefix-no-space.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

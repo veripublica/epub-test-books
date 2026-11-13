@@ -49,7 +49,7 @@ CSS result: One rule, kept: every `p` that is not inside a `div`. In Selectors L
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i not-complex.epub -u --advisory` | no findings; VALID | `not-complex.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i not-complex.epub -u --advisory` | no findings; VALID | `not-complex.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck not-complex.epub -u` | no findings; VALID | `not-complex.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

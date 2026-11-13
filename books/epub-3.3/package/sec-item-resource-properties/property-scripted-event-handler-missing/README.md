@@ -42,7 +42,7 @@ Invalid. An event handler content attribute holds JavaScript, so the document co
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i property-scripted-event-handler-missing.epub -u --advisory` | ERROR OPF-014; INVALID | `property-scripted-event-handler-missing.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i property-scripted-event-handler-missing.epub -u --advisory` | ERROR OPF-014; INVALID | `property-scripted-event-handler-missing.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck property-scripted-event-handler-missing.epub -u` | ERROR OPF-014; INVALID | `property-scripted-event-handler-missing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

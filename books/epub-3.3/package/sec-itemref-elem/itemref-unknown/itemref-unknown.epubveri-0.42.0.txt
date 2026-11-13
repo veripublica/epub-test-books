@@ -1,0 +1,4 @@
+ERROR RSC-005: the itemref's idref names no manifest item [OEBPS/package.opf:33:5]
+ERROR OPF-049: spine itemref idref 'nope' was not found in the manifest [OEBPS/package.opf:33:5]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]

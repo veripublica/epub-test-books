@@ -37,7 +37,7 @@ Invalid. `section` is not an XHTML 1.1 element, so it cannot be in the OPS subse
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i element-section.epub -u --advisory` | ERROR RSC-005; INVALID | `element-section.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i element-section.epub -u --advisory` | ERROR RSC-005; INVALID | `element-section.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck element-section.epub -u` | ERROR RSC-005, ERROR RSC-005; INVALID | `element-section.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

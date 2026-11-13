@@ -47,7 +47,7 @@ CSS result: One rule, kept: every element whose `lang` is `en` in any case, whic
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i attribute-case-flag.epub -u --advisory` | no findings; VALID | `attribute-case-flag.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i attribute-case-flag.epub -u --advisory` | no findings; VALID | `attribute-case-flag.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck attribute-case-flag.epub -u` | ERROR CSS-008; INVALID | `attribute-case-flag.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the `i` flag as an error (CSS-008).

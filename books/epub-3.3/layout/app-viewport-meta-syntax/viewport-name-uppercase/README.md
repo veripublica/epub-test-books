@@ -39,7 +39,7 @@ Invalid. The name must be `viewport`, so the document has no viewport meta tag, 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i viewport-name-uppercase.epub -u --advisory` | ERROR HTM-046; INVALID | `viewport-name-uppercase.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i viewport-name-uppercase.epub -u --advisory` | ERROR HTM-046; INVALID | `viewport-name-uppercase.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck viewport-name-uppercase.epub -u` | ERROR HTM-046; INVALID | `viewport-name-uppercase.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

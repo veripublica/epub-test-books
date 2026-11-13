@@ -34,7 +34,7 @@ Valid. Only the HTML form element makes a document scripted (EPUB 3.3 links "for
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i input-without-form.epub -u --advisory` | no findings; VALID | `input-without-form.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i input-without-form.epub -u --advisory` | no findings; VALID | `input-without-form.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck input-without-form.epub -u` | no findings; VALID | `input-without-form.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

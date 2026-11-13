@@ -45,7 +45,7 @@ CSS result: One rule, kept: every `p` whose directionality is right-to-left. The
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i dir-pseudo-class.epub -u --advisory` | no findings; VALID | `dir-pseudo-class.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i dir-pseudo-class.epub -u --advisory` | no findings; VALID | `dir-pseudo-class.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck dir-pseudo-class.epub -u` | no findings; VALID | `dir-pseudo-class.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

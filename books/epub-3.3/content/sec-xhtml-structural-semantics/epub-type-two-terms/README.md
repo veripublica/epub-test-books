@@ -34,7 +34,7 @@ Valid. The value is a whitespace-separated list of terms, and both are in the de
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i epub-type-two-terms.epub -u --advisory` | no findings; VALID | `epub-type-two-terms.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i epub-type-two-terms.epub -u --advisory` | no findings; VALID | `epub-type-two-terms.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck epub-type-two-terms.epub -u` | no findings; VALID | `epub-type-two-terms.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

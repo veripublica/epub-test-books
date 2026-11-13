@@ -49,7 +49,7 @@ CSS result: One rule. The `content` declaration holds a bad-string token (a pars
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i bad-string.epub -u --advisory` | USAGE CSS-008; VALID | `bad-string.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i bad-string.epub -u --advisory` | USAGE CSS-008; VALID | `bad-string.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck bad-string.epub -u` | ERROR CSS-008; INVALID | `bad-string.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the broken string as an error (CSS-008).

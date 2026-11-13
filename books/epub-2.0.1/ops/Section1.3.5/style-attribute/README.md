@@ -34,7 +34,7 @@ Valid. The attribute is supported, though deprecated.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i style-attribute.epub -u --advisory` | no findings; VALID | `style-attribute.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i style-attribute.epub -u --advisory` | no findings; VALID | `style-attribute.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck style-attribute.epub -u` | no findings; VALID | `style-attribute.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

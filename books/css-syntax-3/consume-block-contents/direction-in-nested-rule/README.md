@@ -49,7 +49,7 @@ CSS result: One rule, `p`, with one nested style rule, `span`, which declares `d
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i direction-in-nested-rule.epub -u --advisory` | ERROR CSS-001; INVALID | `direction-in-nested-rule.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i direction-in-nested-rule.epub -u --advisory` | ERROR CSS-001; INVALID | `direction-in-nested-rule.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-in-nested-rule.epub -u` | ERROR CSS-008, ERROR CSS-008, ERROR CSS-008; INVALID | `direction-in-nested-rule.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it does not report `direction` (no CSS-001), and reports the nested rule as errors (CSS-008).

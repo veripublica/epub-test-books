@@ -45,7 +45,7 @@ CSS result: One rule with one declaration, `color`, whose value is `red directio
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i direction-after-missing-semicolon.epub -u --advisory` | USAGE ADV-024; VALID | `direction-after-missing-semicolon.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i direction-after-missing-semicolon.epub -u --advisory` | USAGE ADV-024; VALID | `direction-after-missing-semicolon.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-after-missing-semicolon.epub -u` | no findings; VALID | `direction-after-missing-semicolon.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

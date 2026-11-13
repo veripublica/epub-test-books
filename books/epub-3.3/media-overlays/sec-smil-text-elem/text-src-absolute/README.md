@@ -34,7 +34,7 @@ Invalid. A path-absolute URL is not a path-relative-scheme-less-URL string.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i text-src-absolute.epub -u --advisory` | ERROR RSC-026; INVALID | `text-src-absolute.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i text-src-absolute.epub -u --advisory` | ERROR RSC-026; INVALID | `text-src-absolute.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck text-src-absolute.epub -u` | ERROR RSC-026; INVALID | `text-src-absolute.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

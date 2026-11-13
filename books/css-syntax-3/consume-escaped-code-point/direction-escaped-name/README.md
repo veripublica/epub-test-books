@@ -45,7 +45,7 @@ CSS result: One rule with one declaration, `direction: rtl`. The escape `\65` an
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i direction-escaped-name.epub -u --advisory` | ERROR CSS-001; INVALID | `direction-escaped-name.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i direction-escaped-name.epub -u --advisory` | ERROR CSS-001; INVALID | `direction-escaped-name.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-escaped-name.epub -u` | ERROR CSS-001; INVALID | `direction-escaped-name.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

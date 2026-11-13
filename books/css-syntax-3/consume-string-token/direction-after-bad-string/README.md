@@ -47,7 +47,7 @@ CSS result: One rule. The `content` declaration holds a bad-string token (a pars
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i direction-after-bad-string.epub -u --advisory` | ERROR CSS-001, USAGE CSS-008; INVALID | `direction-after-bad-string.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i direction-after-bad-string.epub -u --advisory` | ERROR CSS-001, USAGE CSS-008; INVALID | `direction-after-bad-string.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-after-bad-string.epub -u` | ERROR CSS-008, ERROR CSS-001; INVALID | `direction-after-bad-string.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

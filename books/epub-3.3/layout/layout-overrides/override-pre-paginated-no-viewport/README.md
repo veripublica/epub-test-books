@@ -39,7 +39,7 @@ Invalid. The override makes the document pre-paginated, so it must give its dime
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i override-pre-paginated-no-viewport.epub -u --advisory` | ERROR HTM-046; INVALID | `override-pre-paginated-no-viewport.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i override-pre-paginated-no-viewport.epub -u --advisory` | ERROR HTM-046; INVALID | `override-pre-paginated-no-viewport.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck override-pre-paginated-no-viewport.epub -u` | ERROR HTM-046; INVALID | `override-pre-paginated-no-viewport.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

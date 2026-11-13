@@ -1,0 +1,5 @@
+ERROR RSC-005: media-overlay target 'mo' must be of the "application/smil+xml" type (given type was "application/xml") [OEBPS/package.opf:29:5]
+ERROR MED_013: content document declares a media-overlay attribute but is not referenced from that overlay [OEBPS/content.xhtml]
+USAGE OPF-097: 'audio.mp3' is declared in the manifest, but no content document references it [OEBPS/package.opf:32:5]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]

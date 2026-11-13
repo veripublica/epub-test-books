@@ -1,0 +1,4 @@
+ERROR RSC-005: element "form" is not allowed here [OEBPS/content.xhtml:11:5]
+ERROR RSC-005: element "input" is not allowed here [OEBPS/content.xhtml:11:32]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]

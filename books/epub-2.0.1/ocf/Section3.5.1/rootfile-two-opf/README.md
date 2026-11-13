@@ -34,7 +34,7 @@ Valid. Only one such rootfile SHOULD be included, which is a recommendation, and
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i rootfile-two-opf.epub -u --advisory` | WARNING PKG-013; VALID | `rootfile-two-opf.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i rootfile-two-opf.epub -u --advisory` | WARNING PKG-013; VALID | `rootfile-two-opf.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck rootfile-two-opf.epub -u` | ERROR PKG-013; INVALID | `rootfile-two-opf.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the second rootfile as an error (PKG-013).

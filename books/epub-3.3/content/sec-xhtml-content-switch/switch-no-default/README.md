@@ -38,7 +38,7 @@ Invalid. The content model asks for exactly one default after the cases.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i switch-no-default.epub -u --advisory` | ERROR RSC-005, WARNING RSC-017, USAGE ACC-009; INVALID | `switch-no-default.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i switch-no-default.epub -u --advisory` | ERROR RSC-005, WARNING RSC-017, USAGE ACC-009; INVALID | `switch-no-default.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck switch-no-default.epub -u` | USAGE ACC-009, ERROR RSC-005, WARNING RSC-017; INVALID | `switch-no-default.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

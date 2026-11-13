@@ -36,7 +36,7 @@ Valid. By the grammar, `initial-scale 1` is two properties with no value, `initi
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i viewport-valueless-property.epub -u --advisory` | no findings; VALID | `viewport-valueless-property.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i viewport-valueless-property.epub -u --advisory` | no findings; VALID | `viewport-valueless-property.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck viewport-valueless-property.epub -u` | ERROR HTM-047; INVALID | `viewport-valueless-property.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the content as a syntax error (HTM-047).

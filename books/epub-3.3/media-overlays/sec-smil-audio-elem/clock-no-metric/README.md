@@ -40,7 +40,7 @@ Valid. A timecount with no metric is in seconds, so `3.000` is three seconds.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i clock-no-metric.epub -u --advisory` | no findings; VALID | `clock-no-metric.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i clock-no-metric.epub -u --advisory` | no findings; VALID | `clock-no-metric.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck clock-no-metric.epub -u` | no findings; VALID | `clock-no-metric.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

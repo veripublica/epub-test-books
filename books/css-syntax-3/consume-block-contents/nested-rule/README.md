@@ -51,7 +51,7 @@ CSS result: One rule, `p`, with one nested style rule, `span { margin: 0; }`. No
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i nested-rule.epub -u --advisory` | no findings; VALID | `nested-rule.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i nested-rule.epub -u --advisory` | no findings; VALID | `nested-rule.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck nested-rule.epub -u` | ERROR CSS-008, ERROR CSS-008, ERROR CSS-008; INVALID | `nested-rule.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the nested rule as errors (CSS-008).

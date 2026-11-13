@@ -43,7 +43,7 @@ CSS result: The label utf-16 gives the encoding UTF-16LE, and a declared utf-16b
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i charset-utf-16-label-utf-8-bytes.epub -u --advisory` | no findings; VALID | `charset-utf-16-label-utf-8-bytes.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i charset-utf-16-label-utf-8-bytes.epub -u --advisory` | no findings; VALID | `charset-utf-16-label-utf-8-bytes.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck charset-utf-16-label-utf-8-bytes.epub -u` | WARNING CSS-003, ERROR CSS-008; INVALID | `charset-utf-16-label-utf-8-bytes.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it decodes the sheet as UTF-16, warns about UTF-16 (CSS-003) and then cannot parse it (CSS-008).

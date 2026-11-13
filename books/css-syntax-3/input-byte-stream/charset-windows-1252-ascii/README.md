@@ -43,7 +43,7 @@ CSS result: The declaration names windows-1252, so the sheet decodes as windows-
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i charset-windows-1252-ascii.epub -u --advisory` | ERROR CSS-004; INVALID | `charset-windows-1252-ascii.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i charset-windows-1252-ascii.epub -u --advisory` | ERROR CSS-004; INVALID | `charset-windows-1252-ascii.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck charset-windows-1252-ascii.epub -u` | ERROR CSS-004; INVALID | `charset-windows-1252-ascii.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

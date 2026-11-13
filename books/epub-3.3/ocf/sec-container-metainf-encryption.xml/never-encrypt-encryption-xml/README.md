@@ -34,7 +34,7 @@ Invalid. encryption.xml must not be encrypted.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i never-encrypt-encryption-xml.epub -u --advisory` | ERROR SPEC-001; INVALID | `never-encrypt-encryption-xml.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i never-encrypt-encryption-xml.epub -u --advisory` | ERROR SPEC-001; INVALID | `never-encrypt-encryption-xml.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck never-encrypt-encryption-xml.epub -u` | no findings; VALID | `never-encrypt-encryption-xml.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it gives no finding.

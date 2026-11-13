@@ -36,7 +36,7 @@ Invalid. `clipEnd` must be after `clipBegin`, and the same offset is not after i
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.41.0 | `epubveri -i clip-end-equal-begin.epub -u --advisory` | ERROR MED-009; INVALID | `clip-end-equal-begin.epubveri-0.41.0.txt` |
+| epubveri 0.42.0 | `epubveri -i clip-end-equal-begin.epub -u --advisory` | ERROR MED-009; INVALID | `clip-end-equal-begin.epubveri-0.42.0.txt` |
 | epubcheck 5.4.0 | `epubcheck clip-end-equal-begin.epub -u` | ERROR MED-009; INVALID | `clip-end-equal-begin.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

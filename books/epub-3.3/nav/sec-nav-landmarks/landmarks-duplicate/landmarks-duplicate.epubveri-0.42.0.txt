@@ -1,0 +1,4 @@
+ERROR RSC-005: Another landmark was found with the same epub:type and same reference [OEBPS/nav.xhtml:19:13]
+ERROR RSC-005: Another landmark was found with the same epub:type and same reference [OEBPS/nav.xhtml:20:13]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]
