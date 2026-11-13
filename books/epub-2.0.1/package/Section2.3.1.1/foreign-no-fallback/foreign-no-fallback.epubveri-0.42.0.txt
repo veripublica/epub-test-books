@@ -1,0 +1,4 @@
+ERROR SPEC-002: the non-core item 'extra.txt' ('text/plain') must have a fallback [OEBPS/package.opf:27:5]
+USAGE ADV-010: 'extra.txt' is declared in the manifest, but no document draws, applies or loads it [OEBPS/package.opf:27:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]
