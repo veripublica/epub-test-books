@@ -14,10 +14,11 @@ it. Where either of them disagrees with the specification, the book's
 README says so and why. None of the books
 contain commercial content.
 
-The latest release, v0.5.0, holds the two templates, one for EPUB 3 and one
-for EPUB 2, and 224 sets: the EPUB container, the package document, the
-navigation document, publication resources and content documents in EPUB 3,
-and the package and NCX in EPUB 2. Every book
+The latest release, v0.6.0, holds the two templates, one for EPUB 3 and one
+for EPUB 2, and 600 sets: the EPUB container, the package document, the
+navigation document, publication resources, content documents, fixed layout
+and media overlays in EPUB 3; the container, content documents, and the
+package and NCX in EPUB 2; and the CSS that EPUB style sheets use. Every book
 is listed on one page, [`books/INDEX.md`](./books/INDEX.md), with what it
 should give and what each validator says. Each release also has every book
 as a download, one by one or all together in a single zip.
@@ -28,7 +29,7 @@ To use the books in CI, check out a release tag and read them in place:
 - uses: actions/checkout@v4
   with:
     repository: veripublica/epub-test-books
-    ref: v0.5.0
+    ref: v0.6.0
     path: epub-test-books
 ```
 

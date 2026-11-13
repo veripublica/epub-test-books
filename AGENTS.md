@@ -6,12 +6,15 @@ kept true at every release. The rules for adding a set are in
 
 ## Status
 
-Latest release: v0.5.0 (2026-11-09). It holds the two templates and 224
-sets under `books/epub-3.3/<area>/<anchor>/<set>/` and
-`books/epub-2.0.1/<area>/<anchor>/<set>/`: the EPUB container (`ocf`), the
-package document (`package`), the navigation document (`nav`), publication
-resources (`resources`), content documents (`content`), and OPF 2.0.1 with the
-NCX. Cases where the specification and the verifiers disagree are listed in
+Latest release: v0.6.0 (2026-11-13). It holds the two templates and 600
+sets under `books/epub-3.3/<area>/<anchor>/<set>/`,
+`books/epub-2.0.1/<area>/<anchor>/<set>/` and `books/<css-spec>/<anchor>/<set>/`:
+the EPUB container (`ocf`), the package document (`package`), the navigation
+document (`nav`), publication resources (`resources`), content documents
+(`content`), fixed layout (`layout`) and media overlays (`media-overlays`) in
+EPUB 3; OCF 2.0.1 (`ocf`), OPS 2.0.1 (`ops`) and OPF 2.0.1 with the NCX
+(`package`) in EPUB 2; and CSS as EPUB style sheets use it (`css-syntax-3`,
+`selectors-4`, `css-namespaces-3`, `css-cascade-5`). Cases where the specification and the verifiers disagree are listed in
 issue #27 until they are settled. `books/INDEX.md`
 lists every book on one page, and `books/index.json` holds the same list for
 programs.
@@ -146,7 +149,9 @@ python3 scripts/release.py bundle vX.Y.Z <outdir>          # the release assets
 
 `check.py` writes `<book>.<tool>-<version>.txt` next to each book. If an
 output for that version already exists and the new run differs, it stops
-instead of overwriting.
+instead of overwriting. One difference is allowed: epubcheck 5.4.0 lists the
+patterns of a "must be a string matching the regular expression" message in
+no fixed order, so a run that differs only in that order counts as unchanged.
 
 Verifiers: [epubveri](https://github.com/veripublica/epubveri) (latest
 release) run as `epubveri -i <book> -u --advisory`;
@@ -159,7 +164,7 @@ are hidden by both.
 Read them in place; do not copy them into your repository.
 
 - **In CI:** check out a release tag (`repository: veripublica/epub-test-books`,
-  `ref: v0.5.0`). Pin a tag, never `main`: a new set changes what your tests
+  `ref: v0.6.0`). Pin a tag, never `main`: a new set changes what your tests
   see.
 - **Locally:** one clone, read-only. Write your tool's outputs into your own
   project.

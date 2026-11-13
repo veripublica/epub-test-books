@@ -38,10 +38,29 @@ def run(cmd: list[str], cwd: Path) -> str:
     return text.rstrip("\n") + f"\n[exit {p.returncode}]\n"
 
 
+ALTERNATIVES = re.compile(r"must be a string matching the regular expression .*$")
+SPLIT = re.compile(r", (?=must be )| or (?=must be )")
+
+
+def same_but_order(a: str, b: str) -> bool:
+    """True if a and b differ only in the order epubcheck lists the patterns
+    of a "must be a string matching the regular expression ..." message.
+    epubcheck 5.4.0 does not list them in a fixed order from run to run."""
+    def norm(text: str) -> str:
+        return ALTERNATIVES.sub(
+            lambda m: " | ".join(sorted(SPLIT.split(m.group(0)))), text)
+    al, bl = a.splitlines(), b.splitlines()
+    return len(al) == len(bl) and all(
+        x == y or norm(x) == norm(y) for x, y in zip(al, bl))
+
+
 def keep(path: Path, text: str) -> str:
     if path.exists():
-        if path.read_text(encoding="utf-8") == text:
+        old = path.read_text(encoding="utf-8")
+        if old == text:
             return "unchanged"
+        if same_but_order(old, text):
+            return "unchanged (epubcheck listed the same patterns in another order)"
         raise SystemExit(f"{path}: a new run differs from the kept output; "
                          "look at the difference, do not overwrite")
     path.write_text(text, encoding="utf-8")
