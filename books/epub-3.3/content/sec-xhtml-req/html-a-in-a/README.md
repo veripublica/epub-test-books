@@ -34,7 +34,7 @@ Invalid. HTML forbids interactive content inside `a`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i html-a-in-a.epub -u --advisory` | ERROR RSC-005; INVALID | `html-a-in-a.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i html-a-in-a.epub -u --advisory` | ERROR RSC-005; INVALID | `html-a-in-a.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck html-a-in-a.epub -u` | ERROR RSC-005; INVALID | `html-a-in-a.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

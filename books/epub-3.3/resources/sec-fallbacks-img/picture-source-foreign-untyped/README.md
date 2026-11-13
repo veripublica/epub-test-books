@@ -34,7 +34,7 @@ Invalid. A `source` for a foreign resource must say its type.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i picture-source-foreign-untyped.epub -u --advisory` | ERROR MED_007; INVALID | `picture-source-foreign-untyped.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i picture-source-foreign-untyped.epub -u --advisory` | ERROR MED_007; INVALID | `picture-source-foreign-untyped.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck picture-source-foreign-untyped.epub -u` | ERROR MED_007; INVALID | `picture-source-foreign-untyped.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

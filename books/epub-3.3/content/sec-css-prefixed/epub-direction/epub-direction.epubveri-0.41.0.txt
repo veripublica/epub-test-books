@@ -1,0 +1,3 @@
+USAGE OBS-001: usage of the CSS prefixed property '-epub-direction' is outdated [OEBPS/style.css:1:5]
+— 0 error(s), 0 warning(s): VALID
+[exit 0]

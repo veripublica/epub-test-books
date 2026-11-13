@@ -1,0 +1,5 @@
+ERROR RSC-005: rendition:orientation spine override values are mutually exclusive [OEBPS/package.opf:33:5]
+USAGE OBS-001: usage of the "rendition:orientation-landscape" property is outdated [OEBPS/package.opf:33:5]
+USAGE OBS-001: usage of the "rendition:orientation-portrait" property is outdated [OEBPS/package.opf:33:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

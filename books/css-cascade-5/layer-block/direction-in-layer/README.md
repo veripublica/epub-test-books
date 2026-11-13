@@ -45,7 +45,7 @@ CSS result: One `@layer base` block rule holding one style rule with one declara
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i direction-in-layer.epub -u --advisory` | ERROR CSS-001; INVALID | `direction-in-layer.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i direction-in-layer.epub -u --advisory` | ERROR CSS-001; INVALID | `direction-in-layer.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-in-layer.epub -u` | ERROR CSS-001; INVALID | `direction-in-layer.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

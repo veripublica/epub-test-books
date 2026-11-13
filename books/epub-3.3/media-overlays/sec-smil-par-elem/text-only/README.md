@@ -34,7 +34,7 @@ Valid. `audio` is optional in `par` (0 or 1).
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i text-only.epub -u --advisory` | no findings; VALID | `text-only.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i text-only.epub -u --advisory` | no findings; VALID | `text-only.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck text-only.epub -u` | no findings; VALID | `text-only.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

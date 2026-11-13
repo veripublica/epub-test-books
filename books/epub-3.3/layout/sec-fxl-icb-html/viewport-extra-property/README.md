@@ -39,7 +39,7 @@ Valid. The width and height are there; the grammar allows other properties, and 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i viewport-extra-property.epub -u --advisory` | no findings; VALID | `viewport-extra-property.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i viewport-extra-property.epub -u --advisory` | no findings; VALID | `viewport-extra-property.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck viewport-extra-property.epub -u` | no findings; VALID | `viewport-extra-property.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

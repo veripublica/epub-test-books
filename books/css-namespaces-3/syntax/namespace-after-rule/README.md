@@ -47,13 +47,13 @@ EPUB 3.3, [`sec-css-req`](https://www.w3.org/TR/epub-33/#sec-css-req):
 
 Valid. The sheet holds neither `direction` nor `unicode-bidi`, and it is UTF-8, so EPUB 3.3 asks nothing more of it. A parse error is not one of its requirements.
 
-CSS result: One rule is kept, `p { margin: 0; }`. The `@namespace` rule comes after it, so it is ignored, the `epub` prefix is never declared, and the last rule is dropped for its invalid selector. CSS Namespaces calls such a sheet not valid; EPUB 3.3 does not ask for a valid sheet.
+CSS result: One rule is kept, `p { margin: 0; }`. The `@namespace` rule comes after it, so it is ignored, a parse error, and the `epub` prefix is never declared. The last rule is dropped for its invalid selector, a second parse error. CSS Namespaces calls such a sheet not valid; EPUB 3.3 does not ask for a valid sheet.
 
 ## Verifier results
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i namespace-after-rule.epub -u --advisory` | USAGE ADV-021; VALID | `namespace-after-rule.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i namespace-after-rule.epub -u --advisory` | USAGE ADV-021, USAGE CSS-008; VALID | `namespace-after-rule.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck namespace-after-rule.epub -u` | no findings; VALID | `namespace-after-rule.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

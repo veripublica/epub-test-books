@@ -4,7 +4,7 @@
 - Built by: `scripts/css-syntax-3/consume-url-token/bad-url/build.py`
 - Origin: built here
 - Expected: valid
-- Marks: epubveri: wrong error; epubcheck: wrong error
+- Marks: epubcheck: wrong error
 - Asked for by: styloria, after its review of the encoding sets
 - Issue: pending
 - Other clauses: EPUB 3.3 `sec-css-req`
@@ -53,18 +53,17 @@ EPUB 3.3, [`sec-css-req`](https://www.w3.org/TR/epub-33/#sec-css-req):
 
 Valid. The sheet holds neither `direction` nor `unicode-bidi`, and it is UTF-8, so EPUB 3.3 asks nothing more of it. A parse error is not one of its requirements. A bad url is not a URL, so it refers to no resource.
 
-CSS result: One rule. The `background` declaration holds a bad-url token (a parse error) and is dropped; `margin: 0` is kept.
+CSS result: One rule. The `background` declaration holds a bad-url token (a parse error), so its grammar fails and it is dropped: re-read as a rule, it reaches its `;`, a second parse error. `margin: 0` is kept.
 
 ## Verifier results
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i bad-url.epub -u --advisory` | ERROR RSC-020, ERROR RSC-007, USAGE ADV-015; INVALID | `bad-url.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i bad-url.epub -u --advisory` | USAGE ADV-015; VALID | `bad-url.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck bad-url.epub -u` | ERROR RSC-020, ERROR RSC-007; INVALID | `bad-url.epubcheck-5.4.0.txt` |
 
-Neither agrees with the expected result. epubveri reads the bad url as a reference, and reports it as missing (RSC-007) and not valid (RSC-020). epubcheck reads the bad url as a reference, and reports it as missing (RSC-007) and not valid (RSC-020).
+epubveri agrees with the expected result. epubcheck does not: it reads the bad url as a reference, and reports it as missing (RSC-007) and not valid (RSC-020).
 
-- **epubveri: wrong error.** epubveri issue pending.
 - **epubcheck: wrong error.** w3c/epubcheck issue pending.
 
 Every epubveri finding here is in its default output, except USAGE ADV-015, which is an `--advisory` finding.

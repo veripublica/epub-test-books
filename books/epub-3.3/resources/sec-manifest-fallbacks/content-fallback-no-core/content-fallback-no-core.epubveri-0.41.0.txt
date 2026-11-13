@@ -1,0 +1,5 @@
+ERROR RSC-032: img references a foreign resource 'image.bmp' with no fallback [OEBPS/content.xhtml:11:8]
+USAGE OBS-001: usage of a manifest content fallback (for resource 'OEBPS/image.bmp') is outdated [OEBPS/content.xhtml:11:8]
+USAGE OPF-097: 'image.xbm' is declared in the manifest, but no content document references it [OEBPS/package.opf:32:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

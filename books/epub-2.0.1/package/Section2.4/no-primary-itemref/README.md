@@ -34,7 +34,7 @@ Invalid. At least one must be primary.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i no-primary-itemref.epub -u --advisory` | ERROR OPF-033; INVALID | `no-primary-itemref.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i no-primary-itemref.epub -u --advisory` | ERROR OPF-033; INVALID | `no-primary-itemref.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck no-primary-itemref.epub -u` | ERROR OPF-033; INVALID | `no-primary-itemref.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

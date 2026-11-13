@@ -34,7 +34,7 @@ Invalid. Both strings parse to the same URL.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i item-duplicate-after-parsing.epub -u --advisory` | ERROR OPF-074, USAGE OPF-097; INVALID | `item-duplicate-after-parsing.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i item-duplicate-after-parsing.epub -u --advisory` | ERROR OPF-074, USAGE OPF-097; INVALID | `item-duplicate-after-parsing.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck item-duplicate-after-parsing.epub -u` | ERROR OPF-074, USAGE OPF-097; INVALID | `item-duplicate-after-parsing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

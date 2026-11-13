@@ -34,7 +34,7 @@ Invalid. Every item in the manifest must be in the ZIP archive.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i manifest-file-missing.epub -u --advisory` | ERROR RSC-001; INVALID | `manifest-file-missing.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i manifest-file-missing.epub -u --advisory` | ERROR RSC-001; INVALID | `manifest-file-missing.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck manifest-file-missing.epub -u` | ERROR RSC-001; INVALID | `manifest-file-missing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

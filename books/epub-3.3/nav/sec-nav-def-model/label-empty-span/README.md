@@ -34,7 +34,7 @@ Invalid. The label has zero length.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i label-empty-span.epub -u --advisory` | ERROR RSC-005; INVALID | `label-empty-span.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i label-empty-span.epub -u --advisory` | ERROR RSC-005; INVALID | `label-empty-span.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck label-empty-span.epub -u` | ERROR RSC-005; INVALID | `label-empty-span.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

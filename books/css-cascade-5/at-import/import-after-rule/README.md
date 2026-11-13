@@ -51,7 +51,7 @@ CSS result: One rule is kept, `p { margin: 0; }`. The `@import` comes after a st
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i import-after-rule.epub -u --advisory` | USAGE ADV-021; VALID | `import-after-rule.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i import-after-rule.epub -u --advisory` | USAGE ADV-021; VALID | `import-after-rule.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck import-after-rule.epub -u` | no findings; VALID | `import-after-rule.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

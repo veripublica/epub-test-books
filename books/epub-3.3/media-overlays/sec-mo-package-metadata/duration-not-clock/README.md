@@ -40,7 +40,7 @@ Invalid. `3 seconds` matches none of the clock value forms.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i duration-not-clock.epub -u --advisory` | ERROR RSC-005, ERROR RSC-005; INVALID | `duration-not-clock.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i duration-not-clock.epub -u --advisory` | ERROR RSC-005, ERROR RSC-005; INVALID | `duration-not-clock.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck duration-not-clock.epub -u` | ERROR RSC-005, ERROR RSC-005; INVALID | `duration-not-clock.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

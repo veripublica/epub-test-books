@@ -43,7 +43,7 @@ CSS result: The declaration names Shift_JIS, so the sheet decodes as Shift_JIS.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i charset-shift-jis.epub -u --advisory` | ERROR CSS-004; INVALID | `charset-shift-jis.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i charset-shift-jis.epub -u --advisory` | ERROR CSS-004; INVALID | `charset-shift-jis.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck charset-shift-jis.epub -u` | ERROR CSS-004; INVALID | `charset-shift-jis.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

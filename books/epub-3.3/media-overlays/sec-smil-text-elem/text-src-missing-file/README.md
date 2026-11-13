@@ -38,7 +38,7 @@ Invalid. No file `missing.xhtml` exists in the container.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i text-src-missing-file.epub -u --advisory` | ERROR RSC-007, ERROR MED_013; INVALID | `text-src-missing-file.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i text-src-missing-file.epub -u --advisory` | ERROR RSC-007, ERROR MED_013; INVALID | `text-src-missing-file.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck text-src-missing-file.epub -u` | ERROR MED_013, ERROR RSC-007; INVALID | `text-src-missing-file.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

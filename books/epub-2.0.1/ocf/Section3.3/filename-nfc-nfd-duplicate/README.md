@@ -4,7 +4,7 @@
 - Built by: `scripts/epub-2.0.1/ocf/Section3.3/filename-nfc-nfd-duplicate/build.py`
 - Origin: built here
 - Expected: valid
-- Marks: epubveri: wrong error; epubcheck: wrong error
+- Marks: epubcheck: wrong error
 - Asked for by: the maintainer, to start the OCF 2.0.1 sets
 - Issue: pending
 
@@ -34,12 +34,11 @@ Valid. OCF 2.0.1 allows two names in the same directory to map to the same strin
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i filename-nfc-nfd-duplicate.epub -u --advisory` | ERROR OPF-060, ERROR OPF-074, USAGE PKG-012, USAGE PKG-012; INVALID | `filename-nfc-nfd-duplicate.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i filename-nfc-nfd-duplicate.epub -u --advisory` | USAGE PKG-012, USAGE PKG-012; VALID | `filename-nfc-nfd-duplicate.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck filename-nfc-nfd-duplicate.epub -u` | USAGE PKG-012, ERROR OPF-060, USAGE PKG-012, ERROR OPF-074; INVALID | `filename-nfc-nfd-duplicate.epubcheck-5.4.0.txt` |
 
-Neither agrees with the expected result. epubveri reports the two names as duplicates (OPF-060, OPF-074). epubcheck reports the two names as duplicates (OPF-060, OPF-074).
+epubveri agrees with the expected result. epubcheck does not: it reports the two names as duplicates (OPF-060, OPF-074).
 
-- **epubveri: wrong error.** epubveri issue pending.
 - **epubcheck: wrong error.** w3c/epubcheck issue pending.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.

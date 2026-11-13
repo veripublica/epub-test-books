@@ -37,7 +37,7 @@ Invalid. `ruby` is in XHTML 1.1, but its module is not in the OPS subset.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i element-ruby.epub -u --advisory` | ERROR RSC-005; INVALID | `element-ruby.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i element-ruby.epub -u --advisory` | ERROR RSC-005; INVALID | `element-ruby.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck element-ruby.epub -u` | ERROR RSC-005; INVALID | `element-ruby.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

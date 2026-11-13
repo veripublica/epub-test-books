@@ -47,13 +47,13 @@ EPUB 3.3, [`sec-css-req`](https://www.w3.org/TR/epub-33/#sec-css-req):
 
 Valid. A `[` starts a simple block that runs to its `]`; the `;` inside it ends nothing. So `direction: rtl;` is part of the `color` value, not a declaration, and the sheet has no `direction` property.
 
-CSS result: One rule with one declaration, `color`, whose value is the block `[direction: rtl;]`. That does not match the grammar of `color`, so the declaration is dropped.
+CSS result: One rule with one declaration, `color`, whose value is the block `[direction: rtl;]`. That does not match the grammar of `color`, so the declaration is dropped: re-read as a rule, it reaches its `;`, which is a parse error.
 
 ## Verifier results
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i direction-in-brackets.epub -u --advisory` | USAGE ADV-024; VALID | `direction-in-brackets.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i direction-in-brackets.epub -u --advisory` | USAGE ADV-024; VALID | `direction-in-brackets.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-in-brackets.epub -u` | ERROR CSS-008; INVALID | `direction-in-brackets.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the block as an error (CSS-008).

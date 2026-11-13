@@ -40,7 +40,7 @@ Valid. `00:03.0` is a partial clock value: minutes, seconds and a fraction.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i clock-partial.epub -u --advisory` | no findings; VALID | `clock-partial.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i clock-partial.epub -u --advisory` | no findings; VALID | `clock-partial.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck clock-partial.epub -u` | no findings; VALID | `clock-partial.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

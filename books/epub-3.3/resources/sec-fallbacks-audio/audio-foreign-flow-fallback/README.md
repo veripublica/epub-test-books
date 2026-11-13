@@ -34,7 +34,7 @@ Invalid. Flow content does not count as a fallback for foreign audio.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i audio-foreign-flow-fallback.epub -u --advisory` | ERROR RSC-032; INVALID | `audio-foreign-flow-fallback.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i audio-foreign-flow-fallback.epub -u --advisory` | ERROR RSC-032; INVALID | `audio-foreign-flow-fallback.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck audio-foreign-flow-fallback.epub -u` | ERROR RSC-032; INVALID | `audio-foreign-flow-fallback.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

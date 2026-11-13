@@ -34,7 +34,7 @@ Valid. The name is exactly 255 bytes, the most allowed.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i filename-255-bytes.epub -u --advisory` | no findings; VALID | `filename-255-bytes.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i filename-255-bytes.epub -u --advisory` | no findings; VALID | `filename-255-bytes.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck filename-255-bytes.epub -u` | no findings; VALID | `filename-255-bytes.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

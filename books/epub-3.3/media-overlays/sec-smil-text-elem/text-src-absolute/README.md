@@ -4,7 +4,7 @@
 - Built by: `scripts/epub-3.3/media-overlays/sec-smil-text-elem/text-src-absolute/build.py`
 - Origin: built here
 - Expected: invalid
-- Marks: epubveri: missed
+- Marks: none
 - Asked for by: the maintainer, to start the media overlays section
 - Issue: pending
 
@@ -34,12 +34,10 @@ Invalid. A path-absolute URL is not a path-relative-scheme-less-URL string.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i text-src-absolute.epub -u --advisory` | no findings; VALID | `text-src-absolute.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i text-src-absolute.epub -u --advisory` | ERROR RSC-026; INVALID | `text-src-absolute.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck text-src-absolute.epub -u` | ERROR RSC-026; INVALID | `text-src-absolute.epubcheck-5.4.0.txt` |
 
-epubcheck agrees with the expected result. epubveri does not: it reports nothing for the path-absolute URL.
-
-- **epubveri: missed.** epubveri issue pending.
+Both agree with the expected result, so there is nothing to mark. They report the same messages.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

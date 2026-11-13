@@ -50,7 +50,7 @@ Invalid. `META-INF/container.xml` must never be encrypted.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i encryption-declares-container.epub -u --advisory` | ERROR SPEC-001; INVALID | `encryption-declares-container.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i encryption-declares-container.epub -u --advisory` | ERROR SPEC-001; INVALID | `encryption-declares-container.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck encryption-declares-container.epub -u` | no findings; VALID | `encryption-declares-container.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing for the declaration.

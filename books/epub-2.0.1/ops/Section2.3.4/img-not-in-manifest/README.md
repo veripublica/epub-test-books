@@ -34,7 +34,7 @@ Invalid. The image must be listed in the manifest.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i img-not-in-manifest.epub -u --advisory` | ERROR RSC-008, USAGE OPF-003; INVALID | `img-not-in-manifest.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i img-not-in-manifest.epub -u --advisory` | ERROR RSC-008, USAGE OPF-003; INVALID | `img-not-in-manifest.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck img-not-in-manifest.epub -u` | ERROR RSC-008, USAGE OPF-003; INVALID | `img-not-in-manifest.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

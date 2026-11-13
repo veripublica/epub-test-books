@@ -47,7 +47,7 @@ CSS result: An `@layer` statement that declares the layers `a` and `b`, then an 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i layer-statement.epub -u --advisory` | no findings; VALID | `layer-statement.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i layer-statement.epub -u --advisory` | no findings; VALID | `layer-statement.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck layer-statement.epub -u` | no findings; VALID | `layer-statement.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

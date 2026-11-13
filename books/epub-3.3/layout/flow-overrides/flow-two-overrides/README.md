@@ -34,7 +34,7 @@ Invalid. Only one flow override is allowed on a spine item.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i flow-two-overrides.epub -u --advisory` | ERROR RSC-005, USAGE OBS-001, USAGE OBS-001; INVALID | `flow-two-overrides.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i flow-two-overrides.epub -u --advisory` | ERROR RSC-005, USAGE OBS-001, USAGE OBS-001; INVALID | `flow-two-overrides.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck flow-two-overrides.epub -u` | USAGE OBS-001, USAGE OBS-001, ERROR RSC-005; INVALID | `flow-two-overrides.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

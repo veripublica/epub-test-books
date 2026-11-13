@@ -47,7 +47,7 @@ CSS result: One rule, `p { margin: 0; }`. The unclosed comment is a parse error 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i direction-in-unclosed-comment.epub -u --advisory` | no findings; VALID | `direction-in-unclosed-comment.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i direction-in-unclosed-comment.epub -u --advisory` | USAGE CSS-008; VALID | `direction-in-unclosed-comment.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-in-unclosed-comment.epub -u` | ERROR CSS-008; INVALID | `direction-in-unclosed-comment.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the unclosed comment as an error (CSS-008).

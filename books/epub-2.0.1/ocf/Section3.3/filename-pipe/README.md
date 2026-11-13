@@ -4,7 +4,7 @@
 - Built by: `scripts/epub-2.0.1/ocf/Section3.3/filename-pipe/build.py`
 - Origin: built here
 - Expected: valid
-- Marks: epubveri: wrong error; epubcheck: wrong error
+- Marks: epubcheck: wrong error
 - Asked for by: the maintainer, to start the OCF 2.0.1 sets
 - Issue: pending
 
@@ -52,12 +52,11 @@ Valid. `|` is not one of the characters OCF 2.0.1 forbids. (EPUB 3.3 does forbid
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i filename-pipe.epub -u --advisory` | ERROR PKG-009; INVALID | `filename-pipe.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i filename-pipe.epub -u --advisory` | no findings; VALID | `filename-pipe.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck filename-pipe.epub -u` | ERROR PKG-009; INVALID | `filename-pipe.epubcheck-5.4.0.txt` |
 
-Neither agrees with the expected result. epubveri reports `|` as a forbidden character (PKG-009). epubcheck reports `|` as a forbidden character (PKG-009).
+epubveri agrees with the expected result. epubcheck does not: it reports `|` as a forbidden character (PKG-009).
 
-- **epubveri: wrong error.** epubveri issue pending.
 - **epubcheck: wrong error.** w3c/epubcheck issue pending.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.

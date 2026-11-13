@@ -34,7 +34,7 @@ Invalid. Stylesheets are not among the types that may be outside the container.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i remote-stylesheet.epub -u --advisory` | ERROR RSC-006; INVALID | `remote-stylesheet.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i remote-stylesheet.epub -u --advisory` | ERROR RSC-006; INVALID | `remote-stylesheet.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck remote-stylesheet.epub -u` | ERROR RSC-006; INVALID | `remote-stylesheet.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -4,7 +4,7 @@
 - Built by: `scripts/css-syntax-3/consume-block-contents/direction-in-unclosed-block/build.py`
 - Origin: built here
 - Expected: invalid
-- Marks: epubveri: missed, wrong error; epubcheck: missed, wrong error
+- Marks: epubcheck: missed, wrong error
 - Asked for by: styloria, after its review of the encoding sets
 - Issue: pending
 - Other clauses: EPUB 3.3 `sec-css-req`
@@ -53,12 +53,11 @@ CSS result: One rule, `p`, with one declaration, `direction: rtl`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i direction-in-unclosed-block.epub -u --advisory` | ERROR CSS-008; INVALID | `direction-in-unclosed-block.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i direction-in-unclosed-block.epub -u --advisory` | ERROR CSS-001, USAGE CSS-008; INVALID | `direction-in-unclosed-block.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-in-unclosed-block.epub -u` | ERROR CSS-008; INVALID | `direction-in-unclosed-block.epubcheck-5.4.0.txt` |
 
-Neither agrees with the expected result. epubveri does not report `direction` (no CSS-001), and reports the unclosed block as an error (CSS-008). epubcheck does not report `direction` (no CSS-001), and reports the unclosed block as an error (CSS-008).
+epubveri agrees with the expected result. epubcheck does not: it does not report `direction` (no CSS-001), and reports the unclosed block as an error (CSS-008).
 
-- **epubveri: missed, wrong error.** epubveri issue pending.
 - **epubcheck: missed, wrong error.** w3c/epubcheck issue pending.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.

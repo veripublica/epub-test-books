@@ -34,7 +34,7 @@ Valid. The placement properties apply to reflowable content as well as pre-pagin
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i page-spread-reflowable.epub -u --advisory` | USAGE OPF-100; VALID | `page-spread-reflowable.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i page-spread-reflowable.epub -u --advisory` | USAGE OPF-100; VALID | `page-spread-reflowable.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck page-spread-reflowable.epub -u` | USAGE OPF-100; VALID | `page-spread-reflowable.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -34,7 +34,7 @@ Invalid. `nope` is not the ID of any manifest item.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i media-overlay-unknown-id.epub -u --advisory` | ERROR RSC-005, ERROR RSC-005, ERROR MED_012, USAGE OPF-097; INVALID | `media-overlay-unknown-id.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i media-overlay-unknown-id.epub -u --advisory` | ERROR RSC-005, ERROR RSC-005, ERROR MED_012, USAGE OPF-097; INVALID | `media-overlay-unknown-id.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck media-overlay-unknown-id.epub -u` | ERROR RSC-005, ERROR RSC-005, ERROR MED_012, USAGE OPF-097; INVALID | `media-overlay-unknown-id.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

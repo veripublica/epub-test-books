@@ -34,7 +34,7 @@ Valid. JPEG is a core media type and the image is in the manifest.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i img-jpeg.epub -u --advisory` | no findings; VALID | `img-jpeg.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i img-jpeg.epub -u --advisory` | no findings; VALID | `img-jpeg.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck img-jpeg.epub -u` | no findings; VALID | `img-jpeg.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

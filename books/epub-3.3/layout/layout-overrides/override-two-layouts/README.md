@@ -34,7 +34,7 @@ Invalid. Only one layout override is allowed on a spine item.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i override-two-layouts.epub -u --advisory` | ERROR RSC-005; INVALID | `override-two-layouts.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i override-two-layouts.epub -u --advisory` | ERROR RSC-005; INVALID | `override-two-layouts.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck override-two-layouts.epub -u` | ERROR RSC-005; INVALID | `override-two-layouts.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

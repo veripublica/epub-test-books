@@ -34,7 +34,7 @@ Invalid. The space is leading whitespace.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i mimetype-leading-space.epub -u --advisory` | ERROR PKG-007; INVALID | `mimetype-leading-space.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i mimetype-leading-space.epub -u --advisory` | ERROR PKG-007; INVALID | `mimetype-leading-space.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck mimetype-leading-space.epub -u` | ERROR PKG-007; INVALID | `mimetype-leading-space.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

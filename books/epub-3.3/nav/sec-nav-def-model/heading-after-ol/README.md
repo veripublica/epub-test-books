@@ -34,7 +34,7 @@ Invalid. The heading must come first.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i heading-after-ol.epub -u --advisory` | ERROR RSC-005; INVALID | `heading-after-ol.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i heading-after-ol.epub -u --advisory` | ERROR RSC-005; INVALID | `heading-after-ol.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck heading-after-ol.epub -u` | ERROR RSC-005; INVALID | `heading-after-ol.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

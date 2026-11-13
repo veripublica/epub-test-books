@@ -34,7 +34,7 @@ Invalid. `unique-identifier` is required, so it stays in the book and now points
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i identifier-missing.epub -u --advisory` | ERROR RSC-005, ERROR OPF-030, ERROR RSC-005; INVALID | `identifier-missing.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i identifier-missing.epub -u --advisory` | ERROR RSC-005, ERROR OPF-030, ERROR RSC-005; INVALID | `identifier-missing.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck identifier-missing.epub -u` | ERROR RSC-005, ERROR RSC-005, ERROR OPF-030; INVALID | `identifier-missing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -1,0 +1,6 @@
+ERROR RSC-005: a meta element's value must be a string with length at least 1 [OEBPS/package.opf:24:5]
+ERROR RSC-005: The value of the "rendition:layout" property must be "reflowable", "pre-paginated" or "roll" [OEBPS/package.opf:24:5]
+USAGE HTM_060b: viewport metadata is not checked in reflowable content documents [OEBPS/about.xhtml:7:5]
+USAGE HTM_060b: viewport metadata is not checked in reflowable content documents [OEBPS/content.xhtml:7:5]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]

@@ -34,7 +34,7 @@ Invalid. The allowed values are `ltr`, `rtl` and `default`, and an XML attribute
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i ppd-uppercase.epub -u --advisory` | ERROR RSC-005; INVALID | `ppd-uppercase.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i ppd-uppercase.epub -u --advisory` | ERROR RSC-005; INVALID | `ppd-uppercase.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck ppd-uppercase.epub -u` | ERROR RSC-005; INVALID | `ppd-uppercase.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

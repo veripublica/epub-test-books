@@ -57,7 +57,7 @@ CSS result: No rule is kept. `:foo` is invalid, so the whole list `p, :foo` is i
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i selector-list-one-invalid.epub -u --advisory` | USAGE ADV-019; VALID | `selector-list-one-invalid.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i selector-list-one-invalid.epub -u --advisory` | USAGE ADV-019; VALID | `selector-list-one-invalid.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck selector-list-one-invalid.epub -u` | no findings; VALID | `selector-list-one-invalid.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

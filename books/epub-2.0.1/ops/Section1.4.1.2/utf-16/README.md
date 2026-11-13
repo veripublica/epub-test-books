@@ -36,7 +36,7 @@ Valid. A content document may be UTF-8 or UTF-16, and OPS 2.0.1 does not recomme
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i utf-16.epub -u --advisory` | no findings; VALID | `utf-16.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i utf-16.epub -u --advisory` | no findings; VALID | `utf-16.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck utf-16.epub -u` | ERROR HTM_058; INVALID | `utf-16.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports that HTML documents must be encoded in UTF-8 (HTM_058), which OPS 2.0.1 does not require.

@@ -34,7 +34,7 @@ Valid. The section is non-normative and only discourages the element, so a usage
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i discouraged-rp.epub -u --advisory` | USAGE HTM_055, USAGE HTM_055; VALID | `discouraged-rp.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i discouraged-rp.epub -u --advisory` | USAGE HTM_055, USAGE HTM_055; VALID | `discouraged-rp.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck discouraged-rp.epub -u` | USAGE HTM_055, USAGE HTM_055; VALID | `discouraged-rp.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

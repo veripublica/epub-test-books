@@ -34,7 +34,7 @@ Valid. Elements from other namespaces are removed before the schema check, and w
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i container-foreign-element.epub -u --advisory` | no findings; VALID | `container-foreign-element.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i container-foreign-element.epub -u --advisory` | no findings; VALID | `container-foreign-element.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck container-foreign-element.epub -u` | ERROR RSC-005; INVALID | `container-foreign-element.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the foreign element as a schema error (RSC-005).

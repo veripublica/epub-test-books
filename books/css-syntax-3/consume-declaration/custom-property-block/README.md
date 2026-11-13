@@ -49,7 +49,7 @@ CSS result: One rule with two declarations: the custom property `--x`, whose val
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i custom-property-block.epub -u --advisory` | no findings; VALID | `custom-property-block.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i custom-property-block.epub -u --advisory` | no findings; VALID | `custom-property-block.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck custom-property-block.epub -u` | ERROR CSS-008, ERROR CSS-008; INVALID | `custom-property-block.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the block in the custom property as errors (CSS-008).

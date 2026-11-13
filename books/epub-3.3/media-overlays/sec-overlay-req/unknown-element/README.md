@@ -4,7 +4,7 @@
 - Built by: `scripts/epub-3.3/media-overlays/sec-overlay-req/unknown-element/build.py`
 - Origin: built here
 - Expected: invalid
-- Marks: epubveri: missed
+- Marks: none
 - Asked for by: the maintainer, to start the media overlays section
 - Issue: pending
 
@@ -38,12 +38,10 @@ Invalid. The schema allows only `text` and `audio` in `par`, and `img` is not an
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i unknown-element.epub -u --advisory` | no findings; VALID | `unknown-element.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i unknown-element.epub -u --advisory` | ERROR RSC-005; INVALID | `unknown-element.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck unknown-element.epub -u` | ERROR RSC-005; INVALID | `unknown-element.epubcheck-5.4.0.txt` |
 
-epubcheck agrees with the expected result. epubveri does not: it reports nothing for the `img` element.
-
-- **epubveri: missed.** epubveri issue pending.
+Both agree with the expected result, so there is nothing to mark. They report the same messages.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

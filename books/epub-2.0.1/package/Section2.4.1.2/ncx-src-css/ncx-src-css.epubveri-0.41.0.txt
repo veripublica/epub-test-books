@@ -1,0 +1,4 @@
+ERROR RSC-010: NCX content src 'style.css' does not target an OPS document [OEBPS/toc.ncx:18:7]
+USAGE ADV-010: 'style.css' is declared in the manifest, but no document draws, applies or loads it [OEBPS/package.opf:27:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

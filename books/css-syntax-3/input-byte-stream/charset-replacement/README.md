@@ -43,7 +43,7 @@ CSS result: In the Encoding Standard, `iso-2022-kr` is a label of the replacemen
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i charset-replacement.epub -u --advisory` | ERROR CSS-004; INVALID | `charset-replacement.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i charset-replacement.epub -u --advisory` | ERROR CSS-004; INVALID | `charset-replacement.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck charset-replacement.epub -u` | ERROR CSS-004; INVALID | `charset-replacement.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

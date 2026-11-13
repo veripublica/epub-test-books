@@ -34,7 +34,7 @@ Invalid. The only allowed value of the `version` attribute is `1.0`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i container-version-wrong.epub -u --advisory` | ERROR RSC-005; INVALID | `container-version-wrong.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i container-version-wrong.epub -u --advisory` | ERROR RSC-005; INVALID | `container-version-wrong.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck container-version-wrong.epub -u` | ERROR RSC-005; INVALID | `container-version-wrong.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

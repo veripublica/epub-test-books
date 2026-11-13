@@ -47,7 +47,7 @@ CSS result: `style.css` imports `b.css`, then has one rule, `p { margin: 0; }`. 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i import.epub -u --advisory` | no findings; VALID | `import.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i import.epub -u --advisory` | no findings; VALID | `import.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck import.epub -u` | no findings; VALID | `import.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

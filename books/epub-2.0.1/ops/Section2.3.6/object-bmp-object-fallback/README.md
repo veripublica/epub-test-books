@@ -34,7 +34,7 @@ Valid. BMP is not a core media type, but the object gives another object, of a c
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i object-bmp-object-fallback.epub -u --advisory` | no findings; VALID | `object-bmp-object-fallback.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i object-bmp-object-fallback.epub -u --advisory` | no findings; VALID | `object-bmp-object-fallback.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck object-bmp-object-fallback.epub -u` | ERROR RSC-032; INVALID | `object-bmp-object-fallback.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports that the BMP has no fallback (RSC-032), because in an EPUB 2 book it does not count a nested object inside the `object` as one.

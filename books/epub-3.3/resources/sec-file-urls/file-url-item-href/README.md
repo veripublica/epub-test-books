@@ -34,7 +34,7 @@ Invalid. File URLs are not allowed.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i file-url-item-href.epub -u --advisory` | ERROR RSC-030, ERROR RSC-006; INVALID | `file-url-item-href.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i file-url-item-href.epub -u --advisory` | ERROR RSC-030, ERROR RSC-006; INVALID | `file-url-item-href.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck file-url-item-href.epub -u` | ERROR RSC-030, ERROR RSC-006, USAGE OPF-097; INVALID | `file-url-item-href.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

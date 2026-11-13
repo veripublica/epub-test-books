@@ -51,18 +51,18 @@ EPUB 3.3, [`sec-css-req`](https://www.w3.org/TR/epub-33/#sec-css-req):
 
 Invalid. The space inside the unquoted `url(` makes a bad url, whose remnants end at `)`. The `;` ends the `background` declaration, and `direction: rtl` is a declaration of its own.
 
-CSS result: One rule. The `background` declaration holds a bad-url token and is dropped. `direction: rtl` is kept.
+CSS result: One rule. The `background` declaration holds a bad-url token (a parse error), so its grammar fails and it is dropped: re-read as a rule, it reaches its `;`, a second parse error. `direction: rtl` is kept.
 
 ## Verifier results
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i direction-after-bad-url.epub -u --advisory` | ERROR RSC-020, ERROR RSC-007, ERROR CSS-001, USAGE ADV-015; INVALID | `direction-after-bad-url.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i direction-after-bad-url.epub -u --advisory` | ERROR CSS-001, USAGE ADV-015; INVALID | `direction-after-bad-url.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-after-bad-url.epub -u` | ERROR RSC-020, ERROR CSS-001, ERROR RSC-007; INVALID | `direction-after-bad-url.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.
 
-Besides CSS-001, both report RSC-007, RSC-020. These do not change the verdict: the book is invalid for its `direction` declaration.
+Besides CSS-001, epubcheck reports RSC-007, RSC-020. This does not change the verdict: the book is invalid for its `direction` declaration.
 
 Every epubveri finding here is in its default output, except USAGE ADV-015, which is an `--advisory` finding.
 

@@ -36,7 +36,7 @@ Valid. Whitespace normalization turns the tab into a space, and `, ` is a separa
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i viewport-tab-separator.epub -u --advisory` | no findings; VALID | `viewport-tab-separator.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i viewport-tab-separator.epub -u --advisory` | no findings; VALID | `viewport-tab-separator.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck viewport-tab-separator.epub -u` | no findings; VALID | `viewport-tab-separator.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

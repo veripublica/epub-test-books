@@ -34,7 +34,7 @@ Invalid. The heading must be an `h1` to `h6` element, and `hgroup` is not one.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i nav-hgroup-heading.epub -u --advisory` | ERROR RSC-005; INVALID | `nav-hgroup-heading.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i nav-hgroup-heading.epub -u --advisory` | ERROR RSC-005; INVALID | `nav-hgroup-heading.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck nav-hgroup-heading.epub -u` | no findings; VALID | `nav-hgroup-heading.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: epubcheck gives no finding.

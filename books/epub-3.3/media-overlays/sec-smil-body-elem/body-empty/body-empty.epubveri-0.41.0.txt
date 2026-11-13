@@ -1,0 +1,4 @@
+ERROR MED_013: content document declares a media-overlay attribute but is not referenced from that overlay [OEBPS/content.xhtml]
+USAGE OPF-097: 'audio.mp3' is declared in the manifest, but no content document references it [OEBPS/package.opf:32:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

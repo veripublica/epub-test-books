@@ -38,7 +38,7 @@ Valid. `writing-mode` is neither `direction` nor `unicode-bidi`, and EPUB 3.3 al
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i writing-mode-vertical.epub -u --advisory` | no findings; VALID | `writing-mode-vertical.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i writing-mode-vertical.epub -u --advisory` | no findings; VALID | `writing-mode-vertical.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck writing-mode-vertical.epub -u` | no findings; VALID | `writing-mode-vertical.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

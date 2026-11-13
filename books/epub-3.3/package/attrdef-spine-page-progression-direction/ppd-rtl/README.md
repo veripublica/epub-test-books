@@ -34,7 +34,7 @@ Valid. `rtl` is one of the three allowed values.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i ppd-rtl.epub -u --advisory` | no findings; VALID | `ppd-rtl.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i ppd-rtl.epub -u --advisory` | no findings; VALID | `ppd-rtl.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck ppd-rtl.epub -u` | no findings; VALID | `ppd-rtl.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

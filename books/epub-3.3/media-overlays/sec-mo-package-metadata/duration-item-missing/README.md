@@ -34,7 +34,7 @@ Invalid. The duration of each media overlay document is required.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i duration-item-missing.epub -u --advisory` | ERROR RSC-005; INVALID | `duration-item-missing.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i duration-item-missing.epub -u --advisory` | ERROR RSC-005; INVALID | `duration-item-missing.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck duration-item-missing.epub -u` | ERROR RSC-005, WARNING MED_016; INVALID | `duration-item-missing.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

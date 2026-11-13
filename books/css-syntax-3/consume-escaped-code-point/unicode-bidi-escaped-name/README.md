@@ -45,7 +45,7 @@ CSS result: One rule with one declaration, `unicode-bidi: embed`. The escape `\7
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i unicode-bidi-escaped-name.epub -u --advisory` | ERROR CSS-001; INVALID | `unicode-bidi-escaped-name.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i unicode-bidi-escaped-name.epub -u --advisory` | ERROR CSS-001; INVALID | `unicode-bidi-escaped-name.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck unicode-bidi-escaped-name.epub -u` | ERROR CSS-001; INVALID | `unicode-bidi-escaped-name.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -34,7 +34,7 @@ Invalid. The property must not be set globally in a `meta` element without `refi
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i align-x-center-global.epub -u --advisory` | ERROR OPF-027; INVALID | `align-x-center-global.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i align-x-center-global.epub -u --advisory` | ERROR OPF-027; INVALID | `align-x-center-global.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck align-x-center-global.epub -u` | ERROR OPF-027; INVALID | `align-x-center-global.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -34,7 +34,7 @@ Invalid. `body` must hold at least one `par` or `seq`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i body-empty.epub -u --advisory` | ERROR MED_013, USAGE OPF-097; INVALID | `body-empty.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i body-empty.epub -u --advisory` | ERROR MED_013, USAGE OPF-097; INVALID | `body-empty.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck body-empty.epub -u` | ERROR RSC-005, ERROR MED_013, USAGE OPF-097; INVALID | `body-empty.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

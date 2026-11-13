@@ -34,7 +34,7 @@ Invalid. `param` must come before the renderable content of the `object`, and he
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i object-param-after-content.epub -u --advisory` | ERROR RSC-005; INVALID | `object-param-after-content.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i object-param-after-content.epub -u --advisory` | ERROR RSC-005; INVALID | `object-param-after-content.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck object-param-after-content.epub -u` | ERROR RSC-005; INVALID | `object-param-after-content.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

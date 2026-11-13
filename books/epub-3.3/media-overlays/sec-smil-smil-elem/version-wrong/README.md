@@ -4,7 +4,7 @@
 - Built by: `scripts/epub-3.3/media-overlays/sec-smil-smil-elem/version-wrong/build.py`
 - Origin: built here
 - Expected: invalid
-- Marks: epubveri: missed
+- Marks: none
 - Asked for by: the maintainer, to start the media overlays section
 - Issue: pending
 
@@ -34,12 +34,10 @@ Invalid. The `version` attribute must be `3.0`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i version-wrong.epub -u --advisory` | no findings; VALID | `version-wrong.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i version-wrong.epub -u --advisory` | ERROR RSC-005; INVALID | `version-wrong.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck version-wrong.epub -u` | ERROR RSC-005; INVALID | `version-wrong.epubcheck-5.4.0.txt` |
 
-epubcheck agrees with the expected result. epubveri does not: it reports nothing for `version="3.1"`.
-
-- **epubveri: missed.** epubveri issue pending.
+Both agree with the expected result, so there is nothing to mark. They report the same messages.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

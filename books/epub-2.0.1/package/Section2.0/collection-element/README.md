@@ -34,7 +34,7 @@ Invalid. The schema in Appendix A has no such element.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i collection-element.epub -u --advisory` | ERROR RSC-005; INVALID | `collection-element.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i collection-element.epub -u --advisory` | ERROR RSC-005; INVALID | `collection-element.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck collection-element.epub -u` | ERROR RSC-005; INVALID | `collection-element.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

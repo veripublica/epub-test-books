@@ -38,7 +38,7 @@ Valid. `horizontal <number>` is a value of the deprecated `-epub-text-combine`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i epub-text-combine-number.epub -u --advisory` | USAGE OBS-001; VALID | `epub-text-combine-number.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i epub-text-combine-number.epub -u --advisory` | USAGE OBS-001; VALID | `epub-text-combine-number.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck epub-text-combine-number.epub -u` | USAGE OBS-001; VALID | `epub-text-combine-number.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

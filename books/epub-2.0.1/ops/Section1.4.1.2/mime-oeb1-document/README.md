@@ -36,7 +36,7 @@ Valid. The type is deprecated but still one of the two allowed. A warning would 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i mime-oeb1-document.epub -u --advisory` | no findings; VALID | `mime-oeb1-document.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i mime-oeb1-document.epub -u --advisory` | no findings; VALID | `mime-oeb1-document.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck mime-oeb1-document.epub -u` | WARNING OPF-037; VALID | `mime-oeb1-document.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

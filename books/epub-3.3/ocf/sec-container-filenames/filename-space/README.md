@@ -34,7 +34,7 @@ Valid, because this is a SHOULD NOT, not a MUST NOT. A validator that reports re
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i filename-space.epub -u --advisory` | WARNING PKG-010; valid | `filename-space.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i filename-space.epub -u --advisory` | WARNING PKG-010; valid | `filename-space.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck filename-space.epub -u` | WARNING PKG-010; valid | `filename-space.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -4,7 +4,7 @@
 - Built by: `scripts/epub-3.3/media-overlays/sec-smil-par-elem/par-two-audio/build.py`
 - Origin: built here
 - Expected: invalid
-- Marks: epubveri: missed
+- Marks: none
 - Asked for by: the maintainer, to start the media overlays section
 - Issue: pending
 
@@ -34,12 +34,10 @@ Invalid. `par` may hold at most one `audio`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i par-two-audio.epub -u --advisory` | no findings; VALID | `par-two-audio.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i par-two-audio.epub -u --advisory` | ERROR RSC-005; INVALID | `par-two-audio.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck par-two-audio.epub -u` | ERROR RSC-005; INVALID | `par-two-audio.epubcheck-5.4.0.txt` |
 
-epubcheck agrees with the expected result. epubveri does not: it reports nothing for the second `audio`.
-
-- **epubveri: missed.** epubveri issue pending.
+Both agree with the expected result, so there is nothing to mark. They report the same messages.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

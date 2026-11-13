@@ -1,0 +1,4 @@
+USAGE OBS-001: usage of a manifest content fallback (for resource 'OEBPS/image.bmp') is outdated [OEBPS/content.xhtml:11:8]
+USAGE OPF-097: 'image.jpg' is declared in the manifest, but no content document references it [OEBPS/package.opf:32:5]
+— 0 error(s), 0 warning(s): VALID
+[exit 0]

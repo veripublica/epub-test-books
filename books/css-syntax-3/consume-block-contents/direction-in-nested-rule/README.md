@@ -4,7 +4,7 @@
 - Built by: `scripts/css-syntax-3/consume-block-contents/direction-in-nested-rule/build.py`
 - Origin: built here
 - Expected: invalid
-- Marks: epubveri: missed, wrong error; epubcheck: missed, wrong error
+- Marks: epubcheck: missed, wrong error
 - Asked for by: styloria, after its review of the encoding sets
 - Issue: pending
 - Other clauses: EPUB 3.3 `sec-css-req`
@@ -49,12 +49,11 @@ CSS result: One rule, `p`, with one nested style rule, `span`, which declares `d
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i direction-in-nested-rule.epub -u --advisory` | ERROR CSS-008; INVALID | `direction-in-nested-rule.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i direction-in-nested-rule.epub -u --advisory` | ERROR CSS-001; INVALID | `direction-in-nested-rule.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-in-nested-rule.epub -u` | ERROR CSS-008, ERROR CSS-008, ERROR CSS-008; INVALID | `direction-in-nested-rule.epubcheck-5.4.0.txt` |
 
-Neither agrees with the expected result. epubveri does not report `direction` (no CSS-001), and reports the nested rule as an error (CSS-008). epubcheck does not report `direction` (no CSS-001), and reports the nested rule as errors (CSS-008).
+epubveri agrees with the expected result. epubcheck does not: it does not report `direction` (no CSS-001), and reports the nested rule as errors (CSS-008).
 
-- **epubveri: missed, wrong error.** epubveri issue pending.
 - **epubcheck: missed, wrong error.** w3c/epubcheck issue pending.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.

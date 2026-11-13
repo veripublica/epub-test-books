@@ -38,7 +38,7 @@ Valid. Other files may be anywhere under the root directory, and an unlisted fil
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i extra-file-in-root.epub -u --advisory` | USAGE OPF-003; VALID | `extra-file-in-root.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i extra-file-in-root.epub -u --advisory` | USAGE OPF-003; VALID | `extra-file-in-root.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck extra-file-in-root.epub -u` | USAGE OPF-003; VALID | `extra-file-in-root.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

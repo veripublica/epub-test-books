@@ -34,7 +34,7 @@ Invalid. Only UTF-8 and UTF-16 are allowed.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i css-iso-8859-1.epub -u --advisory` | ERROR CSS-004; INVALID | `css-iso-8859-1.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i css-iso-8859-1.epub -u --advisory` | ERROR CSS-004; INVALID | `css-iso-8859-1.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck css-iso-8859-1.epub -u` | ERROR CSS-004; INVALID | `css-iso-8859-1.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

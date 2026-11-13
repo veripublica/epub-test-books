@@ -45,7 +45,7 @@ CSS result: The declaration is not at the start, so it is not recognized; the sh
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i charset-utf-8-later.epub -u --advisory` | no findings; VALID | `charset-utf-8-later.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i charset-utf-8-later.epub -u --advisory` | no findings; VALID | `charset-utf-8-later.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck charset-utf-8-later.epub -u` | no findings; VALID | `charset-utf-8-later.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

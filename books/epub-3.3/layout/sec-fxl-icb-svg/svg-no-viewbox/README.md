@@ -34,7 +34,7 @@ Invalid. The dimensions of a fixed-layout SVG document must be given with `viewB
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i svg-no-viewbox.epub -u --advisory` | ERROR HTM-048; INVALID | `svg-no-viewbox.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i svg-no-viewbox.epub -u --advisory` | ERROR HTM-048; INVALID | `svg-no-viewbox.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck svg-no-viewbox.epub -u` | ERROR HTM-048; INVALID | `svg-no-viewbox.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

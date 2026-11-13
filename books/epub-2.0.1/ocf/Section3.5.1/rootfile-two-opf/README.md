@@ -4,7 +4,7 @@
 - Built by: `scripts/epub-2.0.1/ocf/Section3.5.1/rootfile-two-opf/build.py`
 - Origin: built here
 - Expected: valid
-- Marks: epubveri: wrong error; epubcheck: wrong error
+- Marks: epubcheck: wrong error
 - Asked for by: the maintainer, to start the OCF 2.0.1 sets
 - Issue: pending
 
@@ -34,12 +34,13 @@ Valid. Only one such rootfile SHOULD be included, which is a recommendation, and
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i rootfile-two-opf.epub -u --advisory` | ERROR PKG-013; INVALID | `rootfile-two-opf.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i rootfile-two-opf.epub -u --advisory` | WARNING PKG-013; VALID | `rootfile-two-opf.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck rootfile-two-opf.epub -u` | ERROR PKG-013; INVALID | `rootfile-two-opf.epubcheck-5.4.0.txt` |
 
-Neither agrees with the expected result. epubveri reports the second rootfile as an error (PKG-013). epubcheck reports the second rootfile as an error (PKG-013).
+epubveri agrees with the expected result. epubcheck does not: it reports the second rootfile as an error (PKG-013).
 
-- **epubveri: wrong error.** epubveri issue pending.
+epubveri reports the second rootfile as a warning (PKG-013): the rule is a SHOULD, and a warning does not change the verdict. Up to 0.40.1 it was an error.
+
 - **epubcheck: wrong error.** w3c/epubcheck issue pending.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.

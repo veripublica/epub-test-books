@@ -34,7 +34,7 @@ Invalid. Nothing gives access to the document.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i non-linear-unreachable.epub -u --advisory` | ERROR OPF-096; INVALID | `non-linear-unreachable.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i non-linear-unreachable.epub -u --advisory` | ERROR OPF-096; INVALID | `non-linear-unreachable.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck non-linear-unreachable.epub -u` | ERROR OPF-096; INVALID | `non-linear-unreachable.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

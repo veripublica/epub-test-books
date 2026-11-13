@@ -4,7 +4,7 @@
 - Built by: `scripts/css-syntax-3/consume-qualified-rule/stray-close-brace/build.py`
 - Origin: built here
 - Expected: valid
-- Marks: epubveri: wrong error; epubcheck: wrong error
+- Marks: epubcheck: wrong error
 - Asked for by: styloria, after its review of the encoding sets
 - Issue: pending
 - Other clauses: EPUB 3.3 `sec-css-req`
@@ -55,12 +55,11 @@ CSS result: The `}` is a parse error and becomes part of a qualified rule's prel
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i stray-close-brace.epub -u --advisory` | ERROR CSS-008; INVALID | `stray-close-brace.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i stray-close-brace.epub -u --advisory` | USAGE CSS-008; VALID | `stray-close-brace.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck stray-close-brace.epub -u` | ERROR CSS-008; INVALID | `stray-close-brace.epubcheck-5.4.0.txt` |
 
-Neither agrees with the expected result. epubveri reports the parse error as an error (CSS-008). epubcheck reports the parse error as an error (CSS-008).
+epubveri agrees with the expected result. epubcheck does not: it reports the parse error as an error (CSS-008).
 
-- **epubveri: wrong error.** epubveri issue pending.
 - **epubcheck: wrong error.** w3c/epubcheck issue pending.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.

@@ -42,7 +42,7 @@ Valid. `-epub-direction` is not a prefixed property EPUB defines, and it is not 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i epub-direction.epub -u --advisory` | USAGE OBS-001; VALID | `epub-direction.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i epub-direction.epub -u --advisory` | USAGE OBS-001; VALID | `epub-direction.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck epub-direction.epub -u` | USAGE OBS-001; VALID | `epub-direction.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

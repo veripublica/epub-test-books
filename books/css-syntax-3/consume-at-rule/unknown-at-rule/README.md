@@ -4,7 +4,7 @@
 - Built by: `scripts/css-syntax-3/consume-at-rule/unknown-at-rule/build.py`
 - Origin: built here
 - Expected: valid
-- Marks: epubveri: wrong error; epubcheck: wrong error
+- Marks: epubcheck: wrong error
 - Asked for by: styloria, after its review of the encoding sets
 - Issue: pending
 - Other clauses: EPUB 3.3 `sec-css-req`
@@ -49,18 +49,17 @@ EPUB 3.3, [`sec-css-req`](https://www.w3.org/TR/epub-33/#sec-css-req):
 
 Valid. The sheet holds neither `direction` nor `unicode-bidi`, and it is UTF-8, so EPUB 3.3 asks nothing more of it. A parse error is not one of its requirements.
 
-CSS result: `@foo` is not valid in a stylesheet, so the at-rule, with its block, is dropped, which is a parse error. One rule is kept, `p { margin: 0; }`.
+CSS result: Inside the block, `baz` is not a declaration, and re-read as a rule it reaches the `}`: a parse error. `@foo` is not valid in a stylesheet, so the at-rule, with its block, is dropped, a second parse error. One rule is kept, `p { margin: 0; }`.
 
 ## Verifier results
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i unknown-at-rule.epub -u --advisory` | ERROR CSS-008, USAGE ADV-020; INVALID | `unknown-at-rule.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i unknown-at-rule.epub -u --advisory` | USAGE ADV-020, USAGE CSS-008; VALID | `unknown-at-rule.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck unknown-at-rule.epub -u` | ERROR CSS-008; INVALID | `unknown-at-rule.epubcheck-5.4.0.txt` |
 
-Neither agrees with the expected result. epubveri reports the unknown at-rule as an error (CSS-008). epubcheck reports the unknown at-rule as an error (CSS-008).
+epubveri agrees with the expected result. epubcheck does not: it reports the unknown at-rule as an error (CSS-008).
 
-- **epubveri: wrong error.** epubveri issue pending.
 - **epubcheck: wrong error.** w3c/epubcheck issue pending.
 
 Every epubveri finding here is in its default output, except USAGE ADV-020, which is an `--advisory` finding.

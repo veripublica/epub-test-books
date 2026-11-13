@@ -4,7 +4,7 @@
 - Built by: `scripts/css-syntax-3/input-preprocessing/form-feed-in-string/build.py`
 - Origin: built here
 - Expected: valid
-- Marks: epubveri: wrong error; epubcheck: wrong error
+- Marks: epubcheck: wrong error
 - Asked for by: styloria, after its review of the encoding sets
 - Issue: pending
 - Other clauses: EPUB 3.3 `sec-css-req`
@@ -47,18 +47,17 @@ EPUB 3.3, [`sec-css-req`](https://www.w3.org/TR/epub-33/#sec-css-req):
 
 Valid. The sheet holds neither `direction` nor `unicode-bidi`, and it is UTF-8, so EPUB 3.3 asks nothing more of it. A parse error is not one of its requirements.
 
-CSS result: Preprocessing turns the form feed into a newline, so the string ends there as a bad string (a parse error). `b` follows, and its `"` opens a second string, which takes in `; margin: 0; }` and is broken by the newline at the end of the line: a second bad string. The rule is closed at EOF; its one declaration, `content`, is dropped, and `margin: 0` is never declared.
+CSS result: Preprocessing turns the form feed into a newline, so the string ends there as a bad string (a parse error). `b` follows, and its `"` opens a second string, which takes in `; margin: 0; }` and is broken by the newline at the end of the line: a second bad string. The rule is closed at EOF. Its one declaration, `content`, is dropped: re-read as a rule, it reaches EOF, a third parse error. `margin: 0` is never declared.
 
 ## Verifier results
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i form-feed-in-string.epub -u --advisory` | ERROR CSS-008, ERROR CSS-008, ERROR CSS-008; INVALID | `form-feed-in-string.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i form-feed-in-string.epub -u --advisory` | USAGE CSS-008, USAGE CSS-008, USAGE CSS-008; VALID | `form-feed-in-string.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck form-feed-in-string.epub -u` | ERROR CSS-008; INVALID | `form-feed-in-string.epubcheck-5.4.0.txt` |
 
-Neither agrees with the expected result. epubveri reports the broken string as errors (CSS-008). epubcheck reports the broken string as an error (CSS-008).
+epubveri agrees with the expected result. epubcheck does not: it reports the broken string as an error (CSS-008).
 
-- **epubveri: wrong error.** epubveri issue pending.
 - **epubcheck: wrong error.** w3c/epubcheck issue pending.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.

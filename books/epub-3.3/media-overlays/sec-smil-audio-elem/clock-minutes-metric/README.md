@@ -40,7 +40,7 @@ Valid. `0.05min` is a timecount value with a fraction and the metric `min`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i clock-minutes-metric.epub -u --advisory` | no findings; VALID | `clock-minutes-metric.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i clock-minutes-metric.epub -u --advisory` | no findings; VALID | `clock-minutes-metric.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck clock-minutes-metric.epub -u` | no findings; VALID | `clock-minutes-metric.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

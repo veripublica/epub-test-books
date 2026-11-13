@@ -45,7 +45,7 @@ CSS result: The declaration must lie within the first 1,024 bytes. Its last byte
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i charset-past-1024.epub -u --advisory` | no findings; VALID | `charset-past-1024.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i charset-past-1024.epub -u --advisory` | no findings; VALID | `charset-past-1024.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck charset-past-1024.epub -u` | no findings; VALID | `charset-past-1024.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

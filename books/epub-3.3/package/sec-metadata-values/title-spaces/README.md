@@ -34,7 +34,7 @@ Invalid. The value is empty once whitespace is stripped.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i title-spaces.epub -u --advisory` | ERROR RSC-005; INVALID | `title-spaces.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i title-spaces.epub -u --advisory` | ERROR RSC-005; INVALID | `title-spaces.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck title-spaces.epub -u` | ERROR RSC-005; INVALID | `title-spaces.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -34,7 +34,7 @@ Invalid. This is a self-reference.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i fallback-self.epub -u --advisory` | ERROR OPF-045, USAGE OPF-097; INVALID | `fallback-self.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i fallback-self.epub -u --advisory` | ERROR OPF-045, USAGE OPF-097; INVALID | `fallback-self.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck fallback-self.epub -u` | ERROR OPF-045, USAGE OPF-097; INVALID | `fallback-self.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

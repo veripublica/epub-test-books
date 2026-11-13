@@ -34,7 +34,7 @@ Invalid. `right` is not one of the allowed values `ltr`, `rtl` and `default`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i ppd-unknown.epub -u --advisory` | ERROR RSC-005; INVALID | `ppd-unknown.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i ppd-unknown.epub -u --advisory` | ERROR RSC-005; INVALID | `ppd-unknown.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck ppd-unknown.epub -u` | ERROR RSC-005; INVALID | `ppd-unknown.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

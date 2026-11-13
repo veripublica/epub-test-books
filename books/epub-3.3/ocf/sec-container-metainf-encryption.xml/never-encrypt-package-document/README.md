@@ -43,7 +43,7 @@ Invalid. The package document is on the list of files that must not be encrypted
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i never-encrypt-package-document.epub -u --advisory` | ERROR SPEC-001; INVALID | `never-encrypt-package-document.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i never-encrypt-package-document.epub -u --advisory` | ERROR SPEC-001; INVALID | `never-encrypt-package-document.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck never-encrypt-package-document.epub -u` | VALID | `never-encrypt-package-document.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it gives no finding.

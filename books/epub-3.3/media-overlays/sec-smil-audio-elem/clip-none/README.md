@@ -36,7 +36,7 @@ Valid. Both attributes are optional.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i clip-none.epub -u --advisory` | no findings; VALID | `clip-none.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i clip-none.epub -u --advisory` | no findings; VALID | `clip-none.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck clip-none.epub -u` | no findings; VALID | `clip-none.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

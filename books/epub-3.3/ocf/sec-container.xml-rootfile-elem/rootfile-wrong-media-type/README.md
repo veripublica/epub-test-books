@@ -34,7 +34,7 @@ Invalid. The only allowed value is `application/oebps-package+xml`, so no packag
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i rootfile-wrong-media-type.epub -u --advisory` | ERROR RSC-003; INVALID | `rootfile-wrong-media-type.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i rootfile-wrong-media-type.epub -u --advisory` | ERROR RSC-003; INVALID | `rootfile-wrong-media-type.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck rootfile-wrong-media-type.epub -u` | ERROR RSC-003; INVALID | `rootfile-wrong-media-type.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -4,7 +4,7 @@
 - Built by: `scripts/epub-3.3/content/sec-xhtml-req/bdo-dir-uppercase/build.py`
 - Origin: built here
 - Expected: valid
-- Marks: epubveri: wrong error
+- Marks: none
 - Asked for by: styloria, its proposal 4 (vertical and right-to-left books, 2026-10-28)
 - Issue: pending
 
@@ -42,12 +42,10 @@ Valid. `bdo` has its `dir` attribute, and `RTL` is an ASCII case-insensitive mat
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i bdo-dir-uppercase.epub -u --advisory` | ERROR RSC-005; INVALID | `bdo-dir-uppercase.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i bdo-dir-uppercase.epub -u --advisory` | no findings; VALID | `bdo-dir-uppercase.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck bdo-dir-uppercase.epub -u` | no findings; VALID | `bdo-dir-uppercase.epubcheck-5.4.0.txt` |
 
-epubcheck agrees with the expected result. epubveri does not: it reports `RTL` as an invalid value of `dir` (RSC-005).
-
-- **epubveri: wrong error.** epubveri issue pending.
+Both agree with the expected result, so there is nothing to mark. They report the same messages.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

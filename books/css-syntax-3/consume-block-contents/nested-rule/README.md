@@ -4,7 +4,7 @@
 - Built by: `scripts/css-syntax-3/consume-block-contents/nested-rule/build.py`
 - Origin: built here
 - Expected: valid
-- Marks: epubveri: wrong error; epubcheck: wrong error
+- Marks: epubcheck: wrong error
 - Asked for by: styloria, after its review of the encoding sets
 - Issue: pending
 - Other clauses: EPUB 3.3 `sec-css-req`
@@ -51,12 +51,11 @@ CSS result: One rule, `p`, with one nested style rule, `span { margin: 0; }`. No
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i nested-rule.epub -u --advisory` | ERROR CSS-008; INVALID | `nested-rule.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i nested-rule.epub -u --advisory` | no findings; VALID | `nested-rule.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck nested-rule.epub -u` | ERROR CSS-008, ERROR CSS-008, ERROR CSS-008; INVALID | `nested-rule.epubcheck-5.4.0.txt` |
 
-Neither agrees with the expected result. epubveri reports the nested rule as an error (CSS-008). epubcheck reports the nested rule as errors (CSS-008).
+epubveri agrees with the expected result. epubcheck does not: it reports the nested rule as errors (CSS-008).
 
-- **epubveri: wrong error.** epubveri issue pending.
 - **epubcheck: wrong error.** w3c/epubcheck issue pending.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.

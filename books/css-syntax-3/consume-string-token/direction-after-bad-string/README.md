@@ -41,18 +41,18 @@ EPUB 3.3, [`sec-css-req`](https://www.w3.org/TR/epub-33/#sec-css-req):
 
 Invalid. The newline ends the string as a bad string. The `;` on the next line ends the `content` declaration, and `direction: rtl` is a declaration of its own.
 
-CSS result: One rule. The `content` declaration holds a bad-string token, so its grammar fails and it is dropped. `direction: rtl` is kept.
+CSS result: One rule. The `content` declaration holds a bad-string token (a parse error), so its grammar fails and it is dropped: re-read as a rule, it reaches its `;`, a second parse error. `direction: rtl` is kept.
 
 ## Verifier results
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i direction-after-bad-string.epub -u --advisory` | ERROR CSS-008, ERROR CSS-001; INVALID | `direction-after-bad-string.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i direction-after-bad-string.epub -u --advisory` | ERROR CSS-001, USAGE CSS-008; INVALID | `direction-after-bad-string.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-after-bad-string.epub -u` | ERROR CSS-008, ERROR CSS-001; INVALID | `direction-after-bad-string.epubcheck-5.4.0.txt` |
 
-Both agree with the expected result, so there is nothing to mark. They report the same messages.
+Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.
 
-Besides CSS-001, both report CSS-008. These do not change the verdict: the book is invalid for its `direction` declaration.
+Besides CSS-001, epubcheck reports CSS-008. This does not change the verdict: the book is invalid for its `direction` declaration.
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

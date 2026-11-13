@@ -34,7 +34,7 @@ Invalid. The property must not be declared with the `refines` attribute; a spine
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i layout-with-refines.epub -u --advisory` | ERROR RSC-005; INVALID | `layout-with-refines.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i layout-with-refines.epub -u --advisory` | ERROR RSC-005; INVALID | `layout-with-refines.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck layout-with-refines.epub -u` | ERROR RSC-005, USAGE HTM_060b, USAGE HTM_060b; INVALID | `layout-with-refines.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

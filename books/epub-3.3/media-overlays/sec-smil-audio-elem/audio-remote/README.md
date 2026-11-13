@@ -38,7 +38,7 @@ Valid. Audio may be stored outside the container.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i audio-remote.epub -u --advisory` | no findings; VALID | `audio-remote.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i audio-remote.epub -u --advisory` | no findings; VALID | `audio-remote.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck audio-remote.epub -u` | no findings; VALID | `audio-remote.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

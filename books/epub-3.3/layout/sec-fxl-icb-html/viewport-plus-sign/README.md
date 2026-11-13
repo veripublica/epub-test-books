@@ -39,7 +39,7 @@ Valid. `+1200` is a CSS 2.1 number (an integer preceded by "+"), and it is posit
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.40.1 | `epubveri -i viewport-plus-sign.epub -u --advisory` | no findings; VALID | `viewport-plus-sign.epubveri-0.40.1.txt` |
+| epubveri 0.41.0 | `epubveri -i viewport-plus-sign.epub -u --advisory` | no findings; VALID | `viewport-plus-sign.epubveri-0.41.0.txt` |
 | epubcheck 5.4.0 | `epubcheck viewport-plus-sign.epub -u` | ERROR HTM_057; INVALID | `viewport-plus-sign.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports `+1200` as not a positive number (HTM_057).
