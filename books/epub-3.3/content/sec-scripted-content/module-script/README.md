@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: epubveri: wrong error; epubcheck: wrong error
 - Asked for by: the maintainer, to cover EPUB 3.3 scripting
-- Issue: pending
+- Issue: [#534](https://github.com/veripublica/epub-test-books/issues/534)
 
 ## About this book
 

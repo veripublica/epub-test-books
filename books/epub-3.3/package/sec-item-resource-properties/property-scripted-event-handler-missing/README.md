@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: none
 - Asked for by: the maintainer, to cover EPUB 3.3 scripting
-- Issue: pending
+- Issue: [#541](https://github.com/veripublica/epub-test-books/issues/541)
 
 ## About this book
 
