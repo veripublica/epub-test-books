@@ -47,7 +47,7 @@ The shifted reading is what makes the other files readable. Read without the shi
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.
 
-- **epubcheck: missed.** w3c/epubcheck issue pending.
+- **epubcheck: missed.** [w3c/epubcheck#1779](https://github.com/w3c/epubcheck/issues/1779).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

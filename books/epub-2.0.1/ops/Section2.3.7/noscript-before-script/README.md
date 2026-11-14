@@ -39,7 +39,7 @@ Invalid. A `noscript` must come after the `script` it belongs to, and here it co
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.
 
-- **epubcheck: missed.** w3c/epubcheck issue pending.
+- **epubcheck: missed.** [w3c/epubcheck#1780](https://github.com/w3c/epubcheck/issues/1780).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

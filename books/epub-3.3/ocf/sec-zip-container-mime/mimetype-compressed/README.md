@@ -39,7 +39,7 @@ Invalid. The `mimetype` file must not be compressed. EPUB 2.0.1 has the same cas
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.
 
-- **epubcheck: missed.** w3c/epubcheck issue pending.
+- **epubcheck: missed.** [w3c/epubcheck#1779](https://github.com/w3c/epubcheck/issues/1779).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

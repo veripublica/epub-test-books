@@ -39,7 +39,7 @@ Invalid. The `mimetype` file must not be in the manifest. `container-in-manifest
 
 epubveri agrees with the expected result. epubcheck does not: it reports only USAGE OPF-097, and the book stays valid.
 
-- **epubcheck: missed.** w3c/epubcheck issue pending.
+- **epubcheck: missed.** [w3c/epubcheck#1779](https://github.com/w3c/epubcheck/issues/1779).
 
 USAGE OPF-097 is a side effect of the defect, not a second defect: the manifest now lists a file that nothing in the book references.
 

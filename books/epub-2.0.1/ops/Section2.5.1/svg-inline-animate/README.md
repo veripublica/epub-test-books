@@ -39,7 +39,7 @@ Invalid. SVG animation must not be used in OPS content, and `animate` is an SVG 
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.
 
-- **epubcheck: missed.** w3c/epubcheck issue pending.
+- **epubcheck: missed.** [w3c/epubcheck#1780](https://github.com/w3c/epubcheck/issues/1780).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

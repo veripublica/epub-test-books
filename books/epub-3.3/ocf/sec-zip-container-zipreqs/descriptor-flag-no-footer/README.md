@@ -47,7 +47,7 @@ The local header also keeps its CRC-32 and sizes, where 4.4.7 to 4.4.9 say they 
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.
 
-- **epubcheck: missed.** w3c/epubcheck issue pending.
+- **epubcheck: missed.** [w3c/epubcheck#1779](https://github.com/w3c/epubcheck/issues/1779).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 
