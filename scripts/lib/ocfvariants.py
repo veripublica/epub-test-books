@@ -89,6 +89,13 @@ def mimetype_missing(files):
     return rz.build(_entries(files)[1:])
 
 
+def mimetype_compressed(files):
+    # the mimetype entry is Flate-compressed (method 8)
+    es = _entries(files)
+    es[0].method = 8
+    return rz.build(es)
+
+
 # --- sec-zip-container-zipreqs ------------------------------------------------
 
 def compression_bzip2(files):
@@ -96,6 +103,16 @@ def compression_bzip2(files):
     for e in es:
         if e.name == CONTENT:
             e.method, e.version = 12, 46
+    return rz.build(es)
+
+
+def version_needed_63(files):
+    # "version needed to extract" 63 (ZIP 6.3) for the content document, in
+    # both headers; the file is still deflated as before
+    es = _entries(files)
+    for e in es:
+        if e.name == CONTENT:
+            e.version = 63
     return rz.build(es)
 
 
@@ -135,6 +152,11 @@ def container_in_manifest(files):
                'media-type="application/xml"/>')}))
 
 
+def mimetype_in_manifest(files):
+    return rz.build(_entries(files, changes={OPF: _manifest_add(
+        files, '<item id="mimetype" href="../mimetype" media-type="text/plain"/>')}))
+
+
 # --- sec-container-filenames -------------------------------------------------
 
 def filename_forbidden_char(files):
@@ -143,6 +165,12 @@ def filename_forbidden_char(files):
 
 def filename_space(files):
     return rz.build(_rename_content(files, "con tent.xhtml", "con%20tent.xhtml"))
+
+
+def filename_256_bytes(files):
+    # OEBPS/ + 250 "a" + ".xhtml": the name is 256 bytes
+    name = "a" * 250 + ".xhtml"
+    return rz.build(_rename_content(files, name, name))
 
 
 def filename_case_duplicate(files):
