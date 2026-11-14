@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: none
 - Asked for by: epubveri; parked on 2026-11-08 until the ZIP rule was read, shipped as valid on 2026-11-15
-- Issue: pending
+- Issue: [#627](https://github.com/veripublica/epub-test-books/issues/627)
 
 ## About this book
 

@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: epubcheck: missed
 - Asked for by: styloria, its proposal 4 (vertical and right-to-left books, 2026-10-28); parked on 2026-11-12 while both verifiers missed it, shipped after epubveri reports it
-- Issue: pending
+- Issue: [#618](https://github.com/veripublica/epub-test-books/issues/618)
 
 ## About this book
 

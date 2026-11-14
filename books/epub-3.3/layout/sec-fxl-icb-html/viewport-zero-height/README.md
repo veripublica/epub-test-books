@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: epubcheck: missed
 - Asked for by: the maintainer, to start the fixed layouts section; parked on 2026-11-11 while both verifiers missed it, shipped after epubveri reports it
-- Issue: pending
+- Issue: [#620](https://github.com/veripublica/epub-test-books/issues/620)
 - Other clauses: CSS 2.1 `numbers`
 
 ## About this book
