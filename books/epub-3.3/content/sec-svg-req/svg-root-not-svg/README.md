@@ -38,7 +38,7 @@ Invalid. The root element of a conforming SVG stand-alone file must be svg.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.42.0 | `epubveri -i svg-root-not-svg.epub -u --advisory` | ERROR RSC-005; INVALID | `svg-root-not-svg.epubveri-0.42.0.txt` |
+| epubveri 0.43.0 | `epubveri -i svg-root-not-svg.epub -u --advisory` | ERROR RSC-005; INVALID | `svg-root-not-svg.epubveri-0.43.0.txt` |
 | epubcheck 5.4.0 | `epubcheck svg-root-not-svg.epub -u` | USAGE RSC-025, ERROR RSC-005; INVALID | `svg-root-not-svg.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

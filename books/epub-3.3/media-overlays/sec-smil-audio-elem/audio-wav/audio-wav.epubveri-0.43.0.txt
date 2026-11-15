@@ -1,0 +1,3 @@
+ERROR MED-005: audio resource 'audio.wav' is not a Core Media Type (audio/wav) [OEBPS/content.smil:4:50]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

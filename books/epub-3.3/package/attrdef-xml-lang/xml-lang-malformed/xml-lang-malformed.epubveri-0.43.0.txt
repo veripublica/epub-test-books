@@ -1,0 +1,4 @@
+ERROR OPF-092: language tag 'en_US' is not well-formed [OEBPS/package.opf:2:1]
+ERROR RSC-005: value of attribute "xml:lang" is invalid: "en_US" [OEBPS/package.opf:2:85]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]

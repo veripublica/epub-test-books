@@ -1,0 +1,4 @@
+FATAL RSC-016: content document is not well-formed XML: unknown token at 1:1 [OEBPS/content.xhtml:1:1]
+FATAL RSC-016: a bare '&' must be written as '&amp;' [OEBPS/content.xhtml:1:247]
+— 2 fatal, 0 error(s), 0 warning(s): INVALID
+[exit 1]

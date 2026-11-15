@@ -38,7 +38,7 @@ Invalid. An svg element outside the SVG namespace is not SVG's svg element, so t
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.42.0 | `epubveri -i svg-no-namespace.epub -u --advisory` | ERROR RSC-005; INVALID | `svg-no-namespace.epubveri-0.42.0.txt` |
+| epubveri 0.43.0 | `epubveri -i svg-no-namespace.epub -u --advisory` | ERROR RSC-005; INVALID | `svg-no-namespace.epubveri-0.43.0.txt` |
 | epubcheck 5.4.0 | `epubcheck svg-no-namespace.epub -u` | ERROR RSC-005; INVALID | `svg-no-namespace.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

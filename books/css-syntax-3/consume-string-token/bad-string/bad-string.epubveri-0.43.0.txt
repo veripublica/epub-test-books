@@ -1,0 +1,3 @@
+USAGE CSS-008: CSS syntax error: string '"open' is broken by an unescaped line break [OEBPS/style.css:1:14]
+— 0 error(s), 0 warning(s): VALID
+[exit 0]

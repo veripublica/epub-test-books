@@ -1,0 +1,5 @@
+ERROR OPF-014: content document uses epub:switch but doesn't declare the "switch" property - add it to this document's manifest item in the OPF [OEBPS/content.xhtml:11:5]
+WARNING RSC-017: The "epub:switch" element is deprecated [OEBPS/content.xhtml:11:5]
+USAGE ACC-009: MathML markup has no alternative text [OEBPS/content.xhtml:12:74]
+— 1 error(s), 1 warning(s): INVALID
+[exit 1]

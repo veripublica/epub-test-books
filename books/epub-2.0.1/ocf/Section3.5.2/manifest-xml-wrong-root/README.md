@@ -34,7 +34,7 @@ Invalid. If present, `manifest.xml` must follow the ODF 1.0 manifest schema, who
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.42.0 | `epubveri -i manifest-xml-wrong-root.epub -u --advisory` | ERROR RSC-005; INVALID | `manifest-xml-wrong-root.epubveri-0.42.0.txt` |
+| epubveri 0.43.0 | `epubveri -i manifest-xml-wrong-root.epub -u --advisory` | ERROR RSC-005; INVALID | `manifest-xml-wrong-root.epubveri-0.43.0.txt` |
 | epubcheck 5.4.0 | `epubcheck manifest-xml-wrong-root.epub -u` | no findings; VALID | `manifest-xml-wrong-root.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.

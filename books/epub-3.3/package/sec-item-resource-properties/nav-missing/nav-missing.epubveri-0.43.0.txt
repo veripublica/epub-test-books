@@ -1,0 +1,4 @@
+ERROR RSC-005: EPUB 3 requires a navigation document (a manifest item with properties="nav") [OEBPS/package.opf:25:3]
+USAGE OPF-097: 'nav.xhtml' is declared in the manifest, but no content document references it [OEBPS/package.opf:28:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

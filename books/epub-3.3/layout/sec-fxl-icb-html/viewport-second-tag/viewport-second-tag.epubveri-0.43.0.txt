@@ -1,0 +1,5 @@
+ERROR HTM_056: viewport is missing the 'width' key [OEBPS/content.xhtml:7:5]
+ERROR HTM_056: viewport is missing the 'height' key [OEBPS/content.xhtml:7:5]
+USAGE HTM_060a: additional viewport meta elements are not checked [OEBPS/content.xhtml:8:5]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]

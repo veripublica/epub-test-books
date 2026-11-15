@@ -1,0 +1,4 @@
+ERROR OPF-044: spine item idref 'foreign' has non-content media-type 'image/bmp' whose fallback chain never reaches a content document [OEBPS/package.opf:37:5]
+USAGE OPF-097: 'image.jpg' is declared in the manifest, but no content document references it [OEBPS/package.opf:32:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

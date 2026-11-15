@@ -6,7 +6,7 @@ kept true at every release. The rules for adding a set are in
 
 ## Status
 
-Latest release: v0.6.0 (2026-11-13). It holds the two templates and 600
+Latest release: v0.7.0 (2026-11-15). It holds the two templates and 624
 sets under `books/epub-3.3/<area>/<anchor>/<set>/`,
 `books/epub-2.0.1/<area>/<anchor>/<set>/` and `books/<css-spec>/<anchor>/<set>/`:
 the EPUB container (`ocf`), the package document (`package`), the navigation
@@ -164,7 +164,7 @@ are hidden by both.
 Read them in place; do not copy them into your repository.
 
 - **In CI:** check out a release tag (`repository: veripublica/epub-test-books`,
-  `ref: v0.6.0`). Pin a tag, never `main`: a new set changes what your tests
+  `ref: v0.7.0`). Pin a tag, never `main`: a new set changes what your tests
   see.
 - **Locally:** one clone, read-only. Write your tool's outputs into your own
   project.
