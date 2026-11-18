@@ -1,0 +1,9 @@
+Validating using EPUB version 2.0.1 rules.
+ERROR(RSC-005): switch-case-after-default.epub/OEBPS/content.xhtml(11,71): Error while parsing file: element "ops:default" not allowed yet; missing required element "ops:case"
+ERROR(RSC-005): switch-case-after-default.epub/OEBPS/content.xhtml(11,159): Error while parsing file: element "ops:case" not allowed here; expected the element end-tag
+
+Check finished with errors
+Messages: 0 fatals / 2 errors / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

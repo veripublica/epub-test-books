@@ -1,0 +1,8 @@
+Validating using EPUB version 2.0.1 rules.
+ERROR(RSC-005): case-no-required-namespace.epub/OEBPS/content.xhtml(11,68): Error while parsing file: element "ops:case" missing required attribute "required-namespace"
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

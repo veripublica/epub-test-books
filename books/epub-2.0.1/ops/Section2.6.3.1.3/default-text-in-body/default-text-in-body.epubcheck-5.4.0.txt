@@ -1,0 +1,8 @@
+Validating using EPUB version 2.0.1 rules.
+ERROR(RSC-005): default-text-in-body.epub/OEBPS/content.xhtml(12,224): Error while parsing file: text not allowed here; expected the element end-tag or element "ops:switch"
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]
