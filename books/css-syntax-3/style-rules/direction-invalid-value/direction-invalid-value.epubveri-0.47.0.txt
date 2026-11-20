@@ -1,0 +1,4 @@
+ERROR CSS-001: use of the 'direction' property is not recommended [OEBPS/style.css:1:5]
+USAGE ADV-024: 'sideways' is not a valid value for 'direction', so CSS says to ignore the declaration [OEBPS/style.css:1:16]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

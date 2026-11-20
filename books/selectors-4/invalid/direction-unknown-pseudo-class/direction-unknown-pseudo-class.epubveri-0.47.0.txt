@@ -1,0 +1,4 @@
+ERROR CSS-001: use of the 'direction' property is not recommended [OEBPS/style.css:1:9]
+USAGE ADV-019: ':foo' in selector 'p:foo' is not a pseudo-class or pseudo-element any CSS specification defines in this form, so browsers ignore this whole rule [OEBPS/style.css:1:2]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

@@ -1,0 +1,4 @@
+ERROR CSS-001: use of the 'direction' property is not recommended [OEBPS/style.css:1:27]
+USAGE CSS-008: CSS syntax error: '[epub|type~="footnote"]' uses a namespace prefix no @namespace rule declares [OEBPS/style.css:1:1]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

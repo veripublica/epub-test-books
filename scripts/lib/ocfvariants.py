@@ -358,18 +358,20 @@ AES128 = "http://www.w3.org/2001/04/xmlenc#aes128-cbc"
 _WRAPPED = base64.b64encode(hashlib.sha512(b"wrapped key").digest() * 2).decode()
 
 
-def _aes_xml(target, alg=AES128, props=""):
+def _aes_xml(target, alg=AES128, props="", key=True):
+    # key=False: no EncryptedKey; the EncryptedData names its key with a KeyName
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<encryption xmlns="urn:oasis:names:tc:opendocument:xmlns:container"'
             ' xmlns:enc="http://www.w3.org/2001/04/xmlenc#" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">\n'
-            '  <enc:EncryptedKey Id="EK">\n'
-            '    <enc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5"/>\n'
-            '    <ds:KeyInfo><ds:KeyName>epub-test-books</ds:KeyName></ds:KeyInfo>\n'
-            f'    <enc:CipherData><enc:CipherValue>{_WRAPPED}</enc:CipherValue></enc:CipherData>\n'
-            '  </enc:EncryptedKey>\n'
+            + ('  <enc:EncryptedKey Id="EK">\n'
+               '    <enc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5"/>\n'
+               '    <ds:KeyInfo><ds:KeyName>epub-test-books</ds:KeyName></ds:KeyInfo>\n'
+               f'    <enc:CipherData><enc:CipherValue>{_WRAPPED}</enc:CipherValue></enc:CipherData>\n'
+               '  </enc:EncryptedKey>\n' if key else '') +
             '  <enc:EncryptedData Id="ED1">\n'
             f'    <enc:EncryptionMethod Algorithm="{alg}"/>\n'
-            '    <ds:KeyInfo><ds:RetrievalMethod URI="#EK" Type="http://www.w3.org/2001/04/xmlenc#EncryptedKey"/></ds:KeyInfo>\n'
+            + ('    <ds:KeyInfo><ds:RetrievalMethod URI="#EK" Type="http://www.w3.org/2001/04/xmlenc#EncryptedKey"/></ds:KeyInfo>\n'
+               if key else '    <ds:KeyInfo><ds:KeyName>epub-test-books</ds:KeyName></ds:KeyInfo>\n') +
             f'    <enc:CipherData><enc:CipherReference URI="{target}"/></enc:CipherData>\n'
             f'{props}'
             '  </enc:EncryptedData>\n'
@@ -404,6 +406,10 @@ def _deflate(data):
 
 def aes_encrypted_content(files):
     return _aes_book(files, xml=lambda p: _aes_xml(CONTENT))
+
+
+def aes_no_encrypted_key(files):
+    return _aes_book(files, xml=lambda p: _aes_xml(CONTENT, key=False))
 
 
 def aes_unknown_algorithm(files):

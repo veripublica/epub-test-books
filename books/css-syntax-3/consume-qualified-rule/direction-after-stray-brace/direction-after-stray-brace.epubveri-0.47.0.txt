@@ -1,0 +1,4 @@
+ERROR CSS-001: use of the 'direction' property is not recommended [OEBPS/style.css:1:7]
+USAGE CSS-008: CSS syntax error: invalid selector '} p' at '}' [OEBPS/style.css:1:1]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]
