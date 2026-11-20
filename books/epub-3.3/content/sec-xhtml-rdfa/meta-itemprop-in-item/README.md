@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: none
 - Asked for by: epubveri, after MobileRead 374286 #394 (veripublica/epubveri#147)
-- Issue: pending
+- Issue: [#692](https://github.com/veripublica/epub-test-books/issues/692)
 - Other clauses: EPUB 3.3 `sec-xhtml-req`
 
 ## About this book

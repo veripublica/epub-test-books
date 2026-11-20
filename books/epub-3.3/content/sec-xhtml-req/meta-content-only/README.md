@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: epubveri: missed
 - Asked for by: epubveri, after MobileRead 374286 #394 (veripublica/epubveri#147)
-- Issue: pending
+- Issue: [#687](https://github.com/veripublica/epub-test-books/issues/687)
 
 ## About this book
 

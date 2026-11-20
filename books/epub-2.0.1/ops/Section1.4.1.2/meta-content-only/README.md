@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: none
 - Asked for by: epubveri, after MobileRead 374286 #394 (veripublica/epubveri#147): the EPUB 2 control
-- Issue: pending
+- Issue: [#693](https://github.com/veripublica/epub-test-books/issues/693)
 
 ## About this book
 
