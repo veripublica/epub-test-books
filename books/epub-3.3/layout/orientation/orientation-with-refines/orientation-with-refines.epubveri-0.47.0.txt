@@ -1,0 +1,4 @@
+ERROR RSC-005: the "rendition:orientation" property must not be used with a "refines" attribute [OEBPS/package.opf:25:5]
+USAGE OBS-001: usage of the "rendition:orientation" property is outdated [OEBPS/package.opf:25:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

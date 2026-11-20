@@ -38,7 +38,7 @@ Invalid. The total duration may be given exactly once.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.43.0 | `epubveri -i duration-total-twice.epub -u --advisory` | ERROR RSC-005; INVALID | `duration-total-twice.epubveri-0.43.0.txt` |
+| epubveri 0.47.0 | `epubveri -i duration-total-twice.epub -u --advisory` | ERROR RSC-005; INVALID | `duration-total-twice.epubveri-0.47.0.txt` |
 | epubcheck 5.4.0 | `epubcheck duration-total-twice.epub -u` | no findings; VALID | `duration-total-twice.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.

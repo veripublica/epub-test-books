@@ -1,0 +1,5 @@
+ERROR OPF-045: a chain of "fallback" attributes forms a cycle [OEBPS/package.opf]
+USAGE OPF-097: 'image.bmp' is declared in the manifest, but no content document references it [OEBPS/package.opf:31:5]
+USAGE OPF-097: 'image.jpg' is declared in the manifest, but no content document references it [OEBPS/package.opf:32:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

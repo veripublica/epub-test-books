@@ -44,7 +44,7 @@ Invalid. A script with type="module" is a JavaScript module script, not a data b
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.43.0 | `epubveri -i property-scripted-module-missing.epub -u --advisory` | ERROR OPF-014; INVALID | `property-scripted-module-missing.epubveri-0.43.0.txt` |
+| epubveri 0.47.0 | `epubveri -i property-scripted-module-missing.epub -u --advisory` | ERROR OPF-014; INVALID | `property-scripted-module-missing.epubveri-0.47.0.txt` |
 | epubcheck 5.4.0 | `epubcheck property-scripted-module-missing.epub -u` | no findings; VALID | `property-scripted-module-missing.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it gives no finding, as it treats the module script as a data block.

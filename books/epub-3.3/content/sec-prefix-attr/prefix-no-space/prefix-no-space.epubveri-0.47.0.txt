@@ -1,0 +1,4 @@
+ERROR OPF-004d: the prefix "foo" must be separated from its URI by a space [OEBPS/content.xhtml:3:1]
+ERROR OPF-028: undeclared prefix 'foo' used in 'foo:bar' [OEBPS/content.xhtml:11:5]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]

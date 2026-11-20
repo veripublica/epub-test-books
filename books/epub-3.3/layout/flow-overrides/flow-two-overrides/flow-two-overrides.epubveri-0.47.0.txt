@@ -1,0 +1,5 @@
+ERROR RSC-005: rendition:flow spine override values are mutually exclusive [OEBPS/package.opf:32:5]
+USAGE OBS-001: usage of the "rendition:flow-paginated" property is outdated [OEBPS/package.opf:32:5]
+USAGE OBS-001: usage of the "rendition:flow-scrolled-doc" property is outdated [OEBPS/package.opf:32:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

@@ -34,7 +34,7 @@ Invalid. SVG animation must not be used in OPS content, and `animate` is an SVG 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.43.0 | `epubveri -i svg-inline-animate.epub -u --advisory` | ERROR RSC-005; INVALID | `svg-inline-animate.epubveri-0.43.0.txt` |
+| epubveri 0.47.0 | `epubveri -i svg-inline-animate.epub -u --advisory` | ERROR RSC-005; INVALID | `svg-inline-animate.epubveri-0.47.0.txt` |
 | epubcheck 5.4.0 | `epubcheck svg-inline-animate.epub -u` | no findings; VALID | `svg-inline-animate.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.

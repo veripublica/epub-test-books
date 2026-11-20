@@ -1,0 +1,3 @@
+ERROR NCX-001: dtb:uid 'urn:uuid:00000000-0000-5000-8000-000000000000' does not match the package's identifier 'urn:uuid:65ea2bb3-c893-5317-8d63-1ac85465f315' [OEBPS/toc.ncx:5:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

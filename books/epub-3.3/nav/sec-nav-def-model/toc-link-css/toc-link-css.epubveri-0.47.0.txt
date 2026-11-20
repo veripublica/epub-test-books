@@ -1,0 +1,4 @@
+ERROR RSC-010: 'OEBPS/extra.css' is hyperlinked but is not a Content Document [OEBPS/nav.xhtml:14:13]
+USAGE OPF-097: 'extra.css' is declared in the manifest, but no content document references it [OEBPS/package.opf:29:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

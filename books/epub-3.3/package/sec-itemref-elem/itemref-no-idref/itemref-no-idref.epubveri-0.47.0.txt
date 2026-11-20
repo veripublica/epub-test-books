@@ -1,0 +1,3 @@
+ERROR RSC-005: element "itemref" is missing the required attribute "idref" [OEBPS/package.opf:33:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

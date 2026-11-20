@@ -1,0 +1,3 @@
+ERROR RSC-005: the "media:active-class" property must define a single class name [OEBPS/package.opf:26:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

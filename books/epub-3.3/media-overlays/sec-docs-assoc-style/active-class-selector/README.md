@@ -34,7 +34,7 @@ Invalid. The property must hold a class name, not a selector.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.43.0 | `epubveri -i active-class-selector.epub -u --advisory` | ERROR RSC-005; INVALID | `active-class-selector.epubveri-0.43.0.txt` |
+| epubveri 0.47.0 | `epubveri -i active-class-selector.epub -u --advisory` | ERROR RSC-005; INVALID | `active-class-selector.epubveri-0.47.0.txt` |
 | epubcheck 5.4.0 | `epubcheck active-class-selector.epub -u` | no findings; VALID | `active-class-selector.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.

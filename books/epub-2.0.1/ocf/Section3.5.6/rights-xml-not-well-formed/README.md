@@ -34,7 +34,7 @@ Invalid. `rights.xml` must be a well-formed XML document.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.43.0 | `epubveri -i rights-xml-not-well-formed.epub -u --advisory` | ERROR RSC-005; INVALID | `rights-xml-not-well-formed.epubveri-0.43.0.txt` |
+| epubveri 0.47.0 | `epubveri -i rights-xml-not-well-formed.epub -u --advisory` | ERROR RSC-005; INVALID | `rights-xml-not-well-formed.epubveri-0.47.0.txt` |
 | epubcheck 5.4.0 | `epubcheck rights-xml-not-well-formed.epub -u` | no findings; VALID | `rights-xml-not-well-formed.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.

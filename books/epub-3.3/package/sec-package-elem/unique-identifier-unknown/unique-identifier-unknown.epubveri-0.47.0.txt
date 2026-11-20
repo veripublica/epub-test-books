@@ -1,0 +1,4 @@
+ERROR RSC-005: package unique-identifier "nope" does not resolve to a dc:identifier element [OEBPS/package.opf:2:1]
+ERROR OPF-030: package unique-identifier 'nope' does not match any dc:identifier id [OEBPS/package.opf:2:1]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]

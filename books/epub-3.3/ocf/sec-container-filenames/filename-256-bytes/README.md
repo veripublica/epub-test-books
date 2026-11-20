@@ -34,7 +34,7 @@ Invalid. The name is one byte longer than the 255 allowed. EPUB 2.0.1 has the sa
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.43.0 | `epubveri -i filename-256-bytes.epub -u --advisory` | ERROR SPEC-005; INVALID | `filename-256-bytes.epubveri-0.43.0.txt` |
+| epubveri 0.47.0 | `epubveri -i filename-256-bytes.epub -u --advisory` | ERROR SPEC-005; INVALID | `filename-256-bytes.epubveri-0.47.0.txt` |
 | epubcheck 5.4.0 | `epubcheck filename-256-bytes.epub -u` | no findings; VALID | `filename-256-bytes.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.

@@ -1,0 +1,5 @@
+ERROR RSC-006: remote resource 'file:///tmp/x.jpg' is not allowed in this context [OEBPS/style.css]
+ERROR OPF-014: stylesheet uses a remote resource but doesn't declare the "remote-resources" property - add it to this stylesheet's manifest item in the OPF [OEBPS/style.css]
+ERROR RSC-030: 'file:///tmp/x.jpg' is a file URL, which is not allowed [OEBPS/style.css:1:17]
+— 3 error(s), 0 warning(s): INVALID
+[exit 1]

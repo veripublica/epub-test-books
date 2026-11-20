@@ -38,7 +38,7 @@ Valid. Validity is decided with each switch replaced by the content of its defau
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.45.0 | `epubveri -i case-xhtml-list-item.epub -u --advisory` | no findings; VALID | `case-xhtml-list-item.epubveri-0.45.0.txt` |
+| epubveri 0.47.0 | `epubveri -i case-xhtml-list-item.epub -u --advisory` | no findings; VALID | `case-xhtml-list-item.epubveri-0.47.0.txt` |
 | epubcheck 5.4.0 | `epubcheck case-xhtml-list-item.epub -u` | no findings; VALID | `case-xhtml-list-item.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

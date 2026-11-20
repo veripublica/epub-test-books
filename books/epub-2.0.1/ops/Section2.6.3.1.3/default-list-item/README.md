@@ -34,7 +34,7 @@ Valid. With the switch replaced by the content of its default, the `ul` holds tw
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.45.0 | `epubveri -i default-list-item.epub -u --advisory` | no findings; VALID | `default-list-item.epubveri-0.45.0.txt` |
+| epubveri 0.47.0 | `epubveri -i default-list-item.epub -u --advisory` | no findings; VALID | `default-list-item.epubveri-0.47.0.txt` |
 | epubcheck 5.4.0 | `epubcheck default-list-item.epub -u` | no findings; VALID | `default-list-item.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

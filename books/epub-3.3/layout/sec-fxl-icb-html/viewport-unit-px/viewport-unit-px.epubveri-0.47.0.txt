@@ -1,0 +1,4 @@
+ERROR HTM_057: viewport 'width' value '1200px' is not valid [OEBPS/content.xhtml:7:5]
+ERROR HTM_057: viewport 'height' value '600px' is not valid [OEBPS/content.xhtml:7:5]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]

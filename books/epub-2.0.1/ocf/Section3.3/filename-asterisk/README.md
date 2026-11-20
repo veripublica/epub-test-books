@@ -52,12 +52,12 @@ Invalid. `*` is one of the forbidden characters.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.43.0 | `epubveri -i filename-asterisk.epub -u --advisory` | ERROR PKG-009; INVALID | `filename-asterisk.epubveri-0.43.0.txt` |
+| epubveri 0.47.0 | `epubveri -i filename-asterisk.epub -u --advisory` | ERROR PKG-009, USAGE ADV-025, USAGE ADV-025; INVALID | `filename-asterisk.epubveri-0.47.0.txt` |
 | epubcheck 5.4.0 | `epubcheck filename-asterisk.epub -u` | ERROR PKG-009; INVALID | `filename-asterisk.epubcheck-5.4.0.txt` |
 
-Both agree with the expected result, so there is nothing to mark. They report the same messages.
+Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.
 
-Every epubveri finding here is in its default output. None is an `--advisory` finding.
+Every epubveri finding here is in its default output, except the two USAGE ADV-025, which are `--advisory` findings.
 
 ## Build
 

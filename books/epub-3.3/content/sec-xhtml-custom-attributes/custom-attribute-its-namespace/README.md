@@ -38,7 +38,7 @@ Invalid. The ITS namespace is at w3.org, so the attribute is not a custom attrib
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.43.0 | `epubveri -i custom-attribute-its-namespace.epub -u --advisory` | ERROR HTM_054; INVALID | `custom-attribute-its-namespace.epubveri-0.43.0.txt` |
+| epubveri 0.47.0 | `epubveri -i custom-attribute-its-namespace.epub -u --advisory` | ERROR HTM_054; INVALID | `custom-attribute-its-namespace.epubveri-0.47.0.txt` |
 | epubcheck 5.4.0 | `epubcheck custom-attribute-its-namespace.epub -u` | ERROR HTM_054; INVALID | `custom-attribute-its-namespace.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.
