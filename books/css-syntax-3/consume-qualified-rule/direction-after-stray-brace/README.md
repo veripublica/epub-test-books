@@ -62,7 +62,7 @@ CSS result: The `}` is a parse error and becomes part of a qualified rule's prel
 
 Neither agrees with the expected result. epubveri: it reports the dropped `direction` declaration as an error (CSS-001). epubcheck: it reports the parse error as an error (CSS-008).
 
-- **epubveri: wrong error.** epubveri issue pending.
+- **epubveri: wrong error.** [veripublica/epubveri#144](https://github.com/veripublica/epubveri/issues/144).
 - **epubcheck: wrong error.** [w3c/epubcheck#1768](https://github.com/w3c/epubcheck/issues/1768).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.

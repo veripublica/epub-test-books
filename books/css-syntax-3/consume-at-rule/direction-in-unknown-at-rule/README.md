@@ -62,7 +62,7 @@ CSS result: No rule is kept. `@foo` is not valid in a stylesheet, so the at-rule
 
 Neither agrees with the expected result. epubveri: it reports the dropped `direction` declaration as an error (CSS-001). epubcheck: it reports the dropped `direction` declaration as an error (CSS-001).
 
-- **epubveri: wrong error.** epubveri issue pending.
+- **epubveri: wrong error.** [veripublica/epubveri#144](https://github.com/veripublica/epubveri/issues/144).
 - **epubcheck: wrong error.** [w3c/epubcheck#1781](https://github.com/w3c/epubcheck/issues/1781).
 
 Every epubveri finding here is in its default output, except USAGE ADV-020, which is an `--advisory` finding.

@@ -39,7 +39,7 @@ Invalid. `OriginalLength` must be a positive integer, and 0 is not one. It is al
 
 Neither agrees with the expected result. epubveri: it gives only INFO RSC-004. epubcheck: it gives only INFO RSC-004.
 
-- **epubveri: missed.** epubveri issue pending.
+- **epubveri: missed.** [veripublica/epubveri#146](https://github.com/veripublica/epubveri/issues/146).
 - **epubcheck: missed.** [w3c/epubcheck#1782](https://github.com/w3c/epubcheck/issues/1782).
 
 Both report INFO RSC-004: the encrypted document is not checked. The error is in `META-INF/encryption.xml`, which is not encrypted.
