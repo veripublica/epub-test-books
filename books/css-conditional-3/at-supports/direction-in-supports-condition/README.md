@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: none
 - Asked for by: the maintainer, after w3c/epub-specs#3115 (held CSS cases)
-- Issue: pending
+- Issue: [#666](https://github.com/veripublica/epub-test-books/issues/666)
 - Other clauses: EPUB 3.3 `sec-css-req`
 
 ## About this book

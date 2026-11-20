@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: none
 - Asked for by: styloria, for its 0.21 release (note 2026-11-18)
-- Issue: pending
+- Issue: [#661](https://github.com/veripublica/epub-test-books/issues/661)
 - Other clauses: EPUB 3.3 `sec-css-req`
 
 ## About this book

@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: epubveri: wrong error; epubcheck: wrong error
 - Asked for by: the maintainer, after w3c/epub-specs#3115 (held CSS cases)
-- Issue: pending
+- Issue: [#668](https://github.com/veripublica/epub-test-books/issues/668)
 - Other clauses: EPUB 3.3 `sec-css-req`
 
 ## About this book

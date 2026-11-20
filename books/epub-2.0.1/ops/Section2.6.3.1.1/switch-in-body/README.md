@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: none
 - Asked for by: epubveri, after a user report on MobileRead (thread 374286)
-- Issue: pending
+- Issue: [#632](https://github.com/veripublica/epub-test-books/issues/632)
 
 ## About this book
 

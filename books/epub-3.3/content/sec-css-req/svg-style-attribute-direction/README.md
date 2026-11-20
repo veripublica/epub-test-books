@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: epubcheck: missed
 - Asked for by: the maintainer, after w3c/epub-specs#3115 (held CSS cases)
-- Issue: pending
+- Issue: [#672](https://github.com/veripublica/epub-test-books/issues/672)
 
 ## About this book
 
@@ -47,7 +47,7 @@ EPUB 3.3 speaks of "a CSS style sheet", and a `style` attribute holds declaratio
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing; it does not read `style` attributes in inline SVG for CSS-001.
 
-- **epubcheck: missed.** w3c/epubcheck issue pending.
+- **epubcheck: missed.** [w3c/epubcheck#1781](https://github.com/w3c/epubcheck/issues/1781).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

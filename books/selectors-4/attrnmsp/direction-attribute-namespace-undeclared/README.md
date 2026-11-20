@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: epubveri: wrong error; epubcheck: wrong error
 - Asked for by: the maintainer, after w3c/epub-specs#3115 (held CSS cases)
-- Issue: pending
+- Issue: [#674](https://github.com/veripublica/epub-test-books/issues/674)
 - Other clauses: EPUB 3.3 `sec-css-req`
 
 ## About this book
@@ -73,7 +73,7 @@ CSS result: No rule is kept. The `epub` prefix is not declared, so the selector 
 Neither agrees with the expected result. epubveri: it reports the dropped `direction` declaration as an error (CSS-001). epubcheck: it reports the dropped `direction` declaration as an error (CSS-001).
 
 - **epubveri: wrong error.** epubveri issue pending.
-- **epubcheck: wrong error.** w3c/epubcheck issue pending.
+- **epubcheck: wrong error.** [w3c/epubcheck#1781](https://github.com/w3c/epubcheck/issues/1781).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 
