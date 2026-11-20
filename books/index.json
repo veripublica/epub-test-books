@@ -1,5 +1,5 @@
 {
-  "release": "v0.8.0",
+  "release": "v0.9.0",
   "repository": "https://github.com/veripublica/epub-test-books",
   "credit": "EPUB test books © veripublica contributors, CC BY 4.0, https://github.com/veripublica/epub-test-books",
   "books": [
@@ -49,6 +49,34 @@
         "verdict": "valid",
         "messages": [],
         "output": "books/templates/epub3-minimal/epub3-minimal.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/css-animations-1/keyframes/direction-in-keyframe",
+      "book": "books/css-animations-1/keyframes/direction-in-keyframe/direction-in-keyframe.epub",
+      "asset": "css-animations-1--keyframes--direction-in-keyframe--invalid.epub",
+      "sha256": "ea70c351aed90478812761f3c96e80d94575e0431a92c3a04024c9d30a144690",
+      "title": "`direction: rtl` inside a keyframe of `@keyframes`",
+      "question": "`style.css` holds `@keyframes k { from { direction: rtl; } }`. Does a validator reject the book?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, after w3c/epub-specs#3115, from styloria's CSSOM cases",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/684",
+      "epubveri": {
+        "version": "0.47.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR CSS-001"
+        ],
+        "output": "books/css-animations-1/keyframes/direction-in-keyframe/direction-in-keyframe.epubveri-0.47.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR CSS-001"
+        ],
+        "output": "books/css-animations-1/keyframes/direction-in-keyframe/direction-in-keyframe.epubcheck-5.4.0.txt"
       }
     },
     {
@@ -418,6 +446,122 @@
       }
     },
     {
+      "path": "books/css-conditional-3/at-supports/direction-in-supports-invalid",
+      "book": "books/css-conditional-3/at-supports/direction-in-supports-invalid/direction-in-supports-invalid.epub",
+      "asset": "css-conditional-3--at-supports--direction-in-supports-invalid--valid.epub",
+      "sha256": "e66b805cbd791daa8b29a75948dc2bba5d2fa1425179dc361d79a7cbc763765f",
+      "title": "`direction: rtl` inside an `@supports` rule with an invalid condition, `@supports foo` (valid)",
+      "question": "`style.css` holds `@supports foo { p { direction: rtl; } }`. Does a validator accept the book?",
+      "expected": "valid",
+      "marks": "epubveri: wrong error; epubcheck: wrong error",
+      "asked_by": "the maintainer, after w3c/epub-specs#3115, from styloria's CSSOM cases",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/682",
+      "epubveri": {
+        "version": "0.47.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR CSS-001"
+        ],
+        "output": "books/css-conditional-3/at-supports/direction-in-supports-invalid/direction-in-supports-invalid.epubveri-0.47.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR CSS-001"
+        ],
+        "output": "books/css-conditional-3/at-supports/direction-in-supports-invalid/direction-in-supports-invalid.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/css-conditional-3/processing/direction-in-media-not-all",
+      "book": "books/css-conditional-3/processing/direction-in-media-not-all/direction-in-media-not-all.epub",
+      "asset": "css-conditional-3--processing--direction-in-media-not-all--invalid.epub",
+      "sha256": "a0c23cd420e82a164598f956bc5fa9a4858cf88c33d2785cf46333d164d27c02",
+      "title": "`direction: rtl` inside `@media not all`",
+      "question": "`style.css` holds `@media not all { p { direction: rtl; } }`. Does a validator reject the book?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, after w3c/epub-specs#3115, from styloria's CSSOM cases",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/681",
+      "epubveri": {
+        "version": "0.47.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR CSS-001"
+        ],
+        "output": "books/css-conditional-3/processing/direction-in-media-not-all/direction-in-media-not-all.epubveri-0.47.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR CSS-001"
+        ],
+        "output": "books/css-conditional-3/processing/direction-in-media-not-all/direction-in-media-not-all.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/css-conditional-3/processing/direction-in-supports-false",
+      "book": "books/css-conditional-3/processing/direction-in-supports-false/direction-in-supports-false.epub",
+      "asset": "css-conditional-3--processing--direction-in-supports-false--invalid.epub",
+      "sha256": "dce600e55f7d45efe449df08d5a8e4b5a786d11b385897cc87fa8ac2d46a40e9",
+      "title": "`direction: rtl` inside an `@supports` rule whose condition is false",
+      "question": "`style.css` holds `@supports not (display: block) { p { direction: rtl; } }`. Does a validator reject the book?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, after w3c/epub-specs#3115, from styloria's CSSOM cases",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/680",
+      "epubveri": {
+        "version": "0.47.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR CSS-001"
+        ],
+        "output": "books/css-conditional-3/processing/direction-in-supports-false/direction-in-supports-false.epubveri-0.47.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR CSS-001"
+        ],
+        "output": "books/css-conditional-3/processing/direction-in-supports-false/direction-in-supports-false.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/css-fonts-4/font-face-rule/direction-in-font-face",
+      "book": "books/css-fonts-4/font-face-rule/direction-in-font-face/direction-in-font-face.epub",
+      "asset": "css-fonts-4--font-face-rule--direction-in-font-face--valid.epub",
+      "sha256": "4608aae235d7b76a8a541a4ac01cd2c777d6978558c02b8a04b47ee57157a8fa",
+      "title": "`direction: rtl` inside an `@font-face` rule (valid)",
+      "question": "`style.css` holds `@font-face { font-family: x; direction: rtl; }`. Does a validator accept the book?",
+      "expected": "valid",
+      "marks": "epubveri: wrong error; epubcheck: wrong error",
+      "asked_by": "the maintainer, after w3c/epub-specs#3115, from styloria's CSSOM cases",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/683",
+      "epubveri": {
+        "version": "0.47.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR CSS-001",
+          "USAGE CSS-028",
+          "USAGE ADV-002"
+        ],
+        "output": "books/css-fonts-4/font-face-rule/direction-in-font-face/direction-in-font-face.epubveri-0.47.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "USAGE CSS-028",
+          "ERROR CSS-001",
+          "USAGE CSS-028"
+        ],
+        "output": "books/css-fonts-4/font-face-rule/direction-in-font-face/direction-in-font-face.epubcheck-5.4.0.txt"
+      }
+    },
+    {
       "path": "books/css-fonts-4/font-family-desc/font-face-ui-serif",
       "book": "books/css-fonts-4/font-family-desc/font-face-ui-serif/font-face-ui-serif.epub",
       "asset": "css-fonts-4--font-family-desc--font-face-ui-serif--valid.epub",
@@ -471,6 +615,62 @@
         "verdict": "valid",
         "messages": [],
         "output": "books/css-namespaces-3/syntax/namespace-after-rule/namespace-after-rule.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/css-page-3/margin-property-list/unicode-bidi-in-margin-box",
+      "book": "books/css-page-3/margin-property-list/unicode-bidi-in-margin-box/unicode-bidi-in-margin-box.epub",
+      "asset": "css-page-3--margin-property-list--unicode-bidi-in-margin-box--invalid.epub",
+      "sha256": "35fe5ae7f71cbd5c414a9093437d1272472ae23b9616789df7704bf70c91ceda",
+      "title": "`unicode-bidi: bidi-override` inside a page-margin box of `@page`",
+      "question": "`style.css` holds `@page { @top-center { content: \"x\"; unicode-bidi: bidi-override; } }`. Does a validator reject the book?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, after w3c/epub-specs#3115, from styloria's CSSOM cases",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/686",
+      "epubveri": {
+        "version": "0.47.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR CSS-001"
+        ],
+        "output": "books/css-page-3/margin-property-list/unicode-bidi-in-margin-box/unicode-bidi-in-margin-box.epubveri-0.47.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR CSS-001"
+        ],
+        "output": "books/css-page-3/margin-property-list/unicode-bidi-in-margin-box/unicode-bidi-in-margin-box.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/css-page-3/page-property-list/direction-in-page",
+      "book": "books/css-page-3/page-property-list/direction-in-page/direction-in-page.epub",
+      "asset": "css-page-3--page-property-list--direction-in-page--invalid.epub",
+      "sha256": "fbd3b659721a290577722e83b50cca9ad4dab1145e3a52e2b519c96392eb8948",
+      "title": "`direction: rtl` inside an `@page` rule",
+      "question": "`style.css` holds `@page { direction: rtl; }`. Does a validator reject the book?",
+      "expected": "invalid",
+      "marks": "none",
+      "asked_by": "the maintainer, after w3c/epub-specs#3115, from styloria's CSSOM cases",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/685",
+      "epubveri": {
+        "version": "0.47.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR CSS-001"
+        ],
+        "output": "books/css-page-3/page-property-list/direction-in-page/direction-in-page.epubveri-0.47.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR CSS-001"
+        ],
+        "output": "books/css-page-3/page-property-list/direction-in-page/direction-in-page.epubcheck-5.4.0.txt"
       }
     },
     {
@@ -3601,6 +3801,30 @@
           "ERROR RSC-028"
         ],
         "output": "books/epub-2.0.1/ops/Section1.4.1.2/iso-8859-1/iso-8859-1.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-2.0.1/ops/Section1.4.1.2/meta-content-only",
+      "book": "books/epub-2.0.1/ops/Section1.4.1.2/meta-content-only/meta-content-only.epub",
+      "asset": "epub-2.0.1--Section1.4.1.2--meta-content-only--valid.epub",
+      "sha256": "9c8b1d3150a43c919dcb8f6d0804cfe4bc07b6fc956abb226332e62bf49c6600",
+      "title": "A `meta` with `content` and no `name` or `http-equiv` in an EPUB 2 content document (valid)",
+      "question": "`content.xhtml` has `<meta content=\"true\"/>` in its head. Does a validator accept the book?",
+      "expected": "valid",
+      "marks": "none",
+      "asked_by": "epubveri, after MobileRead 374286 #394 (veripublica/epubveri#147): the EPUB 2 control",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/693",
+      "epubveri": {
+        "version": "0.47.0",
+        "verdict": "valid",
+        "messages": [],
+        "output": "books/epub-2.0.1/ops/Section1.4.1.2/meta-content-only/meta-content-only.epubveri-0.47.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "valid",
+        "messages": [],
+        "output": "books/epub-2.0.1/ops/Section1.4.1.2/meta-content-only/meta-content-only.epubcheck-5.4.0.txt"
       }
     },
     {
@@ -7836,6 +8060,54 @@
       }
     },
     {
+      "path": "books/epub-3.3/content/sec-xhtml-rdfa/meta-itemprop-in-item",
+      "book": "books/epub-3.3/content/sec-xhtml-rdfa/meta-itemprop-in-item/meta-itemprop-in-item.epub",
+      "asset": "epub-3.3--sec-xhtml-rdfa--meta-itemprop-in-item--valid.epub",
+      "sha256": "ccf06e654bb46a3954bf8eeebee3c1cff90d291494935682951214ee50802ad8",
+      "title": "A `meta` with `itemprop` and `content` inside an item (valid)",
+      "question": "`content.xhtml` has `<div itemscope=\"\" itemtype=\"https://schema.org/Book\"><meta itemprop=\"name\" content=\"A test book.\"/></div>` in its body. Does a validator accept the book?",
+      "expected": "valid",
+      "marks": "none",
+      "asked_by": "epubveri, after MobileRead 374286 #394 (veripublica/epubveri#147)",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/692",
+      "epubveri": {
+        "version": "0.47.0",
+        "verdict": "valid",
+        "messages": [],
+        "output": "books/epub-3.3/content/sec-xhtml-rdfa/meta-itemprop-in-item/meta-itemprop-in-item.epubveri-0.47.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "valid",
+        "messages": [],
+        "output": "books/epub-3.3/content/sec-xhtml-rdfa/meta-itemprop-in-item/meta-itemprop-in-item.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/content/sec-xhtml-rdfa/meta-property-no-name",
+      "book": "books/epub-3.3/content/sec-xhtml-rdfa/meta-property-no-name/meta-property-no-name.epub",
+      "asset": "epub-3.3--sec-xhtml-rdfa--meta-property-no-name--valid.epub",
+      "sha256": "8f9c0cc884786ac48841a6ef5d6d9d477dfb5a78a6b10b040139bf6acd721fd3",
+      "title": "A `meta` with RDFa `property` and `content` and no `name` (valid)",
+      "question": "`content.xhtml` has `<meta property=\"dcterms:title\" content=\"A test book.\"/>` in its head. Does a validator accept the book?",
+      "expected": "valid",
+      "marks": "none",
+      "asked_by": "epubveri, after MobileRead 374286 #394 (veripublica/epubveri#147)",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/691",
+      "epubveri": {
+        "version": "0.47.0",
+        "verdict": "valid",
+        "messages": [],
+        "output": "books/epub-3.3/content/sec-xhtml-rdfa/meta-property-no-name/meta-property-no-name.epubveri-0.47.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "valid",
+        "messages": [],
+        "output": "books/epub-3.3/content/sec-xhtml-rdfa/meta-property-no-name/meta-property-no-name.epubcheck-5.4.0.txt"
+      }
+    },
+    {
       "path": "books/epub-3.3/content/sec-xhtml-rdfa/microdata-attributes",
       "book": "books/epub-3.3/content/sec-xhtml-rdfa/microdata-attributes/microdata-attributes.epub",
       "asset": "epub-3.3--sec-xhtml-rdfa--microdata-attributes--valid.epub",
@@ -7883,6 +8155,30 @@
         "verdict": "valid",
         "messages": [],
         "output": "books/epub-3.3/content/sec-xhtml-rdfa/microdata-itemid-no-itemtype/microdata-itemid-no-itemtype.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/content/sec-xhtml-rdfa/microdata-itemprop-no-item",
+      "book": "books/epub-3.3/content/sec-xhtml-rdfa/microdata-itemprop-no-item/microdata-itemprop-no-item.epub",
+      "asset": "epub-3.3--sec-xhtml-rdfa--microdata-itemprop-no-item--invalid.epub",
+      "sha256": "67180d97aa05539ed5f317ed9106afa3b84b115816e46d6f056c272fedccc03f",
+      "title": "An itemprop on an element that is in no item",
+      "question": "`content.xhtml` has `itemprop` on a `p` that is in no item: no `itemscope` on it or on any ancestor, and no `itemref` pointing at it. Does a validator reject it?",
+      "expected": "invalid",
+      "marks": "epubveri: missed; epubcheck: missed",
+      "asked_by": "the maintainer, to cover EPUB 3.3 content document extensions; parked on 2026-11-13 while both verifiers missed it, built on 2026-11-20",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/678",
+      "epubveri": {
+        "version": "0.47.0",
+        "verdict": "valid",
+        "messages": [],
+        "output": "books/epub-3.3/content/sec-xhtml-rdfa/microdata-itemprop-no-item/microdata-itemprop-no-item.epubveri-0.47.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "valid",
+        "messages": [],
+        "output": "books/epub-3.3/content/sec-xhtml-rdfa/microdata-itemprop-no-item/microdata-itemprop-no-item.epubcheck-5.4.0.txt"
       }
     },
     {
@@ -8493,6 +8789,110 @@
           "ERROR RSC-005"
         ],
         "output": "books/epub-3.3/content/sec-xhtml-req/html-p-in-p/html-p-in-p.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/content/sec-xhtml-req/meta-content-only",
+      "book": "books/epub-3.3/content/sec-xhtml-req/meta-content-only/meta-content-only.epub",
+      "asset": "epub-3.3--sec-xhtml-req--meta-content-only--invalid.epub",
+      "sha256": "9a732697c5a642361ff65a9d4349123744e939378ab9c15a2830d406cf0fb728",
+      "title": "A `meta` with `content` and no `name`, `http-equiv`, `charset` or `itemprop`",
+      "question": "`content.xhtml` has `<meta content=\"true\"/>` in its head. Does a validator reject the book?",
+      "expected": "invalid",
+      "marks": "epubveri: missed",
+      "asked_by": "epubveri, after MobileRead 374286 #394 (veripublica/epubveri#147)",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/687",
+      "epubveri": {
+        "version": "0.47.0",
+        "verdict": "valid",
+        "messages": [],
+        "output": "books/epub-3.3/content/sec-xhtml-req/meta-content-only/meta-content-only.epubveri-0.47.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR RSC-005"
+        ],
+        "output": "books/epub-3.3/content/sec-xhtml-req/meta-content-only/meta-content-only.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/content/sec-xhtml-req/meta-empty",
+      "book": "books/epub-3.3/content/sec-xhtml-req/meta-empty/meta-empty.epub",
+      "asset": "epub-3.3--sec-xhtml-req--meta-empty--invalid.epub",
+      "sha256": "36f161ef17cf75afe86c8ef4ce8970785befd55bc577bfaeb2d10989bb6bbb4d",
+      "title": "A `meta` with no attributes",
+      "question": "`content.xhtml` has `<meta/>` in its head. Does a validator reject the book?",
+      "expected": "invalid",
+      "marks": "epubveri: missed",
+      "asked_by": "epubveri, after MobileRead 374286 #394 (veripublica/epubveri#147)",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/688",
+      "epubveri": {
+        "version": "0.47.0",
+        "verdict": "valid",
+        "messages": [],
+        "output": "books/epub-3.3/content/sec-xhtml-req/meta-empty/meta-empty.epubveri-0.47.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR RSC-005"
+        ],
+        "output": "books/epub-3.3/content/sec-xhtml-req/meta-empty/meta-empty.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/content/sec-xhtml-req/meta-name-and-http-equiv",
+      "book": "books/epub-3.3/content/sec-xhtml-req/meta-name-and-http-equiv/meta-name-and-http-equiv.epub",
+      "asset": "epub-3.3--sec-xhtml-req--meta-name-and-http-equiv--invalid.epub",
+      "sha256": "5110d267f748f9e0aa064dc294430b11651acd4fa2eee6537341e167940eb762",
+      "title": "A `meta` with both `name` and `http-equiv`",
+      "question": "`content.xhtml` has `<meta name=\"author\" http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"/>` in its head. Does a validator reject the book?",
+      "expected": "invalid",
+      "marks": "epubveri: missed",
+      "asked_by": "epubveri, after MobileRead 374286 #394 (veripublica/epubveri#147)",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/689",
+      "epubveri": {
+        "version": "0.47.0",
+        "verdict": "valid",
+        "messages": [],
+        "output": "books/epub-3.3/content/sec-xhtml-req/meta-name-and-http-equiv/meta-name-and-http-equiv.epubveri-0.47.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR RSC-005"
+        ],
+        "output": "books/epub-3.3/content/sec-xhtml-req/meta-name-and-http-equiv/meta-name-and-http-equiv.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/content/sec-xhtml-req/meta-name-no-content",
+      "book": "books/epub-3.3/content/sec-xhtml-req/meta-name-no-content/meta-name-no-content.epub",
+      "asset": "epub-3.3--sec-xhtml-req--meta-name-no-content--invalid.epub",
+      "sha256": "32e25e39d84ae1168742d425c745463ee4721c09759e1c597382c62f54619d57",
+      "title": "A `meta` with `name` and no `content`",
+      "question": "`content.xhtml` has `<meta name=\"author\"/>` in its head. Does a validator reject the book?",
+      "expected": "invalid",
+      "marks": "epubveri: missed",
+      "asked_by": "epubveri, after MobileRead 374286 #394 (veripublica/epubveri#147)",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/690",
+      "epubveri": {
+        "version": "0.47.0",
+        "verdict": "valid",
+        "messages": [],
+        "output": "books/epub-3.3/content/sec-xhtml-req/meta-name-no-content/meta-name-no-content.epubveri-0.47.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "invalid",
+        "messages": [
+          "ERROR RSC-005"
+        ],
+        "output": "books/epub-3.3/content/sec-xhtml-req/meta-name-no-content/meta-name-no-content.epubcheck-5.4.0.txt"
       }
     },
     {
@@ -13804,6 +14204,34 @@
           "INFO RSC-004"
         ],
         "output": "books/epub-3.3/ocf/sec-enc-compression/aes-compressed-first/aes-compressed-first.epubcheck-5.4.0.txt"
+      }
+    },
+    {
+      "path": "books/epub-3.3/ocf/sec-enc-compression/aes-original-length-zero",
+      "book": "books/epub-3.3/ocf/sec-enc-compression/aes-original-length-zero/aes-original-length-zero.epub",
+      "asset": "epub-3.3--sec-enc-compression--aes-original-length-zero--invalid.epub",
+      "sha256": "0130ab0e6e321a52f656e12906d6247ebe72d60a21fb03778a0b7c0f58c8ce51",
+      "title": "A Compression element with OriginalLength=\"0\"",
+      "question": "`OEBPS/content.xhtml` is Deflate-compressed, then encrypted, and its Compression property in `META-INF/encryption.xml` gives `OriginalLength=\"0\"`. Does a validator reject the book?",
+      "expected": "invalid",
+      "marks": "epubveri: missed; epubcheck: missed",
+      "asked_by": "the maintainer, to complete the OCF section; parked on 2026-11-13 while both verifiers missed it, built on 2026-11-20",
+      "issue": "https://github.com/veripublica/epub-test-books/issues/679",
+      "epubveri": {
+        "version": "0.47.0",
+        "verdict": "valid",
+        "messages": [
+          "INFO RSC-004"
+        ],
+        "output": "books/epub-3.3/ocf/sec-enc-compression/aes-original-length-zero/aes-original-length-zero.epubveri-0.47.0.txt"
+      },
+      "epubcheck": {
+        "version": "5.4.0",
+        "verdict": "valid",
+        "messages": [
+          "INFO RSC-004"
+        ],
+        "output": "books/epub-3.3/ocf/sec-enc-compression/aes-original-length-zero/aes-original-length-zero.epubcheck-5.4.0.txt"
       }
     },
     {

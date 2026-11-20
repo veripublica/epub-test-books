@@ -6,7 +6,7 @@ kept true at every release. The rules for adding a set are in
 
 ## Status
 
-Latest release: v0.8.0 (2026-11-20). It holds the two templates and 672
+Latest release: v0.9.0 (2026-11-21). It holds the two templates and 688
 sets under `books/epub-3.3/<area>/<anchor>/<set>/`,
 `books/epub-2.0.1/<area>/<anchor>/<set>/` and `books/<css-spec>/<anchor>/<set>/`:
 the EPUB container (`ocf`), the package document (`package`), the navigation
@@ -14,7 +14,8 @@ document (`nav`), publication resources (`resources`), content documents
 (`content`), fixed layout (`layout`) and media overlays (`media-overlays`) in
 EPUB 3; OCF 2.0.1 (`ocf`), OPS 2.0.1 (`ops`) and OPF 2.0.1 with the NCX
 (`package`) in EPUB 2; and CSS as EPUB style sheets use it (`css-syntax-3`,
-`selectors-4`, `css-namespaces-3`, `css-cascade-5`). Cases where the specification and the verifiers disagree are listed in
+`selectors-4`, `css-namespaces-3`, `css-cascade-5`, `css-conditional-3`,
+`css-fonts-4`, `css-pseudo-4`, `css-animations-1`, `css-page-3`). Cases where the specification and the verifiers disagree are listed in
 issue #27 until they are settled. `books/INDEX.md`
 lists every book on one page, and `books/index.json` holds the same list for
 programs.
@@ -164,7 +165,7 @@ are hidden by both.
 Read them in place; do not copy them into your repository.
 
 - **In CI:** check out a release tag (`repository: veripublica/epub-test-books`,
-  `ref: v0.8.0`). Pin a tag, never `main`: a new set changes what your tests
+  `ref: v0.9.0`). Pin a tag, never `main`: a new set changes what your tests
   see.
 - **Locally:** one clone, read-only. Write your tool's outputs into your own
   project.
