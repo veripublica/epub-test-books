@@ -1,0 +1,7 @@
+Validating using EPUB version 3.4 rules.
+USAGE(CSS-028): font-face-ui-serif.epub/OEBPS/style.css(1,14): Use of Font-face declaration.
+No errors or warnings detected.
+Messages: 0 fatals / 0 errors / 0 warnings / 0 infos / 1 usage
+
+EPUBCheck completed
+[exit 0]
