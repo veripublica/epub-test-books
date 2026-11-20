@@ -164,6 +164,11 @@ def microdata_itemtype_no_itemscope(t3, info):
     return _book(t3, info, _doc(t3, '    <div itemtype="https://schema.org/Book"><p>A test book.</p></div>'))
 
 
+def microdata_itemprop_no_item(t3, info):
+    # itemprop on a p with no itemscope ancestor and no itemref naming it
+    return _book(t3, info, _doc(t3, '    <p itemprop="name">A test book.</p>'))
+
+
 def microdata_itemref_no_itemscope(t3, info):
     return _book(t3, info, _doc(t3, '    <div itemref="title"><p>A test book.</p></div>\n    <p id="title">Content.</p>'))
 

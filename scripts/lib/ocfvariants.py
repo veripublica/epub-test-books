@@ -430,6 +430,11 @@ def aes_compressed_first(files, method=8):
     return _aes_book(files, xml=lambda p: _aes_xml(CONTENT, props=_compression(method, len(p))), data=_deflate)
 
 
+def aes_original_length_zero(files):
+    # as aes_compressed_first, but the Compression property says OriginalLength="0"
+    return _aes_book(files, xml=lambda p: _aes_xml(CONTENT, props=_compression(8, 0)), data=_deflate)
+
+
 def cipher_reference_missing(files):
     # encryption.xml (as in aes_encrypted_content) declares OEBPS/secret.xhtml
     # encrypted, and the container has no such file; nothing else changes
