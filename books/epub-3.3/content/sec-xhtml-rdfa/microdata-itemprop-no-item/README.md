@@ -44,7 +44,7 @@ Invalid. HTML allows `itemprop` only where it adds a property to an item. This `
 Neither agrees with the expected result. epubveri: it gives no finding. epubcheck: it gives no finding.
 
 - **epubveri: missed.** epubveri issue pending.
-- **epubcheck: missed.** w3c/epubcheck issue pending.
+- **epubcheck: missed.** [w3c/epubcheck#1775](https://github.com/w3c/epubcheck/issues/1775).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 
