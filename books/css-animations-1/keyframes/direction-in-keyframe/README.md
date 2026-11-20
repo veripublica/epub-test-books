@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: none
 - Asked for by: the maintainer, after w3c/epub-specs#3115, from styloria's CSSOM cases
-- Issue: pending
+- Issue: [#684](https://github.com/veripublica/epub-test-books/issues/684)
 - Other clauses: EPUB 3.3 `sec-css-req`
 
 ## About this book
