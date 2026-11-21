@@ -4,7 +4,7 @@
 - Built by: `scripts/css-fonts-4/font-face-rule/direction-in-font-face/build.py`
 - Origin: built here
 - Expected: valid
-- Marks: epubveri: wrong error; epubcheck: wrong error
+- Marks: epubcheck: wrong error
 - Asked for by: the maintainer, after w3c/epub-specs#3115, from styloria's CSSOM cases
 - Issue: [#683](https://github.com/veripublica/epub-test-books/issues/683)
 - Other clauses: EPUB 3.3 `sec-css-req`
@@ -49,12 +49,11 @@ CSS result: One `@font-face` rule, kept, with one descriptor, `font-family: x`. 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.47.0 | `epubveri -i direction-in-font-face.epub -u --advisory` | ERROR CSS-001, USAGE CSS-028, USAGE ADV-002; INVALID | `direction-in-font-face.epubveri-0.47.0.txt` |
+| epubveri 0.48.0 | `epubveri -i direction-in-font-face.epub -u --advisory` | USAGE CSS-028, USAGE ADV-002; VALID | `direction-in-font-face.epubveri-0.48.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-in-font-face.epub -u` | USAGE CSS-028, ERROR CSS-001, USAGE CSS-028; INVALID | `direction-in-font-face.epubcheck-5.4.0.txt` |
 
-Neither agrees with the expected result. epubveri: it reports the ignored `direction` declaration in `@font-face` as an error (CSS-001), although its own USAGE ADV-002 says that `direction` is not an `@font-face` descriptor. epubcheck: it reports the ignored `direction` declaration in `@font-face` as an error (CSS-001).
+epubveri agrees with the expected result: its USAGE ADV-002 says that `direction` is not an `@font-face` descriptor. epubcheck does not: it reports the ignored `direction` declaration in `@font-face` as an error (CSS-001).
 
-- **epubveri: wrong error.** [veripublica/epubveri#144](https://github.com/veripublica/epubveri/issues/144).
 - **epubcheck: wrong error.** [w3c/epubcheck#1781](https://github.com/w3c/epubcheck/issues/1781).
 
 Every epubveri finding here is in its default output, except USAGE ADV-002, which is an `--advisory` finding.

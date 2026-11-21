@@ -42,7 +42,7 @@ The local header also keeps its CRC-32 and sizes, where 4.4.7 to 4.4.9 say they 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.47.0 | `epubveri -i descriptor-flag-no-footer.epub -u --advisory` | ERROR SPEC-007; INVALID | `descriptor-flag-no-footer.epubveri-0.47.0.txt` |
+| epubveri 0.48.0 | `epubveri -i descriptor-flag-no-footer.epub -u --advisory` | ERROR SPEC-007; INVALID | `descriptor-flag-no-footer.epubveri-0.48.0.txt` |
 | epubcheck 5.4.0 | `epubcheck descriptor-flag-no-footer.epub -u` | no findings; VALID | `descriptor-flag-no-footer.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.

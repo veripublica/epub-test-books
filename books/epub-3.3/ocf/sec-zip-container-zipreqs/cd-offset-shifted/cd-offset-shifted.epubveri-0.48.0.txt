@@ -1,0 +1,4 @@
+FATAL PKG-008: file 'META-INF/container.xml' could not be read: invalid Zip archive: Invalid local file header [META-INF/container.xml]
+ERROR RSC-003: container.xml could not be read, so no <rootfile> with media-type 'application/oebps-package+xml' was found [META-INF/container.xml]
+— 1 fatal, 1 error(s), 0 warning(s): INVALID
+[exit 1]

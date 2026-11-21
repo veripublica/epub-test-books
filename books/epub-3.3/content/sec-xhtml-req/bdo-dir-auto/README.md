@@ -38,7 +38,7 @@ Invalid. `auto` is a keyword of `dir`, but HTML says it must not be specified on
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.47.0 | `epubveri -i bdo-dir-auto.epub -u --advisory` | ERROR RSC-005; INVALID | `bdo-dir-auto.epubveri-0.47.0.txt` |
+| epubveri 0.48.0 | `epubveri -i bdo-dir-auto.epub -u --advisory` | ERROR RSC-005; INVALID | `bdo-dir-auto.epubveri-0.48.0.txt` |
 | epubcheck 5.4.0 | `epubcheck bdo-dir-auto.epub -u` | no findings; VALID | `bdo-dir-auto.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.

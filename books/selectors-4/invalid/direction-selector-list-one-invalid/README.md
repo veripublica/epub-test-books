@@ -4,7 +4,7 @@
 - Built by: `scripts/selectors-4/invalid/direction-selector-list-one-invalid/build.py`
 - Origin: built here
 - Expected: valid
-- Marks: epubveri: wrong error; epubcheck: wrong error
+- Marks: epubcheck: wrong error
 - Asked for by: the maintainer, after w3c/epub-specs#3115 (held CSS cases)
 - Issue: [#675](https://github.com/veripublica/epub-test-books/issues/675)
 - Other clauses: EPUB 3.3 `sec-css-req`
@@ -69,12 +69,11 @@ CSS result: No rule is kept. `:foo` is invalid, so the whole list `p, :foo` is i
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.47.0 | `epubveri -i direction-selector-list-one-invalid.epub -u --advisory` | ERROR CSS-001, USAGE ADV-019; INVALID | `direction-selector-list-one-invalid.epubveri-0.47.0.txt` |
+| epubveri 0.48.0 | `epubveri -i direction-selector-list-one-invalid.epub -u --advisory` | USAGE ADV-019; VALID | `direction-selector-list-one-invalid.epubveri-0.48.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-selector-list-one-invalid.epub -u` | ERROR CSS-001; INVALID | `direction-selector-list-one-invalid.epubcheck-5.4.0.txt` |
 
-Neither agrees with the expected result. epubveri: it reports the dropped `direction` declaration as an error (CSS-001). epubcheck: it reports the dropped `direction` declaration as an error (CSS-001).
+epubveri agrees with the expected result. epubcheck does not: it reports the dropped `direction` declaration as an error (CSS-001).
 
-- **epubveri: wrong error.** [veripublica/epubveri#144](https://github.com/veripublica/epubveri/issues/144).
 - **epubcheck: wrong error.** [w3c/epubcheck#1781](https://github.com/w3c/epubcheck/issues/1781).
 
 Every epubveri finding here is in its default output, except USAGE ADV-019, which is an `--advisory` finding.

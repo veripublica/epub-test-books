@@ -4,7 +4,7 @@
 - Built by: `scripts/epub-3.3/ocf/sec-enc-compression/aes-original-length-zero/build.py`
 - Origin: built here
 - Expected: invalid
-- Marks: epubveri: missed; epubcheck: missed
+- Marks: epubcheck: missed
 - Asked for by: the maintainer, to complete the OCF section; parked on 2026-11-13 while both verifiers missed it, built on 2026-11-20
 - Issue: [#679](https://github.com/veripublica/epub-test-books/issues/679)
 
@@ -34,12 +34,11 @@ Invalid. `OriginalLength` must be a positive integer, and 0 is not one. It is al
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.47.0 | `epubveri -i aes-original-length-zero.epub -u --advisory` | INFO RSC-004; VALID | `aes-original-length-zero.epubveri-0.47.0.txt` |
+| epubveri 0.48.0 | `epubveri -i aes-original-length-zero.epub -u --advisory` | ERROR RSC-005, INFO RSC-004; INVALID | `aes-original-length-zero.epubveri-0.48.0.txt` |
 | epubcheck 5.4.0 | `epubcheck aes-original-length-zero.epub -u` | INFO RSC-004; VALID | `aes-original-length-zero.epubcheck-5.4.0.txt` |
 
-Neither agrees with the expected result. epubveri: it gives only INFO RSC-004. epubcheck: it gives only INFO RSC-004.
+epubveri agrees with the expected result: it reports the zero `OriginalLength` in `META-INF/encryption.xml` (RSC-005). epubcheck does not: it gives only INFO RSC-004.
 
-- **epubveri: missed.** [veripublica/epubveri#146](https://github.com/veripublica/epubveri/issues/146).
 - **epubcheck: missed.** [w3c/epubcheck#1782](https://github.com/w3c/epubcheck/issues/1782).
 
 Both report INFO RSC-004: the encrypted document is not checked. The error is in `META-INF/encryption.xml`, which is not encrypted.

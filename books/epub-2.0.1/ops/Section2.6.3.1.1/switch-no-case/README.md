@@ -60,7 +60,7 @@ The prose of `Section2.6.3.1.1` and `Section2.6.3.1.2` says "zero or more case e
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.47.0 | `epubveri -i switch-no-case.epub -u --advisory` | ERROR RSC-005; INVALID | `switch-no-case.epubveri-0.47.0.txt` |
+| epubveri 0.48.0 | `epubveri -i switch-no-case.epub -u --advisory` | ERROR RSC-005; INVALID | `switch-no-case.epubveri-0.48.0.txt` |
 | epubcheck 5.4.0 | `epubcheck switch-no-case.epub -u` | ERROR RSC-005; INVALID | `switch-no-case.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

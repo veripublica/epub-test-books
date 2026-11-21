@@ -1,0 +1,3 @@
+ERROR HTM_059: viewport 'width' key appears more than once [OEBPS/content.xhtml:7:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

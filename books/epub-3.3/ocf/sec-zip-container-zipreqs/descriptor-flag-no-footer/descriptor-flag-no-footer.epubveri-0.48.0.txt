@@ -1,0 +1,3 @@
+ERROR SPEC-007: 'OEBPS/content.xhtml' sets general purpose bit 3, but no data descriptor follows its data [OEBPS/content.xhtml]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

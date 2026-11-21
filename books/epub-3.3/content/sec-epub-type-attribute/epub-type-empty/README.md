@@ -34,7 +34,7 @@ Invalid. The value must be one or more terms, and an empty value has none.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.47.0 | `epubveri -i epub-type-empty.epub -u --advisory` | ERROR RSC-005; INVALID | `epub-type-empty.epubveri-0.47.0.txt` |
+| epubveri 0.48.0 | `epubveri -i epub-type-empty.epub -u --advisory` | ERROR RSC-005; INVALID | `epub-type-empty.epubveri-0.48.0.txt` |
 | epubcheck 5.4.0 | `epubcheck epub-type-empty.epub -u` | ERROR RSC-005; INVALID | `epub-type-empty.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

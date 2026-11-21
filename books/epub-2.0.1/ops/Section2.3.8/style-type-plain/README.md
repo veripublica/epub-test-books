@@ -34,7 +34,7 @@ Invalid. The `type` of a `style` element must be `text/css` or `text/x-oeb1-css`
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.47.0 | `epubveri -i style-type-plain.epub -u --advisory` | ERROR RSC-005; INVALID | `style-type-plain.epubveri-0.47.0.txt` |
+| epubveri 0.48.0 | `epubveri -i style-type-plain.epub -u --advisory` | ERROR RSC-005; INVALID | `style-type-plain.epubveri-0.48.0.txt` |
 | epubcheck 5.4.0 | `epubcheck style-type-plain.epub -u` | no findings; VALID | `style-type-plain.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.

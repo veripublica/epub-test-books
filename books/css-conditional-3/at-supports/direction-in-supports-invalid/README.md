@@ -4,7 +4,7 @@
 - Built by: `scripts/css-conditional-3/at-supports/direction-in-supports-invalid/build.py`
 - Origin: built here
 - Expected: valid
-- Marks: epubveri: wrong error; epubcheck: wrong error
+- Marks: epubcheck: wrong error
 - Asked for by: the maintainer, after w3c/epub-specs#3115, from styloria's CSSOM cases
 - Issue: [#682](https://github.com/veripublica/epub-test-books/issues/682)
 - Other clauses: EPUB 3.3 `sec-css-req`
@@ -51,12 +51,11 @@ CSS result: No rule is kept. The prelude `foo` does not match `<supports-conditi
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.47.0 | `epubveri -i direction-in-supports-invalid.epub -u --advisory` | ERROR CSS-001; INVALID | `direction-in-supports-invalid.epubveri-0.47.0.txt` |
+| epubveri 0.48.0 | `epubveri -i direction-in-supports-invalid.epub -u --advisory` | no findings; VALID | `direction-in-supports-invalid.epubveri-0.48.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-in-supports-invalid.epub -u` | ERROR CSS-001; INVALID | `direction-in-supports-invalid.epubcheck-5.4.0.txt` |
 
-Neither agrees with the expected result. epubveri: it reports the `direction` declaration in the ignored `@supports` rule as an error (CSS-001). epubcheck: it reports the `direction` declaration in the ignored `@supports` rule as an error (CSS-001).
+epubveri agrees with the expected result. epubcheck does not: it reports the `direction` declaration in the ignored `@supports` rule as an error (CSS-001).
 
-- **epubveri: wrong error.** [veripublica/epubveri#144](https://github.com/veripublica/epubveri/issues/144).
 - **epubcheck: wrong error.** [w3c/epubcheck#1781](https://github.com/w3c/epubcheck/issues/1781).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.

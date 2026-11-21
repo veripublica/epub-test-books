@@ -34,7 +34,7 @@ Invalid. With the switch replaced by the content of its default, the `thead` com
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.47.0 | `epubveri -i default-thead-after-tbody.epub -u --advisory` | ERROR RSC-005; INVALID | `default-thead-after-tbody.epubveri-0.47.0.txt` |
+| epubveri 0.48.0 | `epubveri -i default-thead-after-tbody.epub -u --advisory` | ERROR RSC-005; INVALID | `default-thead-after-tbody.epubveri-0.48.0.txt` |
 | epubcheck 5.4.0 | `epubcheck default-thead-after-tbody.epub -u` | ERROR RSC-005; INVALID | `default-thead-after-tbody.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -1,0 +1,4 @@
+ERROR OPF-014: content document uses scripted but doesn't declare the "scripted" property - add it to this document's manifest item in the OPF [OEBPS/content.xhtml:11:178]
+USAGE RSC-025: SVG element "script" has no required attribute "type" [OEBPS/content.xhtml:11:178]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

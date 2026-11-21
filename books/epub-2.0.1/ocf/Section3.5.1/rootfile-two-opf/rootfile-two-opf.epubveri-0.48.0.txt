@@ -1,0 +1,3 @@
+WARNING PKG-013: container.xml declares more than one package document; OCF 2.0.1 recommends one, and the first is the publication's
+— 0 error(s), 1 warning(s): VALID
+[exit 0]

@@ -34,7 +34,7 @@ Invalid. With the switch replaced by the content of its default, the `ul` holds 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.47.0 | `epubveri -i default-paragraph-in-list.epub -u --advisory` | ERROR RSC-005; INVALID | `default-paragraph-in-list.epubveri-0.47.0.txt` |
+| epubveri 0.48.0 | `epubveri -i default-paragraph-in-list.epub -u --advisory` | ERROR RSC-005; INVALID | `default-paragraph-in-list.epubveri-0.48.0.txt` |
 | epubcheck 5.4.0 | `epubcheck default-paragraph-in-list.epub -u` | ERROR RSC-005; INVALID | `default-paragraph-in-list.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

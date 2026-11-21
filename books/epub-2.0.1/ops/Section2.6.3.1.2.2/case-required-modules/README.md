@@ -60,7 +60,7 @@ Valid. Ruby is an XHTML Extended Module, so a case may hold it when `required-mo
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.47.0 | `epubveri -i case-required-modules.epub -u --advisory` | no findings; VALID | `case-required-modules.epubveri-0.47.0.txt` |
+| epubveri 0.48.0 | `epubveri -i case-required-modules.epub -u --advisory` | no findings; VALID | `case-required-modules.epubveri-0.48.0.txt` |
 | epubcheck 5.4.0 | `epubcheck case-required-modules.epub -u` | no findings; VALID | `case-required-modules.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

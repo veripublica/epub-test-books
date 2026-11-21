@@ -1,0 +1,3 @@
+ERROR HTM-001: XML declaration must not use version 1.1 [OEBPS/content.xhtml:1:1]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

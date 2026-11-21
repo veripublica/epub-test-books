@@ -34,7 +34,7 @@ Invalid. The elements of `metadata.xml` must be namespace-qualified.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.47.0 | `epubveri -i metadata-xml-unqualified.epub -u --advisory` | ERROR RSC-005; INVALID | `metadata-xml-unqualified.epubveri-0.47.0.txt` |
+| epubveri 0.48.0 | `epubveri -i metadata-xml-unqualified.epub -u --advisory` | ERROR RSC-005; INVALID | `metadata-xml-unqualified.epubveri-0.48.0.txt` |
 | epubcheck 5.4.0 | `epubcheck metadata-xml-unqualified.epub -u` | no findings; VALID | `metadata-xml-unqualified.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.

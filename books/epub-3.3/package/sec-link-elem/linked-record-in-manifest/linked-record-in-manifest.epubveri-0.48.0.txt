@@ -1,0 +1,4 @@
+ERROR OPF-067: 'record.xml' must not be both a metadata <link> target and a manifest item [OEBPS/package.opf:24:5]
+USAGE OPF-097: 'record.xml' is declared in the manifest, but no content document references it [OEBPS/package.opf:30:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

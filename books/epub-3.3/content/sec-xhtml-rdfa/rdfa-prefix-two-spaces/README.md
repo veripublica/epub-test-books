@@ -38,7 +38,7 @@ Valid. RDFa's prefix attribute takes pairs of the form NCName ':' ' '+ IRI, so o
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.47.0 | `epubveri -i rdfa-prefix-two-spaces.epub -u --advisory` | no findings; VALID | `rdfa-prefix-two-spaces.epubveri-0.47.0.txt` |
+| epubveri 0.48.0 | `epubveri -i rdfa-prefix-two-spaces.epub -u --advisory` | no findings; VALID | `rdfa-prefix-two-spaces.epubveri-0.48.0.txt` |
 | epubcheck 5.4.0 | `epubcheck rdfa-prefix-two-spaces.epub -u` | ERROR RSC-005; INVALID | `rdfa-prefix-two-spaces.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the prefix value as a schema error (RSC-005), as its pattern allows exactly one space after the colon.

@@ -1,0 +1,3 @@
+ERROR RSC-005: An authority property must be associated with each term property [OEBPS/package.opf:11:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

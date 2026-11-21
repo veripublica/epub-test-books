@@ -81,7 +81,7 @@ CSS result: One rule, `p`, with no declarations. `url(` starts a url token that 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.47.0 | `epubveri -i eof-brace-in-url.epub -u --advisory` | USAGE CSS-008, USAGE CSS-008, USAGE CSS-008; VALID | `eof-brace-in-url.epubveri-0.47.0.txt` |
+| epubveri 0.48.0 | `epubveri -i eof-brace-in-url.epub -u --advisory` | USAGE CSS-008, USAGE CSS-008, USAGE CSS-008; VALID | `eof-brace-in-url.epubveri-0.48.0.txt` |
 | epubcheck 5.4.0 | `epubcheck eof-brace-in-url.epub -u` | ERROR CSS-008, ERROR CSS-008, ERROR CSS-008; INVALID | `eof-brace-in-url.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the parse errors as errors (CSS-008).

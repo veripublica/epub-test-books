@@ -1,0 +1,4 @@
+ERROR RSC-005: element "item" is missing the required attribute "media-type" [OEBPS/package.opf:29:5]
+USAGE OPF-097: 'extra.txt' is declared in the manifest, but no content document references it [OEBPS/package.opf:29:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

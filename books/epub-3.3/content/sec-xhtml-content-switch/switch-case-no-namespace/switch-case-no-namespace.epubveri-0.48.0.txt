@@ -1,0 +1,5 @@
+ERROR RSC-005: element "case" is missing the required attribute "required-namespace" [OEBPS/content.xhtml:12:7]
+WARNING RSC-017: The "epub:switch" element is deprecated [OEBPS/content.xhtml:11:5]
+USAGE ACC-009: MathML markup has no alternative text [OEBPS/content.xhtml:12:18]
+— 1 error(s), 1 warning(s): INVALID
+[exit 1]

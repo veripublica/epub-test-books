@@ -51,7 +51,7 @@ CSS result: One `@supports` rule, kept, holding one rule, `p { margin: 0; }`. It
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.47.0 | `epubveri -i direction-in-supports-condition.epub -u --advisory` | no findings; VALID | `direction-in-supports-condition.epubveri-0.47.0.txt` |
+| epubveri 0.48.0 | `epubveri -i direction-in-supports-condition.epub -u --advisory` | no findings; VALID | `direction-in-supports-condition.epubveri-0.48.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-in-supports-condition.epub -u` | no findings; VALID | `direction-in-supports-condition.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

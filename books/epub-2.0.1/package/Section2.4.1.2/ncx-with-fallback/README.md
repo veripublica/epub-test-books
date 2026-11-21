@@ -34,7 +34,7 @@ Invalid. The NCX item must carry no fallback information.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.47.0 | `epubveri -i ncx-with-fallback.epub -u --advisory` | ERROR SPEC-003; INVALID | `ncx-with-fallback.epubveri-0.47.0.txt` |
+| epubveri 0.48.0 | `epubveri -i ncx-with-fallback.epub -u --advisory` | ERROR SPEC-003; INVALID | `ncx-with-fallback.epubveri-0.48.0.txt` |
 | epubcheck 5.4.0 | `epubcheck ncx-with-fallback.epub -u` | no findings; VALID | `ncx-with-fallback.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it gives no finding.

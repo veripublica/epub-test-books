@@ -1,0 +1,5 @@
+ERROR PKG-009: file name 'con*tent.xhtml' contains a forbidden character [OEBPS/con*tent.xhtml]
+USAGE ADV-025: the reference 'con%2Atent.xhtml' writes '%2A' where the file name 'OEBPS/con*tent.xhtml' has the character itself; under RFC 3986 a percent-encoded reserved character makes a different URI, and a reading system that compares them treats them as two files [OEBPS/package.opf:25:24]
+USAGE ADV-025: the reference 'con%2Atent.xhtml' writes '%2A' where the file name 'OEBPS/con*tent.xhtml' has the character itself; under RFC 3986 a percent-encoded reserved character makes a different URI, and a reading system that compares them treats them as two files [OEBPS/toc.ncx:18:16]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

@@ -4,7 +4,7 @@
 - Built by: `scripts/css-syntax-3/consume-qualified-rule/direction-after-stray-brace/build.py`
 - Origin: built here
 - Expected: valid
-- Marks: epubveri: wrong error; epubcheck: wrong error
+- Marks: epubcheck: wrong error
 - Asked for by: the maintainer, after w3c/epub-specs#3115 (held CSS cases)
 - Issue: [#668](https://github.com/veripublica/epub-test-books/issues/668)
 - Other clauses: EPUB 3.3 `sec-css-req`
@@ -57,12 +57,11 @@ CSS result: The `}` is a parse error and becomes part of a qualified rule's prel
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.47.0 | `epubveri -i direction-after-stray-brace.epub -u --advisory` | ERROR CSS-001, USAGE CSS-008; INVALID | `direction-after-stray-brace.epubveri-0.47.0.txt` |
+| epubveri 0.48.0 | `epubveri -i direction-after-stray-brace.epub -u --advisory` | USAGE CSS-008; VALID | `direction-after-stray-brace.epubveri-0.48.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-after-stray-brace.epub -u` | ERROR CSS-008; INVALID | `direction-after-stray-brace.epubcheck-5.4.0.txt` |
 
-Neither agrees with the expected result. epubveri: it reports the dropped `direction` declaration as an error (CSS-001). epubcheck: it reports the parse error as an error (CSS-008).
+epubveri agrees with the expected result. epubcheck does not: it reports the parse error as an error (CSS-008).
 
-- **epubveri: wrong error.** [veripublica/epubveri#144](https://github.com/veripublica/epubveri/issues/144).
 - **epubcheck: wrong error.** [w3c/epubcheck#1768](https://github.com/w3c/epubcheck/issues/1768).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
