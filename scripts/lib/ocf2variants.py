@@ -95,6 +95,14 @@ def mimetype_trailing_newline(files):
     return _mimetype(files, b"application/epub+zip\n")
 
 
+def mimetype_leading_space(files):
+    return _mimetype(files, b" application/epub+zip")
+
+
+def mimetype_bom(files):
+    return _mimetype(files, b"\xef\xbb\xbfapplication/epub+zip")
+
+
 def mimetype_uppercase(files):
     return _mimetype(files, b"APPLICATION/EPUB+ZIP")
 

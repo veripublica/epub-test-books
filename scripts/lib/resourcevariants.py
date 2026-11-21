@@ -86,6 +86,13 @@ def encoded(html: str, encoding: str, name: str) -> bytes:
     return html.encode(encoding)
 
 
+def undeclared(html: str, encoding: str) -> bytes:
+    """The document in another encoding, with no encoding declaration at all."""
+    assert html.count(' encoding="UTF-8"') == 1 and html.count('    <meta charset="UTF-8"/>\n') == 1
+    html = html.replace(' encoding="UTF-8"', "").replace('    <meta charset="UTF-8"/>\n', "")
+    return html.encode(encoding)
+
+
 def package_utf16(files: Files) -> Files:
     """package.opf in UTF-16 with a byte order mark, its XML declaration saying so."""
     out = []
