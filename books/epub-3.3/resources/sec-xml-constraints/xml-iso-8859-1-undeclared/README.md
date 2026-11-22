@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: epubveri: missed; epubcheck: missed
 - Asked for by: epubsana, to test its repair of these books (note of 2026-11-22)
-- Issue: pending
+- Issue: [#697](https://github.com/veripublica/epub-test-books/issues/697)
 - Other clauses: XML 1.0 `charencoding`
 
 ## About this book
