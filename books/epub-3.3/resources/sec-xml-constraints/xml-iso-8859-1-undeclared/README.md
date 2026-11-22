@@ -44,8 +44,8 @@ Invalid. A document with no byte order mark and no encoding declaration is read 
 
 Neither agrees with the expected result. epubveri: it gives no finding. epubcheck: it gives no finding.
 
-- **epubveri: missed.** Issue pending.
-- **epubcheck: missed.** Issue pending.
+- **epubveri: missed.** [veripublica/epubveri#150](https://github.com/veripublica/epubveri/issues/150).
+- **epubcheck: missed.** [w3c/epubcheck#1784](https://github.com/w3c/epubcheck/issues/1784).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 
