@@ -49,7 +49,7 @@ CSS result: One `@font-face` rule, kept, with one descriptor, `font-family: x`. 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i direction-in-font-face.epub -u --advisory` | USAGE CSS-028, USAGE ADV-002; VALID | `direction-in-font-face.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i direction-in-font-face.epub -u --advisory` | USAGE CSS-028, USAGE ADV-002; VALID | `direction-in-font-face.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-in-font-face.epub -u` | USAGE CSS-028, ERROR CSS-001, USAGE CSS-028; INVALID | `direction-in-font-face.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result: its USAGE ADV-002 says that `direction` is not an `@font-face` descriptor. epubcheck does not: it reports the ignored `direction` declaration in `@font-face` as an error (CSS-001).

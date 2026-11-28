@@ -1,0 +1,5 @@
+ERROR RSC-005: rendition:spread spine override values are mutually exclusive [OEBPS/package.opf:33:5]
+USAGE OBS-001: usage of the "rendition:spread-none" property is outdated [OEBPS/package.opf:33:5]
+USAGE OBS-001: usage of the "rendition:spread-both" property is outdated [OEBPS/package.opf:33:5]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

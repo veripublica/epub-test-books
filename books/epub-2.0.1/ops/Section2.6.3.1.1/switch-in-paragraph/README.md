@@ -34,7 +34,7 @@ Valid. With the switch replaced by the content of its default, the `p` holds tex
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i switch-in-paragraph.epub -u --advisory` | no findings; VALID | `switch-in-paragraph.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i switch-in-paragraph.epub -u --advisory` | no findings; VALID | `switch-in-paragraph.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck switch-in-paragraph.epub -u` | no findings; VALID | `switch-in-paragraph.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

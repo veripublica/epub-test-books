@@ -51,10 +51,12 @@ CSS result: One rule is kept, `p { margin: 0; }`. The `@import` comes after a st
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i import-after-rule.epub -u --advisory` | USAGE ADV-021; VALID | `import-after-rule.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i import-after-rule.epub -u --advisory` | USAGE ADV-021, USAGE OPF-097; VALID | `import-after-rule.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck import-after-rule.epub -u` | no findings; VALID | `import-after-rule.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.
+
+Only epubveri reports `b.css` as unused (USAGE OPF-097): the only thing that names it is the dropped `@import`. USAGE OPF-097 does not change the verdict.
 
 Every epubveri finding here is in its default output, except USAGE ADV-021, which is an `--advisory` finding.
 

@@ -34,7 +34,7 @@ Invalid. With the switch replaced by the content of its default, the `p` holds a
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i default-div-in-paragraph.epub -u --advisory` | ERROR RSC-005; INVALID | `default-div-in-paragraph.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i default-div-in-paragraph.epub -u --advisory` | ERROR RSC-005; INVALID | `default-div-in-paragraph.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck default-div-in-paragraph.epub -u` | ERROR RSC-005; INVALID | `default-div-in-paragraph.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

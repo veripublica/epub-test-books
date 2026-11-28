@@ -38,7 +38,7 @@ Invalid. itemid must not be specified on an element that does not have both item
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i microdata-itemid-no-itemtype.epub -u --advisory` | ERROR RSC-005; INVALID | `microdata-itemid-no-itemtype.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i microdata-itemid-no-itemtype.epub -u --advisory` | ERROR RSC-005; INVALID | `microdata-itemid-no-itemtype.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck microdata-itemid-no-itemtype.epub -u` | no findings; VALID | `microdata-itemid-no-itemtype.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it gives no finding.

@@ -1,0 +1,4 @@
+ERROR RSC-005: media:duration value '3 seconds' must be a valid SMIL3 clock value [OEBPS/package.opf:24:5]
+ERROR RSC-005: media:duration value '3 seconds' must be a valid SMIL3 clock value [OEBPS/package.opf:25:5]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]

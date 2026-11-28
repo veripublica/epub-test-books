@@ -4,7 +4,7 @@
 - Built by: `scripts/css-cascade-5/at-import/import-after-rule-missing/build.py`
 - Origin: built here
 - Expected: valid
-- Marks: epubveri: wrong error; epubcheck: wrong error
+- Marks: epubcheck: wrong error
 - Asked for by: the maintainer, for styloria (selectors and cascade)
 - Issue: [#700](https://github.com/veripublica/epub-test-books/issues/700)
 - Other clauses: EPUB 3.3 `sec-container-iri`, `sec-css-req`
@@ -57,12 +57,11 @@ CSS result: One rule is kept, `p { margin: 0; }`. The `@import` comes after a st
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i import-after-rule-missing.epub -u --advisory` | ERROR RSC-007, USAGE ADV-021; INVALID | `import-after-rule-missing.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i import-after-rule-missing.epub -u --advisory` | USAGE ADV-021; VALID | `import-after-rule-missing.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck import-after-rule-missing.epub -u` | ERROR RSC-007; INVALID | `import-after-rule-missing.epubcheck-5.4.0.txt` |
 
-Neither agrees with the expected result. epubveri: it reports the URL of the dropped `@import` as a missing resource (RSC-007), although its own USAGE ADV-021 says that browsers ignore the `@import`. epubcheck: it reports the URL of the dropped `@import` as a missing resource (RSC-007).
+epubveri agrees with the expected result: its USAGE ADV-021 says that browsers ignore the `@import`. epubcheck does not: it reports the URL of the dropped `@import` as a missing resource (RSC-007).
 
-- **epubveri: wrong error.** Issue pending.
 - **epubcheck: wrong error.** [w3c/epubcheck#1787](https://github.com/w3c/epubcheck/issues/1787).
 
 Every epubveri finding here is in its default output, except USAGE ADV-021, which is an `--advisory` finding.

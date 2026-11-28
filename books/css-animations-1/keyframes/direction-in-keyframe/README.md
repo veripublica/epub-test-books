@@ -49,7 +49,7 @@ CSS result: One `@keyframes k` rule, kept, holding one keyframe, `from`, with on
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i direction-in-keyframe.epub -u --advisory` | ERROR CSS-001; INVALID | `direction-in-keyframe.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i direction-in-keyframe.epub -u --advisory` | ERROR CSS-001; INVALID | `direction-in-keyframe.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-in-keyframe.epub -u` | ERROR CSS-001; INVALID | `direction-in-keyframe.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -41,7 +41,7 @@ Invalid. `char` is not a value of `align` in the OPS XHTML subset, and content d
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i align-char.epub -u --advisory` | ERROR RSC-005; INVALID | `align-char.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i align-char.epub -u --advisory` | ERROR RSC-005; INVALID | `align-char.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck align-char.epub -u` | no findings; VALID | `align-char.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.

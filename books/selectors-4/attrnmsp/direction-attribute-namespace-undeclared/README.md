@@ -67,7 +67,7 @@ CSS result: No rule is kept. The `epub` prefix is not declared, so the selector 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i direction-attribute-namespace-undeclared.epub -u --advisory` | USAGE CSS-008; VALID | `direction-attribute-namespace-undeclared.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i direction-attribute-namespace-undeclared.epub -u --advisory` | USAGE CSS-008; VALID | `direction-attribute-namespace-undeclared.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-attribute-namespace-undeclared.epub -u` | ERROR CSS-001; INVALID | `direction-attribute-namespace-undeclared.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the dropped `direction` declaration as an error (CSS-001).

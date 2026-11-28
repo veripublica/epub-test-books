@@ -42,7 +42,7 @@ The shifted reading is what makes the other files readable. Read without the shi
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i mimetype-data-shift.epub -u --advisory` | ERROR SPEC-008; INVALID | `mimetype-data-shift.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i mimetype-data-shift.epub -u --advisory` | ERROR SPEC-008; INVALID | `mimetype-data-shift.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck mimetype-data-shift.epub -u` | no findings; VALID | `mimetype-data-shift.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.

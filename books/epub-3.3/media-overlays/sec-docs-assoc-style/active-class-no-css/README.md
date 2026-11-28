@@ -4,7 +4,7 @@
 - Built by: `scripts/epub-3.3/media-overlays/sec-docs-assoc-style/active-class-no-css/build.py`
 - Origin: built here
 - Expected: valid
-- Marks: epubveri: wrong error; epubcheck: wrong error
+- Marks: epubcheck: wrong error
 - Asked for by: the maintainer, to cover the media overlays section
 - Issue: [#701](https://github.com/veripublica/epub-test-books/issues/701)
 - Other clauses: EPUB 3.3 `conformance`
@@ -43,12 +43,11 @@ Whether the lowercase "must" is meant is asked in [w3c/epub-specs#3125](https://
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i active-class-no-css.epub -u --advisory` | ERROR CSS-030; INVALID | `active-class-no-css.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i active-class-no-css.epub -u --advisory` | USAGE ADV-026; VALID | `active-class-no-css.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck active-class-no-css.epub -u` | ERROR CSS-030; INVALID | `active-class-no-css.epubcheck-5.4.0.txt` |
 
-Neither agrees with the expected result. epubveri: it reports the content document with no CSS as an error (CSS-030). epubcheck: it reports the content document with no CSS as an error (CSS-030).
+epubveri agrees with the expected result: it reports the content document with no CSS at usage level (USAGE ADV-026), which does not change the verdict. epubcheck does not: it reports the content document with no CSS as an error (CSS-030).
 
-- **epubveri: wrong error.** Issue pending.
 - **epubcheck: wrong error.** [w3c/epubcheck#1788](https://github.com/w3c/epubcheck/issues/1788).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.

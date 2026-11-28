@@ -1,0 +1,3 @@
+ERROR PKG-011: file name 'content.' must not end with a full stop [OEBPS/content.]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

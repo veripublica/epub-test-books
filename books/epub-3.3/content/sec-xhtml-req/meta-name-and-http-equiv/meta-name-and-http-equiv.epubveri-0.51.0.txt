@@ -1,0 +1,3 @@
+ERROR RSC-005: attribute "http-equiv" not allowed here; element "meta" takes only one of "name", "http-equiv", "charset" and "itemprop", and already has "name" [OEBPS/content.xhtml:7:25]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

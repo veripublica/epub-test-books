@@ -1,0 +1,3 @@
+ERROR SPEC-004: the local file header of 'OEBPS/content.xhtml' gives "version needed to extract" as 63; it must be 10, 20 or 45 [OEBPS/content.xhtml]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

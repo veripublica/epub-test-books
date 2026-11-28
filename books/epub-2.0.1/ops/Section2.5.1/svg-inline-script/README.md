@@ -34,7 +34,7 @@ Invalid. SVG scripting must not be used in OPS content, and here the `svg` holds
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i svg-inline-script.epub -u --advisory` | ERROR RSC-005; INVALID | `svg-inline-script.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i svg-inline-script.epub -u --advisory` | ERROR RSC-005; INVALID | `svg-inline-script.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck svg-inline-script.epub -u` | no findings; VALID | `svg-inline-script.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.

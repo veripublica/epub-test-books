@@ -34,7 +34,7 @@ Invalid. The `mimetype` file must not be in the manifest. `container-in-manifest
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i mimetype-in-manifest.epub -u --advisory` | ERROR SPEC-006, USAGE OPF-097; INVALID | `mimetype-in-manifest.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i mimetype-in-manifest.epub -u --advisory` | ERROR SPEC-006, USAGE OPF-097; INVALID | `mimetype-in-manifest.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck mimetype-in-manifest.epub -u` | USAGE OPF-097; VALID | `mimetype-in-manifest.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports only USAGE OPF-097, and the book stays valid.

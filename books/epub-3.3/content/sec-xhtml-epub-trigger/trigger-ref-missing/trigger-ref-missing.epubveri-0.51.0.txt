@@ -1,0 +1,4 @@
+ERROR RSC-005: The ref attribute must refer to an element in the same document [OEBPS/content.xhtml:7:5]
+WARNING RSC-017: The "epub:trigger" element is deprecated [OEBPS/content.xhtml:7:5]
+— 1 error(s), 1 warning(s): INVALID
+[exit 1]

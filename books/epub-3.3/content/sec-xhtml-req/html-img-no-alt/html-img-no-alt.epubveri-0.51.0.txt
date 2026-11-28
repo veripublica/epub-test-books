@@ -1,0 +1,3 @@
+ERROR RSC-005: element "img" missing required attribute "alt" [OEBPS/content.xhtml:11:8]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

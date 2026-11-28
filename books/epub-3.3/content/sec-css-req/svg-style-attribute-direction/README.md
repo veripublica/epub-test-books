@@ -42,7 +42,7 @@ EPUB 3.3 speaks of "a CSS style sheet", and a `style` attribute holds declaratio
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i svg-style-attribute-direction.epub -u --advisory` | ERROR CSS-001; INVALID | `svg-style-attribute-direction.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i svg-style-attribute-direction.epub -u --advisory` | ERROR CSS-001; INVALID | `svg-style-attribute-direction.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck svg-style-attribute-direction.epub -u` | no findings; VALID | `svg-style-attribute-direction.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing; it does not read `style` attributes in inline SVG for CSS-001.

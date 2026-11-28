@@ -34,7 +34,7 @@ Invalid. The class properties must not be used with `refines`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i active-class-refines.epub -u --advisory` | ERROR RSC-005; INVALID | `active-class-refines.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i active-class-refines.epub -u --advisory` | ERROR RSC-005; INVALID | `active-class-refines.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck active-class-refines.epub -u` | ERROR RSC-005; INVALID | `active-class-refines.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

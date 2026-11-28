@@ -51,7 +51,7 @@ CSS result: No rule is kept. The prelude `foo` does not match `<supports-conditi
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i direction-in-supports-invalid.epub -u --advisory` | no findings; VALID | `direction-in-supports-invalid.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i direction-in-supports-invalid.epub -u --advisory` | no findings; VALID | `direction-in-supports-invalid.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-in-supports-invalid.epub -u` | ERROR CSS-001; INVALID | `direction-in-supports-invalid.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the `direction` declaration in the ignored `@supports` rule as an error (CSS-001).

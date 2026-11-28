@@ -1,0 +1,3 @@
+WARNING OPF-037: media-type 'text/x-oeb1-css' is a deprecated OEB 1.x construct [OEBPS/package.opf:27:5]
+— 0 error(s), 1 warning(s): VALID
+[exit 0]

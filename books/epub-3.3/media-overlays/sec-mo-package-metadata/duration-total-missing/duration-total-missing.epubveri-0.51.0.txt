@@ -1,0 +1,3 @@
+ERROR RSC-005: the global media:duration meta element not set [OEBPS/package.opf:26:3]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

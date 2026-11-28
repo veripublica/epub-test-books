@@ -1,0 +1,4 @@
+USAGE CSS-028: @font-face declaration [OEBPS/style.css:1:1]
+USAGE ADV-002: 'direction' is not a recognized descriptor for @font-face [OEBPS/style.css:1:30]
+— 0 error(s), 0 warning(s): VALID
+[exit 0]

@@ -1,0 +1,4 @@
+ERROR RSC-005: duplicate id "par1" [OEBPS/content.smil:4:5]
+ERROR RSC-005: duplicate id "par1" [OEBPS/content.smil:4:118]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]

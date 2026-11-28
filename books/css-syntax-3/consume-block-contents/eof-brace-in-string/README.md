@@ -77,7 +77,7 @@ CSS result: One rule, `p`, with no declarations. The `"` starts a string that ru
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i eof-brace-in-string.epub -u --advisory` | USAGE CSS-008, USAGE CSS-008, USAGE CSS-008; VALID | `eof-brace-in-string.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i eof-brace-in-string.epub -u --advisory` | USAGE CSS-008, USAGE CSS-008, USAGE CSS-008; VALID | `eof-brace-in-string.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck eof-brace-in-string.epub -u` | ERROR CSS-008, ERROR CSS-008, ERROR CSS-008; INVALID | `eof-brace-in-string.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the parse errors as errors (CSS-008).

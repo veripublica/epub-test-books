@@ -1,0 +1,4 @@
+USAGE CSS-028: @font-face declaration [OEBPS/style.css:1:1]
+USAGE ADV-024: 'ui-serif' is not a valid value for 'font-family' in @font-face, so CSS says to ignore the declaration [OEBPS/style.css:1:27]
+— 0 error(s), 0 warning(s): VALID
+[exit 0]

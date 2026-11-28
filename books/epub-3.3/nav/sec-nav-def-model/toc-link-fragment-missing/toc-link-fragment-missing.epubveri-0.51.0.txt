@@ -1,0 +1,3 @@
+ERROR RSC-012: fragment identifier 'nope' is not defined in 'OEBPS/content.xhtml' [OEBPS/nav.xhtml:14:13]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

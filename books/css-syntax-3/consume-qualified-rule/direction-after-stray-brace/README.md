@@ -57,7 +57,7 @@ CSS result: The `}` is a parse error and becomes part of a qualified rule's prel
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i direction-after-stray-brace.epub -u --advisory` | USAGE CSS-008; VALID | `direction-after-stray-brace.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i direction-after-stray-brace.epub -u --advisory` | USAGE CSS-008; VALID | `direction-after-stray-brace.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-after-stray-brace.epub -u` | ERROR CSS-008; INVALID | `direction-after-stray-brace.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the parse error as an error (CSS-008).

@@ -34,7 +34,7 @@ Invalid. A property with an empty reference, only a prefix and a colon, is not a
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i epub-type-prefix-only.epub -u --advisory` | ERROR OPF-026; INVALID | `epub-type-prefix-only.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i epub-type-prefix-only.epub -u --advisory` | ERROR OPF-026; INVALID | `epub-type-prefix-only.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck epub-type-prefix-only.epub -u` | ERROR OPF-026; INVALID | `epub-type-prefix-only.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

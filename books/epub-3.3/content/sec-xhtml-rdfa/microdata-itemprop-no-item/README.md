@@ -38,7 +38,7 @@ Invalid. HTML allows `itemprop` only where it adds a property to an item. This `
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i microdata-itemprop-no-item.epub -u --advisory` | ERROR RSC-005; INVALID | `microdata-itemprop-no-item.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i microdata-itemprop-no-item.epub -u --advisory` | ERROR RSC-005; INVALID | `microdata-itemprop-no-item.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck microdata-itemprop-no-item.epub -u` | no findings; VALID | `microdata-itemprop-no-item.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it gives no finding.

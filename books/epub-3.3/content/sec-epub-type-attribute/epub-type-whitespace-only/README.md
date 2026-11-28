@@ -34,7 +34,7 @@ Invalid. The value must be one or more terms, and spaces alone hold none.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i epub-type-whitespace-only.epub -u --advisory` | ERROR RSC-005; INVALID | `epub-type-whitespace-only.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i epub-type-whitespace-only.epub -u --advisory` | ERROR RSC-005; INVALID | `epub-type-whitespace-only.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck epub-type-whitespace-only.epub -u` | ERROR RSC-005; INVALID | `epub-type-whitespace-only.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

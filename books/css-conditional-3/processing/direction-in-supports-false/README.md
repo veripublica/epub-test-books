@@ -49,7 +49,7 @@ CSS result: One `@supports` rule, kept, holding one style rule with one declarat
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i direction-in-supports-false.epub -u --advisory` | ERROR CSS-001; INVALID | `direction-in-supports-false.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i direction-in-supports-false.epub -u --advisory` | ERROR CSS-001; INVALID | `direction-in-supports-false.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-in-supports-false.epub -u` | ERROR CSS-001; INVALID | `direction-in-supports-false.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

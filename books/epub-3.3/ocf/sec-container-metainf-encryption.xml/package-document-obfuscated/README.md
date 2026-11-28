@@ -48,12 +48,12 @@ Invalid. The package document must not be encrypted, and the obfuscation algorit
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i package-document-obfuscated.epub -u --advisory` | FATAL RSC-016, ERROR SPEC-001, ERROR OPF-001, ERROR RSC-028; INVALID | `package-document-obfuscated.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i package-document-obfuscated.epub -u --advisory` | FATAL RSC-016, ERROR SPEC-001, ERROR OPF-001; INVALID | `package-document-obfuscated.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck package-document-obfuscated.epub -u` | FATAL RSC-016, ERROR OPF-001; INVALID | `package-document-obfuscated.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.
 
-Both read the obfuscated bytes as the package document, find it not well-formed (RSC-016), and so cannot read the EPUB version (OPF-001). epubveri also reports that the same bytes are not UTF-8 (ERROR RSC-028). Only epubveri reports the declaration itself: SPEC-001, a package document declared encrypted. epubcheck gives no finding for `META-INF/encryption.xml`, as on `never-encrypt-package-document`, where it misses the case. epubcheck also prints a Java stack trace (`IllegalStateException` in `OCFChecker.checkPublicationVersion`) before its summary; the summary and exit code are still given. The stack trace is reported as [w3c/epubcheck#1774](https://github.com/w3c/epubcheck/issues/1774).
+Both read the obfuscated bytes as the package document, find it not well-formed (RSC-016), and so cannot read the EPUB version (OPF-001). Only epubveri also reports the declaration itself: SPEC-001, a package document declared encrypted. epubcheck gives no finding for `META-INF/encryption.xml`, as on `never-encrypt-package-document`, where it misses the case. epubcheck also prints a Java stack trace (`IllegalStateException` in `OCFChecker.checkPublicationVersion`) before its summary; the summary and exit code are still given. The stack trace is reported as [w3c/epubcheck#1774](https://github.com/w3c/epubcheck/issues/1774).
 
 SPEC-001 is epubveri's id for a specification rule that epubcheck has no id for. It is in epubveri's default output, not an `--advisory` finding. Every epubveri finding here is in its default output.
 

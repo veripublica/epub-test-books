@@ -51,7 +51,7 @@ CSS result: One rule, kept: the `::before` of every `p`, while it is hovered. `:
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i pseudo-element-hover.epub -u --advisory` | no findings; VALID | `pseudo-element-hover.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i pseudo-element-hover.epub -u --advisory` | no findings; VALID | `pseudo-element-hover.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck pseudo-element-hover.epub -u` | no findings; VALID | `pseudo-element-hover.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

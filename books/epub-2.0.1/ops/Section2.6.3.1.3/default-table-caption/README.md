@@ -34,7 +34,7 @@ Valid. With the switch replaced by the content of its default, the `table` holds
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i default-table-caption.epub -u --advisory` | no findings; VALID | `default-table-caption.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i default-table-caption.epub -u --advisory` | no findings; VALID | `default-table-caption.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck default-table-caption.epub -u` | no findings; VALID | `default-table-caption.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

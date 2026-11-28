@@ -34,7 +34,7 @@ Invalid. `version="1.0"` must be included, and here it is `2.0`.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i container-version-2.epub -u --advisory` | ERROR RSC-005; INVALID | `container-version-2.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i container-version-2.epub -u --advisory` | ERROR RSC-005; INVALID | `container-version-2.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck container-version-2.epub -u` | no findings; VALID | `container-version-2.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.

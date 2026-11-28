@@ -34,7 +34,7 @@ Invalid. HTML requires the `alt` attribute here.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.50.0 | `epubveri -i html-img-no-alt.epub -u --advisory` | ERROR RSC-005; INVALID | `html-img-no-alt.epubveri-0.50.0.txt` |
+| epubveri 0.51.0 | `epubveri -i html-img-no-alt.epub -u --advisory` | ERROR RSC-005; INVALID | `html-img-no-alt.epubveri-0.51.0.txt` |
 | epubcheck 5.4.0 | `epubcheck html-img-no-alt.epub -u` | no findings; VALID | `html-img-no-alt.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it gives no finding.

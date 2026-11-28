@@ -1,0 +1,3 @@
+ERROR RSC-005: attribute "identifier" is not allowed here [META-INF/container.xml:3:14]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]
