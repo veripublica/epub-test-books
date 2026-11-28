@@ -4,7 +4,7 @@
 - Built by: `scripts/epub-3.3/content/sec-xhtml-rdfa/microdata-itemprop-no-item/build.py`
 - Origin: built here
 - Expected: invalid
-- Marks: epubveri: missed; epubcheck: missed
+- Marks: epubcheck: missed
 - Asked for by: the maintainer, to cover EPUB 3.3 content document extensions; parked on 2026-11-13 while both verifiers missed it, built on 2026-11-20
 - Issue: [#678](https://github.com/veripublica/epub-test-books/issues/678)
 

@@ -4,7 +4,7 @@
 - Built by: `scripts/epub-3.3/resources/sec-xml-constraints/xml-iso-8859-1-bom-utf-8/build.py`
 - Origin: built here
 - Expected: invalid
-- Marks: epubveri: missed; epubcheck: missed
+- Marks: epubcheck: missed
 - Asked for by: the maintainer, after veripublica/epubveri#150, whose fix also covers this case
 - Issue: [#698](https://github.com/veripublica/epub-test-books/issues/698)
 - Other clauses: XML 1.0 `charencoding`
