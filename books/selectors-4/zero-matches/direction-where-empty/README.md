@@ -51,7 +51,7 @@ CSS result: One rule, kept, with one declaration, `direction: rtl`. Its selector
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i direction-where-empty.epub -u --advisory` | ERROR CSS-001; INVALID | `direction-where-empty.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i direction-where-empty.epub -u --advisory` | ERROR CSS-001; INVALID | `direction-where-empty.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-where-empty.epub -u` | ERROR CSS-001; INVALID | `direction-where-empty.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -42,7 +42,7 @@ Invalid. `dir` is an enumerated attribute, and its value must match a keyword wi
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i html-dir-padded.epub -u --advisory` | ERROR RSC-005; INVALID | `html-dir-padded.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i html-dir-padded.epub -u --advisory` | ERROR RSC-005; INVALID | `html-dir-padded.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck html-dir-padded.epub -u` | no findings; VALID | `html-dir-padded.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.

@@ -1,0 +1,5 @@
+ERROR PKG-009: file name 'con|tent.xhtml' contains a forbidden character [OEBPS/con|tent.xhtml]
+USAGE ADV-025: the reference 'con%7Ctent.xhtml' names the file 'OEBPS/con|tent.xhtml' only once it is percent-decoded; under the URL Standard they are different URLs, and a reading system that compares them treats them as two files [OEBPS/package.opf:27:24]
+USAGE ADV-025: the reference 'con%7Ctent.xhtml' names the file 'OEBPS/con|tent.xhtml' only once it is percent-decoded; under the URL Standard they are different URLs, and a reading system that compares them treats them as two files [OEBPS/nav.xhtml:13:16]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

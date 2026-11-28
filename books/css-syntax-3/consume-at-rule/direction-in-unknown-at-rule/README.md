@@ -57,7 +57,7 @@ CSS result: No rule is kept. `@foo` is not valid in a stylesheet, so the at-rule
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i direction-in-unknown-at-rule.epub -u --advisory` | USAGE ADV-020; VALID | `direction-in-unknown-at-rule.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i direction-in-unknown-at-rule.epub -u --advisory` | USAGE ADV-020; VALID | `direction-in-unknown-at-rule.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-in-unknown-at-rule.epub -u` | ERROR CSS-001; INVALID | `direction-in-unknown-at-rule.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the dropped `direction` declaration as an error (CSS-001).

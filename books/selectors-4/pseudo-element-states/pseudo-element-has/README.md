@@ -59,7 +59,7 @@ CSS result: No rule is kept. `:has()` is not one of the logical combination pseu
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i pseudo-element-has.epub -u --advisory` | USAGE ADV-017; VALID | `pseudo-element-has.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i pseudo-element-has.epub -u --advisory` | USAGE ADV-017; VALID | `pseudo-element-has.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck pseudo-element-has.epub -u` | no findings; VALID | `pseudo-element-has.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

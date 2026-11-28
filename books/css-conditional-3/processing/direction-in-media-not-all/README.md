@@ -49,7 +49,7 @@ CSS result: One `@media` rule, kept, holding one style rule with one declaration
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i direction-in-media-not-all.epub -u --advisory` | ERROR CSS-001; INVALID | `direction-in-media-not-all.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i direction-in-media-not-all.epub -u --advisory` | ERROR CSS-001; INVALID | `direction-in-media-not-all.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck direction-in-media-not-all.epub -u` | ERROR CSS-001; INVALID | `direction-in-media-not-all.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

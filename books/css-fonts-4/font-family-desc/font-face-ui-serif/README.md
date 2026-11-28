@@ -55,7 +55,7 @@ CSS result: One `@font-face` rule, kept, with no descriptors. `ui-serif` is a `<
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i font-face-ui-serif.epub -u --advisory` | USAGE CSS-028, USAGE ADV-024; VALID | `font-face-ui-serif.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i font-face-ui-serif.epub -u --advisory` | USAGE CSS-028, USAGE ADV-024; VALID | `font-face-ui-serif.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck font-face-ui-serif.epub -u` | USAGE CSS-028; VALID | `font-face-ui-serif.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.

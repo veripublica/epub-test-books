@@ -79,7 +79,7 @@ CSS result: One rule, `p`, with no declarations. `\}` is a valid escape, so it s
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i eof-escaped-brace.epub -u --advisory` | USAGE CSS-008, USAGE CSS-008; VALID | `eof-escaped-brace.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i eof-escaped-brace.epub -u --advisory` | USAGE CSS-008, USAGE CSS-008; VALID | `eof-escaped-brace.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck eof-escaped-brace.epub -u` | ERROR CSS-008; INVALID | `eof-escaped-brace.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports the parse errors as errors (CSS-008).

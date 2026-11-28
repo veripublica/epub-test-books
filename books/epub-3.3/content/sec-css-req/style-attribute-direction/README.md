@@ -42,7 +42,7 @@ EPUB 3.3 speaks of "a CSS style sheet", and a `style` attribute holds declaratio
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i style-attribute-direction.epub -u --advisory` | ERROR CSS-001; INVALID | `style-attribute-direction.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i style-attribute-direction.epub -u --advisory` | ERROR CSS-001; INVALID | `style-attribute-direction.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck style-attribute-direction.epub -u` | ERROR CSS-001; INVALID | `style-attribute-direction.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

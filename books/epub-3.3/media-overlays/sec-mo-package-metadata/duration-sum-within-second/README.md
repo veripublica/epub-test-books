@@ -34,7 +34,7 @@ Valid. The difference, 0.9 seconds, is within one second.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i duration-sum-within-second.epub -u --advisory` | no findings; VALID | `duration-sum-within-second.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i duration-sum-within-second.epub -u --advisory` | no findings; VALID | `duration-sum-within-second.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck duration-sum-within-second.epub -u` | no findings; VALID | `duration-sum-within-second.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -1,0 +1,3 @@
+ERROR RSC-005: element "case" is missing the required attribute "required-namespace" [OEBPS/content.xhtml:11:58]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

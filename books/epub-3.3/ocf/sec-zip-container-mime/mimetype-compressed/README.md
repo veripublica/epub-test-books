@@ -34,7 +34,7 @@ Invalid. The `mimetype` file must not be compressed. EPUB 2.0.1 has the same cas
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i mimetype-compressed.epub -u --advisory` | ERROR PKG-007; INVALID | `mimetype-compressed.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i mimetype-compressed.epub -u --advisory` | ERROR PKG-007; INVALID | `mimetype-compressed.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck mimetype-compressed.epub -u` | no findings; VALID | `mimetype-compressed.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.

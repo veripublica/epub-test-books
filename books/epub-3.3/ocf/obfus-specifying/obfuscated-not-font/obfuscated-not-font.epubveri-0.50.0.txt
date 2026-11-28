@@ -1,0 +1,6 @@
+ERROR PKG-026: obfuscated resource 'OEBPS/style.css' is not a font Core Media Type [META-INF/encryption.xml:3:3]
+INFO RSC-004: File "OEBPS/style.css" is encrypted; its content will not be checked [OEBPS/style.css]
+USAGE OPF-097: 'fonts/box.ttf' is declared in the manifest, but no content document references it [OEBPS/package.opf:30:5]
+USAGE OBS-001: usage of font obfuscation is outdated [META-INF/encryption.xml:3:3]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

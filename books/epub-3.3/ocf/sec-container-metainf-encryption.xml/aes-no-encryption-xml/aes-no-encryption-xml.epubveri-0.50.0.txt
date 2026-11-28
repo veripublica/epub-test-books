@@ -1,0 +1,5 @@
+FATAL RSC-016: content document is not well-formed XML: unknown token at 1:1 [OEBPS/content.xhtml:1:1]
+FATAL RSC-016: a bare '&' must be written as '&amp;' [OEBPS/content.xhtml:1:247]
+ERROR RSC-028: the document is not valid UTF-8 and declares no other encoding, which is not allowed (EPUB requires UTF-8) [OEBPS/content.xhtml:1:1]
+— 2 fatal, 1 error(s), 0 warning(s): INVALID
+[exit 1]

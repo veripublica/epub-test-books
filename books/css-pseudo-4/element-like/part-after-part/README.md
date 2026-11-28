@@ -55,7 +55,7 @@ CSS result: One rule, kept, that never matches. Any pseudo-element is allowed af
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i part-after-part.epub -u --advisory` | no findings; VALID | `part-after-part.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i part-after-part.epub -u --advisory` | no findings; VALID | `part-after-part.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck part-after-part.epub -u` | no findings; VALID | `part-after-part.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

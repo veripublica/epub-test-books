@@ -34,12 +34,12 @@ Invalid. An encrypted resource needs encryption.xml. Without it, a validator rea
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i aes-no-encryption-xml.epub -u --advisory` | FATAL RSC-016, FATAL RSC-016; INVALID | `aes-no-encryption-xml.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i aes-no-encryption-xml.epub -u --advisory` | FATAL RSC-016, FATAL RSC-016, ERROR RSC-028; INVALID | `aes-no-encryption-xml.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck aes-no-encryption-xml.epub -u` | FATAL RSC-016; INVALID | `aes-no-encryption-xml.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report different messages but reach the same verdict.
 
-Both read the ciphertext as the content document and find it not well-formed (FATAL RSC-016). Neither says that `encryption.xml` is missing; the verdict is still the expected one.
+Both read the ciphertext as the content document and find it not well-formed (FATAL RSC-016). Neither says that `encryption.xml` is missing; the verdict is still the expected one. epubveri also reports that the same bytes are not UTF-8 (ERROR RSC-028).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

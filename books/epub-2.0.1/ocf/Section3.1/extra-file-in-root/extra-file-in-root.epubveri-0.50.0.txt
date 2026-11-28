@@ -1,0 +1,3 @@
+USAGE OPF-003: container resource 'README.txt' is not listed in the manifest [OEBPS/package.opf]
+— 0 error(s), 0 warning(s): VALID
+[exit 0]

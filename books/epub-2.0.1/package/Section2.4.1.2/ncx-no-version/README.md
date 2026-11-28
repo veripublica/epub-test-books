@@ -34,7 +34,7 @@ Invalid. The attribute must be specified.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i ncx-no-version.epub -u --advisory` | ERROR RSC-005; INVALID | `ncx-no-version.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i ncx-no-version.epub -u --advisory` | ERROR RSC-005; INVALID | `ncx-no-version.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck ncx-no-version.epub -u` | no findings; VALID | `ncx-no-version.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it gives no finding.

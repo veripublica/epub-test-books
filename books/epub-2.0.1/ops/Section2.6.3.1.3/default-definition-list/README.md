@@ -34,7 +34,7 @@ Valid. With the switch replaced by the content of its default, the `dl` holds a 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i default-definition-list.epub -u --advisory` | no findings; VALID | `default-definition-list.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i default-definition-list.epub -u --advisory` | no findings; VALID | `default-definition-list.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck default-definition-list.epub -u` | no findings; VALID | `default-definition-list.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -38,12 +38,11 @@ Invalid. HTML allows `itemprop` only where it adds a property to an item. This `
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i microdata-itemprop-no-item.epub -u --advisory` | no findings; VALID | `microdata-itemprop-no-item.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i microdata-itemprop-no-item.epub -u --advisory` | ERROR RSC-005; INVALID | `microdata-itemprop-no-item.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck microdata-itemprop-no-item.epub -u` | no findings; VALID | `microdata-itemprop-no-item.epubcheck-5.4.0.txt` |
 
-Neither agrees with the expected result. epubveri: it gives no finding. epubcheck: it gives no finding.
+epubveri agrees with the expected result. epubcheck does not: it gives no finding.
 
-- **epubveri: missed.** [veripublica/epubveri#145](https://github.com/veripublica/epubveri/issues/145).
 - **epubcheck: missed.** [w3c/epubcheck#1775](https://github.com/w3c/epubcheck/issues/1775).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.

@@ -38,7 +38,7 @@ Invalid. itemtype must not be specified on an element that has no itemscope attr
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i microdata-itemtype-no-itemscope.epub -u --advisory` | ERROR RSC-005; INVALID | `microdata-itemtype-no-itemscope.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i microdata-itemtype-no-itemscope.epub -u --advisory` | ERROR RSC-005; INVALID | `microdata-itemtype-no-itemscope.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck microdata-itemtype-no-itemscope.epub -u` | no findings; VALID | `microdata-itemtype-no-itemscope.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it gives no finding.

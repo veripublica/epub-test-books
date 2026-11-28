@@ -40,7 +40,7 @@ Valid. OPS 2.0.1 content documents use XHTML 1.1, whose `meta` requires only `co
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i meta-content-only.epub -u --advisory` | no findings; VALID | `meta-content-only.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i meta-content-only.epub -u --advisory` | no findings; VALID | `meta-content-only.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck meta-content-only.epub -u` | no findings; VALID | `meta-content-only.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -41,12 +41,11 @@ Invalid. The byte order mark makes the document UTF-8, and these bytes are not U
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i xml-iso-8859-1-bom-utf-8.epub -u --advisory` | no findings; VALID | `xml-iso-8859-1-bom-utf-8.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i xml-iso-8859-1-bom-utf-8.epub -u --advisory` | ERROR RSC-028; INVALID | `xml-iso-8859-1-bom-utf-8.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck xml-iso-8859-1-bom-utf-8.epub -u` | no findings; VALID | `xml-iso-8859-1-bom-utf-8.epubcheck-5.4.0.txt` |
 
-Neither agrees with the expected result. epubveri: it gives no finding. epubcheck: it gives no finding.
+epubveri agrees with the expected result. epubcheck does not: it gives no finding.
 
-- **epubveri: missed.** [veripublica/epubveri#150](https://github.com/veripublica/epubveri/issues/150).
 - **epubcheck: missed.** [w3c/epubcheck#1784](https://github.com/w3c/epubcheck/issues/1784).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.

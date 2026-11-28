@@ -34,7 +34,7 @@ Invalid. The version needed to extract must be 10, 20 or 45.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i version-needed-63.epub -u --advisory` | ERROR SPEC-004; INVALID | `version-needed-63.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i version-needed-63.epub -u --advisory` | ERROR SPEC-004; INVALID | `version-needed-63.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck version-needed-63.epub -u` | no findings; VALID | `version-needed-63.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.

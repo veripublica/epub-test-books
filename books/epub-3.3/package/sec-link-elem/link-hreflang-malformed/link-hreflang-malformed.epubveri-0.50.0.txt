@@ -1,0 +1,4 @@
+ERROR OPF-092: hreflang value 'en_US' is not well-formed [OEBPS/package.opf:24:5]
+ERROR RSC-005: value of attribute "hreflang" is invalid: "en_US" [OEBPS/package.opf:24:107]
+— 2 error(s), 0 warning(s): INVALID
+[exit 1]

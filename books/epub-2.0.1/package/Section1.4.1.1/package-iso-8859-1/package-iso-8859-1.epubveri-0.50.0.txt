@@ -1,0 +1,3 @@
+ERROR RSC-028: the OPF declares encoding 'ISO-8859-1', which is not allowed (EPUB requires UTF-8) [OEBPS/package.opf]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

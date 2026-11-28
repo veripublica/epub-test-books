@@ -54,7 +54,7 @@ Invalid. The schema puts the case elements before the default, and here the case
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i switch-case-after-default.epub -u --advisory` | ERROR RSC-005, ERROR RSC-005; INVALID | `switch-case-after-default.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i switch-case-after-default.epub -u --advisory` | ERROR RSC-005, ERROR RSC-005; INVALID | `switch-case-after-default.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck switch-case-after-default.epub -u` | ERROR RSC-005, ERROR RSC-005; INVALID | `switch-case-after-default.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

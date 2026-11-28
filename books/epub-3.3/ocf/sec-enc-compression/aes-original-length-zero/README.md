@@ -34,7 +34,7 @@ Invalid. `OriginalLength` must be a positive integer, and 0 is not one. It is al
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i aes-original-length-zero.epub -u --advisory` | ERROR RSC-005, INFO RSC-004; INVALID | `aes-original-length-zero.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i aes-original-length-zero.epub -u --advisory` | ERROR RSC-005, INFO RSC-004; INVALID | `aes-original-length-zero.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck aes-original-length-zero.epub -u` | INFO RSC-004; VALID | `aes-original-length-zero.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result: it reports the zero `OriginalLength` in `META-INF/encryption.xml` (RSC-005). epubcheck does not: it gives only INFO RSC-004.

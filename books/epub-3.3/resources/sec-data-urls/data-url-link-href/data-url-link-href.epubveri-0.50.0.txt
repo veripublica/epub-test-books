@@ -1,0 +1,3 @@
+ERROR RSC-029: a package link href must not be a data URL [OEBPS/package.opf:24:24]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

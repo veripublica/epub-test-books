@@ -1,0 +1,3 @@
+ERROR OPF-060: file name 'OEBPS/Content.xhtml' collides with another entry after case-folding/normalization [OEBPS/Content.xhtml]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]

@@ -34,7 +34,7 @@ Invalid. The `type` of an `object` must match the media type in the manifest, an
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i object-type-mismatch.epub -u --advisory` | ERROR OPF-013; INVALID | `object-type-mismatch.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i object-type-mismatch.epub -u --advisory` | ERROR OPF-013; INVALID | `object-type-mismatch.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck object-type-mismatch.epub -u` | no findings; VALID | `object-type-mismatch.epubcheck-5.4.0.txt` |
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.

@@ -36,7 +36,7 @@ Invalid. The file must hold the ASCII string and nothing else. The byte order ma
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i mimetype-bom.epub -u --advisory` | ERROR PKG-007; INVALID | `mimetype-bom.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i mimetype-bom.epub -u --advisory` | ERROR PKG-007; INVALID | `mimetype-bom.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck mimetype-bom.epub -u` | ERROR PKG-007; INVALID | `mimetype-bom.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

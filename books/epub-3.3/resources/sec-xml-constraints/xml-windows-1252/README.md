@@ -34,7 +34,7 @@ Invalid. Only UTF-8 and UTF-16 are allowed.
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i xml-windows-1252.epub -u --advisory` | ERROR RSC-028; INVALID | `xml-windows-1252.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i xml-windows-1252.epub -u --advisory` | ERROR RSC-028; INVALID | `xml-windows-1252.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck xml-windows-1252.epub -u` | ERROR RSC-028; INVALID | `xml-windows-1252.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

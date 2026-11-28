@@ -40,7 +40,7 @@ Valid. The local header is there and has its central directory header, which is 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i local-crc-differs.epub -u --advisory` | no findings; VALID | `local-crc-differs.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i local-crc-differs.epub -u --advisory` | no findings; VALID | `local-crc-differs.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck local-crc-differs.epub -u` | no findings; VALID | `local-crc-differs.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

@@ -48,7 +48,7 @@ EPUB 3.3's content model for `encryption` reads "EncryptedKey [1 or more]", and 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i aes-no-encrypted-key.epub -u --advisory` | INFO RSC-004; VALID | `aes-no-encrypted-key.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i aes-no-encrypted-key.epub -u --advisory` | INFO RSC-004; VALID | `aes-no-encrypted-key.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck aes-no-encrypted-key.epub -u` | INFO RSC-004; VALID | `aes-no-encrypted-key.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

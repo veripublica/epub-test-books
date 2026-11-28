@@ -58,7 +58,7 @@ Invalid. With the switch replaced by the content of its default, `body` holds te
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i default-text-in-body.epub -u --advisory` | ERROR RSC-005; INVALID | `default-text-in-body.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i default-text-in-body.epub -u --advisory` | ERROR RSC-005; INVALID | `default-text-in-body.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck default-text-in-body.epub -u` | ERROR RSC-005; INVALID | `default-text-in-body.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

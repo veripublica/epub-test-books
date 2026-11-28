@@ -1,0 +1,6 @@
+FATAL RSC-016: OPF is not well-formed XML: unknown token at 1:1 [OEBPS/package.opf:1:1]
+ERROR SPEC-001: 'OEBPS/package.opf' is declared encrypted, and this file must never be encrypted [META-INF/encryption.xml:6:7]
+ERROR OPF-001: the EPUB version could not be read: the package document is not well-formed before its root element [OEBPS/package.opf]
+ERROR RSC-028: the OPF is not valid UTF-8 and declares no other encoding, which is not allowed (EPUB requires UTF-8) [OEBPS/package.opf:1:1]
+— 1 fatal, 3 error(s), 0 warning(s): INVALID
+[exit 1]

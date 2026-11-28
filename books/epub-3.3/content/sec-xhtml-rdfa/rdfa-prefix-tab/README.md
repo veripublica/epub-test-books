@@ -42,7 +42,7 @@ Invalid. Only spaces (' '+) may follow the colon. A tab is white space between p
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i rdfa-prefix-tab.epub -u --advisory` | ERROR RSC-005; INVALID | `rdfa-prefix-tab.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i rdfa-prefix-tab.epub -u --advisory` | ERROR RSC-005; INVALID | `rdfa-prefix-tab.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck rdfa-prefix-tab.epub -u` | ERROR RSC-005; INVALID | `rdfa-prefix-tab.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.

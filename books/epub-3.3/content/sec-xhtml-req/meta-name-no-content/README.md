@@ -38,7 +38,7 @@ Invalid. HTML says that a `meta` with `name` must also have `content`. This one 
 
 | Verifier | Command | Result | Output |
 |----------|---------|--------|--------|
-| epubveri 0.48.0 | `epubveri -i meta-name-no-content.epub -u --advisory` | ERROR RSC-005; INVALID | `meta-name-no-content.epubveri-0.48.0.txt` |
+| epubveri 0.50.0 | `epubveri -i meta-name-no-content.epub -u --advisory` | ERROR RSC-005; INVALID | `meta-name-no-content.epubveri-0.50.0.txt` |
 | epubcheck 5.4.0 | `epubcheck meta-name-no-content.epub -u` | ERROR RSC-005; INVALID | `meta-name-no-content.epubcheck-5.4.0.txt` |
 
 Both agree with the expected result, so there is nothing to mark. They report the same messages.
