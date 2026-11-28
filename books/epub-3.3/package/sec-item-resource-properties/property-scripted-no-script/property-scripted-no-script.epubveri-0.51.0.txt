@@ -1,0 +1,3 @@
+ERROR OPF-015: the "scripted" property is declared but doesn't appear to be needed [OEBPS/content.xhtml:3:1]
+— 1 error(s), 0 warning(s): INVALID
+[exit 1]
