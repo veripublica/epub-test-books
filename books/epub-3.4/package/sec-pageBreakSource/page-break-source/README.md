@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: none
 - Asked for by: the maintainer, from the EPUB 3.4 pageBreakSource property (w3c/epub-specs#2714)
-- Issue: pending
+- Issue: [#711](https://github.com/veripublica/epub-test-books/issues/711)
 - Other clauses: EPUB 3.3 `sec-nav-pagelist`
 
 ## About this book

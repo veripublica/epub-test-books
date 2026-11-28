@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: none
 - Asked for by: the maintainer, from the EPUB 3.4 roll layouts (w3c/epub-specs#2791)
-- Issue: pending
+- Issue: [#707](https://github.com/veripublica/epub-test-books/issues/707)
 - Other clauses: EPUB 3.4 `sec-roll`
 
 ## About this book

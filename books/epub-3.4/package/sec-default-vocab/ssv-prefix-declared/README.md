@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: epubcheck: missed
 - Asked for by: the maintainer, from the EPUB 3.4 prefix URL for structural semantics (w3c/epub-specs#2733)
-- Issue: pending
+- Issue: [#710](https://github.com/veripublica/epub-test-books/issues/710)
 - Other clauses: EPUB 3.4 `type-attr-syntax`
 
 ## About this book
@@ -46,7 +46,7 @@ EPUB 3.3 gives no URL for this vocabulary, so it does not say whether this prefi
 
 epubveri agrees with the expected result. epubcheck does not: it reports nothing.
 
-- **epubcheck: missed.** Issue pending.
+- **epubcheck: missed.** [w3c/epubcheck#1789](https://github.com/w3c/epubcheck/issues/1789).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

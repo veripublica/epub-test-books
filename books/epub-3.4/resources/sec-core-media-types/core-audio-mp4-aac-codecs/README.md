@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: none
 - Asked for by: the maintainer, from the EPUB 3.4 core media types (w3c/epub-specs#2979)
-- Issue: pending
+- Issue: [#712](https://github.com/veripublica/epub-test-books/issues/712)
 
 ## About this book
 
