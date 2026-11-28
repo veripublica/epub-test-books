@@ -1,0 +1,4 @@
+USAGE OPF-090: media-type 'application/x-font-ttf' is a non-preferred (but valid) Core Media Type; 'font/ttf' is preferred [OEBPS/package.opf:30:5]
+USAGE CSS-028: @font-face declaration [OEBPS/style.css:1:1]
+— 0 error(s), 0 warning(s): VALID
+[exit 0]

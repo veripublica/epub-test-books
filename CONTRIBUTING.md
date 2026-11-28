@@ -38,8 +38,10 @@ what its question needs.
 - A template carries every part its EPUB version requires, and meets its
   recommendations (SHOULD) too, so a correct validator reports nothing on
   it. Each part cites its clause in the template's README.
-- EPUB 3 books follow EPUB 3.3, the current W3C Recommendation. EPUB 2
-  books follow EPUB 2.0.1.
+- EPUB 3 books follow EPUB 3.3, the current W3C Recommendation. Books
+  under `books/epub-3.4/` follow EPUB 3.4 as its latest draft states it,
+  only for rules that no open w3c/epub-specs issue is about, and each
+  quotes that draft with its date (#704). EPUB 2 books follow EPUB 2.0.1.
 - Placeholder values are valid values, so they raise nothing. The template
   title is `Test book`; each set uses its own short title. The language is
   `en`. A set that needs an ISBN adds one on purpose, with a correct check

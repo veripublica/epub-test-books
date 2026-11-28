@@ -1,0 +1,8 @@
+Validating using EPUB version 3.4 rules.
+ERROR(RSC-005): roll-override-pre-paginated.epub/OEBPS/package.opf(33,75): Error while parsing file: Layout override "rendition:layout-pre-paginated" must not be used in roll publications
+
+Check finished with errors
+Messages: 0 fatals / 1 error / 0 warnings / 0 infos / 0 usages
+
+EPUBCheck completed
+[exit 1]

@@ -1,0 +1,9 @@
+Validating using EPUB version 3.4 rules.
+USAGE(OPF-090): core-font-x-font-ttf.epub/OEBPS/package.opf(30,79): It is encouraged to use MIME media type "font/ttf" instead of "application/x-font-ttf".
+USAGE(CSS-028): core-font-x-font-ttf.epub/OEBPS/style.css(2,3): Use of Font-face declaration.
+USAGE(CSS-028): core-font-x-font-ttf.epub/OEBPS/style.css(3,3): Use of Font-face declaration.
+No errors or warnings detected.
+Messages: 0 fatals / 0 errors / 0 warnings / 0 infos / 3 usages
+
+EPUBCheck completed
+[exit 0]

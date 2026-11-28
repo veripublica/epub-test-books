@@ -16,7 +16,10 @@ EPUB 3; OCF 2.0.1 (`ocf`), OPS 2.0.1 (`ops`) and OPF 2.0.1 with the NCX
 (`package`) in EPUB 2; and CSS as EPUB style sheets use it (`css-syntax-3`,
 `selectors-4`, `css-namespaces-3`, `css-cascade-5`, `css-conditional-3`,
 `css-fonts-4`, `css-pseudo-4`, `css-animations-1`, `css-page-3`). Cases where the specification and the verifiers disagree are listed in
-issue #27 until they are settled. `books/INDEX.md`
+issue #27 until they are settled. On `main`, not yet in a release:
+`books/epub-3.4/<area>/<anchor>/<set>/`, sets that follow the EPUB 3.4
+draft for rules no open w3c/epub-specs issue is about (CONTRIBUTING §2,
+#704). `books/INDEX.md`
 lists every book on one page, and `books/index.json` holds the same list for
 programs.
 
@@ -69,6 +72,7 @@ books/                          CC BY 4.0
     epub3-minimal/              EPUB 3.3, zero findings
     epub2-minimal/              EPUB 2.0.1, zero findings
   epub-3.3/<area>/<anchor>/<set>/
+  epub-3.4/<area>/<anchor>/<set>/   EPUB 3.4 draft, settled rules only
   epub-2.0.1/<area>/<anchor>/<set>/
   css-<module>/<anchor>/<set>/
   bundles/                      generated from verified sets
@@ -88,6 +92,8 @@ scripts/                        AGPL-3.0-only
                                 the layout sets' changes to it
   lib/opsvariants.py            the OPS 2.0.1 content document sets' pieces
   lib/minijpeg.py, minimedia.py generated JPEG, BMP, XBM and WAV files
+  lib/encodedmedia.py           AVIF, JPEG XL and MP4 audio made once with
+                                outside encoders, kept as bytes
   check.py                      runs both verifiers, keeps their outputs
   release.py                    index, release check, download bundle
   templates/<template>/build.py builds a template; package() for sets
