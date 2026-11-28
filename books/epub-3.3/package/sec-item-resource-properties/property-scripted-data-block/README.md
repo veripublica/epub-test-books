@@ -6,7 +6,7 @@
 - Expected: invalid
 - Marks: none
 - Asked for by: the maintainer, after w3c/epub-specs#3126
-- Issue: pending
+- Issue: [#702](https://github.com/veripublica/epub-test-books/issues/702)
 - Other clauses: EPUB 3.3 `sec-scripted-support`, `sec-scripted` (appendix D.6.5)
 
 ## About this book
