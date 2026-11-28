@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: epubveri: wrong error; epubcheck: wrong error
 - Asked for by: the maintainer, to cover the media overlays section
-- Issue: pending
+- Issue: [#701](https://github.com/veripublica/epub-test-books/issues/701)
 - Other clauses: EPUB 3.3 `conformance`
 
 ## About this book
@@ -37,7 +37,7 @@ EPUB 3.3, [`conformance`](https://www.w3.org/TR/epub-33/#conformance):
 
 Valid. The class names are declared in the package document, one in each property, as the MUST asks. The sentence about the style sheet says "must ensure" in lowercase. It is the only lowercase "must" in the section, and EPUB 3.3 reads its key words as requirements "when, and only when, they appear in all capitals". So a content document with a media overlay and no style sheet breaks no requirement. A reading system then styles the active element its own way, or not at all, as the section says: "In the absence of such definitions reading systems might provide their own styling, or no styling at all."
 
-Whether the lowercase "must" is meant is a question for W3C. Until it is answered, the book follows the text as written.
+Whether the lowercase "must" is meant is asked in [w3c/epub-specs#3125](https://github.com/w3c/epub-specs/issues/3125). Until it is answered, the book follows the text as written.
 
 ## Verifier results
 
@@ -49,7 +49,7 @@ Whether the lowercase "must" is meant is a question for W3C. Until it is answere
 Neither agrees with the expected result. epubveri: it reports the content document with no CSS as an error (CSS-030). epubcheck: it reports the content document with no CSS as an error (CSS-030).
 
 - **epubveri: wrong error.** Issue pending.
-- **epubcheck: wrong error.** Issue pending.
+- **epubcheck: wrong error.** [w3c/epubcheck#1788](https://github.com/w3c/epubcheck/issues/1788).
 
 Every epubveri finding here is in its default output. None is an `--advisory` finding.
 

@@ -6,7 +6,7 @@
 - Expected: valid
 - Marks: epubveri: wrong error; epubcheck: wrong error
 - Asked for by: the maintainer, for styloria (selectors and cascade)
-- Issue: pending
+- Issue: [#700](https://github.com/veripublica/epub-test-books/issues/700)
 - Other clauses: EPUB 3.3 `sec-container-iri`, `sec-css-req`
 
 ## About this book
@@ -63,7 +63,7 @@ CSS result: One rule is kept, `p { margin: 0; }`. The `@import` comes after a st
 Neither agrees with the expected result. epubveri: it reports the URL of the dropped `@import` as a missing resource (RSC-007), although its own USAGE ADV-021 says that browsers ignore the `@import`. epubcheck: it reports the URL of the dropped `@import` as a missing resource (RSC-007).
 
 - **epubveri: wrong error.** Issue pending.
-- **epubcheck: wrong error.** Issue pending.
+- **epubcheck: wrong error.** [w3c/epubcheck#1787](https://github.com/w3c/epubcheck/issues/1787).
 
 Every epubveri finding here is in its default output, except USAGE ADV-021, which is an `--advisory` finding.
 
